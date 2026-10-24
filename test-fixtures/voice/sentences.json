@@ -1,0 +1,122 @@
+[
+  {
+    "id": "V01",
+    "lang": "th",
+    "language": "th",
+    "voice": "Microsoft Pattara",
+    "file": "V01.wav",
+    "text": "ขวดสองร้อยห้าสิบมิลสีเขียวใบละเท่าไร",
+    "durationSec": 6.51,
+    "durationMs": 6507,
+    "factId": "CAT-038",
+    "expected": "5.80 บาท (P07 B-250 สีเขียว 250 ml)"
+  },
+  {
+    "id": "V02",
+    "lang": "th",
+    "language": "th",
+    "voice": "Microsoft Pattara",
+    "file": "V02.wav",
+    "text": "ถ้าสั่งหมื่นใบได้ส่วนลดกี่เปอร์เซ็นต์",
+    "durationSec": 4.39,
+    "durationMs": 4387,
+    "factId": "BR-08",
+    "expected": "5% (สั่ง 10,000 ใบ ลดค่าขวด 5%)"
+  },
+  {
+    "id": "V03",
+    "lang": "th",
+    "language": "th",
+    "voice": "Microsoft Pattara",
+    "file": "V03.wav",
+    "text": "พิมพ์โลโก้ด้วยเพิ่มเท่าไร",
+    "durationSec": 1.72,
+    "durationMs": 1718,
+    "factId": "LGP-103",
+    "expected": "ใบละ 0.80 บาท ขั้นต่ำ 5,000 ใบ (10,000 ใบ = 8,000.00 บาท)"
+  },
+  {
+    "id": "V04",
+    "lang": "th",
+    "language": "th",
+    "voice": "Microsoft Pattara",
+    "file": "V04.wav",
+    "text": "ส่งไปโรงงานนครสวรรค์ค่าส่งเท่าไร",
+    "durationSec": 5.98,
+    "durationMs": 5977,
+    "factId": "LOG-001",
+    "expected": "1,500.00 บาท (1 เที่ยว ≤ 20,000 ใบ · ADDR-01 ระยะ 160 กม. เกิน 50 กม.)"
+  },
+  {
+    "id": "V05",
+    "lang": "th",
+    "language": "th",
+    "voice": "Microsoft Pattara",
+    "file": "V05.wav",
+    "text": "ขอใบเสนอราคาด้วย",
+    "durationSec": 2.8,
+    "durationMs": 2797,
+    "factId": "POL-086",
+    "expected": "ออกใบเสนอราคา QT-NNNN อายุ 7 วัน (ต้องล็อกอินก่อน)"
+  },
+  {
+    "id": "V06",
+    "lang": "th",
+    "language": "th",
+    "voice": "Microsoft Pattara",
+    "file": "V06.wav",
+    "text": "ขวดแตกเคลมได้ภายในกี่วัน",
+    "durationSec": 4.92,
+    "durationMs": 4917,
+    "factId": "POL-107",
+    "expected": "ภายใน 7 วันนับจากวันจัดส่ง"
+  },
+  {
+    "id": "V07",
+    "lang": "th",
+    "language": "th",
+    "voice": "Microsoft Pattara",
+    "file": "V07.wav",
+    "text": "ขวดห้าร้อยมิลสั่งขั้นต่ำกี่ใบ",
+    "durationSec": 3.86,
+    "durationMs": 3857,
+    "factId": "BR-02",
+    "expected": "800 ใบ (B-500 500 ml)"
+  },
+  {
+    "id": "V08",
+    "lang": "en",
+    "language": "en",
+    "voice": "Microsoft Zira Desktop",
+    "file": "V08.wav",
+    "text": "What is the minimum order for the 150 ml bottle?",
+    "durationSec": 5.45,
+    "durationMs": 5447,
+    "factId": "BR-02",
+    "expected": "1,800 bottles (B-150 150 ml)"
+  },
+  {
+    "id": "V09",
+    "lang": "th",
+    "language": "th",
+    "voice": "Microsoft Pattara",
+    "file": "V09.wav",
+    "text": "วันรับของเร็วที่สุดคือวันไหน",
+    "durationSec": 3.33,
+    "durationMs": 3327,
+    "factId": "FAQ-070",
+    "expected": "2026-10-25 (วันนี้ 2026-10-11 + 14 วัน)"
+  },
+  {
+    "id": "V10",
+    "lang": "en",
+    "language": "en",
+    "voice": "Microsoft Zira Desktop",
+    "file": "V10.wav",
+    "text": "Can I get free samples?",
+    "durationSec": 2.27,
+    "durationMs": 2267,
+    "factId": "FAQ-096",
+    "expected": "Yes, free (0.00 THB), up to 3 bottles per model per company per month (POL-098 / FAQ-096)"
+  }
+]

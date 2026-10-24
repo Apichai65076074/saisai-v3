@@ -1,0 +1,72 @@
+{
+  "84754baf57e238118aa331158270384ca3c1eeab842db86992554afa55888b10": {
+    "id": "V01",
+    "text": "ขวดสองร้อยห้าสิบมิลสีเขียวใบละเท่าไร",
+    "language": "th",
+    "file": "V01.wav",
+    "durationMs": 6507
+  },
+  "590efb8b1993fc2875dba596bb79eda54b71fc5024edaa1805032cba690e3f4d": {
+    "id": "V02",
+    "text": "ถ้าสั่งหมื่นใบได้ส่วนลดกี่เปอร์เซ็นต์",
+    "language": "th",
+    "file": "V02.wav",
+    "durationMs": 4387
+  },
+  "79b5b7c02e936cdf8e12a8cc40293a34b6701aaf8895cc20c1104e3729952301": {
+    "id": "V03",
+    "text": "พิมพ์โลโก้ด้วยเพิ่มเท่าไร",
+    "language": "th",
+    "file": "V03.wav",
+    "durationMs": 1718
+  },
+  "5f8eee71cad34808a04d9324f0f409356c6d0007374b15e51dc36900f629428f": {
+    "id": "V04",
+    "text": "ส่งไปโรงงานนครสวรรค์ค่าส่งเท่าไร",
+    "language": "th",
+    "file": "V04.wav",
+    "durationMs": 5977
+  },
+  "f64930fbfe9729b308bdb0805e7c0ad11bbeb68884d241f43113f235a634a826": {
+    "id": "V05",
+    "text": "ขอใบเสนอราคาด้วย",
+    "language": "th",
+    "file": "V05.wav",
+    "durationMs": 2797
+  },
+  "5d5aa624b86978e1de705956d5d1c302a977f6a98e137f65e36cf374d29671a5": {
+    "id": "V06",
+    "text": "ขวดแตกเคลมได้ภายในกี่วัน",
+    "language": "th",
+    "file": "V06.wav",
+    "durationMs": 4917
+  },
+  "5c4ea5cc8f2e3fe1de6c94d3bf20ea320ecaaece593171d7447b2d9c22c84fae": {
+    "id": "V07",
+    "text": "ขวดห้าร้อยมิลสั่งขั้นต่ำกี่ใบ",
+    "language": "th",
+    "file": "V07.wav",
+    "durationMs": 3857
+  },
+  "253032e3b68a7c0a229fbaaacca8484261907337422a83510e150a7ac4aaf80f": {
+    "id": "V08",
+    "text": "What is the minimum order for the 150 ml bottle?",
+    "language": "en",
+    "file": "V08.wav",
+    "durationMs": 5447
+  },
+  "5321f6b1b67b3539421559408476456949e242df9710bd03446fb5561a18fd96": {
+    "id": "V09",
+    "text": "วันรับของเร็วที่สุดคือวันไหน",
+    "language": "th",
+    "file": "V09.wav",
+    "durationMs": 3327
+  },
+  "3692b21b68bc5c287f8419956a130174dfc7b44d185cc4ae7a15905ba144272b": {
+    "id": "V10",
+    "text": "Can I get free samples?",
+    "language": "en",
+    "file": "V10.wav",
+    "durationMs": 2267
+  }
+}
