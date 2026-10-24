@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="378" viewBox="0 0 1400 378" font-family="Sarabun, Tahoma, sans-serif">
+<rect width="1400" height="378" fill="#fff"/>
+<text x="30" y="38" font-size="22" font-weight="700" fill="#222">ไทม์ไลน์แผนงาน · saisai-v3</text>
+<text x="30" y="62" font-size="14" fill="#666">แกนนอน = นาทีโดยประมาณ (โทเคนที่ประเมิน ÷ ความเร็วของ CLI) · ขอบส้ม = งานบนสายวิกฤต</text>
+<line x1="180.0" y1="74" x2="180.0" y2="308" stroke="#eee"/><text x="180.0" y="328" font-size="13" text-anchor="middle" fill="#777">0</text>
+<line x1="322.79999999999995" y1="74" x2="322.79999999999995" y2="308" stroke="#eee"/><text x="322.79999999999995" y="328" font-size="13" text-anchor="middle" fill="#777">60</text>
+<line x1="465.59999999999997" y1="74" x2="465.59999999999997" y2="308" stroke="#eee"/><text x="465.59999999999997" y="328" font-size="13" text-anchor="middle" fill="#777">120</text>
+<line x1="608.4" y1="74" x2="608.4" y2="308" stroke="#eee"/><text x="608.4" y="328" font-size="13" text-anchor="middle" fill="#777">180</text>
+<line x1="751.1999999999999" y1="74" x2="751.1999999999999" y2="308" stroke="#eee"/><text x="751.1999999999999" y="328" font-size="13" text-anchor="middle" fill="#777">240</text>
+<line x1="894.0" y1="74" x2="894.0" y2="308" stroke="#eee"/><text x="894.0" y="328" font-size="13" text-anchor="middle" fill="#777">300</text>
+<line x1="1036.8" y1="74" x2="1036.8" y2="308" stroke="#eee"/><text x="1036.8" y="328" font-size="13" text-anchor="middle" fill="#777">360</text>
+<line x1="1179.6" y1="74" x2="1179.6" y2="308" stroke="#eee"/><text x="1179.6" y="328" font-size="13" text-anchor="middle" fill="#777">420</text>
+<line x1="1322.3999999999999" y1="74" x2="1322.3999999999999" y2="308" stroke="#eee"/><text x="1322.3999999999999" y="328" font-size="13" text-anchor="middle" fill="#777">480</text>
+<text x="170" y="104" font-size="15" text-anchor="end" fill="#333">yolo1</text>
+<line x1="180" y1="118" x2="1370" y2="118" stroke="#f2f2f2"/>
+<text x="170" y="142" font-size="15" text-anchor="end" fill="#333">yolo2</text>
+<line x1="180" y1="156" x2="1370" y2="156" stroke="#f2f2f2"/>
+<text x="170" y="180" font-size="15" text-anchor="end" fill="#333">yolo2 #2</text>
+<line x1="180" y1="194" x2="1370" y2="194" stroke="#f2f2f2"/>
+<text x="170" y="218" font-size="15" text-anchor="end" fill="#333">yolo3</text>
+<line x1="180" y1="232" x2="1370" y2="232" stroke="#f2f2f2"/>
+<text x="170" y="256" font-size="15" text-anchor="end" fill="#333">yolo3 #2</text>
+<line x1="180" y1="270" x2="1370" y2="270" stroke="#f2f2f2"/>
+<text x="170" y="294" font-size="15" text-anchor="end" fill="#333">cyolo1</text>
+<line x1="180" y1="308" x2="1370" y2="308" stroke="#f2f2f2"/>
+<rect x="180.0" y="85" width="81.3" height="28" rx="5" fill="#2b7bd6" fill-opacity="0.88" stroke="#dc5a1e" stroke-width="3"/>
+<text x="220.65" y="104" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T04</text>
+<rect x="263.3" y="85" width="69.40000000000002" height="28" rx="5" fill="#2b7bd6" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="298.0" y="104" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T11</text>
+<rect x="334.70000000000005" y="85" width="69.39999999999999" height="28" rx="5" fill="#2b7bd6" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="369.40000000000003" y="104" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T14</text>
+<rect x="406.1" y="85" width="93.19999999999997" height="28" rx="5" fill="#2b7bd6" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="452.7" y="104" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T15</text>
+<rect x="596.5" y="85" width="81.30000000000001" height="28" rx="5" fill="#2b7bd6" fill-opacity="0.88" stroke="#dc5a1e" stroke-width="3"/>
+<text x="637.15" y="104" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T20</text>
+<rect x="1108.1999999999998" y="85" width="259.80000000000007" height="28" rx="5" fill="#2b7bd6" fill-opacity="0.88" stroke="#dc5a1e" stroke-width="3"/>
+<text x="1238.1" y="104" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T23</text>
+<rect x="180.0" y="123" width="5.14" height="28" rx="5" fill="#2e9e5b" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="182.57" y="142" font-size="13" font-weight="700" text-anchor="middle" fill="#fff"></text>
+<rect x="187.14" y="123" width="5.14" height="28" rx="5" fill="#2e9e5b" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="189.70999999999998" y="142" font-size="13" font-weight="700" text-anchor="middle" fill="#fff"></text>
+<rect x="263.3" y="123" width="45.60000000000001" height="28" rx="5" fill="#2e9e5b" fill-opacity="0.88" stroke="#dc5a1e" stroke-width="3"/>
+<text x="286.1" y="142" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T05</text>
+<rect x="310.9" y="123" width="93.20000000000002" height="28" rx="5" fill="#2e9e5b" fill-opacity="0.88" stroke="#dc5a1e" stroke-width="3"/>
+<text x="357.5" y="142" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T07</text>
+<rect x="406.1" y="123" width="69.39999999999999" height="28" rx="5" fill="#2e9e5b" fill-opacity="0.88" stroke="#dc5a1e" stroke-width="3"/>
+<text x="440.8" y="142" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T08</text>
+<rect x="406.1" y="161" width="105.1" height="28" rx="5" fill="#2e9e5b" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="458.65000000000003" y="180" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T16</text>
+<rect x="596.5" y="123" width="69.39999999999999" height="28" rx="5" fill="#2e9e5b" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="631.2" y="142" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T18</text>
+<rect x="679.8000000000001" y="123" width="140.79999999999993" height="28" rx="5" fill="#2e9e5b" fill-opacity="0.88" stroke="#dc5a1e" stroke-width="3"/>
+<text x="750.2" y="142" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T21</text>
+<rect x="180.0" y="199" width="5.14" height="28" rx="5" fill="#8e44ad" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="182.57" y="218" font-size="13" font-weight="700" text-anchor="middle" fill="#fff"></text>
+<rect x="263.3" y="199" width="69.40000000000002" height="28" rx="5" fill="#8e44ad" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="298.0" y="218" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T10</text>
+<rect x="334.70000000000005" y="199" width="81.30000000000001" height="28" rx="5" fill="#8e44ad" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="375.35" y="218" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T12</text>
+<rect x="406.1" y="237" width="57.49999999999998" height="28" rx="5" fill="#8e44ad" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="434.85" y="256" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T17</text>
+<rect x="418.0" y="199" width="57.49999999999998" height="28" rx="5" fill="#8e44ad" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="446.75" y="218" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T09</text>
+<rect x="477.5" y="199" width="117.00000000000001" height="28" rx="5" fill="#8e44ad" fill-opacity="0.88" stroke="#dc5a1e" stroke-width="3"/>
+<text x="536.0" y="218" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T13</text>
+<rect x="822.6" y="199" width="283.59999999999997" height="28" rx="5" fill="#8e44ad" fill-opacity="0.88" stroke="#dc5a1e" stroke-width="3"/>
+<text x="964.4" y="218" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T22</text>
+<rect x="180.0" y="275" width="57.5" height="28" rx="5" fill="#c0392b" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="208.75" y="294" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T06</text>
+<rect x="406.1" y="275" width="69.39999999999999" height="28" rx="5" fill="#c0392b" fill-opacity="0.88" stroke="none" stroke-width="3"/>
+<text x="440.8" y="294" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">T19</text>
+<text x="1370" y="364" font-size="14" text-anchor="end" fill="#555">รวม ≈ 500 นาที</text></svg>

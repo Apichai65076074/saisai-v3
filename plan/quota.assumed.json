@@ -1,0 +1,7 @@
+{"note": "โควตาสมมติสำหรับจำลองแผน (ไม่ได้ถามบัญชีจริง · กัน planner เรียก docker) · reset เป็นชั่วโมงจากตอนนี้",
+ "accounts": [
+  {"account": "yolo1", "kind": "yolo", "logged_in": true, "plan": "max", "session_used": 0, "session_reset": 5, "week_used": 0, "week_reset": 168},
+  {"account": "yolo2", "kind": "yolo", "logged_in": true, "plan": "max", "session_used": 0, "session_reset": 5, "week_used": 0, "week_reset": 168},
+  {"account": "yolo3", "kind": "yolo", "logged_in": true, "plan": "max", "session_used": 0, "session_reset": 5, "week_used": 0, "week_reset": 168},
+  {"account": "cyolo1", "kind": "cyolo", "logged_in": true, "plan": "plus", "session_used": 0, "session_reset": 5, "week_used": 0, "week_reset": 168}
+ ]}

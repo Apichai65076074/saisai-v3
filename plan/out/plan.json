@@ -1,0 +1,468 @@
+{
+ "critical_path": [
+  "T04",
+  "T05",
+  "T07",
+  "T08",
+  "T13",
+  "T20",
+  "T21",
+  "T22",
+  "T23"
+ ],
+ "rank": {
+  "T23": 13.2,
+  "T22": 27.6,
+  "T21": 34.8,
+  "T18": 38.4,
+  "T02": 38.401,
+  "T20": 39.0,
+  "T13": 45.0,
+  "T12": 49.2,
+  "T01": 49.201,
+  "T15": 43.8,
+  "T11": 48.6,
+  "T03": 48.601,
+  "T08": 48.6,
+  "T09": 37.8,
+  "T16": 40.2,
+  "T17": 41.4,
+  "T19": 41.4,
+  "T07": 53.4,
+  "T05": 55.8,
+  "T14": 47.4,
+  "T10": 52.8,
+  "T04": 60.0,
+  "T06": 42.2
+ },
+ "peak_workers": 6,
+ "rounds": [
+  {
+   "t_min": 0,
+   "start": [
+    "T06",
+    "T04",
+    "T01",
+    "T03"
+   ]
+  },
+  {
+   "t_min": 3,
+   "start": [
+    "T02"
+   ]
+  },
+  {
+   "t_min": 35,
+   "start": [
+    "T05",
+    "T10",
+    "T11"
+   ]
+  },
+  {
+   "t_min": 55,
+   "start": [
+    "T07"
+   ]
+  },
+  {
+   "t_min": 65,
+   "start": [
+    "T12",
+    "T14"
+   ]
+  },
+  {
+   "t_min": 95,
+   "start": [
+    "T08",
+    "T15",
+    "T17",
+    "T19",
+    "T16"
+   ]
+  },
+  {
+   "t_min": 100,
+   "start": [
+    "T09"
+   ]
+  },
+  {
+   "t_min": 125,
+   "start": [
+    "T13"
+   ]
+  },
+  {
+   "t_min": 175,
+   "start": [
+    "T20",
+    "T18"
+   ]
+  },
+  {
+   "t_min": 210,
+   "start": [
+    "T21"
+   ]
+  },
+  {
+   "t_min": 270,
+   "start": [
+    "T22"
+   ]
+  },
+  {
+   "t_min": 390,
+   "start": [
+    "T23"
+   ]
+  }
+ ],
+ "assign": {
+  "T06": {
+   "id": "T06",
+   "account": "cyolo1",
+   "start": 0.0,
+   "end": 0.4166666666666667,
+   "image": true,
+   "mode": "full",
+   "score": 26.7,
+   "why": "KC-QUEST 26.7 (urgency=0.125 fit=0.007 session=0.948 speed=0.492 load=0.0) · ประเมิน 2.00M tok ≈ 5ชม. 5.2% / สัปดาห์ 0.65%",
+   "alts": [],
+   "status": "planned"
+  },
+  "T04": {
+   "id": "T04",
+   "account": "yolo1",
+   "start": 0.0,
+   "end": 0.5833333333333334,
+   "image": false,
+   "mode": "full",
+   "score": 34.3,
+   "why": "KC-QUEST 34.3 (urgency=0.125 fit=0.007 session=0.945 speed=1.0 load=0.0) · ประเมิน 4.20M tok ≈ 5ชม. 5.46% / สัปดาห์ 0.66% · อันดับ 2 yolo2 34.3",
+   "alts": [
+    "yolo2 34.3",
+    "yolo3 34.3"
+   ],
+   "status": "planned"
+  },
+  "T01": {
+   "id": "T01",
+   "account": "yolo2",
+   "start": 0.0,
+   "end": 0.05,
+   "image": false,
+   "mode": "full",
+   "score": 32.3,
+   "why": "KC-QUEST 32.3 (urgency=0.125 fit=0.0 session=1.0 speed=0.82 load=0.0) · ประเมิน 0.00M tok ≈ 5ชม. 0.0% / สัปดาห์ 0.0% · อันดับ 2 yolo3 32.3",
+   "alts": [
+    "yolo3 32.3",
+    "yolo1 29.0"
+   ],
+   "status": "planned"
+  },
+  "T03": {
+   "id": "T03",
+   "account": "yolo3",
+   "start": 0.0,
+   "end": 0.05,
+   "image": false,
+   "mode": "full",
+   "score": 32.1,
+   "why": "KC-QUEST 32.1 (urgency=0.125 fit=0.0 session=1.0 speed=0.81 load=0.0) · ประเมิน 0.00M tok ≈ 5ชม. 0.0% / สัปดาห์ 0.0% · อันดับ 2 yolo2 29.6",
+   "alts": [
+    "yolo2 29.6",
+    "yolo1 28.8"
+   ],
+   "status": "planned"
+  },
+  "T02": {
+   "id": "T02",
+   "account": "yolo2",
+   "start": 0.05,
+   "end": 0.1,
+   "image": false,
+   "mode": "full",
+   "score": 29.6,
+   "why": "KC-QUEST 29.6 (urgency=0.125 fit=0.0 session=1.0 speed=0.64 load=0.0) · ประเมิน 0.00M tok ≈ 5ชม. 0.0% / สัปดาห์ 0.0% · อันดับ 2 yolo3 29.6",
+   "alts": [
+    "yolo3 29.6",
+    "yolo1 26.3"
+   ],
+   "status": "planned"
+  },
+  "T05": {
+   "id": "T05",
+   "account": "yolo2",
+   "start": 0.5833333333333334,
+   "end": 0.9166666666666667,
+   "image": false,
+   "mode": "full",
+   "score": 33.6,
+   "why": "KC-QUEST 33.6 (urgency=0.125 fit=0.004 session=0.969 speed=0.93 load=0.0) · ประเมิน 2.40M tok ≈ 5ชม. 3.12% / สัปดาห์ 0.37% · อันดับ 2 yolo3 33.6",
+   "alts": [
+    "yolo3 33.6",
+    "yolo1 32.7"
+   ],
+   "status": "planned"
+  },
+  "T10": {
+   "id": "T10",
+   "account": "yolo3",
+   "start": 0.5833333333333334,
+   "end": 1.0833333333333335,
+   "image": false,
+   "mode": "full",
+   "score": 32.6,
+   "why": "KC-QUEST 32.6 (urgency=0.125 fit=0.006 session=0.953 speed=0.88 load=0.0) · ประเมิน 3.60M tok ≈ 5ชม. 4.68% / สัปดาห์ 0.56% · อันดับ 2 yolo1 31.8",
+   "alts": [
+    "yolo1 31.8",
+    "yolo2 29.7"
+   ],
+   "status": "planned"
+  },
+  "T11": {
+   "id": "T11",
+   "account": "yolo1",
+   "start": 0.5833333333333334,
+   "end": 1.0833333333333335,
+   "image": false,
+   "mode": "full",
+   "score": 30.8,
+   "why": "KC-QUEST 30.8 (urgency=0.125 fit=0.006 session=0.899 speed=0.81 load=0.0) · ประเมิน 3.60M tok ≈ 5ชม. 4.68% / สัปดาห์ 0.56% · อันดับ 2 yolo2 28.6",
+   "alts": [
+    "yolo2 28.6",
+    "yolo3 28.4"
+   ],
+   "status": "planned"
+  },
+  "T07": {
+   "id": "T07",
+   "account": "yolo2",
+   "start": 0.9166666666666667,
+   "end": 1.5833333333333335,
+   "image": false,
+   "mode": "full",
+   "score": 32.1,
+   "why": "KC-QUEST 32.1 (urgency=0.125 fit=0.008 session=0.906 speed=0.89 load=0.0) · ประเมิน 4.80M tok ≈ 5ชม. 6.24% / สัปดาห์ 0.75% · อันดับ 2 yolo3 29.4",
+   "alts": [
+    "yolo3 29.4",
+    "yolo1 28.5"
+   ],
+   "status": "planned"
+  },
+  "T12": {
+   "id": "T12",
+   "account": "yolo3",
+   "start": 1.0833333333333335,
+   "end": 1.666666666666667,
+   "image": false,
+   "mode": "full",
+   "score": 30.9,
+   "why": "KC-QUEST 30.9 (urgency=0.125 fit=0.007 session=0.899 speed=0.82 load=0.0) · ประเมิน 4.20M tok ≈ 5ชม. 5.46% / สัปดาห์ 0.66% · อันดับ 2 yolo1 30.1",
+   "alts": [
+    "yolo1 30.1",
+    "yolo2 27.7"
+   ],
+   "status": "planned"
+  },
+  "T14": {
+   "id": "T14",
+   "account": "yolo1",
+   "start": 1.0833333333333335,
+   "end": 1.5833333333333335,
+   "image": false,
+   "mode": "full",
+   "score": 29.8,
+   "why": "KC-QUEST 29.8 (urgency=0.125 fit=0.006 session=0.852 speed=0.79 load=0.0) · ประเมิน 3.60M tok ≈ 5ชม. 4.68% / สัปดาห์ 0.56% · อันดับ 2 yolo2 27.4",
+   "alts": [
+    "yolo2 27.4",
+    "yolo3 27.3"
+   ],
+   "status": "planned"
+  },
+  "T08": {
+   "id": "T08",
+   "account": "yolo2",
+   "start": 1.5833333333333335,
+   "end": 2.0833333333333335,
+   "image": false,
+   "mode": "full",
+   "score": 30.2,
+   "why": "KC-QUEST 30.2 (urgency=0.125 fit=0.006 session=0.86 speed=0.81 load=0.0) · ประเมิน 3.60M tok ≈ 5ชม. 4.68% / สัปดาห์ 0.56% · อันดับ 2 yolo1 29.3",
+   "alts": [
+    "yolo1 29.3",
+    "yolo3 27.6"
+   ],
+   "status": "planned"
+  },
+  "T15": {
+   "id": "T15",
+   "account": "yolo1",
+   "start": 1.5833333333333335,
+   "end": 2.25,
+   "image": false,
+   "mode": "full",
+   "score": 27.9,
+   "why": "KC-QUEST 27.9 (urgency=0.125 fit=0.008 session=0.789 speed=0.73 load=0.0) · ประเมิน 4.80M tok ≈ 5ชม. 6.24% / สัปดาห์ 0.75% · อันดับ 2 yolo3 26.2",
+   "alts": [
+    "yolo3 26.2",
+    "yolo2 25.6"
+   ],
+   "status": "planned"
+  },
+  "T17": {
+   "id": "T17",
+   "account": "yolo3",
+   "start": 1.5833333333333335,
+   "end": 2.0,
+   "image": false,
+   "mode": "full",
+   "score": 25.9,
+   "why": "KC-QUEST 25.9 (urgency=0.125 fit=0.005 session=0.86 speed=0.69 load=0.25) · ประเมิน 3.00M tok ≈ 5ชม. 3.9% / สัปดาห์ 0.47% · อันดับ 2 cyolo1 25.5",
+   "alts": [
+    "cyolo1 25.5",
+    "yolo2 25.3"
+   ],
+   "status": "planned"
+  },
+  "T19": {
+   "id": "T19",
+   "account": "cyolo1",
+   "start": 1.5833333333333335,
+   "end": 2.0833333333333335,
+   "image": false,
+   "mode": "full",
+   "score": 25.7,
+   "why": "KC-QUEST 25.7 (urgency=0.125 fit=0.008 session=0.886 speed=0.483 load=0.0) · ประเมิน 2.40M tok ≈ 5ชม. 6.24% / สัปดาห์ 0.78% · อันดับ 2 yolo2 25.4",
+   "alts": [
+    "yolo2 25.4",
+    "yolo1 24.3"
+   ],
+   "status": "planned"
+  },
+  "T16": {
+   "id": "T16",
+   "account": "yolo2",
+   "start": 1.5833333333333335,
+   "end": 2.3333333333333335,
+   "image": false,
+   "mode": "full",
+   "score": 24.6,
+   "why": "KC-QUEST 24.6 (urgency=0.125 fit=0.009 session=0.789 speed=0.67 load=0.25) · ประเมิน 5.40M tok ≈ 5ชม. 7.02% / สัปดาห์ 0.84% · อันดับ 2 yolo1 23.5",
+   "alts": [
+    "yolo1 23.5",
+    "yolo3 22.1"
+   ],
+   "status": "planned"
+  },
+  "T09": {
+   "id": "T09",
+   "account": "yolo3",
+   "start": 1.666666666666667,
+   "end": 2.0833333333333335,
+   "image": false,
+   "mode": "full",
+   "score": 24.4,
+   "why": "KC-QUEST 24.4 (urgency=0.125 fit=0.005 session=0.821 speed=0.63 load=0.25) · ประเมิน 3.00M tok ≈ 5ชม. 3.9% / สัปดาห์ 0.47% · อันดับ 2 yolo1 23.3",
+   "alts": [
+    "yolo1 23.3",
+    "yolo2 20.8"
+   ],
+   "status": "planned"
+  },
+  "T13": {
+   "id": "T13",
+   "account": "yolo3",
+   "start": 2.0833333333333335,
+   "end": 2.916666666666667,
+   "image": false,
+   "mode": "full",
+   "score": 27.6,
+   "why": "KC-QUEST 27.6 (urgency=0.125 fit=0.01 session=0.743 speed=0.75 load=0.0) · ประเมิน 6.00M tok ≈ 5ชม. 7.8% / สัปดาห์ 0.94% · อันดับ 2 yolo1 24.6",
+   "alts": [
+    "yolo1 24.6",
+    "yolo2 24.6"
+   ],
+   "status": "planned"
+  },
+  "T20": {
+   "id": "T20",
+   "account": "yolo1",
+   "start": 2.916666666666667,
+   "end": 3.5000000000000004,
+   "image": false,
+   "mode": "full",
+   "score": 25.9,
+   "why": "KC-QUEST 25.9 (urgency=0.125 fit=0.007 session=0.735 speed=0.65 load=0.0) · ประเมิน 4.20M tok ≈ 5ชม. 5.46% / สัปดาห์ 0.66% · อันดับ 2 yolo2 25.9",
+   "alts": [
+    "yolo2 25.9",
+    "yolo3 25.2"
+   ],
+   "status": "planned"
+  },
+  "T18": {
+   "id": "T18",
+   "account": "yolo2",
+   "start": 2.916666666666667,
+   "end": 3.416666666666667,
+   "image": false,
+   "mode": "full",
+   "score": 25.9,
+   "why": "KC-QUEST 25.9 (urgency=0.125 fit=0.006 session=0.743 speed=0.64 load=0.0) · ประเมิน 3.60M tok ≈ 5ชม. 4.68% / สัปดาห์ 0.56% · อันดับ 2 yolo3 25.2",
+   "alts": [
+    "yolo3 25.2",
+    "cyolo1 23.8"
+   ],
+   "status": "planned"
+  },
+  "T21": {
+   "id": "T21",
+   "account": "yolo2",
+   "start": 3.5000000000000004,
+   "end": 4.5,
+   "image": false,
+   "mode": "full",
+   "score": 23.7,
+   "why": "KC-QUEST 23.7 (urgency=0.125 fit=0.012 session=0.649 speed=0.58 load=0.0) · ประเมิน 7.20M tok ≈ 5ชม. 9.36% / สัปดาห์ 1.12% · อันดับ 2 yolo3 23.7",
+   "alts": [
+    "yolo3 23.7",
+    "yolo1 23.6"
+   ],
+   "status": "planned"
+  },
+  "T22": {
+   "id": "T22",
+   "account": "yolo3",
+   "start": 4.5,
+   "end": 6.5,
+   "image": false,
+   "mode": "full",
+   "score": 20.7,
+   "why": "KC-QUEST 20.7 (urgency=0.125 fit=0.023 session=0.555 speed=0.46 load=0.0) · ประเมิน 14.40M tok ≈ 5ชม. 18.72% / สัปดาห์ 2.25% · อันดับ 2 yolo1 20.6",
+   "alts": [
+    "yolo1 20.6",
+    "yolo2 19.3"
+   ],
+   "status": "planned"
+  },
+  "T23": {
+   "id": "T23",
+   "account": "yolo1",
+   "start": 6.5,
+   "end": 8.333333333333334,
+   "image": false,
+   "mode": "full",
+   "score": 17.2,
+   "why": "KC-QUEST 17.2 (urgency=0.125 fit=0.021 session=0.563 speed=0.22 load=0.0) · ประเมิน 13.20M tok ≈ 5ชม. 17.16% / สัปดาห์ 2.06% · อันดับ 2 cyolo1 16.3",
+   "alts": [
+    "cyolo1 16.3",
+    "yolo2 15.9"
+   ],
+   "status": "planned"
+  }
+ }
+}

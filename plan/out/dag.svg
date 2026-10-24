@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2990" height="1090" viewBox="0 0 2990 1090" font-family="Sarabun, Tahoma, sans-serif">
+<defs><marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#9a9a9a"/></marker><marker id="ac" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#dc5a1e"/></marker></defs>
+<rect width="2990" height="1090" fill="#ffffff"/>
+<rect width="2990" height="76" fill="#2b7bd6"/>
+<text x="40" y="50" font-size="30" font-weight="700" fill="#fff">แตกโจทย์เป็นกราฟงาน (DAG) · saisai-v3 · MAX_AGENTS=6</text>
+<path d="M310,314.0 C339.0,314.0 339.0,314.0 368,314.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M970,524.0 C999.0,524.0 999.0,594.0 1028,594.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M640,734.0 C834.0,734.0 834.0,594.0 1028,594.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M310,594.0 C339.0,594.0 339.0,734.0 368,734.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M310,594.0 C339.0,594.0 339.0,454.0 368,454.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M310,454.0 C339.0,454.0 339.0,454.0 368,454.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M640,734.0 C669.0,734.0 669.0,384.0 698,384.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M310,314.0 C504.0,314.0 504.0,384.0 698,384.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M640,594.0 C999.0,594.0 999.0,524.0 1358,524.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M640,454.0 C999.0,454.0 999.0,524.0 1358,524.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M970,384.0 C1164.0,384.0 1164.0,524.0 1358,524.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M640,734.0 C669.0,734.0 669.0,664.0 698,664.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M640,734.0 C834.0,734.0 834.0,734.0 1028,734.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M640,454.0 C834.0,454.0 834.0,734.0 1028,734.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M970,664.0 C999.0,664.0 999.0,734.0 1028,734.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M310,734.0 C669.0,734.0 669.0,874.0 1028,874.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M970,524.0 C999.0,524.0 999.0,874.0 1028,874.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M970,664.0 C999.0,664.0 999.0,874.0 1028,874.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M970,524.0 C999.0,524.0 999.0,314.0 1028,314.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M640,314.0 C1164.0,314.0 1164.0,454.0 1688,454.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M1630,524.0 C1659.0,524.0 1659.0,454.0 1688,454.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M1300,314.0 C1494.0,314.0 1494.0,454.0 1688,454.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M970,524.0 C999.0,524.0 999.0,454.0 1028,454.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M1300,734.0 C1494.0,734.0 1494.0,594.0 1688,594.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M1300,454.0 C1494.0,454.0 1494.0,594.0 1688,594.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M1300,174.0 C1659.0,174.0 1659.0,524.0 2018,524.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M1300,594.0 C1659.0,594.0 1659.0,524.0 2018,524.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M970,384.0 C1494.0,384.0 1494.0,524.0 2018,524.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M1630,524.0 C1824.0,524.0 1824.0,524.0 2018,524.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M1300,734.0 C1659.0,734.0 1659.0,524.0 2018,524.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M1300,874.0 C1659.0,874.0 1659.0,524.0 2018,524.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M1960,454.0 C1989.0,454.0 1989.0,524.0 2018,524.0" fill="none" stroke="#c4c4c4" stroke-width="1.6" marker-end="url(#ag)"/>
+<path d="M310,594.0 C339.0,594.0 339.0,594.0 368,594.0" fill="none" stroke="#dc5a1e" stroke-width="4" marker-end="url(#ac)"/>
+<path d="M640,594.0 C669.0,594.0 669.0,524.0 698,524.0" fill="none" stroke="#dc5a1e" stroke-width="4" marker-end="url(#ac)"/>
+<path d="M970,524.0 C999.0,524.0 999.0,174.0 1028,174.0" fill="none" stroke="#dc5a1e" stroke-width="4" marker-end="url(#ac)"/>
+<path d="M1300,174.0 C1329.0,174.0 1329.0,524.0 1358,524.0" fill="none" stroke="#dc5a1e" stroke-width="4" marker-end="url(#ac)"/>
+<path d="M1630,524.0 C1659.0,524.0 1659.0,594.0 1688,594.0" fill="none" stroke="#dc5a1e" stroke-width="4" marker-end="url(#ac)"/>
+<path d="M1960,594.0 C1989.0,594.0 1989.0,524.0 2018,524.0" fill="none" stroke="#dc5a1e" stroke-width="4" marker-end="url(#ac)"/>
+<path d="M2290,524.0 C2319.0,524.0 2319.0,524.0 2348,524.0" fill="none" stroke="#dc5a1e" stroke-width="4" marker-end="url(#ac)"/>
+<path d="M2620,524.0 C2649.0,524.0 2649.0,524.0 2678,524.0" fill="none" stroke="#dc5a1e" stroke-width="4" marker-end="url(#ac)"/>
+<rect x="40" y="260.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="175.0" y="289.0" font-size="22" text-anchor="middle" fill="#111">T01 · S 0.001 📚</text>
+<text x="175.0" y="314.0" font-size="16" text-anchor="middle" fill="#555">[done] PDF 7 เล่ม 122 หน้า…</text>
+<text x="52" y="352.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 49.201</text>
+<rect x="234" y="330.0" width="66" height="29" rx="14.5" fill="#2e9e5b" stroke="#2e9e5b" stroke-width="1.5"/>
+<text x="267.0" y="351.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo2</text>
+<rect x="370" y="260.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="505.0" y="289.0" font-size="22" text-anchor="middle" fill="#111">T02 · S 0.001 📚</text>
+<text x="505.0" y="314.0" font-size="16" text-anchor="middle" fill="#555">[done] คำถาม RAG 770 ข้อ (…</text>
+<text x="382" y="352.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 38.401</text>
+<rect x="564" y="330.0" width="66" height="29" rx="14.5" fill="#2e9e5b" stroke="#2e9e5b" stroke-width="1.5"/>
+<text x="597.0" y="351.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo2</text>
+<rect x="40" y="400.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="175.0" y="429.0" font-size="22" text-anchor="middle" fill="#111">T03 · S 0.001 🎙</text>
+<text x="175.0" y="454.0" font-size="16" text-anchor="middle" fill="#555">[done] ไฟล์เสียงทดสอบ V01–…</text>
+<text x="52" y="492.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 48.601</text>
+<rect x="234" y="470.0" width="66" height="29" rx="14.5" fill="#8e44ad" stroke="#8e44ad" stroke-width="1.5"/>
+<text x="267.0" y="491.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo3</text>
+<rect x="40" y="540.0" width="270" height="108" rx="9" fill="#fdf0ea" stroke="#dc5a1e" stroke-width="2.5"/>
+<text x="175.0" y="569.0" font-size="22" text-anchor="middle" fill="#111">T04 · L 4.2 ☁</text>
+<text x="175.0" y="594.0" font-size="16" text-anchor="middle" fill="#555">โครงแอปใหม่: docker compos…</text>
+<text x="52" y="632.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 60</text>
+<rect x="234" y="610.0" width="66" height="29" rx="14.5" fill="#2b7bd6" stroke="#2b7bd6" stroke-width="1.5"/>
+<text x="267.0" y="631.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo1</text>
+<rect x="370" y="540.0" width="270" height="108" rx="9" fill="#fdf0ea" stroke="#dc5a1e" stroke-width="2.5"/>
+<text x="505.0" y="569.0" font-size="22" text-anchor="middle" fill="#111">T05 · M 2.4</text>
+<text x="505.0" y="594.0" font-size="16" text-anchor="middle" fill="#555">lib กฎ: คัดลอก rules.ts (ห…</text>
+<text x="382" y="632.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 55.8</text>
+<rect x="564" y="610.0" width="66" height="29" rx="14.5" fill="#2e9e5b" stroke="#2e9e5b" stroke-width="1.5"/>
+<text x="597.0" y="631.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo2</text>
+<rect x="40" y="680.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="175.0" y="709.0" font-size="22" text-anchor="middle" fill="#111">T06 · M 2 🖼</text>
+<text x="175.0" y="734.0" font-size="16" text-anchor="middle" fill="#555">รูปทั้งเว็บ (cyolo): มาสคอ…</text>
+<text x="52" y="772.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 42.2</text>
+<rect x="224" y="750.0" width="76" height="29" rx="14.5" fill="#c0392b" stroke="#c0392b" stroke-width="1.5"/>
+<text x="262.0" y="771.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">cyolo1</text>
+<rect x="700" y="470.0" width="270" height="108" rx="9" fill="#fdf0ea" stroke="#dc5a1e" stroke-width="2.5"/>
+<text x="835.0" y="499.0" font-size="22" text-anchor="middle" fill="#111">T07 · L 4.8</text>
+<text x="835.0" y="524.0" font-size="16" text-anchor="middle" fill="#555">หน้าเว็บหลัก: / (shell) · …</text>
+<text x="712" y="562.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 53.4</text>
+<rect x="894" y="540.0" width="66" height="29" rx="14.5" fill="#2e9e5b" stroke="#2e9e5b" stroke-width="1.5"/>
+<text x="927.0" y="561.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo2</text>
+<rect x="1030" y="120.0" width="270" height="108" rx="9" fill="#fdf0ea" stroke="#dc5a1e" stroke-width="2.5"/>
+<text x="1165.0" y="149.0" font-size="22" text-anchor="middle" fill="#111">T08 · M 3.6</text>
+<text x="1165.0" y="174.0" font-size="16" text-anchor="middle" fill="#555">ใบเสนอราคา QT: POST/GET /a…</text>
+<text x="1042" y="212.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 48.6</text>
+<rect x="1224" y="190.0" width="66" height="29" rx="14.5" fill="#2e9e5b" stroke="#2e9e5b" stroke-width="1.5"/>
+<text x="1257.0" y="211.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo2</text>
+<rect x="1030" y="540.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="1165.0" y="569.0" font-size="22" text-anchor="middle" fill="#111">T09 · M 3</text>
+<text x="1165.0" y="594.0" font-size="16" text-anchor="middle" fill="#555">หลังร้าน /staff/orders · /…</text>
+<text x="1042" y="632.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 37.8</text>
+<rect x="1224" y="610.0" width="66" height="29" rx="14.5" fill="#8e44ad" stroke="#8e44ad" stroke-width="1.5"/>
+<text x="1257.0" y="631.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo3</text>
+<rect x="370" y="680.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="505.0" y="709.0" font-size="22" text-anchor="middle" fill="#111">T10 · M 3.6 📨</text>
+<text x="505.0" y="734.0" font-size="16" text-anchor="middle" fill="#555">ชั้น RabbitMQ: คิว chat/st…</text>
+<text x="382" y="772.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 52.8</text>
+<rect x="564" y="750.0" width="66" height="29" rx="14.5" fill="#8e44ad" stroke="#8e44ad" stroke-width="1.5"/>
+<text x="597.0" y="771.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo3</text>
+<rect x="370" y="400.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="505.0" y="429.0" font-size="22" text-anchor="middle" fill="#111">T11 · M 3.6 💬</text>
+<text x="505.0" y="454.0" font-size="16" text-anchor="middle" fill="#555">mock-llm: LLM tag PRICE/QU…</text>
+<text x="382" y="492.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 48.6</text>
+<rect x="564" y="470.0" width="66" height="29" rx="14.5" fill="#2b7bd6" stroke="#2b7bd6" stroke-width="1.5"/>
+<text x="597.0" y="491.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo1</text>
+<rect x="700" y="330.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="835.0" y="359.0" font-size="22" text-anchor="middle" fill="#111">T12 · L 4.2 📚</text>
+<text x="835.0" y="384.0" font-size="16" text-anchor="middle" fill="#555">rag-worker + embedder: อ่า…</text>
+<text x="712" y="422.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 49.2</text>
+<rect x="894" y="400.0" width="66" height="29" rx="14.5" fill="#8e44ad" stroke="#8e44ad" stroke-width="1.5"/>
+<text x="927.0" y="421.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo3</text>
+<rect x="1360" y="470.0" width="270" height="108" rx="9" fill="#fdf0ea" stroke="#dc5a1e" stroke-width="2.5"/>
+<text x="1495.0" y="499.0" font-size="22" text-anchor="middle" fill="#111">T13 · L 6 💬</text>
+<text x="1495.0" y="524.0" font-size="16" text-anchor="middle" fill="#555">chat-worker: SQL สินค้า/บร…</text>
+<text x="1372" y="562.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 45</text>
+<rect x="1554" y="540.0" width="66" height="29" rx="14.5" fill="#8e44ad" stroke="#8e44ad" stroke-width="1.5"/>
+<text x="1587.0" y="561.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo3</text>
+<rect x="700" y="610.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="835.0" y="639.0" font-size="22" text-anchor="middle" fill="#111">T14 · M 3.6</text>
+<text x="835.0" y="664.0" font-size="16" text-anchor="middle" fill="#555">หน้าต่างแชท: ปุ่มลอย · ฟอง…</text>
+<text x="712" y="702.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 47.4</text>
+<rect x="894" y="680.0" width="66" height="29" rx="14.5" fill="#2b7bd6" stroke="#2b7bd6" stroke-width="1.5"/>
+<text x="927.0" y="701.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo1</text>
+<rect x="1030" y="680.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="1165.0" y="709.0" font-size="22" text-anchor="middle" fill="#111">T15 · M 4.8 🎙</text>
+<text x="1165.0" y="734.0" font-size="16" text-anchor="middle" fill="#555">เสียง: stt-worker · tts-wo…</text>
+<text x="1042" y="772.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 43.8</text>
+<rect x="1224" y="750.0" width="66" height="29" rx="14.5" fill="#2b7bd6" stroke="#2b7bd6" stroke-width="1.5"/>
+<text x="1257.0" y="771.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo1</text>
+<rect x="1030" y="820.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="1165.0" y="849.0" font-size="22" text-anchor="middle" fill="#111">T16 · L 5.4</text>
+<text x="1165.0" y="874.0" font-size="16" text-anchor="middle" fill="#555">3D: ฉากหน้าแรกขวด 9 ใบ + ส…</text>
+<text x="1042" y="912.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 40.2</text>
+<rect x="1224" y="890.0" width="66" height="29" rx="14.5" fill="#2e9e5b" stroke="#2e9e5b" stroke-width="1.5"/>
+<text x="1257.0" y="911.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo2</text>
+<rect x="1030" y="260.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="1165.0" y="289.0" font-size="22" text-anchor="middle" fill="#111">T17 · M 3</text>
+<text x="1165.0" y="314.0" font-size="16" text-anchor="middle" fill="#555">dashboard ประเมิน RAG: GET…</text>
+<text x="1042" y="352.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 41.4</text>
+<rect x="1224" y="330.0" width="66" height="29" rx="14.5" fill="#8e44ad" stroke="#8e44ad" stroke-width="1.5"/>
+<text x="1257.0" y="351.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo3</text>
+<rect x="1690" y="400.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="1825.0" y="429.0" font-size="22" text-anchor="middle" fill="#111">T18 · L 3.6 📚</text>
+<text x="1825.0" y="454.0" font-size="16" text-anchor="middle" fill="#555">ชุดประเมิน: eval/rag.json …</text>
+<text x="1702" y="492.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 38.4</text>
+<rect x="1884" y="470.0" width="66" height="29" rx="14.5" fill="#2e9e5b" stroke="#2e9e5b" stroke-width="1.5"/>
+<text x="1917.0" y="491.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo2</text>
+<rect x="1030" y="400.0" width="270" height="108" rx="9" fill="#fff" stroke="#bdbdbd" stroke-width="1.8"/>
+<text x="1165.0" y="429.0" font-size="22" text-anchor="middle" fill="#111">T19 · M 2.4</text>
+<text x="1165.0" y="454.0" font-size="16" text-anchor="middle" fill="#555">dashboard load test: GET/P…</text>
+<text x="1042" y="492.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 41.4</text>
+<rect x="1214" y="470.0" width="76" height="29" rx="14.5" fill="#c0392b" stroke="#c0392b" stroke-width="1.5"/>
+<text x="1252.0" y="491.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">cyolo1</text>
+<rect x="1690" y="540.0" width="270" height="108" rx="9" fill="#fdf0ea" stroke="#dc5a1e" stroke-width="2.5"/>
+<text x="1825.0" y="569.0" font-size="22" text-anchor="middle" fill="#111">T20 · M 4.2 🧪</text>
+<text x="1825.0" y="594.0" font-size="16" text-anchor="middle" fill="#555">load test mock: loadtest/r…</text>
+<text x="1702" y="632.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 39</text>
+<rect x="1884" y="610.0" width="66" height="29" rx="14.5" fill="#2b7bd6" stroke="#2b7bd6" stroke-width="1.5"/>
+<text x="1917.0" y="631.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo1</text>
+<rect x="2020" y="470.0" width="270" height="108" rx="9" fill="#fdf0ea" stroke="#dc5a1e" stroke-width="2.5"/>
+<text x="2155.0" y="499.0" font-size="22" text-anchor="middle" fill="#111">T21 · L 7.2 🧪 🔒</text>
+<text x="2155.0" y="524.0" font-size="16" text-anchor="middle" fill="#555">รวมระบบ MODE=mock: Playwri…</text>
+<text x="2032" y="562.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 34.8</text>
+<rect x="2214" y="540.0" width="66" height="29" rx="14.5" fill="#2e9e5b" stroke="#2e9e5b" stroke-width="1.5"/>
+<text x="2247.0" y="561.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo2</text>
+<rect x="2350" y="470.0" width="270" height="108" rx="9" fill="#fdf0ea" stroke="#dc5a1e" stroke-width="2.5"/>
+<text x="2485.0" y="499.0" font-size="22" text-anchor="middle" fill="#111">T22 · L 14.4 ☁ 🔒</text>
+<text x="2485.0" y="524.0" font-size="16" text-anchor="middle" fill="#555">⛔ รออนุมัติ — เช่า GPU 3 ใ…</text>
+<text x="2362" y="562.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 27.6</text>
+<rect x="2544" y="540.0" width="66" height="29" rx="14.5" fill="#8e44ad" stroke="#8e44ad" stroke-width="1.5"/>
+<text x="2577.0" y="561.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo3</text>
+<rect x="2680" y="470.0" width="270" height="108" rx="9" fill="#fdf0ea" stroke="#dc5a1e" stroke-width="2.5"/>
+<text x="2815.0" y="499.0" font-size="22" text-anchor="middle" fill="#111">T23 · L 13.2 ☁ 🔒</text>
+<text x="2815.0" y="524.0" font-size="16" text-anchor="middle" fill="#555">⛔ รออนุมัติ — scale ×2 ×4 …</text>
+<text x="2692" y="562.0" font-size="24" font-weight="700" fill="#2b7bd6">rank 13.2</text>
+<rect x="2874" y="540.0" width="66" height="29" rx="14.5" fill="#2b7bd6" stroke="#2b7bd6" stroke-width="1.5"/>
+<text x="2907.0" y="561.0" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">yolo1</text>
+<rect x="40" y="1042" width="22" height="22" rx="5" fill="#2b7bd6"/><text x="70" y="1060" font-size="19" fill="#333">yolo1</text>
+<rect x="165" y="1042" width="22" height="22" rx="5" fill="#2e9e5b"/><text x="195" y="1060" font-size="19" fill="#333">yolo2</text>
+<rect x="290" y="1042" width="22" height="22" rx="5" fill="#8e44ad"/><text x="320" y="1060" font-size="19" fill="#333">yolo3</text>
+<rect x="415" y="1042" width="22" height="22" rx="5" fill="#c0392b"/><text x="445" y="1060" font-size="19" fill="#333">cyolo1</text>
+<text x="40" y="1012" font-size="18" fill="#666">🖼 image · ☁ infra · 🧪 test · 💬 chat · 📚 rag · 🎙 voice · 📨 mq · 🔒 รันคนเดียว</text>
+<text x="2950" y="1060" font-size="20" text-anchor="end" fill="#dc5a1e" font-weight="700">━ สายวิกฤต: T04 → T05 → T07 → T08 → T13 → T20 → T21 → T22 → T23</text>
+</svg>
