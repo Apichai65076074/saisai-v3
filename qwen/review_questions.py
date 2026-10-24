@@ -8,6 +8,7 @@
                                                # ผลแยกที่ qwen/review-canary/ ไม่ปนกับ qwen/review/
     py qwen/review_questions.py --strict-tokens  # ไม่เรียก API: ตัวเลข/รหัสรุ่น/สีใน answer ต้องอยู่ใน fact
                                                  # ตรวจ 770 ข้อ + 30 canary · ผลที่ qwen/review-strict/
+    py qwen/review_questions.py --recheck FAQ-Q105   # ตรวจข้อที่ระบุซ้ำ (หลายข้อได้) เขียนทับเฉพาะบรรทัดนั้นใน qwen/review/
 
 อ่าน QWEN_API_KEY, QWEN_BASE_URL, QWEN_MODEL จาก .env (ไม่ print ค่า key)
 เรียก /chat/completions แบบ OpenAI-compatible ด้วย urllib · temperature 0 · พยายามปิด thinking (/no_think)
@@ -545,6 +546,51 @@ def run_strict(facts: dict[str, dict]) -> int:
     return 0
 
 
+def recheck(qids: list[str], client: Client, facts: dict, searcher: Searcher) -> int:
+    """ตรวจข้อที่ระบุซ้ำ แล้วเขียนทับเฉพาะบรรทัดของ qid นั้นใน qwen/review/<เล่ม>.jsonl (ไม่มีเดิม = ต่อท้าย)"""
+    qmap = {q["qid"]: q for q in load_questions(None)}
+    unknown = [qid for qid in qids if qid not in qmap]
+    if unknown:
+        print(f"ไม่พบ qid: {', '.join(unknown)}")
+        return 1
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    failed = 0
+    for qid in qids:
+        q = qmap[qid]
+        try:
+            rec = review_one(q, client, facts, searcher)
+        except Exception as e:  # noqa: BLE001 — ไม่แตะไฟล์เดิมถ้าเรียก API ไม่สำเร็จ
+            print(f"{qid} ERROR {e} (ไม่แก้ไฟล์)")
+            failed += 1
+            continue
+        path = OUT_DIR / f"{q['book']}.jsonl"
+        lines = path.read_text(encoding="utf-8").splitlines() if path.exists() else []
+        new_line = json.dumps(rec, ensure_ascii=False)
+        old = None
+        for i, line in enumerate(lines):
+            try:
+                if json.loads(line).get("qid") == qid:
+                    old, lines[i] = json.loads(line), new_line
+                    break
+            except json.JSONDecodeError:
+                continue
+        else:
+            lines.append(new_line)
+        path.write_text("".join(l + "\n" for l in lines), encoding="utf-8")
+        print(f"{qid} [{q['type']}]\n  Q: {q['question']}\n  A: {q['answer']}")
+        print(f"  เดิม: {old['code'] if old else '(ไม่มี)'} → ใหม่: {rec['code']} · {rec['latency_s']}s · "
+              f"{rec['prompt_tokens'] + rec['completion_tokens']} tok"
+              f"{'  (retry)' if rec['attempts'] > 1 else ''}{'  [THINK]' if rec['thinking'] else ''}")
+        if rec.get("searched_ids"):
+            print(f"  searched: {', '.join(rec['searched_ids'])}")
+        if rec.get("raw"):
+            print(f"  raw: {rec['raw'][:200]}")
+        print(f"  {'เขียนทับ' if old else 'ต่อท้าย'} {path.relative_to(ROOT)}")
+    for note in client.notes:
+        print("NOTE:", note)
+    return 1 if failed else 0
+
+
 def stratified(pending: list[dict], n: int) -> list[dict]:
     """เลือก n ข้อแบบวนทุก type และทุกเล่ม เพื่อให้รันทดลองเห็นภาพรวม"""
     by_type: dict[str, list[dict]] = defaultdict(list)
@@ -575,6 +621,8 @@ def main() -> int:
                          "· ผลเขียนที่ qwen/review-canary/")
     ap.add_argument("--strict-tokens", action="store_true",
                     help="ไม่เรียก API: ตัวเลข/รหัสรุ่น/สีใน answer ต้องอยู่ใน fact · รันกับ 770 ข้อ + 30 canary")
+    ap.add_argument("--recheck", nargs="+", metavar="QID",
+                    help="ตรวจข้อที่ระบุซ้ำ เขียนทับเฉพาะบรรทัดนั้นใน qwen/review/")
     args = ap.parse_args()
     workers = max(1, min(args.workers, MAX_WORKERS))
     if args.strict_tokens:
@@ -583,6 +631,8 @@ def main() -> int:
     client = Client(load_env(ROOT / ".env"))
     facts = load_facts()
     searcher = Searcher(facts)
+    if args.recheck:
+        return recheck(args.recheck, client, facts, searcher)
     meta: dict[str, dict] = {}
     if args.canary:
         # canary สุ่มจากทุกเล่มเสมอ (ไม่ใช้ --book) เพื่อให้ชุดคงที่ตาม seed
