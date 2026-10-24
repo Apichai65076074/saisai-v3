@@ -1,0 +1,30 @@
+{"qid": "LOG-Q040", "mutation": "flip_unanswerable", "strict_applicable": false, "strict_caught": false, "issues": [], "orig_also_fails": false, "qwen_code": "ANSWERABLE", "qwen_caught": true}
+{"qid": "QC-Q017", "mutation": "flip_unanswerable", "strict_applicable": false, "strict_caught": false, "issues": [], "orig_also_fails": false, "qwen_code": "ANSWERABLE", "qwen_caught": true}
+{"qid": "CAT-Q012", "mutation": "flip_unanswerable", "strict_applicable": false, "strict_caught": false, "issues": [], "orig_also_fails": false, "qwen_code": "ANSWERABLE", "qwen_caught": true}
+{"qid": "LGP-Q012", "mutation": "flip_unanswerable", "strict_applicable": false, "strict_caught": false, "issues": [], "orig_also_fails": false, "qwen_code": "ANSWERABLE", "qwen_caught": true}
+{"qid": "LOG-Q024", "mutation": "flip_unanswerable", "strict_applicable": false, "strict_caught": false, "issues": [], "orig_also_fails": false, "qwen_code": "ANSWERABLE", "qwen_caught": true}
+{"qid": "FAQ-Q018", "mutation": "flip_unanswerable", "strict_applicable": false, "strict_caught": false, "issues": [], "orig_also_fails": false, "qwen_code": "ANSWERABLE", "qwen_caught": true}
+{"qid": "POL-Q010", "mutation": "flip_unanswerable", "strict_applicable": false, "strict_caught": false, "issues": [], "orig_also_fails": false, "qwen_code": "ANSWERABLE", "qwen_caught": true}
+{"qid": "LOG-Q017", "mutation": "flip_unanswerable", "strict_applicable": false, "strict_caught": false, "issues": [], "orig_also_fails": false, "qwen_code": "ANSWERABLE", "qwen_caught": true}
+{"qid": "USE-Q015", "mutation": "flip_unanswerable", "strict_applicable": false, "strict_caught": false, "issues": [], "orig_also_fails": false, "qwen_code": "ANSWERABLE", "qwen_caught": true}
+{"qid": "CAT-Q041", "mutation": "flip_unanswerable", "strict_applicable": false, "strict_caught": false, "issues": [], "orig_also_fails": false, "qwen_code": "ANSWERABLE", "qwen_caught": true}
+{"qid": "POL-Q092", "mutation": "number", "strict_applicable": true, "strict_caught": true, "issues": ["ตัวเลข 24 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "OK", "qwen_caught": false}
+{"qid": "LGP-Q095", "mutation": "model", "strict_applicable": true, "strict_caught": true, "issues": ["รหัส B-100 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "USE-Q097", "mutation": "color", "strict_applicable": true, "strict_caught": true, "issues": ["สี ชา ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "USE-Q082", "mutation": "number", "strict_applicable": true, "strict_caught": true, "issues": ["ตัวเลข 120 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "LOG-Q071", "mutation": "model", "strict_applicable": true, "strict_caught": true, "issues": ["รหัส B-150 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "CAT-Q076", "mutation": "color", "strict_applicable": true, "strict_caught": true, "issues": ["สี ชา ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "LGP-Q054", "mutation": "number", "strict_applicable": true, "strict_caught": true, "issues": ["ตัวเลข 2 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "LGP-Q020", "mutation": "model", "strict_applicable": true, "strict_caught": true, "issues": ["รหัส B-500 ซ้ำ 2 ครั้ง แต่ fact มี 1"], "orig_also_fails": false, "qwen_code": "OK", "qwen_caught": false}
+{"qid": "USE-Q012", "mutation": "color", "strict_applicable": true, "strict_caught": true, "issues": ["สี ชา ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "LOG-Q060", "mutation": "number", "strict_applicable": true, "strict_caught": true, "issues": ["ตัวเลข 8 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "POL-Q077", "mutation": "model", "strict_applicable": true, "strict_caught": true, "issues": ["รหัส B-100 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "USE-Q092", "mutation": "color", "strict_applicable": true, "strict_caught": true, "issues": ["สี ใส ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "QC-Q099", "mutation": "number", "strict_applicable": true, "strict_caught": true, "issues": ["ตัวเลข 48 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "LGP-Q077", "mutation": "model", "strict_applicable": true, "strict_caught": true, "issues": ["รหัส B-100 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "CAT-Q025", "mutation": "color", "strict_applicable": true, "strict_caught": true, "issues": ["สี ชา ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "OK", "qwen_caught": false}
+{"qid": "LOG-Q088", "mutation": "number", "strict_applicable": true, "strict_caught": true, "issues": ["ตัวเลข 3 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "FAQ-Q088", "mutation": "model", "strict_applicable": true, "strict_caught": true, "issues": ["รหัส B-150 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "FAQ-Q090", "mutation": "color", "strict_applicable": true, "strict_caught": true, "issues": ["สี amber ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "LOG-Q029", "mutation": "number", "strict_applicable": true, "strict_caught": true, "issues": ["ตัวเลข 20 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}
+{"qid": "CAT-Q031", "mutation": "model", "strict_applicable": true, "strict_caught": true, "issues": ["รหัส B-250 ไม่อยู่ใน fact"], "orig_also_fails": false, "qwen_code": "WRONG_ANSWER", "qwen_caught": true}

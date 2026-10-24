@@ -1,0 +1,110 @@
+{"qid": "POL-Q100", "book": "SS-POLICY", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 1.04, "prompt_tokens": 974, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["POL-037", "POL-143", "POL-025", "POL-028", "POL-027", "POL-026", "POL-016", "POL-137", "POL-036", "POL-084"]}
+{"qid": "POL-Q101", "book": "SS-POLICY", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 1.14, "prompt_tokens": 915, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["CAT-166", "CAT-031", "USE-127", "LGP-061", "LGP-046", "USE-123", "USE-016", "LGP-008", "USE-119", "POL-036"]}
+{"qid": "POL-Q089", "book": "SS-POLICY", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 1.33, "prompt_tokens": 606, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q001", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.61, "prompt_tokens": 402, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q002", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.22, "prompt_tokens": 437, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q004", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.35, "prompt_tokens": 429, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q003", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.59, "prompt_tokens": 479, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q006", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.38, "prompt_tokens": 424, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q005", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.79, "prompt_tokens": 476, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q007", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.22, "prompt_tokens": 459, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q009", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.06, "prompt_tokens": 460, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q008", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.15, "prompt_tokens": 430, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q010", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.96, "prompt_tokens": 458, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q011", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 1.64, "prompt_tokens": 447, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q013", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 1.8, "prompt_tokens": 465, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q012", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.17, "prompt_tokens": 514, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q014", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.08, "prompt_tokens": 422, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q015", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 1.58, "prompt_tokens": 477, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q016", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 1.49, "prompt_tokens": 474, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q017", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 1.3, "prompt_tokens": 426, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q018", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 1.25, "prompt_tokens": 556, "completion_tokens": 31, "attempts": 1, "thinking": false}
+{"qid": "POL-Q019", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 1.99, "prompt_tokens": 417, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q020", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.08, "prompt_tokens": 450, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q021", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.32, "prompt_tokens": 446, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q022", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.3, "prompt_tokens": 472, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q023", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.3, "prompt_tokens": 583, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q024", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.76, "prompt_tokens": 441, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q027", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.72, "prompt_tokens": 429, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q026", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.37, "prompt_tokens": 457, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q025", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.44, "prompt_tokens": 480, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q031", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.43, "prompt_tokens": 419, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q028", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.49, "prompt_tokens": 413, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q030", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.49, "prompt_tokens": 470, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q029", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.53, "prompt_tokens": 486, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q034", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.99, "prompt_tokens": 411, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q032", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.05, "prompt_tokens": 402, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q033", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.1, "prompt_tokens": 418, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q035", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.23, "prompt_tokens": 442, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q037", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.88, "prompt_tokens": 413, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q038", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.34, "prompt_tokens": 448, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q036", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.47, "prompt_tokens": 408, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q039", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.38, "prompt_tokens": 416, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q040", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 1.97, "prompt_tokens": 426, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q042", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.3, "prompt_tokens": 435, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q041", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.45, "prompt_tokens": 406, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q043", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.5, "prompt_tokens": 405, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q044", "book": "SS-POLICY", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.11, "prompt_tokens": 423, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q046", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.13, "prompt_tokens": 473, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q045", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.43, "prompt_tokens": 511, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q047", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.04, "prompt_tokens": 423, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q048", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.75, "prompt_tokens": 694, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q051", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.58, "prompt_tokens": 843, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q050", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.91, "prompt_tokens": 484, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q049", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.18, "prompt_tokens": 476, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q052", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.85, "prompt_tokens": 710, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q053", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.95, "prompt_tokens": 556, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q055", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.75, "prompt_tokens": 710, "completion_tokens": 31, "attempts": 1, "thinking": false}
+{"qid": "POL-Q054", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.96, "prompt_tokens": 515, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q056", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.7, "prompt_tokens": 450, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q057", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.69, "prompt_tokens": 693, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q058", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.7, "prompt_tokens": 612, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q059", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.81, "prompt_tokens": 620, "completion_tokens": 31, "attempts": 1, "thinking": false}
+{"qid": "POL-Q061", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.4, "prompt_tokens": 570, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q060", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.53, "prompt_tokens": 644, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q062", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.92, "prompt_tokens": 620, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q063", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.85, "prompt_tokens": 482, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q064", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.94, "prompt_tokens": 582, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q065", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.07, "prompt_tokens": 574, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q067", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 5.67, "prompt_tokens": 614, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q068", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 5.62, "prompt_tokens": 536, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q066", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 5.85, "prompt_tokens": 582, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q069", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 5.53, "prompt_tokens": 614, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q070", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.49, "prompt_tokens": 762, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q072", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.61, "prompt_tokens": 651, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q071", "book": "SS-POLICY", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.75, "prompt_tokens": 655, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q073", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 3.78, "prompt_tokens": 572, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q075", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 2.13, "prompt_tokens": 554, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q074", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 2.61, "prompt_tokens": 573, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q076", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 2.38, "prompt_tokens": 547, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q077", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 2.51, "prompt_tokens": 552, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q078", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 1.84, "prompt_tokens": 593, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q079", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 1.95, "prompt_tokens": 648, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q080", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 2.34, "prompt_tokens": 490, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q081", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 2.98, "prompt_tokens": 576, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q082", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 2.7, "prompt_tokens": 627, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q083", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 2.33, "prompt_tokens": 572, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q084", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 2.08, "prompt_tokens": 546, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q085", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 1.26, "prompt_tokens": 605, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q086", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 1.62, "prompt_tokens": 616, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q090", "book": "SS-POLICY", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 1.81, "prompt_tokens": 593, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q088", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 1.85, "prompt_tokens": 651, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q087", "book": "SS-POLICY", "type": "table", "ok": true, "code": "OK", "latency_s": 2.04, "prompt_tokens": 525, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q092", "book": "SS-POLICY", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 1.85, "prompt_tokens": 608, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q093", "book": "SS-POLICY", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 1.93, "prompt_tokens": 647, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q091", "book": "SS-POLICY", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 2.41, "prompt_tokens": 586, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q094", "book": "SS-POLICY", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 2.07, "prompt_tokens": 580, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q095", "book": "SS-POLICY", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 1.18, "prompt_tokens": 529, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q096", "book": "SS-POLICY", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 1.42, "prompt_tokens": 550, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q097", "book": "SS-POLICY", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 1.54, "prompt_tokens": 526, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q098", "book": "SS-POLICY", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 1.41, "prompt_tokens": 654, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q099", "book": "SS-POLICY", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 1.29, "prompt_tokens": 568, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "POL-Q102", "book": "SS-POLICY", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 1.34, "prompt_tokens": 1040, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["POL-037", "POL-082", "POL-096", "LGP-111", "LOG-065", "POL-092", "LGP-010", "LGP-067", "POL-018", "POL-032"]}
+{"qid": "POL-Q103", "book": "SS-POLICY", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 1.37, "prompt_tokens": 979, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["POL-092", "QC-127", "POL-096", "POL-083", "CAT-038", "POL-100", "CAT-045", "LGP-092", "POL-082", "USE-112"]}
+{"qid": "POL-Q104", "book": "SS-POLICY", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 1.49, "prompt_tokens": 912, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["CAT-101", "CAT-211", "USE-027", "CAT-094", "POL-037", "CAT-100", "CAT-088", "USE-066", "POL-143", "POL-016"]}
+{"qid": "POL-Q105", "book": "SS-POLICY", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 2.13, "prompt_tokens": 958, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["POL-068", "POL-067", "POL-138", "CAT-001", "POL-003", "POL-061", "USE-133", "POL-062", "POL-066", "LOG-119"]}
+{"qid": "POL-Q106", "book": "SS-POLICY", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 2.92, "prompt_tokens": 956, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["QC-137", "CAT-104", "CAT-227", "POL-066", "POL-061", "CAT-046", "QC-003", "CAT-001", "POL-067", "POL-032"]}
+{"qid": "POL-Q107", "book": "SS-POLICY", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 2.87, "prompt_tokens": 955, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["POL-028", "POL-027", "POL-026", "POL-025", "POL-030", "LGP-103", "LGP-104", "USE-057", "POL-018", "POL-023"]}
+{"qid": "POL-Q108", "book": "SS-POLICY", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 2.97, "prompt_tokens": 806, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["CAT-228", "CAT-222", "CAT-221", "CAT-220", "CAT-219", "CAT-218", "CAT-217", "POL-088", "LOG-009", "LOG-004"]}
+{"qid": "POL-Q109", "book": "SS-POLICY", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 2.47, "prompt_tokens": 969, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["POL-092", "POL-050", "QC-123", "POL-056", "POL-051", "POL-041", "LGP-067", "LOG-090", "POL-054", "USE-140"]}
+{"qid": "POL-Q110", "book": "SS-POLICY", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 1.59, "prompt_tokens": 935, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["POL-062", "POL-071", "POL-061", "POL-070", "POL-063", "POL-092", "LOG-124", "POL-066", "POL-069", "POL-064"]}

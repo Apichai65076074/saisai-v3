@@ -1,0 +1,110 @@
+{"qid": "FAQ-Q001", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.7, "prompt_tokens": 395, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q089", "book": "SS-FAQ-EN", "type": "footnote", "ok": true, "code": "OK", "latency_s": 1.99, "prompt_tokens": 422, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q045", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.91, "prompt_tokens": 428, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q002", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.31, "prompt_tokens": 394, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q003", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.37, "prompt_tokens": 437, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q004", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.03, "prompt_tokens": 413, "completion_tokens": 28, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q005", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.03, "prompt_tokens": 413, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q006", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.0, "prompt_tokens": 432, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q007", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.97, "prompt_tokens": 412, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q008", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.4, "prompt_tokens": 393, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q009", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.26, "prompt_tokens": 413, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q010", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.51, "prompt_tokens": 386, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q011", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.46, "prompt_tokens": 405, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q012", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.28, "prompt_tokens": 409, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q013", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.43, "prompt_tokens": 415, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q014", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.23, "prompt_tokens": 416, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q015", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.61, "prompt_tokens": 416, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q016", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 5.02, "prompt_tokens": 428, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q017", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.09, "prompt_tokens": 394, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q018", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.65, "prompt_tokens": 419, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q019", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.26, "prompt_tokens": 391, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q020", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.42, "prompt_tokens": 422, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q021", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.44, "prompt_tokens": 386, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q024", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.02, "prompt_tokens": 391, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q023", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.42, "prompt_tokens": 403, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q022", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.74, "prompt_tokens": 409, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q025", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.77, "prompt_tokens": 420, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q026", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 5.82, "prompt_tokens": 394, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q027", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.38, "prompt_tokens": 404, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q028", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.48, "prompt_tokens": 412, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q029", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.2, "prompt_tokens": 416, "completion_tokens": 31, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q030", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.79, "prompt_tokens": 408, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q031", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.34, "prompt_tokens": 395, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q033", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.95, "prompt_tokens": 404, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q032", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 3.05, "prompt_tokens": 403, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q034", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.88, "prompt_tokens": 410, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q035", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 5.03, "prompt_tokens": 402, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q036", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 5.46, "prompt_tokens": 400, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q037", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 7.29, "prompt_tokens": 399, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q038", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.04, "prompt_tokens": 391, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q039", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.43, "prompt_tokens": 400, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q041", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.17, "prompt_tokens": 389, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q040", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 6.34, "prompt_tokens": 430, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q043", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.43, "prompt_tokens": 403, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q042", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 4.59, "prompt_tokens": 394, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q044", "book": "SS-FAQ-EN", "type": "direct", "ok": true, "code": "OK", "latency_s": 2.93, "prompt_tokens": 433, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q046", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.77, "prompt_tokens": 394, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q048", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.62, "prompt_tokens": 397, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q047", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.86, "prompt_tokens": 402, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q049", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.49, "prompt_tokens": 402, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q051", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.4, "prompt_tokens": 417, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q050", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.57, "prompt_tokens": 384, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q052", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.46, "prompt_tokens": 448, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q053", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.03, "prompt_tokens": 440, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q055", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.58, "prompt_tokens": 408, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q054", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.77, "prompt_tokens": 384, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q056", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 1.62, "prompt_tokens": 386, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q057", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.4, "prompt_tokens": 406, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q058", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.27, "prompt_tokens": 409, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q059", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.32, "prompt_tokens": 394, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q060", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.9, "prompt_tokens": 429, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q061", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.74, "prompt_tokens": 410, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q064", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 4.96, "prompt_tokens": 435, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q063", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 5.65, "prompt_tokens": 403, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q062", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 5.9, "prompt_tokens": 393, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q065", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 4.15, "prompt_tokens": 429, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q066", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.24, "prompt_tokens": 409, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q067", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.24, "prompt_tokens": 411, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q068", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.27, "prompt_tokens": 402, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q069", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 3.15, "prompt_tokens": 394, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q071", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.12, "prompt_tokens": 410, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q072", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.04, "prompt_tokens": 421, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q070", "book": "SS-FAQ-EN", "type": "paraphrase", "ok": true, "code": "OK", "latency_s": 2.41, "prompt_tokens": 395, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q073", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 2.63, "prompt_tokens": 427, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q075", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 2.86, "prompt_tokens": 411, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q074", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 3.12, "prompt_tokens": 427, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q076", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 2.95, "prompt_tokens": 421, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q077", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 2.8, "prompt_tokens": 424, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q078", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 2.32, "prompt_tokens": 418, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q080", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 2.44, "prompt_tokens": 417, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q079", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 2.53, "prompt_tokens": 419, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q081", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 2.04, "prompt_tokens": 421, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q082", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 3.78, "prompt_tokens": 432, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q085", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 3.23, "prompt_tokens": 418, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q084", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 3.48, "prompt_tokens": 407, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q083", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 3.61, "prompt_tokens": 401, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q088", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 3.83, "prompt_tokens": 425, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q086", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 3.93, "prompt_tokens": 433, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q087", "book": "SS-FAQ-EN", "type": "table", "ok": true, "code": "OK", "latency_s": 3.93, "prompt_tokens": 430, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q090", "book": "SS-FAQ-EN", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 3.76, "prompt_tokens": 504, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q091", "book": "SS-FAQ-EN", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 5.09, "prompt_tokens": 499, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q092", "book": "SS-FAQ-EN", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 5.1, "prompt_tokens": 495, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q094", "book": "SS-FAQ-EN", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 5.23, "prompt_tokens": 458, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q096", "book": "SS-FAQ-EN", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 3.65, "prompt_tokens": 501, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q095", "book": "SS-FAQ-EN", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 3.77, "prompt_tokens": 455, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q097", "book": "SS-FAQ-EN", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 3.72, "prompt_tokens": 526, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q099", "book": "SS-FAQ-EN", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 1.97, "prompt_tokens": 511, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q098", "book": "SS-FAQ-EN", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 2.32, "prompt_tokens": 495, "completion_tokens": 22, "attempts": 1, "thinking": false}
+{"qid": "FAQ-Q100", "book": "SS-FAQ-EN", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 2.59, "prompt_tokens": 795, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["FAQ-016", "FAQ-057", "FAQ-023", "FAQ-020", "FAQ-018", "FAQ-014", "FAQ-017", "FAQ-123", "FAQ-041", "FAQ-027"]}
+{"qid": "FAQ-Q101", "book": "SS-FAQ-EN", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 1.63, "prompt_tokens": 805, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["FAQ-024", "FAQ-014", "FAQ-021", "FAQ-019", "FAQ-017", "USE-033", "CAT-185", "CAT-033", "FAQ-012", "FAQ-023"]}
+{"qid": "FAQ-Q102", "book": "SS-FAQ-EN", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 1.83, "prompt_tokens": 785, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["FAQ-044", "FAQ-042", "FAQ-095", "FAQ-122", "FAQ-123", "FAQ-046", "FAQ-043", "FAQ-041", "FAQ-040", "FAQ-006"]}
+{"qid": "FAQ-Q103", "book": "SS-FAQ-EN", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 1.44, "prompt_tokens": 793, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["FAQ-123", "FAQ-044", "FAQ-043", "FAQ-042", "FAQ-041", "FAQ-122", "FAQ-046", "FAQ-040", "FAQ-095", "FAQ-067"]}
+{"qid": "FAQ-Q104", "book": "SS-FAQ-EN", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 5.44, "prompt_tokens": 768, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["FAQ-112", "FAQ-126", "FAQ-004", "FAQ-032", "FAQ-057", "FAQ-036", "FAQ-030", "FAQ-028", "FAQ-114", "FAQ-037"]}
+{"qid": "FAQ-Q105", "book": "SS-FAQ-EN", "type": "unanswerable", "ok": false, "code": "NOT_IN_FACT", "latency_s": 5.49, "prompt_tokens": 758, "completion_tokens": 24, "attempts": 1, "thinking": false, "searched_ids": ["FAQ-035", "FAQ-057", "FAQ-122", "FAQ-034", "FAQ-115", "FAQ-046", "FAQ-069", "FAQ-068", "FAQ-067", "FAQ-066"]}
+{"qid": "FAQ-Q106", "book": "SS-FAQ-EN", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 5.42, "prompt_tokens": 776, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["FAQ-127", "FAQ-087", "FAQ-004", "FAQ-129", "FAQ-128", "FAQ-126", "LOG-007", "FAQ-114", "FAQ-113", "FAQ-112"]}
+{"qid": "FAQ-Q107", "book": "SS-FAQ-EN", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 3.45, "prompt_tokens": 763, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["FAQ-004", "FAQ-087", "FAQ-122", "FAQ-008", "FAQ-113", "FAQ-026", "FAQ-025", "FAQ-086", "FAQ-040", "FAQ-007"]}
+{"qid": "FAQ-Q108", "book": "SS-FAQ-EN", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 2.99, "prompt_tokens": 803, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["FAQ-128", "FAQ-123", "FAQ-044", "FAQ-043", "FAQ-042", "FAQ-041", "FAQ-122", "FAQ-095", "FAQ-010", "FAQ-004"]}
+{"qid": "FAQ-Q109", "book": "SS-FAQ-EN", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 3.1, "prompt_tokens": 753, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["FAQ-004", "FAQ-087", "FAQ-097", "FAQ-112", "FAQ-045", "FAQ-122", "FAQ-126", "FAQ-096", "LOG-007", "FAQ-114"]}
+{"qid": "FAQ-Q110", "book": "SS-FAQ-EN", "type": "unanswerable", "ok": true, "code": "OK", "latency_s": 1.21, "prompt_tokens": 759, "completion_tokens": 22, "attempts": 1, "thinking": false, "searched_ids": ["FAQ-132", "FAQ-007", "FAQ-005", "FAQ-006", "FAQ-096", "FAQ-008", "FAQ-013", "FAQ-012", "FAQ-004", "FAQ-114"]}
+{"qid": "FAQ-Q093", "book": "SS-FAQ-EN", "type": "crosspage", "ok": true, "code": "OK", "latency_s": 65.45, "prompt_tokens": 451, "completion_tokens": 22, "attempts": 1, "thinking": false}

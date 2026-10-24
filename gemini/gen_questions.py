@@ -293,7 +293,7 @@ BOOKS_SPECS["SS-FAQ-EN"] = ("FAQ", [
     ([], "unanswerable", "medium", "What percentage volume discount is granted when purchasing 16,800 bottles?", "This information is not available in the document, as volume discount tiers are not listed in the PDF guide."),
     ([], "unanswerable", "medium", "Under the November 2026 discount schedule, what is the exact discount rate for 45,000 bottles?", "This information is not available in the document, as discount tables are not provided in the PDF."),
     ([], "unanswerable", "medium", "How much does SaiSai charge per piece for 28 mm dropper assemblies and 38 mm flip-top closures?", "This information is not available in the document, and SaiSai does not sell bottle caps."),
-    ([], "unanswerable", "medium", "What is the wholesale price per box for 43 mm Lug closures?", "This information is not available in the document, and SaiSai does not sell caps."),
+    ([], "unanswerable", "medium", "What is the wholesale price per box for 43 mm Lug closures?", "This information is not available in the document."),
     ([], "unanswerable", "medium", "How do SaiSai Glassware's unit prices compare against competitor Chonburi Glassworks Corp.?", "This information is not available in the document, which contains no data on competitors."),
     ([], "unanswerable", "medium", "What is SaiSai Glassware's market share compared to rival producer Siam Glass Industry?", "This information is not available in the document."),
     ([], "unanswerable", "medium", "What are the item codes for 500 ml PET plastic bottles and square porcelain jars?", "This information is not available in the document, as SaiSai only makes round soda-lime glass bottles in four standard models."),
