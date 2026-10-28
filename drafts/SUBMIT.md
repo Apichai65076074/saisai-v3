@@ -135,6 +135,47 @@ Browser (Next.js :3600 + Three.js + WebAudio)
 
 ---
 
+## คลิปตัวอย่าง
+
+เลือกเฉพาะเคสที่ **ผ่านทั้งโหมด mock และ ai** ตาม `orchestra/app/TEST_REPORT.md` (ตาราง mock 62/62 · ตาราง ai 46/62 โดย R01 ไม่ผ่านใน ai จึงเลือก C01 แทน R01) · GIF ที่แสดงด้านล่างเป็นของโหมด **mock** · GIF ของโหมด **ai** (GPU จริง) มีลิงก์ในตาราง
+
+**D02 — 3D มาสคอต 4 ท่า + ขยับปากตามเสียง** (mock ✅)
+
+![D02 มาสคอต 3D (mock)](orchestra/app/test-gifs/D02.gif)
+
+**C01 — แชทถามช่องทางติดต่อเซลส์** (mock ✅ · ai ✅)
+
+![C01 แชท (mock)](orchestra/app/test-gifs/C01.gif)
+
+**L01 — Dashboard รองรับกี่คน (`/admin/load`)** (mock ✅ · ai ✅)
+
+![L01 dashboard รองรับกี่คน (mock)](orchestra/app/test-gifs/L01.gif)
+
+**E01 — Dashboard ประเมิน RAG (`/admin/eval`)** (mock ✅ · ai ✅)
+
+![E01 eval (mock)](orchestra/app/test-gifs/E01.gif)
+
+**MP4 มีเสียง**
+
+| โหมด | เคส | สถานะ (TEST_REPORT) | ไฟล์ |
+|---|---|---|---|
+| ai (GPU จริง) | T03 อ่านออกเสียงคำตอบภาษาอังกฤษ | ✅ | [orchestra/app/test-videos/ai/T03.mp4](orchestra/app/test-videos/ai/T03.mp4) |
+| ai (GPU จริง) | V04 ถามด้วยเสียงไมค์ → ตอบอังกฤษ | ✅ | [orchestra/app/test-videos/ai/V04.mp4](orchestra/app/test-videos/ai/V04.mp4) |
+| mock | V04 ถามด้วยเสียงไมค์ → ตอบอังกฤษ | ✅ | [orchestra/app/test-videos/V04.mp4](orchestra/app/test-videos/V04.mp4) |
+
+**รายการไฟล์ที่เลือกและสถานะ**
+
+| เคส | mock | ai | GIF ที่แสดง | GIF ai |
+|---|---|---|---|---|
+| D02 | ✅ | ✅ | `orchestra/app/test-gifs/D02.gif` | [ai/D02.gif](orchestra/app/test-gifs/ai/D02.gif) |
+| C01 | ✅ | ✅ | `orchestra/app/test-gifs/C01.gif` | [ai/C01.gif](orchestra/app/test-gifs/ai/C01.gif) |
+| L01 | ✅ | ✅ | `orchestra/app/test-gifs/L01.gif` | [ai/L01.gif](orchestra/app/test-gifs/ai/L01.gif) |
+| E01 | ✅ | ✅ | `orchestra/app/test-gifs/E01.gif` | [ai/E01.gif](orchestra/app/test-gifs/ai/E01.gif) |
+
+หมายเหตุ: ไฟล์อยู่ใต้ `orchestra/app/` (ไม่มี `test-videos/` ที่ root repo) · สถานะ ai ของ C01/D02/E01/L01/T03/V04 อ่านจากการที่เคสไม่อยู่ในตารางเคสที่ไม่ผ่านของ T22 (16 เคส) และตรงกับยอดรายหมวด · `orchestra/` ยังเป็น untracked ลิงก์จะใช้ได้เมื่อไฟล์ถูกรวมในที่ส่งงาน
+
+---
+
 ## 7. เวลาที่ใช้จริงเทียบเป้า 3 ชม. พร้อมเหตุผล
 
 | รายการวัดเวลา | เป้าหมาย | ผลจริง (จาก `orchestra/BOARD.md`) | สถานะ |
