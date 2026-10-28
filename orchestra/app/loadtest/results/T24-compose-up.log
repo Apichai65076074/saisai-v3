@@ -1,0 +1,594 @@
+ Image saisai3-mock-llm Building 
+ Image saisai3-web Building 
+ Image saisai3-chat-worker Building 
+ Image saisai3-db Building 
+ Image saisai3-stt-worker Building 
+ Image saisai3-notify-worker Building 
+ Image saisai3-rag-worker Building 
+ Image saisai3-tts-worker Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 3.58kB done
+#1 DONE 0.0s
+
+#2 [rag-worker internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.12kB 0.0s done
+#2 ...
+
+#3 [stt-worker internal] load build definition from Dockerfile
+#3 transferring dockerfile: 590B 0.0s done
+#3 DONE 0.5s
+
+#4 [notify-worker internal] load build definition from Dockerfile
+#4 transferring dockerfile: 350B done
+#4 DONE 0.5s
+
+#5 [tts-worker internal] load build definition from Dockerfile
+#5 transferring dockerfile: 590B done
+#5 DONE 0.5s
+
+#6 [chat-worker internal] load build definition from Dockerfile
+#6 transferring dockerfile: 496B 0.0s done
+#6 DONE 0.6s
+
+#7 [mock-llm internal] load build definition from Dockerfile
+#7 transferring dockerfile: 518B 0.0s done
+#7 DONE 0.6s
+
+#8 [db internal] load build definition from Dockerfile
+#8 transferring dockerfile: 346B 0.0s done
+#8 DONE 0.6s
+
+#2 [rag-worker internal] load build definition from Dockerfile
+#2 DONE 0.6s
+
+#9 [web internal] load build definition from Dockerfile
+#9 transferring dockerfile: 1.49kB 0.0s done
+#9 DONE 0.6s
+
+#10 [rag-worker internal] load metadata for docker.io/library/node:22-bookworm-slim
+#10 ...
+
+#11 [db internal] load metadata for docker.io/pgvector/pgvector:pg16
+#11 DONE 0.1s
+
+#12 [db internal] load .dockerignore
+#12 transferring context: 211B done
+#12 DONE 0.1s
+
+#10 [web internal] load metadata for docker.io/library/node:22-bookworm-slim
+#10 ...
+
+#13 [db 1/2] FROM docker.io/pgvector/pgvector:pg16@sha256:7b822b0aac60967beb1ea5e576b8602c94c300a157d187f385ae3e0da199b90a
+#13 resolve docker.io/pgvector/pgvector:pg16@sha256:7b822b0aac60967beb1ea5e576b8602c94c300a157d187f385ae3e0da199b90a 0.1s done
+#13 DONE 0.1s
+
+#14 [db internal] load build context
+#14 transferring context: 158.71kB 0.1s done
+#14 DONE 0.2s
+
+#15 [db 2/2] COPY db/init/*.sql /docker-entrypoint-initdb.d/
+#15 CACHED
+
+#16 [db] exporting to image
+#16 exporting layers 0.0s done
+#16 exporting manifest sha256:add61d566b9c0620b80f4a572f9fb3744d2f6cab03cfeff33876e65c8a21ec45 done
+#16 exporting config sha256:55cca8c65c4c4e8bb06842f5b3eeba01f66065ace9c20bd888404911d3a33d6e done
+#16 exporting attestation manifest sha256:83f2dceeb0caf9e469e55ac35a0a0ef7580b9b4a077824cbc44a3c288b75363a
+#16 exporting attestation manifest sha256:83f2dceeb0caf9e469e55ac35a0a0ef7580b9b4a077824cbc44a3c288b75363a 0.0s done
+#16 exporting manifest list sha256:bf1b458974af2dcf169a1eece6701264aeca3748860666ef02fc99cf28c4645e 0.0s done
+#16 naming to docker.io/library/saisai3-db:latest done
+#16 unpacking to docker.io/library/saisai3-db:latest 0.1s done
+#16 DONE 0.4s
+
+#10 [web internal] load metadata for docker.io/library/node:22-bookworm-slim
+#10 ...
+
+#17 [db] resolving provenance for metadata file
+#17 DONE 0.0s
+
+#10 [web internal] load metadata for docker.io/library/node:22-bookworm-slim
+#10 DONE 2.1s
+
+#12 [mock-llm internal] load .dockerignore
+#12 CACHED
+
+#18 [chat-worker internal] load build context
+#18 DONE 0.0s
+
+#19 [web internal] load build context
+#19 DONE 0.0s
+
+#20 [tts-worker internal] load build context
+#20 DONE 0.0s
+
+#21 [stt-worker internal] load build context
+#21 DONE 0.0s
+
+#22 [rag-worker 1/5] FROM docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d
+#22 resolve docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d
+#22 resolve docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d 0.1s done
+#22 DONE 0.2s
+
+#23 [mock-llm internal] load build context
+#23 transferring context: 4.04MB 0.1s done
+#23 DONE 0.2s
+
+#24 [mock-llm 2/5] RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg espeak-ng && rm -rf /var/lib/apt/lists/*
+#24 CACHED
+
+#25 [mock-llm 3/5] WORKDIR /app
+#25 CACHED
+
+#26 [mock-llm 4/5] COPY mock-llm/ ./mock-llm/
+#26 CACHED
+
+#27 [notify-worker internal] load build context
+#27 transferring context: 24.92kB 0.0s done
+#27 DONE 0.2s
+
+#28 [mock-llm 5/5] COPY e2e/voice-fixtures/ ./e2e/voice-fixtures/
+#28 CACHED
+
+#29 [rag-worker internal] load build context
+#29 transferring context: 870.83kB 0.0s done
+#29 DONE 0.2s
+
+#30 [notify-worker 5/6] COPY shared/ /app/shared/
+#30 CACHED
+
+#31 [notify-worker 3/6] COPY workers/notify-worker/package.json ./
+#31 CACHED
+
+#32 [notify-worker 2/6] WORKDIR /app/workers/notify-worker
+#32 CACHED
+
+#33 [notify-worker 4/6] RUN npm install --omit=dev --no-audit --no-fund
+#33 CACHED
+
+#34 [mock-llm] exporting to image
+#34 exporting layers 0.0s done
+#34 exporting manifest sha256:19ec336a8f6c8cd24acbaafd9a284674f3551173f59aabf8dde461d8cd3ab145 0.0s done
+#34 exporting config sha256:6d67693ca11fc59e600367a26f44aee3b44a2f978d40d7ac7cf660add26568c9 0.0s done
+#34 exporting attestation manifest sha256:d336ad41d09c530e411baa2cf24dabb3d2d3e0bf1f5bbd46c3d661e25e6b78c9
+#34 ...
+
+#35 [notify-worker 6/6] COPY workers/notify-worker/ ./
+#35 CACHED
+
+#36 [rag-worker  6/10] COPY workers/rag-worker/package.json ./
+#36 CACHED
+
+#37 [rag-worker  9/10] COPY workers/rag-worker/ ./
+#37 CACHED
+
+#38 [rag-worker  7/10] RUN npm install --omit=dev --no-audit --no-fund
+#38 CACHED
+
+#39 [rag-worker  5/10] WORKDIR /app/workers/rag-worker
+#39 CACHED
+
+#40 [rag-worker  4/10] RUN pip3 install --no-cache-dir --break-system-packages --no-deps -r /tmp/requirements.txt  && python3 -c "import pymupdf; print('pymupdf', pymupdf.__version__)"
+#40 CACHED
+
+#41 [rag-worker  8/10] COPY shared/ /app/shared/
+#41 CACHED
+
+#42 [rag-worker  2/10] RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-pip ca-certificates  && rm -rf /var/lib/apt/lists/*
+#42 CACHED
+
+#43 [rag-worker  3/10] COPY workers/rag-worker/requirements.txt /tmp/requirements.txt
+#43 CACHED
+
+#44 [rag-worker 10/10] COPY docs/pdf/ /app/docs/
+#44 CACHED
+
+#18 [chat-worker internal] load build context
+#18 transferring context: 360.60kB 0.1s done
+#18 DONE 0.3s
+
+#21 [stt-worker internal] load build context
+#21 transferring context: 20.37kB 0.1s done
+#21 DONE 0.4s
+
+#34 [mock-llm] exporting to image
+#34 exporting attestation manifest sha256:d336ad41d09c530e411baa2cf24dabb3d2d3e0bf1f5bbd46c3d661e25e6b78c9 0.1s done
+#34 exporting manifest list sha256:2327adfa0c482d22fc64e5f6657ef9b3a0135b54b4de299e0d7d0b4e57714ceb 0.1s done
+#34 naming to docker.io/library/saisai3-mock-llm:latest
+#34 ...
+
+#20 [tts-worker internal] load build context
+#20 transferring context: 39.30kB 0.1s done
+#20 DONE 0.5s
+
+#19 [web internal] load build context
+#19 transferring context: 1.80MB 0.3s done
+#19 DONE 0.5s
+
+#45 [chat-worker 4/8] RUN cd web && npm ci --omit=dev
+#45 CACHED
+
+#46 [chat-worker 3/8] COPY web/package.json web/package-lock.json ./web/
+#46 CACHED
+
+#47 [chat-worker 5/8] COPY web/lib/ ./web/lib/
+#47 CACHED
+
+#48 [chat-worker 6/8] COPY shared/ ./shared/
+#48 CACHED
+
+#49 [stt-worker 3/7] COPY workers/stt-worker/package*.json ./workers/stt-worker/
+#49 CACHED
+
+#50 [stt-worker 4/7] RUN cd workers/stt-worker && npm ci --omit=dev --no-audit --no-fund
+#50 CACHED
+
+#51 [stt-worker 5/7] COPY shared/ ./shared/
+#51 CACHED
+
+#52 [stt-worker 6/7] COPY workers/stt-worker/*.mjs ./workers/stt-worker/
+#52 CACHED
+
+#53 [chat-worker 2/8] WORKDIR /app
+#53 CACHED
+
+#54 [stt-worker 7/7] WORKDIR /app/workers/stt-worker
+#54 CACHED
+
+#34 [mock-llm] exporting to image
+#34 naming to docker.io/library/saisai3-mock-llm:latest 0.0s done
+#34 unpacking to docker.io/library/saisai3-mock-llm:latest 0.1s done
+#34 DONE 0.6s
+
+#55 [web deps 4/4] RUN npm ci --no-audit --no-fund
+#55 CACHED
+
+#56 [web deps 2/4] WORKDIR /app/web
+#56 CACHED
+
+#57 [web deps 3/4] COPY web/package.json web/package-lock.json ./
+#57 CACHED
+
+#58 [web build 3/9] COPY --from=deps /app/web/node_modules ./web/node_modules
+#58 CACHED
+
+#59 [tts-worker 5/7] COPY shared/ ./shared/
+#59 CACHED
+
+#60 [tts-worker 6/7] COPY workers/tts-worker/*.mjs ./workers/tts-worker/
+#60 CACHED
+
+#61 [tts-worker 4/7] RUN cd workers/tts-worker && npm ci --omit=dev --no-audit --no-fund
+#61 CACHED
+
+#53 [tts-worker 2/8] WORKDIR /app
+#53 CACHED
+
+#62 [tts-worker 3/7] COPY workers/tts-worker/package*.json ./workers/tts-worker/
+#62 CACHED
+
+#63 [tts-worker 7/7] WORKDIR /app/workers/tts-worker
+#63 CACHED
+
+#64 [tts-worker] exporting to image
+#64 exporting layers done
+#64 exporting manifest sha256:e8d9d175ad6d757bdf6d121843c0204f043872b5f90a56a8daf616a5c9fbc686
+#64 exporting manifest sha256:e8d9d175ad6d757bdf6d121843c0204f043872b5f90a56a8daf616a5c9fbc686 0.1s done
+#64 exporting config sha256:e6ae7f0089d274d57c444a54e10862e763bcd41603bb35eba9c6a13c9b17466b 0.1s done
+#64 ...
+
+#65 [chat-worker 7/8] COPY workers/chat-worker/ ./workers/chat-worker/
+#65 DONE 0.3s
+
+#64 [tts-worker] exporting to image
+#64 exporting attestation manifest sha256:4d2b86dd695b53568b9b1f2a396141ea7c01e2c11eb04930727db9531e909840
+#64 ...
+
+#66 [notify-worker] exporting to image
+#66 exporting layers 0.0s done
+#66 exporting manifest sha256:2799673e6926d2442625ac7bed710f31ffdfa1771420b5d4b95f9982ae514337 0.1s done
+#66 exporting config sha256:a72f5b7644c5136c6446750881c237111fccd578873596d823f92aa5caac236c 0.0s done
+#66 exporting attestation manifest sha256:e38fad80dc1b0a798508eb186d9acd7de571f689dc2daa6978b0afb46306a4f5 0.1s done
+#66 exporting manifest list sha256:59b6488a9a83bb4982a7825c86c1ddc124f026a78046457bf4fe92abf6d30387 0.2s done
+#66 naming to docker.io/library/saisai3-notify-worker:latest 0.1s done
+#66 unpacking to docker.io/library/saisai3-notify-worker:latest 0.1s done
+#66 DONE 0.9s
+
+#67 [web build 4/9] COPY web/ ./web/
+#67 DONE 0.6s
+
+#68 [rag-worker] exporting to image
+#68 exporting layers 0.1s done
+#68 exporting manifest sha256:09550266a650123c2319b1cbfedebdb43b257980c2959c77cf88b467b38b82f0 0.1s done
+#68 exporting config sha256:49ac33b794748298635a89d721f16b8a2759423a5f11d50a7499849f8df944e5 0.0s done
+#68 exporting attestation manifest sha256:c20a1cdee886ffa7d1975acfe7caca4a2240bdcbf6f59ec7c680782a5663469a 0.2s done
+#68 exporting manifest list sha256:ff18d01f9aaff7625c7948122c8ea7ea816ca1b2d1f669e006dd3328b7f9a713 0.3s done
+#68 naming to docker.io/library/saisai3-rag-worker:latest 0.1s done
+#68 unpacking to docker.io/library/saisai3-rag-worker:latest 0.1s done
+#68 DONE 1.0s
+
+#64 [tts-worker] exporting to image
+#64 exporting attestation manifest sha256:4d2b86dd695b53568b9b1f2a396141ea7c01e2c11eb04930727db9531e909840 0.2s done
+#64 exporting manifest list sha256:17a92c325bc50894f7f262399637cd392f2869fcb184452a213ef0bf93ae7aca
+#64 ...
+
+#69 [chat-worker 8/8] WORKDIR /app/workers/chat-worker
+#69 DONE 0.5s
+
+#64 [tts-worker] exporting to image
+#64 exporting manifest list sha256:17a92c325bc50894f7f262399637cd392f2869fcb184452a213ef0bf93ae7aca 0.1s done
+#64 naming to docker.io/library/saisai3-tts-worker:latest 0.1s done
+#64 unpacking to docker.io/library/saisai3-tts-worker:latest
+#64 ...
+
+#70 [stt-worker] exporting to image
+#70 exporting layers 0.0s done
+#70 exporting manifest sha256:0e4c96a0730cc56b42a7dfc3700a20a1660a9a8879719e4a6b815e330283a19d 0.0s done
+#70 exporting config sha256:a7cd47d16bb9281c48b2ea6cdcafc3fd34bfdb93cf2f721ca5380a08114d8a00 0.1s done
+#70 exporting attestation manifest sha256:1bf4a79ab2e821b2f177c7a43db48f5df9e39848d271d396a2e5edd9f61310a6 0.2s done
+#70 exporting manifest list sha256:fc9c42460426b730cd62739e05cf95ac3676e1bb31f6d91117914422247cedd1 0.1s done
+#70 naming to docker.io/library/saisai3-stt-worker:latest 0.0s done
+#70 unpacking to docker.io/library/saisai3-stt-worker:latest 0.1s done
+#70 DONE 1.0s
+
+#64 [tts-worker] exporting to image
+#64 unpacking to docker.io/library/saisai3-tts-worker:latest 0.1s done
+#64 DONE 1.0s
+
+#71 [chat-worker] exporting to image
+#71 ...
+
+#72 [web build 5/9] RUN mkdir -p /app/shared
+#72 DONE 1.0s
+
+#71 [chat-worker] exporting to image
+#71 exporting layers 0.7s done
+#71 exporting manifest sha256:ac44aeb5c5da0e2dd0914f8d356717e6d8377755bfe204755b1802cf8f087941 0.1s done
+#71 exporting config sha256:a782d624729914c9378b8af10f0bdd7fdaaf47b44d8f7642df1db54e4913f53e 0.1s done
+#71 exporting attestation manifest sha256:c1517f3b4e4084f64e79d8dd4f7b7022cf1868c0c4ccc1ee458b1774ad677026 0.1s done
+#71 exporting manifest list sha256:2b8b034a3d947c750d265250fdecf1cd3518eebd97da3b923ffb85db69ef8f8f
+#71 ...
+
+#73 [web build 6/9] COPY shared* /app/shared/
+#73 DONE 0.4s
+
+#71 [chat-worker] exporting to image
+#71 exporting manifest list sha256:2b8b034a3d947c750d265250fdecf1cd3518eebd97da3b923ffb85db69ef8f8f 0.1s done
+#71 naming to docker.io/library/saisai3-chat-worker:latest 0.0s done
+#71 unpacking to docker.io/library/saisai3-chat-worker:latest
+#71 ...
+
+#74 [web build 7/9] COPY loadtest/criteria.json /app/loadtest/criteria.json
+#74 DONE 0.3s
+
+#71 [chat-worker] exporting to image
+#71 unpacking to docker.io/library/saisai3-chat-worker:latest 0.4s done
+#71 DONE 1.6s
+
+#75 [rag-worker] resolving provenance for metadata file
+#75 DONE 0.3s
+
+#76 [web build 8/9] WORKDIR /app/web
+#76 DONE 0.2s
+
+#77 [mock-llm] resolving provenance for metadata file
+#77 DONE 1.2s
+
+#78 [notify-worker] resolving provenance for metadata file
+#78 DONE 0.9s
+
+#79 [stt-worker] resolving provenance for metadata file
+#79 DONE 0.1s
+
+#80 [tts-worker] resolving provenance for metadata file
+#80 DONE 0.7s
+
+#81 [web build 9/9] RUN mkdir -p public && npm run build
+#81 ...
+
+#82 [chat-worker] resolving provenance for metadata file
+#82 DONE 0.0s
+
+#81 [web build 9/9] RUN mkdir -p public && npm run build
+#81 1.545 
+#81 1.545 > saisai-web@3.0.0 build
+#81 1.545 > next build
+#81 1.545 
+#81 3.286   ▲ Next.js 14.2.35
+#81 3.287   - Experiments (use with caution):
+#81 3.287     · externalDir
+#81 3.287     · outputFileTracingRoot
+#81 3.287 
+#81 3.324    Creating an optimized production build ...
+#81 55.16  ✓ Compiled successfully
+#81 55.16    Skipping linting
+#81 55.16    Checking validity of types ...
+#81 69.56    Collecting page data ...
+#81 72.01    Generating static pages (0/18) ...
+#81 72.30    Generating static pages (4/18) 
+#81 73.02    Generating static pages (8/18) 
+#81 73.31    Generating static pages (13/18) 
+#81 73.58  ✓ Generating static pages (18/18)
+#81 74.59    Finalizing page optimization ...
+#81 74.59    Collecting build traces ...
+#81 117.5 
+#81 117.5 Route (app)                              Size     First Load JS
+#81 117.5 ┌ ƒ /                                    1.19 kB        97.4 kB
+#81 117.5 ├ ƒ /_not-found                          150 B          87.7 kB
+#81 117.5 ├ ƒ /admin/docs                          1.7 kB         89.2 kB
+#81 117.5 ├ ƒ /admin/eval                          652 B          96.9 kB
+#81 117.5 ├ ƒ /admin/load                          3.96 kB        91.5 kB
+#81 117.5 ├ ƒ /api/addresses                       0 B                0 B
+#81 117.5 ├ ƒ /api/admin/docs                      0 B                0 B
+#81 117.5 ├ ƒ /api/admin/eval                      0 B                0 B
+#81 117.5 ├ ƒ /api/admin/load                      0 B                0 B
+#81 117.5 ├ ƒ /api/auth/lang                       0 B                0 B
+#81 117.5 ├ ƒ /api/auth/login                      0 B                0 B
+#81 117.5 ├ ƒ /api/auth/logout                     0 B                0 B
+#81 117.5 ├ ƒ /api/auth/me                         0 B                0 B
+#81 117.5 ├ ƒ /api/chat                            0 B                0 B
+#81 117.5 ├ ƒ /api/chat/history                    0 B                0 B
+#81 117.5 ├ ƒ /api/claims                          0 B                0 B
+#81 117.5 ├ ƒ /api/claims/[no]                     0 B                0 B
+#81 117.5 ├ ƒ /api/claims/[no]/photos/[seq]        0 B                0 B
+#81 117.5 ├ ƒ /api/docs/[filename]                 0 B                0 B
+#81 117.5 ├ ƒ /api/health                          0 B                0 B
+#81 117.5 ├ ƒ /api/orders                          0 B                0 B
+#81 117.5 ├ ƒ /api/orders/[no]                     0 B                0 B
+#81 117.5 ├ ƒ /api/orders/[no]/reorder             0 B                0 B
+#81 117.5 ├ ƒ /api/orders/[no]/reschedule          0 B                0 B
+#81 117.5 ├ ƒ /api/owner/holidays                  0 B                0 B
+#81 117.5 ├ ƒ /api/owner/holidays/[date]           0 B                0 B
+#81 117.5 ├ ƒ /api/products                        0 B                0 B
+#81 117.5 ├ ƒ /api/quote                           0 B                0 B
+#81 117.5 ├ ƒ /api/quotes                          0 B                0 B
+#81 117.5 ├ ƒ /api/quotes/[no]                     0 B                0 B
+#81 117.5 ├ ƒ /api/quotes/[no]/convert             0 B                0 B
+#81 117.5 ├ ƒ /api/samples                         0 B                0 B
+#81 117.5 ├ ƒ /api/staff/claims                    0 B                0 B
+#81 117.5 ├ ƒ /api/staff/claims/[no]               0 B                0 B
+#81 117.5 ├ ƒ /api/staff/claims/[no]/photos/[seq]  0 B                0 B
+#81 117.5 ├ ƒ /api/staff/claims/[no]/status        0 B                0 B
+#81 117.5 ├ ƒ /api/staff/notifications             0 B                0 B
+#81 117.5 ├ ƒ /api/staff/orders                    0 B                0 B
+#81 117.5 ├ ƒ /api/staff/orders/[no]               0 B                0 B
+#81 117.5 ├ ƒ /api/staff/orders/[no]/advance       0 B                0 B
+#81 117.5 ├ ƒ /api/staff/orders/[no]/payment       0 B                0 B
+#81 117.5 ├ ƒ /api/test/clock                      0 B                0 B
+#81 117.5 ├ ƒ /api/test/reset                      0 B                0 B
+#81 117.5 ├ ƒ /api/tts                             0 B                0 B
+#81 117.5 ├ ƒ /api/tts/[audioId]                   0 B                0 B
+#81 117.5 ├ ƒ /api/tts/status                      0 B                0 B
+#81 117.5 ├ ƒ /api/voice                           0 B                0 B
+#81 117.5 ├ ƒ /api/voice/status                    0 B                0 B
+#81 117.5 ├ ƒ /claims                              181 B          96.4 kB
+#81 117.5 ├ ƒ /claims/[no]                         181 B          96.4 kB
+#81 117.5 ├ ƒ /login                               1.1 kB          111 kB
+#81 117.5 ├ ƒ /order                               4.01 kB         122 kB
+#81 117.5 ├ ƒ /orders                              1.09 kB         119 kB
+#81 117.5 ├ ƒ /orders/[no]                         1.74 kB         120 kB
+#81 117.5 ├ ƒ /orders/[no]/claim                   2.07 kB         120 kB
+#81 117.5 ├ ƒ /owner/holidays                      1.29 kB        88.8 kB
+#81 117.5 ├ ƒ /products                            2.29 kB         121 kB
+#81 117.5 ├ ƒ /quotes                              181 B          96.4 kB
+#81 117.5 ├ ƒ /quotes/[no]                         1.97 kB         120 kB
+#81 117.5 ├ ƒ /samples                             2.28 kB         112 kB
+#81 117.5 ├ ƒ /staff/claims                        145 B           120 kB
+#81 117.5 ├ ƒ /staff/claims/[no]                   146 B           120 kB
+#81 117.5 ├ ƒ /staff/orders                        2.02 kB         120 kB
+#81 117.5 └ ƒ /staff/orders/[no]                   2.02 kB         120 kB
+#81 117.5 + First Load JS shared by all            87.5 kB
+#81 117.5   ├ chunks/117-d5568bb59c0c8623.js       31.7 kB
+#81 117.5   ├ chunks/fd9d1056-8b0452e95899cf6d.js  53.6 kB
+#81 117.5   └ other shared chunks (total)          2.14 kB
+#81 117.5 
+#81 117.5 
+#81 117.5 ƒ Middleware                             27.3 kB
+#81 117.5 
+#81 117.5 ƒ  (Dynamic)  server-rendered on demand
+#81 117.5 
+#81 117.6 npm notice
+#81 117.6 npm notice New major version of npm available! 10.9.9 -> 12.2.1
+#81 117.6 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+#81 117.6 npm notice To update run: npm install -g npm@12.2.1
+#81 117.6 npm notice
+#81 DONE 117.7s
+
+#53 [web 2/8] WORKDIR /app
+#53 CACHED
+
+#83 [web runner 3/6] COPY --from=build /app/web/.next/standalone ./
+#83 DONE 0.9s
+
+#84 [web runner 4/6] COPY --from=build /app/web/.next/static ./web/.next/static
+#84 DONE 0.2s
+
+#85 [web runner 5/6] COPY --from=build /app/web/public ./web/public
+#85 DONE 0.2s
+
+#86 [web runner 6/6] COPY --from=build /app/shared ./shared
+#86 DONE 0.2s
+
+#87 [web] exporting to image
+#87 exporting layers
+#87 exporting layers 1.7s done
+#87 exporting manifest sha256:c83fbaa4b01b9d3da0ae534f8e06d2772669b6b6ee5b954beb223c99d8ed78f4 0.0s done
+#87 exporting config sha256:09cfc3677c535188168e44441f4ad73700031a1e06e5b46e31b4f1768189e335 0.0s done
+#87 exporting attestation manifest sha256:99f4576698987076a35297a63b4962cd4efb3f6e314ad108e8ca7cb9b8edbf4d
+#87 exporting attestation manifest sha256:99f4576698987076a35297a63b4962cd4efb3f6e314ad108e8ca7cb9b8edbf4d 0.0s done
+#87 exporting manifest list sha256:90afdfb484caa6b8acc012742daa815929889d015fef4678eefaf4cf3c773cbf 0.0s done
+#87 naming to docker.io/library/saisai3-web:latest done
+#87 unpacking to docker.io/library/saisai3-web:latest
+#87 unpacking to docker.io/library/saisai3-web:latest 1.2s done
+#87 DONE 3.1s
+
+#88 [web] resolving provenance for metadata file
+#88 DONE 0.0s
+ Image saisai3-tts-worker Built 
+ Image saisai3-chat-worker Built 
+ Image saisai3-notify-worker Built 
+ Image saisai3-db Built 
+ Image saisai3-web Built 
+ Image saisai3-rag-worker Built 
+ Image saisai3-mock-llm Built 
+ Image saisai3-stt-worker Built 
+ Container saisai3-mock-llm-1 Running 
+ Container saisai3-tts-worker-1 Running 
+ Container saisai3-db-1 Running 
+ Container saisai3-rabbitmq-1 Running 
+ Container saisai3-notify-worker-1 Running 
+ Container saisai3-embedder-1 Running 
+ Container saisai3-stt-worker-1 Running 
+ Container saisai3-rag-worker-1 Recreate 
+ Container saisai3-chat-worker-2 Recreate 
+ Container saisai3-web-1 Recreate 
+ Container saisai3-chat-worker-1 Recreate 
+ Container saisai3-web-1 Recreated 
+ Container saisai3-chat-worker-1 Recreated 
+ Container saisai3-rag-worker-1 Recreated 
+ Container saisai3-chat-worker-2 Recreated 
+ Container saisai3-rabbitmq-1 Waiting 
+ Container saisai3-db-1 Waiting 
+ Container saisai3-rabbitmq-1 Waiting 
+ Container saisai3-embedder-1 Waiting 
+ Container saisai3-db-1 Waiting 
+ Container saisai3-db-1 Waiting 
+ Container saisai3-rabbitmq-1 Waiting 
+ Container saisai3-mock-llm-1 Waiting 
+ Container saisai3-db-1 Waiting 
+ Container saisai3-rabbitmq-1 Waiting 
+ Container saisai3-db-1 Waiting 
+ Container saisai3-db-1 Waiting 
+ Container saisai3-rabbitmq-1 Waiting 
+ Container saisai3-mock-llm-1 Waiting 
+ Container saisai3-rabbitmq-1 Waiting 
+ Container saisai3-embedder-1 Waiting 
+ Container saisai3-mock-llm-1 Waiting 
+ Container saisai3-db-1 Healthy 
+ Container saisai3-db-1 Healthy 
+ Container saisai3-embedder-1 Healthy 
+ Container saisai3-rabbitmq-1 Healthy 
+ Container saisai3-web-1 Starting 
+ Container saisai3-rabbitmq-1 Healthy 
+ Container saisai3-db-1 Healthy 
+ Container saisai3-rabbitmq-1 Healthy 
+ Container saisai3-db-1 Healthy 
+ Container saisai3-db-1 Healthy 
+ Container saisai3-mock-llm-1 Healthy 
+ Container saisai3-rabbitmq-1 Healthy 
+ Container saisai3-rabbitmq-1 Healthy 
+ Container saisai3-mock-llm-1 Healthy 
+ Container saisai3-mock-llm-1 Healthy 
+ Container saisai3-rabbitmq-1 Healthy 
+ Container saisai3-rag-worker-1 Starting 
+ Container saisai3-embedder-1 Healthy 
+ Container saisai3-chat-worker-2 Starting 
+ Container saisai3-db-1 Healthy 
+ Container saisai3-web-1 Started 
+ Container saisai3-rag-worker-1 Started 
+ Container saisai3-chat-worker-2 Started 
+ Container saisai3-chat-worker-1 Starting 
+ Container saisai3-chat-worker-1 Started 
+
+real	2m14.387s
+user	0m1.576s
+sys	0m1.103s

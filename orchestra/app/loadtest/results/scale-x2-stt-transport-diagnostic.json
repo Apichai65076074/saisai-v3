@@ -1,0 +1,9 @@
+{
+  "phase": "diagnostic 28/10 14:13-14:22 +07; excluded from load capacity",
+  "stt_instance": {"id": 58061043, "gpu": "RTX 4090", "machine_id": 16299, "geolocation": "Ireland, IE", "path": "direct SSH -L tunnel 127.0.0.1:58082 -> host:8000"},
+  "host_gpu": {"model_loaded": "large-v3", "memory_used_mib": 5083, "utilization_idle_pct": 0},
+  "server_decode_ms": [524, 373, 383, 357, 367, 405, 372],
+  "client_end_to_end_s_V03_165KB": {"plain_tunnel": [14.14, 8.92, 9.90, 4.47, 5.62, 7.01], "ssh_compressed_tunnel_trial": [2.43, 5.08]},
+  "load_run": "scale-x2-stt.json U=1: 9.7 s / 15.5 s / 422 empty (3.6 s) -> fail",
+  "conclusion": "GPU decode ~0.4 s (queue 0); remaining 4-14 s is upload transport from the local web/stt-worker to the Ireland host over SSH. Bottleneck = network path/host geography, not GPU or queue. Not fixed within cutoff/budget; host replacement would delay x4 past the $12.5 actual gate."
+}

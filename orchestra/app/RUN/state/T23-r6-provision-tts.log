@@ -1,0 +1,6 @@
+{"action": "push", "rc": 0, "verified": true, "remote": "/workspace/runtime-private.json", "ls": "-rw------- 1 root root 158 Oct 28 07:22 /workspace/runtime-private.json", "err": ""}
+{"action": "push", "rc": 0, "verified": true, "remote": "/workspace/server.py", "ls": "-rw-r--r-- 1 root root 7701 Oct 28 07:22 /workspace/server.py", "err": ""}
+{"action": "push", "rc": 0, "verified": true, "remote": "/workspace/launch.py", "ls": "-rw-r--r-- 1 root root 688 Oct 28 07:23 /workspace/launch.py", "err": ""}
+{"action": "push", "rc": 0, "verified": true, "remote": "/workspace/bootstrap.sh", "ls": "-rw-r--r-- 1 root root 666 Oct 28 07:23 /workspace/bootstrap.sh", "err": ""}
+{"action": "push", "rc": 0, "verified": true, "remote": "/workspace/voices", "ls": "drwxr-xr-x 2 root root 44 Oct 28 07:23 /workspace/voices", "err": ""}
+{"role": "tts", "id": 58063016, "bootstrap": "started; health pending"}

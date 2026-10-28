@@ -1,0 +1,4 @@
+chat-worker-2  | [retrieve] RAG_CANDIDATE_CACHE=off
+chat-worker-2  | [retrieve] keyword search = pruned (doc_chunk_trgms)
+chat-worker-1  | [retrieve] RAG_CANDIDATE_CACHE=off
+chat-worker-1  | [retrieve] keyword search = pruned (doc_chunk_trgms)

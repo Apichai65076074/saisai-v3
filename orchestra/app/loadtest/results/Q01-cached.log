@@ -1,0 +1,10 @@
+npm notice run npx
+npm notice run 'playwright' test tests/Q01.spec.ts
+
+Running 1 test using 1 worker
+
+(node:184850) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › tests/Q01.spec.ts:12:1 › Q01 20 concurrent chat windows finish without errors with two consumers (1.3m)
+
+  1 passed (1.3m)

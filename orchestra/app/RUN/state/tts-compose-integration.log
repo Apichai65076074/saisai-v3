@@ -1,0 +1,90 @@
+TAP version 13
+# cold runtime counters {"requests":6,"upstream":6,"memoryHits":0,"dbReads":0,"dbWrites":0,"shared":0}
+# Subtest: TTS_CACHE=off: sequential + simultaneous repeats call upstream each time, zero DB/cache work
+ok 1 - TTS_CACHE=off: sequential + simultaneous repeats call upstream each time, zero DB/cache work
+  ---
+  duration_ms: 100.505918
+  type: 'test'
+  ...
+# Subtest: ฿5.80 → ห้าบาทแปดสิบสตางค์
+ok 2 - ฿5.80 → ห้าบาทแปดสิบสตางค์
+  ---
+  duration_ms: 15.853685
+  type: 'test'
+  ...
+# Subtest: B-250 → บี สองร้อยห้าสิบ
+ok 3 - B-250 → บี สองร้อยห้าสิบ
+  ---
+  duration_ms: 1.402337
+  type: 'test'
+  ...
+# Subtest: เงินอื่น ๆ
+ok 4 - เงินอื่น ๆ
+  ---
+  duration_ms: 0.842342
+  type: 'test'
+  ...
+# Subtest: รหัสเอกสาร/สินค้าอ่านทีละหลัก
+ok 5 - รหัสเอกสาร/สินค้าอ่านทีละหลัก
+  ---
+  duration_ms: 0.867147
+  type: 'test'
+  ...
+# Subtest: จำนวนเต็ม
+ok 6 - จำนวนเต็ม
+  ---
+  duration_ms: 0.621105
+  type: 'test'
+  ...
+# Subtest: ตัด emoji/tag/markdown/ป้ายอ้างอิง
+ok 7 - ตัด emoji/tag/markdown/ป้ายอ้างอิง
+  ---
+  duration_ms: 0.520688
+  type: 'test'
+  ...
+# Subtest: ภาษาตามตัวอักษร
+ok 8 - ภาษาตามตัวอักษร
+  ---
+  duration_ms: 2.899991
+  type: 'test'
+  ...
+# Subtest: ยาวไม่เกิน 600 ตัวอักษร
+ok 9 - ยาวไม่เกิน 600 ตัวอักษร
+  ---
+  duration_ms: 1.269815
+  type: 'test'
+  ...
+# Subtest: wavDurationMs · audioIdFor
+ok 10 - wavDurationMs · audioIdFor
+  ---
+  duration_ms: 2.494923
+  type: 'test'
+  ...
+# Subtest: cache sha256(ข้อความ+ภาษา): เรียก service ครั้งเดียว · ส่ง voice nongsai + language
+ok 11 - cache sha256(ข้อความ+ภาษา): เรียก service ครั้งเดียว · ส่ง voice nongsai + language
+  ---
+  duration_ms: 153.655917
+  type: 'test'
+  ...
+# [tts-worker] consuming T22_tests_tts168_tts.request (prefetch 2) · TTS_URL=http://127.0.0.1:38033 · voice nongsai
+# [tts-worker] TTS_CACHE=on
+# [tts-worker] warm cache 9/9
+# [tts-worker] ok seq=2 76355569294c 1250ms mock th
+# [tts-worker] ok seq=1 6e3d5b77f62c 1560ms mock th (cache)
+# [tts-worker] error empty_text
+# [tts-worker] counters {"requests":12,"upstream":10,"memoryHits":1,"dbReads":10,"dbWrites":11,"shared":0}
+# Subtest: integration: tts.request → reply {type:tts, messageId, seq, audioId, durationMs, engine, lang}
+ok 12 - integration: tts.request → reply {type:tts, messageId, seq, audioId, durationMs, engine, lang}
+  ---
+  duration_ms: 1167.510102
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1637.495145

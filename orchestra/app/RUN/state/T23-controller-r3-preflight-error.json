@@ -1,0 +1,25 @@
+{
+  "started_epoch": 1793115092.8862462,
+  "deadline_epoch": 1793118392.8862462,
+  "stage": "FAILED",
+  "loads": [],
+  "owner_pid": 6379,
+  "owner_start_ticks": "22372",
+  "controller_pid": 103995,
+  "failure": {
+    "type": "TypeError",
+    "message": "unsupported operand type(s) for +: 'PosixPath' and 'str'"
+  },
+  "cleanup": {
+    "checked_epoch": 1793115105.4338923,
+    "task_instances": 0,
+    "other_instances": 0,
+    "verified": true
+  },
+  "cleanup_second_check": {
+    "checked_epoch": 1793115113.5413613,
+    "task_instances": 0,
+    "other_instances": 0
+  },
+  "finished_epoch": 1793115113.5414202
+}

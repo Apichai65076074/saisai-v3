@@ -1,0 +1,316 @@
+{
+  "label": "smoke-stt",
+  "config": {
+    "mode": "stt",
+    "environment": "mock",
+    "think_sec": 0,
+    "stage_sec": 10,
+    "shard": "1/1",
+    "started_at": "2026-10-26T04:04:53.749Z",
+    "mq_prefix": "T20_",
+    "latency_definition": "chat completion; stt/tts completion; voice stop-to-first-audio; mix per-transaction chat completion or voice first audio",
+    "mix_voice_probability": 0.3,
+    "mock_latency_ms": 800,
+    "token_metric": "output_chars only; SSE has no token usage",
+    "finished_at": "2026-10-26T04:05:10.664Z"
+  },
+  "stages": [
+    {
+      "users": 1,
+      "local_users": 1,
+      "mode": "stt",
+      "n": 11,
+      "ok": 11,
+      "err": 0,
+      "error_rate": 0,
+      "p50_ms": 901.4015669999999,
+      "p95_ms": 1140.851103,
+      "ttft_p50_ms": 0,
+      "ttft_p95_ms": 0,
+      "completion_p95_ms": 0,
+      "first_audio_p95_ms": 0,
+      "stt_rtf_p95": 0.5925854447664203,
+      "tts_rtf_p95": 0,
+      "output_chars_per_sec": 0,
+      "elapsed_ms": 10460.192406,
+      "queue_max": {
+        "chat": 0,
+        "stt": 1,
+        "tts": 1
+      },
+      "counts": {
+        "chat_attempted": 0,
+        "chat_accepted": 0,
+        "chat_done": 0,
+        "broker_chat_publish": 0
+      },
+      "queue_samples": [
+        {
+          "at": "2026-10-26T04:04:54.193Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 0,
+            "publish": 0
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 0
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 0
+          }
+        },
+        {
+          "at": "2026-10-26T04:04:56.203Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 0,
+            "publish": 0
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 1
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 0
+          }
+        },
+        {
+          "at": "2026-10-26T04:04:58.201Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 0,
+            "publish": 0
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 1
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 0
+          }
+        },
+        {
+          "at": "2026-10-26T04:05:00.207Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 0,
+            "publish": 0
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 1
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 0
+          }
+        },
+        {
+          "at": "2026-10-26T04:05:02.206Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 0,
+            "publish": 0
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 7
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 6
+          }
+        },
+        {
+          "at": "2026-10-26T04:05:04.200Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 0,
+            "publish": 0
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 7
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 6
+          }
+        },
+        {
+          "at": "2026-10-26T04:05:10.661Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 0,
+            "publish": 0
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 11
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 10
+          }
+        }
+      ],
+      "queue_errors": [],
+      "samples": [
+        {
+          "kind": "stt",
+          "started_at": "2026-10-26T04:04:54.193Z",
+          "stt_ms": 1140.851103,
+          "stt_rtf": 0.34288323582560565,
+          "delay_ms": 1140.851103,
+          "ok": true
+        },
+        {
+          "kind": "stt",
+          "started_at": "2026-10-26T04:04:55.336Z",
+          "stt_ms": 1025.3558350000003,
+          "stt_rtf": 0.2085381131307996,
+          "delay_ms": 1025.3558350000003,
+          "ok": true
+        },
+        {
+          "kind": "stt",
+          "started_at": "2026-10-26T04:04:56.363Z",
+          "stt_ms": 871.4251839999997,
+          "stt_rtf": 0.38445228705882345,
+          "delay_ms": 871.4251839999997,
+          "ok": true
+        },
+        {
+          "kind": "stt",
+          "started_at": "2026-10-26T04:04:57.236Z",
+          "stt_ms": 901.4015669999999,
+          "stt_rtf": 0.13853241554017273,
+          "delay_ms": 901.4015669999999,
+          "ok": true
+        },
+        {
+          "kind": "stt",
+          "started_at": "2026-10-26T04:04:58.137Z",
+          "stt_ms": 874.3585269999994,
+          "stt_rtf": 0.5088595523115531,
+          "delay_ms": 874.3585269999994,
+          "ok": true
+        },
+        {
+          "kind": "stt",
+          "started_at": "2026-10-26T04:04:59.012Z",
+          "stt_ms": 894.9914359999993,
+          "stt_rtf": 0.16430842902657022,
+          "delay_ms": 894.9914359999993,
+          "ok": true
+        },
+        {
+          "kind": "stt",
+          "started_at": "2026-10-26T04:04:59.908Z",
+          "stt_ms": 877.4822869999998,
+          "stt_rtf": 0.5106775195024066,
+          "delay_ms": 877.4822869999998,
+          "ok": true
+        },
+        {
+          "kind": "stt",
+          "started_at": "2026-10-26T04:05:00.787Z",
+          "stt_ms": 934.2980950000001,
+          "stt_rtf": 0.17152460465774488,
+          "delay_ms": 934.2980950000001,
+          "ok": true
+        },
+        {
+          "kind": "stt",
+          "started_at": "2026-10-26T04:05:01.727Z",
+          "stt_ms": 1018.2222860000011,
+          "stt_rtf": 0.5925854447664203,
+          "delay_ms": 1018.2222860000011,
+          "ok": true
+        },
+        {
+          "kind": "stt",
+          "started_at": "2026-10-26T04:05:02.748Z",
+          "stt_ms": 1009.6583699999992,
+          "stt_rtf": 0.18535974083692525,
+          "delay_ms": 1009.6583699999992,
+          "ok": true
+        },
+        {
+          "kind": "stt",
+          "started_at": "2026-10-26T04:05:03.759Z",
+          "stt_ms": 890.9498509999994,
+          "stt_rtf": 0.230966860093217,
+          "delay_ms": 890.9498509999994,
+          "ok": true
+        }
+      ],
+      "message_conservation": true,
+      "pass": true,
+      "target_200_pass": null
+    }
+  ],
+  "max_users_ok": {
+    "stt": 1
+  }
+}

@@ -1,0 +1,76 @@
+npm notice run npx
+npm notice run 'playwright' test tests/L01.spec.ts tests/L02.spec.ts
+
+Running 2 tests using 1 worker
+
+(node:30434) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/L01.spec.ts:11:1 › L01 POST load-run-a.json → load-chart 8 points and load-max-users from the file (1.5m)
+(node:33046) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [chromium] › tests/L02.spec.ts:13:1 › L02 failing stage is red and the chart has the 200-user target line (57.1s)
+
+
+  1) [chromium] › tests/L01.spec.ts:11:1 › L01 POST load-run-a.json → load-chart 8 points and load-max-users from the file 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('.load-run[data-run-id="28"]').getByTestId('load-chart')
+    Expected: 1
+    Received: 0
+    Timeout:  20000ms
+
+    Call log:
+      - Expect "toHaveCount" locator('.load-run[data-run-id="28"]').getByTestId('load-chart') with timeout 20000ms
+      - waiting for locator('.load-run[data-run-id="28"]').getByTestId('load-chart')
+        42 × locator resolved to 0 elements
+           - unexpected value "0"
+
+
+      28 |   }
+      29 |   const chart = selectedRun.getByTestId('load-chart');
+    > 30 |   await expect(chart).toHaveCount(1);
+         |                       ^
+      31 |   await expect(chart).toHaveAttribute('data-points', String(fixture.stages.length));
+      32 |   await expect(chart).toHaveAttribute('data-points', '8');
+      33 |   await expect(chart.locator('[data-series="p95_ms"] circle')).toHaveCount(8);
+        at /root/runs/saisai/wt/T23/e2e/tests/L01.spec.ts:30:23
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results-T23/L01-L01-POST-load-run-a-js-f31fa-oad-max-users-from-the-file-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results-T23/L01-L01-POST-load-run-a-js-f31fa-oad-max-users-from-the-file-chromium/error-context.md
+
+  2) [chromium] › tests/L02.spec.ts:13:1 › L02 failing stage is red and the chart has the 200-user target line 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator: locator('.load-run[data-run-id="29"]').getByTestId('load-chart')
+    Expected: "8"
+    Timeout: 20000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveAttribute" locator('.load-run[data-run-id="29"]').getByTestId('load-chart') with timeout 20000ms
+      - waiting for locator('.load-run[data-run-id="29"]').getByTestId('load-chart')
+
+
+      21 |   const selectedRun = page.locator(`.load-run[data-run-id="${run.id}"]`);
+      22 |   const chart = selectedRun.getByTestId('load-chart');
+    > 23 |   await expect(chart).toHaveAttribute('data-points', '8');
+         |                       ^
+      24 |
+      25 |   // ตาราง: ขั้นไม่ผ่านเป็นสีแดง · ขั้นผ่านไม่แดง
+      26 |   const bad = selectedRun.locator('[data-testid="load-stage-row"][data-pass="false"]');
+        at /root/runs/saisai/wt/T23/e2e/tests/L02.spec.ts:23:23
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results-T23/L02-L02-failing-stage-is-r-a0d5f-as-the-200-user-target-line-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results-T23/L02-L02-failing-stage-is-r-a0d5f-as-the-200-user-target-line-chromium/error-context.md
+
+  2 failed
+    [chromium] › tests/L01.spec.ts:11:1 › L01 POST load-run-a.json → load-chart 8 points and load-max-users from the file 
+    [chromium] › tests/L02.spec.ts:13:1 › L02 failing stage is red and the chart has the 200-user target line 

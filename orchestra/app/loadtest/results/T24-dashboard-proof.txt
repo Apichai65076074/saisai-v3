@@ -1,0 +1,18 @@
+headline ['11']
+sections ['11']
+kinds [('primary', 'ค่าหลัก · ปิด cache · คำถามไม่ซ้ำ (rag770) · prefetch 4/4/2')]
+max ['data-testid="load-max-users" data-mode="mix" data-run-id="11" data-value="25"']
+opt [เสริม] #14 load-run-a (mock fixture) · mix · 27/10/2569 10:01:00
+opt [เสริม] #13 load-run-a (mock fixture) · mix · 27/10/2569 10:00:38
+opt [เสริม] #12 mock-mix-nocache-prefetch48 · mix · 27/10/2569 09:58:34
+opt [หลัก] #11 mock-mix-nocache-pruned · mix · 27/10/2569 09:38:15
+opt [หลัก] #10 mock-mix-nocache · mix · 26/10/2569 21:40:05
+opt [เสริม] #9 load-run-a (mock fixture) · mix · 26/10/2569 13:58:30
+opt [เสริม] #8 load-run-a (mock fixture) · mix · 26/10/2569 13:58:13
+opt [เสริม] #7 load-run-a (mock fixture) · mix · 26/10/2569 13:23:36
+opt [เสริม] #6 load-run-a (mock fixture) · mix · 26/10/2569 13:23:19
+opt [เสริม] #5 load-run-a (mock fixture) · mix · 26/10/2569 12:40:57
+opt [เสริม] #4 load-run-a (mock fixture) · mix · 26/10/2569 12:40:45
+opt [เสริม] #3 mock-mix · mix · 26/10/2569 12:28:46
+opt [เสริม] #2 mock-mix-prefetch-only · mix · 26/10/2569 12:06:08
+opt [เสริม] #1 mock-mix-baseline · mix · 26/10/2569 11:45:49

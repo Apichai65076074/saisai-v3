@@ -1,0 +1,185 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/root/runs/saisai/wt/T20/e2e/node_modules/.bin/playwright",
+      "test",
+      "tests/Q01.spec.ts"
+    ],
+    "configFile": "/root/runs/saisai/wt/T20/e2e/playwright.config.ts",
+    "rootDir": "/root/runs/saisai/wt/T20/e2e/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/root/runs/saisai/wt/T20/e2e/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/root/runs/saisai/wt/T20/e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/root/runs/saisai/wt/T20/e2e/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "/root/runs/saisai/wt/T20/e2e/tests",
+        "snapshotDir": "/root/runs/saisai/wt/T20/e2e/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://localhost:4600",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "video": {
+            "mode": "on",
+            "size": {
+              "width": 1280,
+              "height": 800
+            }
+          },
+          "locale": "th-TH",
+          "timezoneId": "Asia/Bangkok",
+          "permissions": [
+            "microphone"
+          ],
+          "actionTimeout": 30000,
+          "navigationTimeout": 60000,
+          "browserName": "chromium",
+          "launchOptions": {
+            "executablePath": "/ms-playwright/chromium-1247/chrome-linux64/chrome",
+            "args": [
+              "--use-fake-ui-for-media-stream",
+              "--use-fake-device-for-media-stream",
+              "--autoplay-policy=no-user-gesture-required",
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader",
+              "--ignore-gpu-blocklist"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./test-results/report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0-alpha-1790635538000",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "Q01.spec.ts",
+      "file": "Q01.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Q01 20 concurrent chat windows finish without errors with two consumers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 79242,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-26T05:08:12.350Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "Q01-replies",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJ3aW5kb3ciOiAxLAogICAgIm1lc3NhZ2VJZCI6ICJhODRlN2M5ZS1hOGY0LTQ4ZDEtYWFlZS00YzdhNjUwNmFkOGYiCiAgfSwKICB7CiAgICAid2luZG93IjogMiwKICAgICJtZXNzYWdlSWQiOiAiZTg0ZWI2M2ItZmY1NC00MzdlLTk1YjEtMDliZTI2Mzc0YjdlIgogIH0sCiAgewogICAgIndpbmRvdyI6IDMsCiAgICAibWVzc2FnZUlkIjogIjhlODA5ZjRkLTBjZTItNDU4Yi1iNDJkLTE2ZDZhNWVlOTYyMyIKICB9LAogIHsKICAgICJ3aW5kb3ciOiA0LAogICAgIm1lc3NhZ2VJZCI6ICI5ZTMzMTIzNS0zMDg5LTRlMzQtOWQ0OS0wMDY2ODI0MWViM2IiCiAgfSwKICB7CiAgICAid2luZG93IjogNSwKICAgICJtZXNzYWdlSWQiOiAiNDE1ZDNmNDEtZWIyMi00ZGJmLWJiZmQtYzliYzBiZWM2M2RmIgogIH0sCiAgewogICAgIndpbmRvdyI6IDYsCiAgICAibWVzc2FnZUlkIjogIjczY2U0NDg4LTQ2ZjItNDhiNi05MzM4LTMwODI4ZGVlYTRlOSIKICB9LAogIHsKICAgICJ3aW5kb3ciOiA3LAogICAgIm1lc3NhZ2VJZCI6ICI4NTgxYTdhYy0zOWJkLTQwNjgtOTcyOC0xNTQ3ZTFiYzM3MzEiCiAgfSwKICB7CiAgICAid2luZG93IjogOCwKICAgICJtZXNzYWdlSWQiOiAiZjUxMTZjYmMtMDgwMy00M2ZiLTg2MjEtMTE5MDRmMWIyZThhIgogIH0sCiAgewogICAgIndpbmRvdyI6IDksCiAgICAibWVzc2FnZUlkIjogImI3MjQ1MmIxLTQ4ZTktNGI5NS1iZmQ2LWYyNDJhY2ZiNzBhNSIKICB9LAogIHsKICAgICJ3aW5kb3ciOiAxMCwKICAgICJtZXNzYWdlSWQiOiAiMDIyOGE4NDgtNGVjNi00YWJmLTk0Y2EtYmU1OTQ5MmVkYjM4IgogIH0sCiAgewogICAgIndpbmRvdyI6IDExLAogICAgIm1lc3NhZ2VJZCI6ICI1OTAxZmNiOC1hYWRkLTRmNTYtODMxNy04MTA2NDBhMjc4M2MiCiAgfSwKICB7CiAgICAid2luZG93IjogMTIsCiAgICAibWVzc2FnZUlkIjogIjA5NTNlZjg3LTg1NDYtNDM2Yy05NjJiLWEwMjk5OWI1NTRlMyIKICB9LAogIHsKICAgICJ3aW5kb3ciOiAxMywKICAgICJtZXNzYWdlSWQiOiAiODM3NmUwMzQtMThkMS00NmMyLTkxMjMtZTU3NDYzNTZjZDJjIgogIH0sCiAgewogICAgIndpbmRvdyI6IDE0LAogICAgIm1lc3NhZ2VJZCI6ICIyZDMzODhhMy02MTUzLTQ0YjctODliMS05NWJjZTJmMmQ3NzEiCiAgfSwKICB7CiAgICAid2luZG93IjogMTUsCiAgICAibWVzc2FnZUlkIjogImM3MjZhMTZhLWFmZmQtNDI5NC05NDcxLWE4ODAzNzZiMzI5ZSIKICB9LAogIHsKICAgICJ3aW5kb3ciOiAxNiwKICAgICJtZXNzYWdlSWQiOiAiNzc0MzBmYzYtYWRjZi00NTY0LWJiODYtZGIyNTM0NjM5OGJkIgogIH0sCiAgewogICAgIndpbmRvdyI6IDE3LAogICAgIm1lc3NhZ2VJZCI6ICJkOWI3ZDNlNi0zM2NmLTQ0MjItYWUzOC02NDU3MjM2MDU2OTQiCiAgfSwKICB7CiAgICAid2luZG93IjogMTgsCiAgICAibWVzc2FnZUlkIjogImNhY2VhNmE2LTM4NjQtNDE1Ni04MjJhLTY4OGZkNTkwZTcxYSIKICB9LAogIHsKICAgICJ3aW5kb3ciOiAxOSwKICAgICJtZXNzYWdlSWQiOiAiYjVmNzAzNWMtNjNjOS00YWRhLThkNTUtNmRhMWVhOWMxNGI3IgogIH0sCiAgewogICAgIndpbmRvdyI6IDIwLAogICAgIm1lc3NhZ2VJZCI6ICJiNWY2ODVhZi1lYjZiLTQ0MjMtYWM0OS0xMWZlY2Q2Mzg3ZWEiCiAgfQpd"
+                    },
+                    {
+                      "name": "Q01-browser-errors",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "312145481516212db1a0-a7a376f9833d4ca9d8de",
+          "file": "Q01.spec.ts",
+          "line": 12,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-26T05:08:11.624Z",
+    "duration": 80754.67000000001,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

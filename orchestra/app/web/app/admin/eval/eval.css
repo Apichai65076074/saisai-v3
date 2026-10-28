@@ -1,0 +1,49 @@
+/* /admin/eval (T17) */
+.eval-page h2 { margin: 28px 0 10px; }
+.eval-page h2 small { font-weight: 400; font-size: 0.9rem; }
+.eval-controls { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-end; }
+.eval-select { display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem; color: var(--muted); }
+.eval-select select { min-width: 360px; }
+.eval-config { font-size: 0.85rem; margin: 8px 0 14px; }
+.eval-hero { text-align: center; padding: 22px; }
+.eval-hero-big { font-size: 1.9rem; font-weight: 700; color: var(--brand-dark); }
+.eval-hero-big b { font-size: 2.6rem; font-variant-numeric: tabular-nums; }
+.eval-hero-big small { font-size: 1rem; font-weight: 400; color: var(--muted); }
+.eval-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; }
+.eval-card { padding: 14px 16px; }
+.eval-card h3 { font-size: 0.9rem; margin: 0 0 6px; color: var(--muted); font-weight: 600; }
+.eval-card strong { font-size: 1.7rem; color: var(--brand-dark); font-variant-numeric: tabular-nums; display: block; }
+.eval-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 16px; align-items: start; }
+.eval-table td { font-variant-numeric: tabular-nums; }
+.eval-table td, .eval-table th:not(:first-child) { text-align: right; }
+.eval-table tr.eval-total th, .eval-table tr.eval-total td { font-weight: 700; background: #f2f8fa; border-top: 2px solid var(--line); }
+.eval-table tr.eval-active th { background: #d7eef5; }
+.eval-diff { font-weight: 700; white-space: nowrap; }
+.eval-good { color: var(--ok); }
+.eval-bad { color: var(--danger); }
+.eval-same, .eval-none { color: var(--muted); }
+.eval-chart { margin: 0; padding: 14px; }
+.eval-chart figcaption { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+.eval-chart h3 { margin: 0; font-size: 1rem; }
+.eval-legend { list-style: none; display: flex; gap: 14px; margin: 0; padding: 0; font-size: 0.85rem; color: var(--ink); }
+.eval-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.eval-grid { stroke: #e6eef1; stroke-width: 1; }
+.eval-axis { font-size: 11px; fill: var(--muted); }
+.eval-axis-label { font-size: 12px; fill: var(--ink); }
+.eval-bar-value { font-size: 11px; fill: var(--ink); font-variant-numeric: tabular-nums; }
+.eval-bar:hover rect:last-of-type { opacity: 0.8; }
+.eval-filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.chip { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 4px 12px; font-size: 0.85rem; color: var(--brand-dark); }
+.chip.active { background: var(--brand); border-color: var(--brand); color: #fff; }
+.chip.fail { border-color: #f1b8b2; }
+.chip.fail.active { background: var(--danger); border-color: var(--danger); }
+.eval-item { background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--ok); border-radius: 8px; margin: 6px 0; padding: 8px 12px; }
+.eval-item.fail { border-left-color: var(--danger); }
+.eval-item summary { cursor: pointer; }
+.eval-item.pass .eval-mark { color: var(--ok); }
+.eval-item.fail .eval-mark { color: var(--danger); }
+.eval-detail { font-size: 0.92rem; padding: 6px 0 2px 18px; }
+.eval-detail p { margin: 4px 0; }
+.eval-detail a { margin-right: 8px; }
+.eval-turn { border-left: 2px solid var(--line); padding-left: 10px; margin: 6px 0; }
+.eval-turn h5 { margin: 4px 0; }

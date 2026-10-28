@@ -1,0 +1,20 @@
+{
+ "questions": 858,
+ "identical": 858,
+ "mismatches": [],
+ "fullscan_ms": {
+  "p50": 652.7,
+  "p95": 1442.5,
+  "max": 6653.7
+ },
+ "pruned_ms": {
+  "p50": 81.1,
+  "p95": 217.6,
+  "max": 1517.5
+ },
+ "chunks_scored": {
+  "p50": 29,
+  "p95": 48,
+  "max": 81
+ }
+}

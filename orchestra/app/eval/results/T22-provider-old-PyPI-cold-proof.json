@@ -1,0 +1,87 @@
+{
+  "mode": "ai",
+  "started_at": "2026-10-27T05:01:48.270Z",
+  "transport": "temporary HTTPS; authenticated POST; no-store",
+  "items": [
+    {
+      "n": 1,
+      "elapsed_ms": 18477.583455,
+      "bytes": 1735724,
+      "duration_s": 54.24,
+      "generation_s": 15.27880786100286,
+      "rtf": 0.2816889354904657,
+      "cache_control": "no-store",
+      "cf_cache_status": "DYNAMIC",
+      "sha256": "bb88197d24ac8222dbc9790efe9874565079a7535a0295eb9992cb6a461b480b"
+    },
+    {
+      "n": 2,
+      "elapsed_ms": 8846.470628,
+      "bytes": 1689644,
+      "duration_s": 52.8,
+      "generation_s": 6.934912936005276,
+      "rtf": 0.13134304803040295,
+      "cache_control": "no-store",
+      "cf_cache_status": "DYNAMIC",
+      "sha256": "794a5fac93fe8665f4fe09b7e680fe1d64b6c2588efcdf6a00c28eb0d881930a"
+    },
+    {
+      "n": 3,
+      "elapsed_ms": 9039.354362000002,
+      "bytes": 1812524,
+      "duration_s": 56.64,
+      "generation_s": 6.992051152003114,
+      "rtf": 0.12344723079101542,
+      "cache_control": "no-store",
+      "cf_cache_status": "DYNAMIC",
+      "sha256": "571671b5bd82aa9b49a0b80a997be1f2ea690939195fe71e690654b7923ef833"
+    }
+  ],
+  "before": {
+    "upstream_calls": {
+      "stt": 0,
+      "tts": 0,
+      "rerank": 0
+    },
+    "response_cache": "off",
+    "audio_cache": "off"
+  },
+  "unauthorized_status": 401,
+  "rerank": {
+    "results": [
+      {
+        "index": 0,
+        "relevance_score": 0.99072265625,
+        "score": 0.99072265625
+      },
+      {
+        "index": 1,
+        "relevance_score": 0.004467010498046875,
+        "score": 0.004467010498046875
+      },
+      {
+        "index": 2,
+        "relevance_score": 1.8656253814697266e-05,
+        "score": 1.8656253814697266e-05
+      }
+    ]
+  },
+  "after": {
+    "upstream_calls": {
+      "stt": 0,
+      "tts": 3,
+      "rerank": 1
+    },
+    "response_cache": "off",
+    "audio_cache": "off"
+  },
+  "tts_upstream_delta": 3,
+  "finished_at": "2026-10-27T05:02:26.856Z",
+  "primary_eligible": false,
+  "reason": "PyPI resolver installed VoxCPM1.5 implementation without voxcpm.model.voxcpm2; checkpoint/code mismatch. These timings/audio are invalid for VoxCPM2 baseline.",
+  "implementation_version": "1.5.0",
+  "implementation_class": "VoxCPMModel",
+  "checkpoint_architecture": "voxcpm2",
+  "output_sample_rate": 16000,
+  "required_sample_rate": 48000
+}

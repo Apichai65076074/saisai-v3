@@ -1,0 +1,7 @@
+DELETE 1
+7 docs ready, 334 chunks
+doc_chunks_pkey: CREATE UNIQUE INDEX doc_chunks_pkey ON public.doc_chunks USING btree (id)
+doc_chunks_doc_idx: CREATE INDEX doc_chunks_doc_idx ON public.doc_chunks USING btree (doc_id)
+doc_chunks_content_trgm: CREATE INDEX doc_chunks_content_trgm ON public.doc_chunks USING gin (content gin_trgm_ops)
+doc_chunks_embedding_hnsw: CREATE INDEX doc_chunks_embedding_hnsw ON public.doc_chunks USING hnsw (embedding vector_cosine_ops)
+doc_chunks_tsv_idx: CREATE INDEX doc_chunks_tsv_idx ON public.doc_chunks USING gin (tsv)

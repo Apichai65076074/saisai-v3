@@ -1,0 +1,88 @@
+TAP version 13
+# Subtest: SQL context contains only authenticated company and latest ten history messages
+ok 1 - SQL context contains only authenticated company and latest ten history messages
+  ---
+  duration_ms: 223.635095
+  type: 'test'
+  ...
+# Subtest: cross-company ORDER tool has no rows; anonymous QUOTE cannot write
+ok 2 - cross-company ORDER tool has no rows; anonymous QUOTE cannot write
+  ---
+  duration_ms: 6.410159
+  type: 'test'
+  ...
+# Subtest: privacy guard rejects before LLM and done includes retrieval/products
+ok 3 - privacy guard rejects before LLM and done includes retrieval/products
+  ---
+  duration_ms: 17.218118
+  type: 'test'
+  ...
+# Subtest: sentence/tts arrive before stream finishes and hidden tags never leak
+ok 4 - sentence/tts arrive before stream finishes and hidden tags never leak
+  ---
+  duration_ms: 14.746856
+  type: 'test'
+  ...
+# Subtest: LLM outage emits error without throwing out of consumer
+ok 5 - LLM outage emits error without throwing out of consumer
+  ---
+  duration_ms: 17.722233
+  type: 'test'
+  ...
+# Subtest: RERANK=off and >3 second rerank still complete a real mock chat
+ok 6 - RERANK=off and >3 second rerank still complete a real mock chat
+  ---
+  duration_ms: 5428.290057
+  type: 'test'
+  ...
+# Subtest: unpaid production guard follows shared prepay versus credit eligibility
+ok 7 - unpaid production guard follows shared prepay versus credit eligibility
+  ---
+  duration_ms: 30.84853
+  type: 'test'
+  ...
+# Subtest: tags, think and citations remain hidden at every possible token split
+ok 8 - tags, think and citations remain hidden at every possible token split
+  ---
+  duration_ms: 6.297633
+  type: 'test'
+  ...
+# Subtest: sentence emitted before end, decimals preserved, long text capped
+ok 9 - sentence emitted before end, decimals preserved, long text capped
+  ---
+  duration_ms: 0.806683
+  type: 'test'
+  ...
+# Subtest: RRF merges identities and limits candidates to twenty
+ok 10 - RRF merges identities and limits candidates to twenty
+  ---
+  duration_ms: 0.96682
+  type: 'test'
+  ...
+# Subtest: RERANK=off skips network; malformed/server errors fall back
+ok 11 - RERANK=off skips network; malformed/server errors fall back
+  ---
+  duration_ms: 1.151962
+  type: 'test'
+  ...
+# Subtest: rerank >3 sec aborts and returns RRF top4
+ok 12 - rerank >3 sec aborts and returns RRF top4
+  ---
+  duration_ms: 3003.501528
+  type: 'test'
+  ...
+# Subtest: embedding failure preserves lexical candidates
+ok 13 - embedding failure preserves lexical candidates
+  ---
+  duration_ms: 24.504376
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6078.998808

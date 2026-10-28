@@ -1,0 +1,43 @@
+npm notice run npx
+npm notice run 'playwright' test tests/Q01.spec.ts
+
+Running 1 test using 1 worker
+
+(node:70970) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/Q01.spec.ts:9:1 › Q01 20 concurrent chat windows finish without errors with two consumers (1.1m)
+
+
+  1) [chromium] › tests/Q01.spec.ts:9:1 › Q01 20 concurrent chat windows finish without errors with two consumers 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByTestId('chat-panel')
+    Expected: visible
+    Received: hidden
+    Timeout:  20000ms
+
+    Call log:
+      - Expect "toBeVisible" getByTestId('chat-panel') with timeout 20000ms
+      - waiting for getByTestId('chat-panel')
+        41 × locator resolved to <section hidden="" id="saisai-chat" data-testid="chat-panel" class="chat_panel__wNcMG" aria-label="Chat with Nong Sai">…</section>
+           - unexpected value "hidden"
+
+
+       at ../lib/chat.ts:18
+
+      16 |   const panel = page.getByTestId('chat-panel');
+      17 |   if (!(await panel.isVisible().catch(() => false))) await page.getByTestId('chat-open').click();
+    > 18 |   await expect(panel).toBeVisible();
+         |                       ^
+      19 |   await expect(page.getByTestId('chat-input')).toBeEditable({ timeout: 30_000 });
+      20 | }
+      21 |
+        at openChat (/root/runs/saisai/wt/T20/e2e/lib/chat.ts:18:23)
+        at /root/runs/saisai/wt/T20/e2e/tests/Q01.spec.ts:37:7
+        at /root/runs/saisai/wt/T20/e2e/tests/Q01.spec.ts:27:19
+
+    Error Context: test-results/Q01-Q01-20-concurrent-chat-dd482-t-errors-with-two-consumers-chromium/error-context.md
+
+  1 failed
+    [chromium] › tests/Q01.spec.ts:9:1 › Q01 20 concurrent chat windows finish without errors with two consumers 

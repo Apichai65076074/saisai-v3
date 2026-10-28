@@ -1,0 +1,1026 @@
+{
+ "label": "FIXTURE B · rerank off (ข้อมูลสมมติสำหรับ e2e)",
+ "config": {
+  "rerank": "off",
+  "mode": "mock",
+  "fixture": true,
+  "llm": "mock",
+  "embed": "multilingual-e5-small",
+  "k": 4,
+  "note": "ไฟล์ทดสอบ dashboard (T17) · ตัวเลขสมมติ ไม่ใช่ผลประเมินจริง"
+ },
+ "summary": {
+  "rag": {
+   "n": 770,
+   "hit_at_4": 0.87,
+   "mrr": 0.76,
+   "citation_acc": 0.82,
+   "faithfulness": 0.9,
+   "correctness": 0.82
+  },
+  "qa": {
+   "n": 75,
+   "correctness": 0.93,
+   "exact_value": 0.96,
+   "sql_correct": 0.97,
+   "privacy_ok": 1
+  },
+  "conv": {
+   "n": 12,
+   "context_retention": 0.83,
+   "stt_cer": 0.06
+  }
+ },
+ "by_doc": [
+  {
+   "doc": "SS-CAT-BOTTLES.pdf",
+   "n": 110,
+   "correctness": 0.85,
+   "hit_at_4": 0.91,
+   "mrr": 0.8
+  },
+  {
+   "doc": "SS-LOGO-PRINT.pdf",
+   "n": 110,
+   "correctness": 0.8,
+   "hit_at_4": 0.86,
+   "mrr": 0.74
+  },
+  {
+   "doc": "SS-LOGISTICS.pdf",
+   "n": 110,
+   "correctness": 0.84,
+   "hit_at_4": 0.89,
+   "mrr": 0.79
+  },
+  {
+   "doc": "SS-POLICY.pdf",
+   "n": 110,
+   "correctness": 0.83,
+   "hit_at_4": 0.88,
+   "mrr": 0.78
+  },
+  {
+   "doc": "SS-QC-STANDARD.pdf",
+   "n": 110,
+   "correctness": 0.78,
+   "hit_at_4": 0.84,
+   "mrr": 0.72
+  },
+  {
+   "doc": "SS-USE-CARE.pdf",
+   "n": 110,
+   "correctness": 0.86,
+   "hit_at_4": 0.9,
+   "mrr": 0.8
+  },
+  {
+   "doc": "SS-FAQ-EN.pdf",
+   "n": 110,
+   "correctness": 0.75,
+   "hit_at_4": 0.82,
+   "mrr": 0.7
+  }
+ ],
+ "by_type": [
+  {
+   "type": "rag:direct",
+   "n": 308,
+   "correctness": 0.89
+  },
+  {
+   "type": "rag:paraphrase",
+   "n": 196,
+   "correctness": 0.83
+  },
+  {
+   "type": "rag:table",
+   "n": 112,
+   "correctness": 0.71
+  },
+  {
+   "type": "rag:unanswerable",
+   "n": 77,
+   "correctness": 0.84
+  },
+  {
+   "type": "rag:crosspage",
+   "n": 72,
+   "correctness": 0.69
+  },
+  {
+   "type": "rag:footnote",
+   "n": 5,
+   "correctness": 0.6
+  },
+  {
+   "type": "qa:price",
+   "n": 40,
+   "correctness": 0.93
+  },
+  {
+   "type": "qa:rules",
+   "n": 35,
+   "correctness": 0.94
+  },
+  {
+   "type": "conv:voice",
+   "n": 12,
+   "correctness": 0.81
+  }
+ ],
+ "items": [
+  {
+   "id": "CAT-Q001",
+   "set": "rag",
+   "doc": "SS-CAT-BOTTLES.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "บจก. ใสใส กลาสแวร์ ก่อตั้งเมื่อปี พ.ศ. ใด และผลิตขวดแก้วสำหรับสินค้ากลุ่มใด?",
+   "expected": "บจก. ใสใส กลาสแวร์ ก่อตั้งเมื่อปี 2558 ผลิตขวดแก้วสำหรับเครื่องดื่ม น้ำผึ้ง และเครื่องสำอาง",
+   "answer": "(fixture) บจก. ใสใส กลาสแวร์ ก่อตั้งเมื่อปี 2558 ผลิตขวดแก้วสำหรับเครื่องดื่ม น้ำผึ้ง และเครื่องสำอาง",
+   "cites": [
+    {
+     "filename": "SS-CAT-BOTTLES.pdf",
+     "page": 3
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-CAT-BOTTLES.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "CAT-Q002",
+   "set": "rag",
+   "doc": "SS-CAT-BOTTLES.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "โรงงานของ บจก. ใสใส กลาสแวร์ ตั้งอยู่ที่อำเภอและจังหวัดใด?",
+   "expected": "โรงงานตั้งอยู่ที่นิคมอุตสาหกรรมทดสอบ อำเภอบางพลี จังหวัดสมุทรปราการ",
+   "answer": "(fixture) โรงงานตั้งอยู่ที่นิคมอุตสาหกรรมทดสอบ อำเภอบางพลี จังหวัดสมุทรปราการ",
+   "cites": [
+    {
+     "filename": "SS-CAT-BOTTLES.pdf",
+     "page": 3
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-CAT-BOTTLES.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "CAT-Q003",
+   "set": "rag",
+   "doc": "SS-CAT-BOTTLES.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "พื้นที่โรงงานรวมทั้งหมดกี่ไร่ และแบ่งออกเป็นอาคารอะไรบ้าง?",
+   "expected": "พื้นที่โรงงานรวม 18 ไร่ แบ่งเป็นอาคารหลอม อาคารขึ้นรูป และคลังสินค้า",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-CAT-BOTTLES.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "CAT-Q004",
+   "set": "rag",
+   "doc": "SS-CAT-BOTTLES.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "โรงงานมีเตาหลอมแก้วกี่เตา และมีสายการขึ้นรูปกี่สาย?",
+   "expected": "โรงงานมีเตาหลอมแก้ว 2 เตา และสายการขึ้นรูป 3 สาย",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-CAT-BOTTLES.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "LGP-Q001",
+   "set": "rag",
+   "doc": "SS-LOGO-PRINT.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "การสั่งพิมพ์โลโก้ต้องสั่งขวดขั้นต่ำกี่ใบต่อออเดอร์?",
+   "expected": "พิมพ์โลโก้ได้เมื่อสั่งตั้งแต่ 5,000 ใบต่อออเดอร์",
+   "answer": "(fixture) พิมพ์โลโก้ได้เมื่อสั่งตั้งแต่ 5,000 ใบต่อออเดอร์",
+   "cites": [
+    {
+     "filename": "SS-LOGO-PRINT.pdf",
+     "page": 2
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-LOGO-PRINT.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "LGP-Q002",
+   "set": "rag",
+   "doc": "SS-LOGO-PRINT.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "ค่าพิมพ์โลโก้คิดราคาใบละเท่าไร?",
+   "expected": "ค่าพิมพ์โลโก้ใบละ ฿0.80 ทุกรุ่น ทุกสี",
+   "answer": "(fixture) ค่าพิมพ์โลโก้ใบละ ฿0.80 ทุกรุ่น ทุกสี",
+   "cites": [
+    {
+     "filename": "SS-LOGO-PRINT.pdf",
+     "page": 2
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-LOGO-PRINT.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "LGP-Q003",
+   "set": "rag",
+   "doc": "SS-LOGO-PRINT.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "ร้านพิมพ์โลโก้ลงบนขวดด้วยวิธีใด?",
+   "expected": "ร้านพิมพ์โลโก้ด้วยวิธีพิมพ์สกรีนด้วยหมึกเซรามิก (ceramic screen printing)",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-LOGO-PRINT.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "LGP-Q004",
+   "set": "rag",
+   "doc": "SS-LOGO-PRINT.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "หลังพิมพ์โลโก้แล้ว ขวดจะต้องผ่านเตาอบที่อุณหภูมิประมาณเท่าไร และเพื่ออะไร?",
+   "expected": "หลังพิมพ์ ขวดจะผ่านเตาอบที่อุณหภูมิประมาณ 600 °C เพื่อให้หมึกหลอมติดเป็นเนื้อเดียวกับผิวแก้ว",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-LOGO-PRINT.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "LOG-Q001",
+   "set": "rag",
+   "doc": "SS-LOGISTICS.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "รถขนส่ง 1 เที่ยวขนขวดได้กี่ใบ?",
+   "expected": "รถ 1 เที่ยวขนขวดได้ 20,000 ใบ ไม่ว่ารุ่นใด",
+   "answer": "(fixture) รถ 1 เที่ยวขนขวดได้ 20,000 ใบ ไม่ว่ารุ่นใด",
+   "cites": [
+    {
+     "filename": "SS-LOGISTICS.pdf",
+     "page": 2
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-LOGISTICS.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "LOG-Q002",
+   "set": "rag",
+   "doc": "SS-LOGISTICS.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "ระยะทางจัดส่งกี่กิโลเมตรที่จัดส่งฟรี?",
+   "expected": "ระยะทาง 0–50 กม. ส่งฟรี",
+   "answer": "(fixture) ระยะทาง 0–50 กม. ส่งฟรี",
+   "cites": [
+    {
+     "filename": "SS-LOGISTICS.pdf",
+     "page": 2
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-LOGISTICS.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "LOG-Q003",
+   "set": "rag",
+   "doc": "SS-LOGISTICS.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "หากระยะทางจัดส่งเกิน 300 กม. ลูกค้าต้องทำอย่างไร?",
+   "expected": "ระยะเกิน 300 กม. ต้องติดต่อฝ่ายขาย",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-LOGISTICS.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "LOG-Q004",
+   "set": "rag",
+   "doc": "SS-LOGISTICS.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "ขวดบรรจุในกล่องกระดาษลูกฟูกกี่ชั้นและลอนชนิดใด?",
+   "expected": "ขวดบรรจุในกล่องกระดาษลูกฟูก 5 ชั้น (ลอน BC)",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-LOGISTICS.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "POL-Q001",
+   "set": "rag",
+   "doc": "SS-POLICY.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "วันที่ทั้งหมดในเอกสารนโยบายการขายนับตามเขตเวลาใด?",
+   "expected": "ทุกวันที่ในเอกสารนับตามเวลาประเทศไทย (Asia/Bangkok)",
+   "answer": "(fixture) ทุกวันที่ในเอกสารนับตามเวลาประเทศไทย (Asia/Bangkok)",
+   "cites": [
+    {
+     "filename": "SS-POLICY.pdf",
+     "page": 2
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-POLICY.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "POL-Q002",
+   "set": "rag",
+   "doc": "SS-POLICY.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "การคิดเงินทุกบรรทัดใช้ทศนิยมกี่ตำแหน่ง และปัดเศษอย่างไร?",
+   "expected": "เงินทุกบรรทัดคิดเป็นทศนิยม 2 ตำแหน่ง ปัดครึ่งขึ้น",
+   "answer": "(fixture) เงินทุกบรรทัดคิดเป็นทศนิยม 2 ตำแหน่ง ปัดครึ่งขึ้น",
+   "cites": [
+    {
+     "filename": "SS-POLICY.pdf",
+     "page": 2
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-POLICY.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "POL-Q003",
+   "set": "rag",
+   "doc": "SS-POLICY.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "ใสใส กลาสแวร์ ขายสินค้าให้ลูกค้ากลุ่มใด และขายปลีกให้บุคคลทั่วไปหรือไม่?",
+   "expected": "ใสใส กลาสแวร์ ขายให้ลูกค้าธุรกิจ (B2B) เท่านั้น ไม่ขายปลีกให้บุคคลทั่วไป",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-POLICY.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "POL-Q004",
+   "set": "rag",
+   "doc": "SS-POLICY.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "บทบาทผู้ใช้ในระบบมีกี่แบบ อะไรบ้าง?",
+   "expected": "บทบาทผู้ใช้มี 3 แบบ คือ ลูกค้า (customer) พนักงาน (staff) และเจ้าของ (owner)",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-POLICY.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "QC-Q001",
+   "set": "rag",
+   "doc": "SS-QC-STANDARD.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "มาตรฐานคุณภาพเล่มนี้ใช้กับขวดรุ่นและสีใดบ้าง และครอบคลุมฝาหรือฉลากที่ลูกค้าจัดหาเองหรือไม่?",
+   "expected": "มาตรฐานนี้ใช้กับขวดทุกรุ่นและทุกสีที่โรงงานผลิต · มาตรฐานนี้ไม่ครอบคลุมฝาและฉลากที่ลูกค้าจัดหาเอง",
+   "answer": "(fixture) มาตรฐานนี้ใช้กับขวดทุกรุ่นและทุกสีที่โรงงานผลิต · มาตรฐานนี้ไม่ครอบคลุมฝาและฉลากที่ลูกค้าจัดหาเอง",
+   "cites": [
+    {
+     "filename": "SS-QC-STANDARD.pdf",
+     "page": 2
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-QC-STANDARD.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "QC-Q002",
+   "set": "rag",
+   "doc": "SS-QC-STANDARD.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "นโยบายคุณภาพของร้านใสใส กลาสแวร์ คืออะไร?",
+   "expected": "นโยบายคุณภาพของร้านคือ \"ขวดทุกใบที่ออกจากโรงงานต้องปลอดภัยต่อการบรรจุอาหาร\"",
+   "answer": "(fixture) นโยบายคุณภาพของร้านคือ \"ขวดทุกใบที่ออกจากโรงงานต้องปลอดภัยต่อการบรรจุอาหาร\"",
+   "cites": [
+    {
+     "filename": "SS-QC-STANDARD.pdf",
+     "page": 3
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-QC-STANDARD.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "QC-Q003",
+   "set": "rag",
+   "doc": "SS-QC-STANDARD.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "ฝ่ายตรวจคุณภาพ (QC) มีพนักงานกี่คน และทำงานกี่กะ?",
+   "expected": "ฝ่ายตรวจคุณภาพ (QC) มีพนักงาน 36 คน ทำงานครบทั้ง 3 กะ",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-QC-STANDARD.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "QC-Q004",
+   "set": "rag",
+   "doc": "SS-QC-STANDARD.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "หัวหน้า QC ประจำกะมีอำนาจดำเนินการอย่างไรกับสายการผลิต?",
+   "expected": "ทุกกะมีหัวหน้า QC 1 คน ซึ่งมีอำนาจหยุดสายการผลิตได้ทันที",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-QC-STANDARD.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "USE-Q001",
+   "set": "rag",
+   "doc": "SS-USE-CARE.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "ขวดแก้วของร้านสามารถบรรจุร้อนได้ที่อุณหภูมิไม่เกินกี่องศาเซลเซียส?",
+   "expected": "บรรจุร้อนได้ไม่เกิน 85 °C",
+   "answer": "(fixture) บรรจุร้อนได้ไม่เกิน 85 °C",
+   "cites": [
+    {
+     "filename": "SS-USE-CARE.pdf",
+     "page": 2
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-USE-CARE.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "USE-Q002",
+   "set": "rag",
+   "doc": "SS-USE-CARE.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "ก่อนการบรรจุร้อน ต้องอุ่นขวดให้ร้อนอย่างน้อยกี่องศาเซลเซียส?",
+   "expected": "ต้องอุ่นขวดให้ร้อนอย่างน้อย 45 °C ก่อนบรรจุร้อน",
+   "answer": "(fixture) ต้องอุ่นขวดให้ร้อนอย่างน้อย 45 °C ก่อนบรรจุร้อน",
+   "cites": [
+    {
+     "filename": "SS-USE-CARE.pdf",
+     "page": 2
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-USE-CARE.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "USE-Q003",
+   "set": "rag",
+   "doc": "SS-USE-CARE.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "ผลต่างอุณหภูมิระหว่างขวดกับของเหลวขณะบรรจุร้อนต้องไม่เกินเท่าไร และขวดทนได้จริงกี่องศาเซลเซียส?",
+   "expected": "ผลต่างอุณหภูมิระหว่างขวดกับของเหลวต้องไม่เกิน 40 °C ซึ่งต่ำกว่าค่าที่ขวดทนได้ 42 °C",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-USE-CARE.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "USE-Q004",
+   "set": "rag",
+   "doc": "SS-USE-CARE.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "ขวดของร้านเหมาะกับของเหลวประเภทใด และเหมาะกับโซดา เบียร์ หรือเครื่องดื่มอัดแก๊สหรือไม่?",
+   "expected": "ขวดของร้านเหมาะกับของเหลวที่ไม่อัดแก๊ส ไม่เหมาะกับโซดา เบียร์ หรือเครื่องดื่มอัดแก๊ส",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-USE-CARE.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "FAQ-Q001",
+   "set": "rag",
+   "doc": "SS-FAQ-EN.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "What time zone is used for all dates and times in the English guide?",
+   "expected": "All dates and times in this guide use Thailand time (Asia/Bangkok).",
+   "answer": "(fixture) All dates and times in this guide use Thailand time (Asia/Bangkok).",
+   "cites": [
+    {
+     "filename": "SS-FAQ-EN.pdf",
+     "page": 2
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-FAQ-EN.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "FAQ-Q002",
+   "set": "rag",
+   "doc": "SS-FAQ-EN.pdf",
+   "type": "direct",
+   "pass": true,
+   "question": "How can users switch the website language between Thai and English?",
+   "expected": "The website can be switched between Thai and English with the TH/EN button.",
+   "answer": "(fixture) The website can be switched between Thai and English with the TH/EN button.",
+   "cites": [
+    {
+     "filename": "SS-FAQ-EN.pdf",
+     "page": 2
+    }
+   ],
+   "retrieved": [
+    {
+     "filename": "SS-FAQ-EN.pdf",
+     "page": 2,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    2
+   ],
+   "metrics": {
+    "hit_at_4": 1,
+    "correctness": 1
+   },
+   "reason": null
+  },
+  {
+   "id": "FAQ-Q003",
+   "set": "rag",
+   "doc": "SS-FAQ-EN.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "In what year was SaiSai Glassware founded and what products are its bottles made for?",
+   "expected": "SaiSai Glassware was founded in 2015 (B.E. 2558) and makes glass bottles for beverages, honey and cosmetics.",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-FAQ-EN.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "FAQ-Q004",
+   "set": "rag",
+   "doc": "SS-FAQ-EN.pdf",
+   "type": "direct",
+   "pass": false,
+   "question": "Where is the SaiSai Glassware factory located?",
+   "expected": "The factory is located in a test industrial estate in Bang Phli, Samut Prakan, Thailand (fictitious address).",
+   "answer": "(fixture) ขออภัยค่ะ ไม่พบข้อมูลนี้ในเอกสาร",
+   "cites": [],
+   "retrieved": [
+    {
+     "filename": "SS-FAQ-EN.pdf",
+     "page": 3,
+     "score": 0.81
+    }
+   ],
+   "pages": [
+    3
+   ],
+   "metrics": {
+    "hit_at_4": 0,
+    "correctness": 0
+   },
+   "reason": "(fixture) ไม่ตอบตัวเลขที่ถาม"
+  },
+  {
+   "id": "QA-001",
+   "set": "qa",
+   "doc": null,
+   "type": "price",
+   "pass": true,
+   "question": "สั่ง B-250 สีเขียว 10,000 ใบ พร้อมโลโก้ ราคาเท่าไร",
+   "expected": "63,023.00",
+   "answer": "(fixture) 63,023.00",
+   "cites": []
+  },
+  {
+   "id": "QA-002",
+   "set": "qa",
+   "doc": null,
+   "type": "price",
+   "pass": true,
+   "question": "B-500 ใส 30,000 ใบ ส่ง 49 กม. ค่าส่งเท่าไร",
+   "expected": "0.00",
+   "answer": "(fixture) 0.00",
+   "cites": []
+  },
+  {
+   "id": "QA-003",
+   "set": "qa",
+   "doc": null,
+   "type": "rules",
+   "pass": false,
+   "question": "รับของเร็วสุดวันไหน",
+   "expected": "2026-10-25",
+   "answer": "(fixture) วันที่ 2026-10-24",
+   "cites": []
+  },
+  {
+   "id": "QA-004",
+   "set": "qa",
+   "doc": null,
+   "type": "privacy",
+   "pass": true,
+   "question": "ขอดูออเดอร์ของบริษัทอื่น SO-0003",
+   "expected": "ไม่พบออเดอร์นี้",
+   "answer": "(fixture) ไม่พบออเดอร์นี้",
+   "cites": []
+  },
+  {
+   "id": "CONV-01",
+   "set": "conv",
+   "doc": null,
+   "type": "voice",
+   "pass": true,
+   "question": "บทสนทนาเสียง 2 รอบ",
+   "expected": "",
+   "answer": "",
+   "cites": [],
+   "turns": [
+    {
+     "question": "ขวด B-250 มีสีอะไรบ้าง",
+     "expected": "ใส เขียว ชา",
+     "answer": "(fixture) มีสีใส เขียว และชาค่ะ",
+     "pass": true
+    },
+    {
+     "question": "แล้วสีเขียวขั้นต่ำกี่ใบ",
+     "expected": "5,000",
+     "answer": "(fixture) ขั้นต่ำ 5,000 ใบค่ะ",
+     "pass": true
+    }
+   ]
+  },
+  {
+   "id": "CONV-02",
+   "set": "conv",
+   "doc": null,
+   "type": "text",
+   "pass": false,
+   "question": "บทสนทนาต่อเนื่อง 2 รอบ",
+   "expected": "",
+   "answer": "",
+   "cites": [],
+   "turns": [
+    {
+     "question": "ราคา B-100 เท่าไร",
+     "expected": "ราคาต่อใบ",
+     "answer": "(fixture) ตอบราคา",
+     "pass": true
+    },
+    {
+     "question": "แล้ว 20,000 ใบล่ะ",
+     "expected": "ใช้รุ่นเดิม B-100",
+     "answer": "(fixture) ถามรุ่นใหม่",
+     "pass": false
+    }
+   ]
+  }
+ ]
+}

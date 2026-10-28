@@ -1,0 +1,218 @@
+name: saisai3
+# SaiSai v3 (T04) — mock (ฟรี):  docker compose --profile mock up -d --build   → http://localhost:3600
+# AI จริง: วาง .env.vast (LLM_*) + .env.aibox (STT_URL TTS_URL RERANK_URL AIBOX_API_KEY) ข้างไฟล์นี้ แล้ว docker compose up -d --build
+# scale:   docker compose --profile mock up -d --scale chat-worker=2 --scale stt-worker=2 --scale tts-worker=2
+# พอร์ตที่เปิดออก: web ${WEB_PORT:-3600} · RabbitMQ UI 127.0.0.1:${MQ_UI_PORT:-15672} (ถ้า 15672 ไม่ว่าง ใส่ MQ_UI_PORT=15673 ใน .env)
+# ห้าม bind mount ยกเว้น ./docs/pdf:/app/docs:ro ของ rag-worker
+
+# ค่า AI (LLM / ai-box) ของ worker ที่คุย AI มาจาก env_file (.env.example → .env.vast → .env.aibox · ไฟล์หลังทับไฟล์ก่อน)
+# เพราะ `environment:` จะทับค่าใน env_file — web ไม่เรียก AI ตรง จึงใส่ค่าเริ่มต้นไว้ใน environment ได้
+x-ai-env: &ai-env
+  LLM_BASE_URL: ${LLM_BASE_URL:-http://mock-llm:8000/v1}
+  LLM_MODEL: ${LLM_MODEL:-mock}
+  LLM_API_KEY: ${LLM_API_KEY:-mock}
+  STT_URL: ${STT_URL:-http://mock-llm:8000}
+  TTS_URL: ${TTS_URL:-http://mock-llm:8000}
+  RERANK_URL: ${RERANK_URL:-http://mock-llm:8000}
+  AIBOX_API_KEY: ${AIBOX_API_KEY:-mock}
+
+x-app-env: &app-env
+  MODE: ${MODE:-mock}
+  TZ: Asia/Bangkok
+  DATABASE_URL: ${DATABASE_URL:-postgres://ss:ss@db:5432/saisai}
+  AMQP_URL: ${AMQP_URL:-amqp://guest:guest@rabbitmq:5672}
+  EMBED_URL: ${EMBED_URL:-http://embedder:80}
+  MQ_PREFIX: ${MQ_PREFIX:-}
+  RERANK: ${RERANK:-on}
+  CHAT_PREFETCH: ${CHAT_PREFETCH:-4}
+  STT_PREFETCH: ${STT_PREFETCH:-4}
+  TTS_PREFETCH: ${TTS_PREFETCH:-2}
+  TTS_CACHE: ${TTS_CACHE:-on}
+  EVAL_TOKEN: ${EVAL_TOKEN:-ss-eval}
+  ALLOW_TEST_RESET: ${ALLOW_TEST_RESET:-1}
+
+x-ai-env-files: &ai-env-files
+  - path: .env.example
+    required: true
+  - path: .env.vast
+    required: false
+  - path: .env.aibox
+    required: false
+
+x-worker-health: &worker-health
+  # worker แตะไฟล์ /tmp/healthy ทุก 10 วิ → ไฟล์ต้องใหม่กว่า 1 นาที
+  test: ["CMD-SHELL", "find /tmp/healthy -mmin -1 | grep -q ."]
+  interval: 10s
+  timeout: 5s
+  retries: 6
+  start_period: 30s
+
+x-core-deps: &core-deps
+  db:
+    condition: service_healthy
+  rabbitmq:
+    condition: service_healthy
+
+x-mock-dep: &mock-dep
+  condition: service_healthy
+  required: false  # มีเฉพาะ --profile mock
+
+services:
+  db:
+    build:
+      context: .
+      dockerfile: db/Dockerfile
+    environment:
+      POSTGRES_USER: ss
+      POSTGRES_PASSWORD: ss
+      POSTGRES_DB: saisai
+      TZ: Asia/Bangkok
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ss -d saisai"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+    restart: unless-stopped
+
+  rabbitmq:
+    image: rabbitmq:4-management
+    ports:
+      - "127.0.0.1:${MQ_UI_PORT:-15672}:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 10s
+      retries: 12
+      start_period: 20s
+    restart: unless-stopped
+
+  embedder:
+    image: ghcr.io/huggingface/text-embeddings-inference:cpu-1.9
+    command: ["--model-id", "intfloat/multilingual-e5-small", "--port", "80"]
+    volumes:
+      - hfcache:/data
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:80/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 60
+      start_period: 60s
+    restart: unless-stopped
+
+  mock-llm:
+    profiles: ["mock"]
+    build:
+      context: .
+      dockerfile: mock-llm/Dockerfile
+    environment:
+      PORT: "8000"
+      MOCK_LATENCY_MS: ${MOCK_LATENCY_MS:-800}
+      TTS_CACHE: ${TTS_CACHE:-on}
+    expose:
+      - "8000"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8000/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 10s
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: web/Dockerfile
+    ports:
+      - "${WEB_PORT:-3600}:3000"
+    environment:
+      <<: [*app-env, *ai-env]
+      SESSION_SECRET: ${SESSION_SECRET:-saisai-dev-session-secret}
+      MQ_API: http://rabbitmq:15672  # ในเครือข่าย compose (สคริปต์ฝั่ง host ใช้ MQ_API ของตัวเอง)
+    depends_on:
+      <<: *core-deps
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/health').then(r=>r.json()).then(j=>process.exit(j.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    restart: unless-stopped
+
+  chat-worker:
+    build:
+      context: .
+      dockerfile: workers/chat-worker/Dockerfile
+    environment:
+      <<: *app-env
+      # T24: RRF candidate cache ของ retrieve.mjs เป็นของเสริม ต้องเปิดเอง (on) · ค่าหลักของ load test = off
+      RAG_CANDIDATE_CACHE: ${RAG_CANDIDATE_CACHE:-off}
+      PG_POOL_MAX: ${PG_POOL_MAX:-16}
+    env_file: *ai-env-files
+    depends_on:
+      <<: *core-deps
+      embedder:
+        condition: service_healthy
+      mock-llm: *mock-dep
+    healthcheck: *worker-health
+    restart: unless-stopped
+
+  rag-worker:
+    build:
+      context: .
+      dockerfile: workers/rag-worker/Dockerfile
+    environment:
+      <<: *app-env
+      DOCS_DIR: /app/docs
+      RAG_HOLD_MS: ${RAG_HOLD_MS:-0}  # T21: e2e Q03 ตั้ง 15000 ใน .env เพื่อหยุด worker ระหว่าง processing ได้
+    volumes:
+      - ./docs/pdf:/app/docs:ro
+    depends_on:
+      <<: *core-deps
+      embedder:
+        condition: service_healthy
+    healthcheck: *worker-health
+    restart: unless-stopped
+
+  stt-worker:
+    build:
+      context: .
+      dockerfile: workers/stt-worker/Dockerfile
+    environment:
+      <<: *app-env
+    env_file: *ai-env-files
+    depends_on:
+      <<: *core-deps
+      mock-llm: *mock-dep
+    healthcheck: *worker-health
+    restart: unless-stopped
+
+  tts-worker:
+    build:
+      context: .
+      dockerfile: workers/tts-worker/Dockerfile
+    environment:
+      <<: *app-env
+    env_file: *ai-env-files
+    depends_on:
+      <<: *core-deps
+      mock-llm: *mock-dep
+    healthcheck: *worker-health
+    restart: unless-stopped
+
+  notify-worker:
+    build:
+      context: .
+      dockerfile: workers/notify-worker/Dockerfile
+    environment:
+      <<: *app-env
+    depends_on:
+      <<: *core-deps
+    healthcheck: *worker-health
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  hfcache:

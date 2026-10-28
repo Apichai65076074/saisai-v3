@@ -1,0 +1,10 @@
+{
+  "run_id": 3,
+  "label": "mock-mix",
+  "stages": 8,
+  "max_users_ok": {
+    "mix": 250
+  },
+  "page_errors": [],
+  "verified_at": "2026-10-26T05:29:14.258Z"
+}

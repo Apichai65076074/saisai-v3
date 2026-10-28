@@ -1,0 +1,25 @@
+node_modules/
+.next/
+.env
+.env.vast
+test-results/
+test-results-ai/
+test-results-ai-r2/
+playwright-report/
+__pycache__/
+*.pyc
+.env.*
+!.env.example
+.vast-private/
+*.tsbuildinfo
+# user-provided synthetic voice reference (copied out-of-band into app/ and worktrees; not versioned)
+voices/
+# T23 live controller logs remain local; commit sanitized result snapshots instead.
+RUN/state/T23-20261028-*.log
+RUN/state/T23-controller-20261028-*.log
+e2e/test-results-ai-t23/
+
+# T23 final browser video artifacts remain local
+e2e/test-results-t23-final-display/
+RUN/state/T23-controller-final.log
+RUN/state/T23-controller-final-*.log

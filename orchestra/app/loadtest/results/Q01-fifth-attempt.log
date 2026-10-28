@@ -1,0 +1,38 @@
+npm notice run npx
+npm notice run 'playwright' test tests/Q01.spec.ts
+
+Running 1 test using 1 worker
+
+(node:85846) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/Q01.spec.ts:12:1 › Q01 20 concurrent chat windows finish without errors with two consumers (2.3m)
+
+
+  1) [chromium] › tests/Q01.spec.ts:12:1 › Q01 20 concurrent chat windows finish without errors with two consumers 
+
+    TimeoutError: apiRequestContext.post: Timeout 30000ms exceeded.
+    Call log:
+      - → POST http://localhost:4600/api/auth/login
+        - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - content-type: application/json
+        - content-length: 59
+
+
+       at ../lib/helpers.ts:34
+
+      32 |   const password = PASSWORDS[email];
+      33 |   if (!password) throw new Error(`ไม่รู้รหัสผ่านของ ${email}`);
+    > 34 |   const r = await page.request.post('/api/auth/login', { data: { email, password } });
+         |                                ^
+      35 |   expect(r.status(), `login ${email} ล้ม: ${await r.text()}`).toBe(200);
+      36 |   const j = (await r.json()) as { user: LoginUser };
+      37 |   if (opts.goto) await page.goto(opts.goto);
+        at login (/root/runs/saisai/wt/T20/e2e/lib/helpers.ts:34:32)
+        at /root/runs/saisai/wt/T20/e2e/tests/Q01.spec.ts:39:13
+
+    Error Context: test-results/Q01-Q01-20-concurrent-chat-dd482-t-errors-with-two-consumers-chromium/error-context.md
+
+  1 failed
+    [chromium] › tests/Q01.spec.ts:12:1 › Q01 20 concurrent chat windows finish without errors with two consumers 

@@ -1,0 +1,11 @@
+      filename      | pages | chunks | status 
+--------------------+-------+--------+--------
+ SS-CAT-BOTTLES.pdf |    24 |     59 | ready
+ SS-FAQ-EN.pdf      |    12 |     40 | ready
+ SS-LOGISTICS.pdf   |    14 |     39 | ready
+ SS-LOGO-PRINT.pdf  |    18 |     44 | ready
+ SS-POLICY.pdf      |    16 |     51 | ready
+ SS-QC-STANDARD.pdf |    20 |     52 | ready
+ SS-USE-CARE.pdf    |    18 |     49 | ready
+(7 rows)
+

@@ -1,0 +1,8 @@
+{"BlockIO":"0B / 0B","CPUPerc":"3.33%","Container":"saisai3-web-1","ID":"e85e5c57fefc","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-web-1","NetIO":"550MB / 508MB","PIDs":"11"}
+{"BlockIO":"0B / 0B","CPUPerc":"0.06%","Container":"saisai3-db-1","ID":"31460b622ece","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-db-1","NetIO":"184MB / 389MB","PIDs":"19"}
+{"BlockIO":"0B / 0B","CPUPerc":"1.12%","Container":"saisai3-rabbitmq-1","ID":"36fe7d290c46","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-rabbitmq-1","NetIO":"290MB / 292MB","PIDs":"29"}
+{"BlockIO":"0B / 0B","CPUPerc":"0.22%","Container":"saisai3-chat-worker-1","ID":"23d41f68b859","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-chat-worker-1","NetIO":"55.5MB / 39MB","PIDs":"19"}
+{"BlockIO":"0B / 0B","CPUPerc":"0.29%","Container":"saisai3-chat-worker-2","ID":"6e6e51eea09f","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-chat-worker-2","NetIO":"55.6MB / 38.7MB","PIDs":"19"}
+{"BlockIO":"0B / 0B","CPUPerc":"5.24%","Container":"saisai3-stt-worker-1","ID":"a71ce0f4f6b9","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-stt-worker-1","NetIO":"278MB / 209MB","PIDs":"11"}
+{"BlockIO":"0B / 0B","CPUPerc":"0.00%","Container":"saisai3-tts-worker-1","ID":"1a73e14cea5a","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-tts-worker-1","NetIO":"41.8MB / 161MB","PIDs":"11"}
+{"BlockIO":"0B / 0B","CPUPerc":"0.84%","Container":"saisai3-embedder-1","ID":"e32783ad83b3","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-embedder-1","NetIO":"582MB / 29.4MB","PIDs":"14"}

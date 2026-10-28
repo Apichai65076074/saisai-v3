@@ -1,0 +1,23 @@
+import { test, expect } from '@playwright/test';
+import { reset, hold } from '../lib/helpers';
+import { openChat, askChat } from '../lib/chat';
+import { installFakeMic, saveVoiceMp4 } from '../lib/fake-mic';
+test.beforeEach(async ({ request }) => { await reset(request); });
+test('T01 manual Thai speech pronounces baht and model codes; cached WAV is playable', async ({ page }, info) => {
+  test.setTimeout(300_000);
+  await installFakeMic(page); await page.goto('/'); await openChat(page);
+  await page.evaluate(() => window.__startVoiceCapture());
+  const answer = await askChat(page, 'B-250 สีเขียวใบละเท่าไร'); expect(answer.text).toContain('5.80');
+  await page.getByTestId('tts-play').last().click();
+  await page.waitForFunction(() => window.__voiceMetrics.ended.length > 0);
+  const m = await page.evaluate(() => window.__voiceMetrics);
+  expect(m.plays[0].duration).toBeGreaterThan(1); expect(m.plays[0].lang).toBe('th'); expect(m.maxMouth).toBeGreaterThan(0);
+  const first = await (await page.request.post('/api/tts', { data: { text: 'ใบละ ฿5.80 B-250' } })).json();
+  const repeated = await (await page.request.post('/api/tts', { data: { text: 'ใบละ ฿5.80 B-250' } })).json();
+  expect(repeated.audioId).toBe(first.audioId); expect(first.durationMs).toBeGreaterThan(1000);
+  const wav = await page.request.get(`/api/tts/${first.audioId}`); expect(wav.headers()['content-type']).toBe('audio/wav');
+  expect((await wav.body()).subarray(0, 4).toString()).toBe('RIFF');
+  const range = await page.request.get(`/api/tts/${first.audioId}`, { headers: { Range: 'bytes=0-43' } });
+  expect(range.status()).toBe(206); expect((await range.body()).length).toBe(44);
+  await hold(page); await saveVoiceMp4(page, info);
+});

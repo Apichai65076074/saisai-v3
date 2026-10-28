@@ -1,0 +1,28 @@
+{
+  "instances": {
+    "57914113": {
+      "id": 57914113,
+      "label": "saisai-20261027-llm",
+      "start_epoch": 1793073556.0996857,
+      "burn_hr": 0.5303703703703704,
+      "network_reserve_usd": 0.5,
+      "end_epoch": 1793086654.797803
+    },
+    "57914254": {
+      "id": 57914254,
+      "label": "saisai-20261027-stt",
+      "start_epoch": 1793073649.4770923,
+      "burn_hr": 0.41388888888888886,
+      "network_reserve_usd": 0.5,
+      "end_epoch": 1793086654.797803
+    },
+    "57914350": {
+      "id": 57914350,
+      "label": "saisai-20261027-tts",
+      "start_epoch": 1793073697.6862485,
+      "burn_hr": 0.41388888888888886,
+      "network_reserve_usd": 0.5,
+      "end_epoch": 1793086654.797803
+    }
+  }
+}

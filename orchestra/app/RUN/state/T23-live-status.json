@@ -1,0 +1,111 @@
+{
+  "checked_epoch": 1793169841.7059653,
+  "instances": [
+    {
+      "id": 58056674,
+      "label": "saisai-20261027-llm-1",
+      "status": "running",
+      "hourly_usd": 0.5303703703703704,
+      "health_ok": true,
+      "health": {
+        "status": "ok"
+      },
+      "gpu": "NVIDIA GeForce RTX 5090, 22866 MiB, 32607 MiB, 0 %",
+      "bootstrap_markers": []
+    },
+    {
+      "id": 58057002,
+      "label": "saisai-20261027-llm-2",
+      "status": "running",
+      "hourly_usd": 0.5303703703703704,
+      "health_ok": true,
+      "health": {
+        "status": "ok"
+      },
+      "gpu": "NVIDIA GeForce RTX 5090, 22866 MiB, 32607 MiB, 100 %",
+      "bootstrap_markers": []
+    },
+    {
+      "id": 58057003,
+      "label": "saisai-20261027-stt",
+      "status": "running",
+      "hourly_usd": 0.40055555555555555,
+      "health_ok": true,
+      "health": {
+        "status": "ok",
+        "models": {
+          "stt": "large-v3"
+        },
+        "response_cache": "off",
+        "audio_cache": "off",
+        "tts_execution_concurrency": 1,
+        "stt_execution_concurrency": 1,
+        "stt_decode": {
+          "beam_size": 1,
+          "best_of": 1,
+          "temperature": 0.0,
+          "vad_filter": true,
+          "condition_on_previous_text": false
+        }
+      },
+      "gpu": "NVIDIA GeForce RTX 4090, 6078 MiB, 24564 MiB, 0 %",
+      "bootstrap_markers": []
+    },
+    {
+      "id": 58057382,
+      "label": "saisai-20261027-tts",
+      "status": "running",
+      "hourly_usd": 0.38722222222222225,
+      "health_ok": true,
+      "health": {
+        "status": "ok",
+        "models": {
+          "tts": "VoxCPM2"
+        },
+        "response_cache": "off",
+        "audio_cache": "off",
+        "tts_execution_concurrency": 1,
+        "stt_execution_concurrency": 1,
+        "stt_decode": {
+          "beam_size": 1,
+          "best_of": 1,
+          "temperature": 0.0,
+          "vad_filter": true,
+          "condition_on_previous_text": false
+        }
+      },
+      "gpu": "NVIDIA GeForce RTX 4090, 7320 MiB, 24564 MiB, 0 %",
+      "bootstrap_markers": [
+        "Application startup complete",
+        "Fetching",
+        "Building"
+      ]
+    },
+    {
+      "id": 58058046,
+      "label": "saisai-20261027-rerank",
+      "status": "running",
+      "hourly_usd": 0.40648148148148144,
+      "health_ok": true,
+      "health": {
+        "status": "ok",
+        "models": {
+          "rerank": "bge-reranker-v2-m3"
+        },
+        "response_cache": "off",
+        "audio_cache": "off",
+        "tts_execution_concurrency": 1,
+        "stt_execution_concurrency": 1,
+        "stt_decode": {
+          "beam_size": 1,
+          "best_of": 1,
+          "temperature": 0.0,
+          "vad_filter": true,
+          "condition_on_previous_text": false
+        }
+      },
+      "gpu": "NVIDIA GeForce RTX 4090, 2096 MiB, 24564 MiB, 0 %",
+      "bootstrap_markers": []
+    }
+  ]
+}

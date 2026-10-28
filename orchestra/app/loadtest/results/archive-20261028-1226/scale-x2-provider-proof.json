@@ -1,0 +1,49 @@
+{
+  "health": {
+    "llm-1": {
+      "status": "ok"
+    },
+    "llm-2": {
+      "status": "ok"
+    },
+    "stt": {
+      "status": "ok",
+      "models": {
+        "stt": "large-v3"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1
+    },
+    "tts": {
+      "status": "ok",
+      "models": {
+        "tts": "VoxCPM2"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1
+    },
+    "rerank": {
+      "status": "ok",
+      "models": {
+        "rerank": "bge-reranker-v2-m3"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1
+    }
+  },
+  "speech": [
+    {
+      "bytes": 506924,
+      "cache_control": null,
+      "rtf": null
+    },
+    {
+      "bytes": 491564,
+      "cache_control": null,
+      "rtf": null
+    }
+  ]
+}

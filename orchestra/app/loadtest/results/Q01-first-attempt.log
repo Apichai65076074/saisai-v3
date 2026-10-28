@@ -1,0 +1,31 @@
+npm notice run npx
+npm notice run 'playwright' test tests/Q01.spec.ts
+
+Running 1 test using 1 worker
+
+(node:65567) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/Q01.spec.ts:9:1 › Q01 20 concurrent chat windows finish without errors with two consumers (1.9m)
+
+
+  1) [chromium] › tests/Q01.spec.ts:9:1 › Q01 20 concurrent chat windows finish without errors with two consumers 
+
+    TimeoutError: page.goto: Timeout 60000ms exceeded.
+    Call log:
+      - navigating to "http://localhost:4600/products", waiting until "load"
+
+
+      34 |       });
+      35 |       await login(page, `${accounts[i % accounts.length]}@saisai.test`);
+    > 36 |       await page.goto('/products');
+         |                  ^
+      37 |       await openChat(page);
+      38 |       await typeSlow(page.getByTestId('chat-input'), 'B-500 ขั้นต่ำกี่ใบ');
+      39 |       return page;
+        at /root/runs/saisai/wt/T20/e2e/tests/Q01.spec.ts:36:18
+        at /root/runs/saisai/wt/T20/e2e/tests/Q01.spec.ts:27:19
+
+    Error Context: test-results/Q01-Q01-20-concurrent-chat-dd482-t-errors-with-two-consumers-chromium/error-context.md
+
+  1 failed
+    [chromium] › tests/Q01.spec.ts:9:1 › Q01 20 concurrent chat windows finish without errors with two consumers 

@@ -1,0 +1,169 @@
+{
+  "started_epoch": 1793164412.8522582,
+  "deadline_epoch": 1793171612.8522582,
+  "stage": "measured-x2-x4-skipped",
+  "loads": [
+    "scale-x2"
+  ],
+  "owner_pid": 22734,
+  "owner_start_ticks": "79333",
+  "controller_pid": 219768,
+  "watchdog_pid": 114486,
+  "resumed_from": "r5-controller-114456",
+  "health": {
+    "llm-1": {
+      "status": "ok"
+    },
+    "llm-2": {
+      "status": "ok"
+    },
+    "stt": {
+      "status": "ok",
+      "models": {
+        "stt": "large-v3"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1
+    },
+    "tts": {
+      "status": "ok",
+      "models": {
+        "tts": "VoxCPM2"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1
+    },
+    "rerank": {
+      "status": "ok",
+      "models": {
+        "rerank": "bge-reranker-v2-m3"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1
+    }
+  },
+  "budget_gates": [
+    {
+      "step": "scale-x2",
+      "estimated_usd": 11.13207,
+      "burn_hr": 2.45537,
+      "projected_usd": 11.58222,
+      "run": true
+    },
+    {
+      "step": "scale-x2-voice",
+      "estimated_usd": 11.32964,
+      "burn_hr": 2.45537,
+      "projected_usd": 11.77979,
+      "run": false
+    },
+    {
+      "step": "scale-x2-chat",
+      "estimated_usd": 11.33155,
+      "burn_hr": 2.45537,
+      "projected_usd": 11.7817,
+      "run": false
+    },
+    {
+      "step": "x2-ai-rerun16",
+      "estimated_usd": 11.33349,
+      "burn_hr": 2.45537,
+      "projected_usd": 12.35656,
+      "run": false
+    }
+  ],
+  "cost_after_x2": {
+    "stage": "T23-x2-load-mix",
+    "ids": [
+      58048734,
+      58049004,
+      58049112,
+      58049267,
+      58049699
+    ],
+    "actual_usd": 8.075,
+    "estimated_usd": 11.3355,
+    "burn_hr": 2.45537,
+    "headroom_to_12_usd": 0.6645,
+    "last_checked": 1793165156.9432325,
+    "watchdog_pid": 114486,
+    "other_instances": 0
+  },
+  "x4_offer_quotes": [
+    {
+      "id": 45669379,
+      "machine_id": 145194,
+      "gpu_name": "RTX 5090",
+      "gpu_ram": 32607,
+      "dph_total": 0.5303703703703704,
+      "dph_base": 0.4933333333333333,
+      "storage_cost": 0.3333333333333333,
+      "reliability": 0.9973736,
+      "verification": "verified",
+      "cuda_max_good": 13.0,
+      "inet_down": 592.0,
+      "inet_down_cost": 0.005208333333333333,
+      "inet_up_cost": 0.005208333333333333,
+      "geolocation": "South Korea, KR",
+      "disk_space": 531.0,
+      "cpu_ram": 31193
+    },
+    {
+      "id": 45043235,
+      "machine_id": 143992,
+      "gpu_name": "RTX 5090",
+      "gpu_ram": 32607,
+      "dph_total": 0.5303703703703704,
+      "dph_base": 0.4933333333333333,
+      "storage_cost": 0.3333333333333333,
+      "reliability": 0.9973094,
+      "verification": "verified",
+      "cuda_max_good": 13.0,
+      "inet_down": 446.9,
+      "inet_down_cost": 0.005208333333333333,
+      "inet_up_cost": 0.005208333333333333,
+      "geolocation": "South Korea, KR",
+      "disk_space": 614.0,
+      "cpu_ram": 31193
+    },
+    {
+      "id": 55517253,
+      "machine_id": 11743,
+      "gpu_name": "RTX 4090",
+      "gpu_ram": 24564,
+      "dph_total": 0.40648148148148144,
+      "dph_base": 0.39999999999999997,
+      "storage_cost": 0.09333333333333332,
+      "reliability": 0.9991084,
+      "verification": "verified",
+      "cuda_max_good": 13.2,
+      "inet_down": 527.1,
+      "inet_down_cost": 0.006510416666666667,
+      "inet_up_cost": 0.006510416666666667,
+      "geolocation": "Japan, JP",
+      "disk_space": 3157.0,
+      "cpu_ram": 128722
+    }
+  ],
+  "x4_decision": {
+    "projected_usd_with_cleanup": 15.123678796296296,
+    "status": "SKIPPED",
+    "reason": "cumulative $10 threshold"
+  },
+  "cleanup": {
+    "checked_epoch": 1793165179.1487496,
+    "task_instances": 0,
+    "other_instances": 0,
+    "verified": true
+  },
+  "cleanup_second_check": {
+    "checked_epoch": 1793165180.8956752,
+    "task_instances": 0,
+    "other_instances": 0
+  },
+  "mock_restore_exit": 0,
+  "finished_epoch": 1793165185.5454893
+}

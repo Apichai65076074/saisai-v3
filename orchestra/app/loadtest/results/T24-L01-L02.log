@@ -1,0 +1,8 @@
+
+(node:93001) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/2] [chromium] › tests/L01.spec.ts:11:1 › L01 POST load-run-a.json → load-chart 8 points and load-max-users from the file
+[2/2] [chromium] › tests/L02.spec.ts:13:1 › L02 failing stage is red and the chart has the 200-user target line
+  2 passed (36.1s)

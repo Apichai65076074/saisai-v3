@@ -1,0 +1,194 @@
+ Image saisai3-web Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 878B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.49kB 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+#3 DONE 0.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 211B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [deps 1/4] FROM docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d
+#6 resolve docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d 0.1s done
+#6 DONE 0.1s
+
+#5 [internal] load build context
+#5 transferring context: 1.52MB 0.5s done
+#5 DONE 0.5s
+
+#7 [build 2/9] WORKDIR /app
+#7 CACHED
+
+#8 [deps 2/4] WORKDIR /app/web
+#8 CACHED
+
+#9 [deps 3/4] COPY web/package.json web/package-lock.json ./
+#9 CACHED
+
+#10 [deps 4/4] RUN npm ci --no-audit --no-fund
+#10 CACHED
+
+#11 [build 3/9] COPY --from=deps /app/web/node_modules ./web/node_modules
+#11 CACHED
+
+#12 [build 4/9] COPY web/ ./web/
+#12 DONE 0.5s
+
+#13 [build 5/9] RUN mkdir -p /app/shared
+#13 DONE 0.8s
+
+#14 [build 6/9] COPY shared* /app/shared/
+#14 DONE 0.2s
+
+#15 [build 7/9] COPY loadtest/criteria.json /app/loadtest/criteria.json
+#15 DONE 0.1s
+
+#16 [build 8/9] WORKDIR /app/web
+#16 DONE 0.2s
+
+#17 [build 9/9] RUN mkdir -p public && npm run build
+#17 2.023 
+#17 2.023 > saisai-web@3.0.0 build
+#17 2.023 > next build
+#17 2.023 
+#17 3.990   ▲ Next.js 14.2.35
+#17 3.991   - Experiments (use with caution):
+#17 3.991     · externalDir
+#17 3.991     · outputFileTracingRoot
+#17 3.991 
+#17 4.050    Creating an optimized production build ...
+#17 56.66  ✓ Compiled successfully
+#17 56.66    Skipping linting
+#17 56.66    Checking validity of types ...
+#17 74.77    Collecting page data ...
+#17 77.89    Generating static pages (0/18) ...
+#17 78.30    Generating static pages (4/18) 
+#17 79.05    Generating static pages (8/18) 
+#17 79.16    Generating static pages (13/18) 
+#17 79.65  ✓ Generating static pages (18/18)
+#17 80.97    Finalizing page optimization ...
+#17 80.97    Collecting build traces ...
+#17 116.0 
+#17 116.0 Route (app)                              Size     First Load JS
+#17 116.0 ┌ ƒ /                                    1.19 kB        97.4 kB
+#17 116.0 ├ ƒ /_not-found                          150 B          87.7 kB
+#17 116.0 ├ ƒ /admin/docs                          1.7 kB         89.2 kB
+#17 116.0 ├ ƒ /admin/eval                          652 B          96.9 kB
+#17 116.0 ├ ƒ /admin/load                          5.67 kB        93.2 kB
+#17 116.0 ├ ƒ /api/addresses                       0 B                0 B
+#17 116.0 ├ ƒ /api/admin/docs                      0 B                0 B
+#17 116.0 ├ ƒ /api/admin/eval                      0 B                0 B
+#17 116.0 ├ ƒ /api/admin/load                      0 B                0 B
+#17 116.0 ├ ƒ /api/auth/lang                       0 B                0 B
+#17 116.0 ├ ƒ /api/auth/login                      0 B                0 B
+#17 116.0 ├ ƒ /api/auth/logout                     0 B                0 B
+#17 116.0 ├ ƒ /api/auth/me                         0 B                0 B
+#17 116.0 ├ ƒ /api/chat                            0 B                0 B
+#17 116.0 ├ ƒ /api/chat/history                    0 B                0 B
+#17 116.0 ├ ƒ /api/claims                          0 B                0 B
+#17 116.0 ├ ƒ /api/claims/[no]                     0 B                0 B
+#17 116.0 ├ ƒ /api/claims/[no]/photos/[seq]        0 B                0 B
+#17 116.0 ├ ƒ /api/docs/[filename]                 0 B                0 B
+#17 116.0 ├ ƒ /api/health                          0 B                0 B
+#17 116.0 ├ ƒ /api/orders                          0 B                0 B
+#17 116.0 ├ ƒ /api/orders/[no]                     0 B                0 B
+#17 116.0 ├ ƒ /api/orders/[no]/reorder             0 B                0 B
+#17 116.0 ├ ƒ /api/orders/[no]/reschedule          0 B                0 B
+#17 116.0 ├ ƒ /api/owner/holidays                  0 B                0 B
+#17 116.0 ├ ƒ /api/owner/holidays/[date]           0 B                0 B
+#17 116.0 ├ ƒ /api/products                        0 B                0 B
+#17 116.0 ├ ƒ /api/quote                           0 B                0 B
+#17 116.0 ├ ƒ /api/quotes                          0 B                0 B
+#17 116.0 ├ ƒ /api/quotes/[no]                     0 B                0 B
+#17 116.0 ├ ƒ /api/quotes/[no]/convert             0 B                0 B
+#17 116.0 ├ ƒ /api/samples                         0 B                0 B
+#17 116.0 ├ ƒ /api/staff/claims                    0 B                0 B
+#17 116.0 ├ ƒ /api/staff/claims/[no]               0 B                0 B
+#17 116.0 ├ ƒ /api/staff/claims/[no]/photos/[seq]  0 B                0 B
+#17 116.0 ├ ƒ /api/staff/claims/[no]/status        0 B                0 B
+#17 116.0 ├ ƒ /api/staff/notifications             0 B                0 B
+#17 116.0 ├ ƒ /api/staff/orders                    0 B                0 B
+#17 116.0 ├ ƒ /api/staff/orders/[no]               0 B                0 B
+#17 116.0 ├ ƒ /api/staff/orders/[no]/advance       0 B                0 B
+#17 116.0 ├ ƒ /api/staff/orders/[no]/payment       0 B                0 B
+#17 116.0 ├ ƒ /api/test/clock                      0 B                0 B
+#17 116.0 ├ ƒ /api/test/reset                      0 B                0 B
+#17 116.0 ├ ƒ /api/tts                             0 B                0 B
+#17 116.0 ├ ƒ /api/tts/[audioId]                   0 B                0 B
+#17 116.0 ├ ƒ /api/tts/status                      0 B                0 B
+#17 116.0 ├ ƒ /api/voice                           0 B                0 B
+#17 116.0 ├ ƒ /api/voice/status                    0 B                0 B
+#17 116.0 ├ ƒ /claims                              181 B          96.4 kB
+#17 116.0 ├ ƒ /claims/[no]                         181 B          96.4 kB
+#17 116.0 ├ ƒ /login                               1.1 kB          111 kB
+#17 116.0 ├ ƒ /order                               4.01 kB         122 kB
+#17 116.0 ├ ƒ /orders                              1.09 kB         119 kB
+#17 116.0 ├ ƒ /orders/[no]                         1.74 kB         120 kB
+#17 116.0 ├ ƒ /orders/[no]/claim                   2.07 kB         120 kB
+#17 116.0 ├ ƒ /owner/holidays                      1.29 kB        88.8 kB
+#17 116.0 ├ ƒ /products                            2.29 kB         121 kB
+#17 116.0 ├ ƒ /quotes                              181 B          96.4 kB
+#17 116.0 ├ ƒ /quotes/[no]                         1.97 kB         120 kB
+#17 116.0 ├ ƒ /samples                             2.28 kB         112 kB
+#17 116.0 ├ ƒ /staff/claims                        145 B           120 kB
+#17 116.0 ├ ƒ /staff/claims/[no]                   146 B           120 kB
+#17 116.0 ├ ƒ /staff/orders                        2.02 kB         120 kB
+#17 116.0 └ ƒ /staff/orders/[no]                   2.02 kB         120 kB
+#17 116.0 + First Load JS shared by all            87.5 kB
+#17 116.0   ├ chunks/117-d5568bb59c0c8623.js       31.7 kB
+#17 116.0   ├ chunks/fd9d1056-8b0452e95899cf6d.js  53.6 kB
+#17 116.0   └ other shared chunks (total)          2.14 kB
+#17 116.0 
+#17 116.0 
+#17 116.0 ƒ Middleware                             27.3 kB
+#17 116.0 
+#17 116.0 ƒ  (Dynamic)  server-rendered on demand
+#17 116.0 
+#17 116.1 npm notice
+#17 116.1 npm notice New major version of npm available! 10.9.9 -> 12.2.1
+#17 116.1 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+#17 116.1 npm notice To update run: npm install -g npm@12.2.1
+#17 116.1 npm notice
+#17 DONE 116.4s
+
+#7 [build 2/9] WORKDIR /app
+#7 CACHED
+
+#18 [runner 3/6] COPY --from=build /app/web/.next/standalone ./
+#18 DONE 2.0s
+
+#19 [runner 4/6] COPY --from=build /app/web/.next/static ./web/.next/static
+#19 DONE 0.3s
+
+#20 [runner 5/6] COPY --from=build /app/web/public ./web/public
+#20 DONE 0.2s
+
+#21 [runner 6/6] COPY --from=build /app/shared ./shared
+#21 DONE 0.1s
+
+#22 exporting to image
+#22 exporting layers
+#22 exporting layers 2.8s done
+#22 exporting manifest sha256:64e5579a329ee6c2d5b15b61d987323186dc757e6d16f5f7424cba1dfd739816 0.1s done
+#22 exporting config sha256:284f2eaaff555b85ab5c4d7035b8a519a80e60fa930fa78304c75f0999fd9b90 0.0s done
+#22 exporting attestation manifest sha256:19b22e37bc2ff6456bd5ddf7cba65b66192086c435ceb858dc0b6925a1525279
+#22 exporting attestation manifest sha256:19b22e37bc2ff6456bd5ddf7cba65b66192086c435ceb858dc0b6925a1525279 0.1s done
+#22 exporting manifest list sha256:36b7e99a1bc1f30108c2f7d8da0731e9b2e37a8b4be73070c5f95fa78c063ca2 0.1s done
+#22 naming to docker.io/library/saisai3-web:latest
+#22 naming to docker.io/library/saisai3-web:latest 0.0s done
+#22 unpacking to docker.io/library/saisai3-web:latest
+#22 unpacking to docker.io/library/saisai3-web:latest 1.6s done
+#22 DONE 4.8s
+
+#23 resolving provenance for metadata file
+#23 DONE 0.0s
+ Image saisai3-web Built 

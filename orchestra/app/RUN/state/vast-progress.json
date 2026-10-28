@@ -1,0 +1,11 @@
+{
+  "stage": "T23-handoff",
+  "ids": [],
+  "actual_usd": 5.088,
+  "estimated_usd": 6.41465,
+  "burn_hr": 0,
+  "headroom_to_12_usd": 5.58535,
+  "last_checked": 1793096581.502445,
+  "watchdog_pid": 322880,
+  "other_instances": 0
+}

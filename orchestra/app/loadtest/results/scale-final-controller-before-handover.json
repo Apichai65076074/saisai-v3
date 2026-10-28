@@ -1,0 +1,146 @@
+{
+  "started_epoch": 1793167475.1214259,
+  "deadline_epoch": 1793179175.1214259,
+  "stage": "x2-model-readiness",
+  "loads": [],
+  "owner_pid": 313026,
+  "owner_start_ticks": "976641",
+  "controller_pid": 319838,
+  "watchdog_pid": 319981,
+  "last_provisioned": "rerank",
+  "selected_offers": {
+    "llm-1": {
+      "id": 49025068,
+      "machine_id": 149085,
+      "gpu_name": "RTX 5090",
+      "gpu_ram": 32607,
+      "dph_total": 0.5303703703703704,
+      "dph_base": 0.4933333333333333,
+      "storage_cost": 0.3333333333333333,
+      "reliability": 0.997894,
+      "verification": "verified",
+      "cuda_max_good": 13.0,
+      "inet_down": 510.1,
+      "inet_down_cost": 0.005208333333333333,
+      "inet_up_cost": 0.005208333333333333,
+      "geolocation": "South Korea, KR",
+      "disk_space": 589.0,
+      "cpu_ram": 31193
+    },
+    "stt": {
+      "id": 53366998,
+      "machine_id": 148288,
+      "gpu_name": "RTX 4090",
+      "gpu_ram": 24564,
+      "dph_total": 0.40055555555555555,
+      "dph_base": 0.38666666666666666,
+      "storage_cost": 0.19999999999999998,
+      "reliability": 0.9971661,
+      "verification": "verified",
+      "cuda_max_good": 13.2,
+      "inet_down": 77.8,
+      "inet_down_cost": 0.0026041666666666665,
+      "inet_up_cost": 0.00390625,
+      "geolocation": "Denmark, DK",
+      "disk_space": 1308.0,
+      "cpu_ram": 64108
+    },
+    "llm-2": {
+      "id": 44173704,
+      "machine_id": 143365,
+      "gpu_name": "RTX 5090",
+      "gpu_ram": 32607,
+      "dph_total": 0.5303703703703704,
+      "dph_base": 0.4933333333333333,
+      "storage_cost": 0.3333333333333333,
+      "reliability": 0.9983899,
+      "verification": "verified",
+      "cuda_max_good": 13.0,
+      "inet_down": 615.6,
+      "inet_down_cost": 0.005208333333333333,
+      "inet_up_cost": 0.005208333333333333,
+      "geolocation": "South Korea, KR",
+      "disk_space": 349.0,
+      "cpu_ram": 31193
+    },
+    "tts": {
+      "id": 58001235,
+      "machine_id": 20592,
+      "gpu_name": "RTX 4090",
+      "gpu_ram": 24564,
+      "dph_total": 0.38722222222222225,
+      "dph_base": 0.37333333333333335,
+      "storage_cost": 0.19999999999999998,
+      "reliability": 0.9930902,
+      "verification": "verified",
+      "cuda_max_good": 13.4,
+      "inet_down": 203.3,
+      "inet_down_cost": 0.00390625,
+      "inet_up_cost": 0.00390625,
+      "geolocation": "T\u00fcrkiye, TR",
+      "disk_space": 643.0,
+      "cpu_ram": 31734
+    },
+    "rerank": {
+      "id": 55517253,
+      "machine_id": 11743,
+      "gpu_name": "RTX 4090",
+      "gpu_ram": 24564,
+      "dph_total": 0.40648148148148144,
+      "dph_base": 0.39999999999999997,
+      "storage_cost": 0.09333333333333332,
+      "reliability": 0.9991087,
+      "verification": "verified",
+      "cuda_max_good": 13.2,
+      "inet_down": 527.1,
+      "inet_down_cost": 0.006510416666666667,
+      "inet_up_cost": 0.006510416666666667,
+      "geolocation": "Japan, JP",
+      "disk_space": 3140.6,
+      "cpu_ram": 128722
+    }
+  },
+  "health": {
+    "llm-1": {
+      "status": "ok"
+    },
+    "llm-2": {
+      "status": "ok"
+    },
+    "stt": {
+      "status": "ok",
+      "models": {
+        "stt": "large-v3"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1,
+      "stt_execution_concurrency": 1,
+      "stt_decode": {
+        "beam_size": 1,
+        "best_of": 1,
+        "temperature": 0.0,
+        "vad_filter": true,
+        "condition_on_previous_text": false
+      }
+    },
+    "tts": null,
+    "rerank": {
+      "status": "ok",
+      "models": {
+        "rerank": "bge-reranker-v2-m3"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1,
+      "stt_execution_concurrency": 1,
+      "stt_decode": {
+        "beam_size": 1,
+        "best_of": 1,
+        "temperature": 0.0,
+        "vad_filter": true,
+        "condition_on_previous_text": false
+      }
+    }
+  }
+}

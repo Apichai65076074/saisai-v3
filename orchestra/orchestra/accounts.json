@@ -1,0 +1,13 @@
+{
+  "_help": "ใส่ได้ต่อบัญชี: plan_expires (YYYY-MM-DD), budget_pct (% ของสัปดาห์ที่ให้ LAB ใช้), disabled",
+  "yolo1": {
+    "_note": "เปิดสำรองเมื่อ yolo3 ติด limit (ผู้ใช้อนุญาต 25/10 12:13)"
+  },
+  "yolo2": {
+    "disabled": true
+  },
+  "yolo3": {
+    "budget_pct": 40,
+    "_note": "เปลี่ยนเป็น Pro แล้ว โควตาน้อยลง"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "scale-x2",
+  "status": "BLOCKED",
+  "measured": false,
+  "reason": "Latest T22 baseline N=0; user prohibits scaling with zero baseline. Existing baseline destroyed and verified zero.",
+  "stages": [],
+  "max_users_ok": null
+}

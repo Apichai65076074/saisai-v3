@@ -1,0 +1,100 @@
+npm notice run saisai-web@3.0.0 build
+npm notice run next build
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+  ▲ Next.js 14.2.35
+  - Experiments (use with caution):
+    · externalDir
+    · outputFileTracingRoot
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Skipping linting
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/18) ...
+   Generating static pages (4/18) 
+   Generating static pages (8/18) 
+   Generating static pages (13/18) 
+ ✓ Generating static pages (18/18)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ƒ /                                    1.19 kB        97.4 kB
+├ ƒ /_not-found                          150 B          87.7 kB
+├ ƒ /admin/docs                          1.7 kB         89.2 kB
+├ ƒ /admin/eval                          652 B          96.9 kB
+├ ƒ /admin/load                          4.74 kB        92.3 kB
+├ ƒ /api/addresses                       0 B                0 B
+├ ƒ /api/admin/docs                      0 B                0 B
+├ ƒ /api/admin/eval                      0 B                0 B
+├ ƒ /api/admin/load                      0 B                0 B
+├ ƒ /api/auth/lang                       0 B                0 B
+├ ƒ /api/auth/login                      0 B                0 B
+├ ƒ /api/auth/logout                     0 B                0 B
+├ ƒ /api/auth/me                         0 B                0 B
+├ ƒ /api/chat                            0 B                0 B
+├ ƒ /api/chat/history                    0 B                0 B
+├ ƒ /api/claims                          0 B                0 B
+├ ƒ /api/claims/[no]                     0 B                0 B
+├ ƒ /api/claims/[no]/photos/[seq]        0 B                0 B
+├ ƒ /api/docs/[filename]                 0 B                0 B
+├ ƒ /api/health                          0 B                0 B
+├ ƒ /api/orders                          0 B                0 B
+├ ƒ /api/orders/[no]                     0 B                0 B
+├ ƒ /api/orders/[no]/reorder             0 B                0 B
+├ ƒ /api/orders/[no]/reschedule          0 B                0 B
+├ ƒ /api/owner/holidays                  0 B                0 B
+├ ƒ /api/owner/holidays/[date]           0 B                0 B
+├ ƒ /api/products                        0 B                0 B
+├ ƒ /api/quote                           0 B                0 B
+├ ƒ /api/quotes                          0 B                0 B
+├ ƒ /api/quotes/[no]                     0 B                0 B
+├ ƒ /api/quotes/[no]/convert             0 B                0 B
+├ ƒ /api/samples                         0 B                0 B
+├ ƒ /api/staff/claims                    0 B                0 B
+├ ƒ /api/staff/claims/[no]               0 B                0 B
+├ ƒ /api/staff/claims/[no]/photos/[seq]  0 B                0 B
+├ ƒ /api/staff/claims/[no]/status        0 B                0 B
+├ ƒ /api/staff/notifications             0 B                0 B
+├ ƒ /api/staff/orders                    0 B                0 B
+├ ƒ /api/staff/orders/[no]               0 B                0 B
+├ ƒ /api/staff/orders/[no]/advance       0 B                0 B
+├ ƒ /api/staff/orders/[no]/payment       0 B                0 B
+├ ƒ /api/test/clock                      0 B                0 B
+├ ƒ /api/test/reset                      0 B                0 B
+├ ƒ /api/tts                             0 B                0 B
+├ ƒ /api/tts/[audioId]                   0 B                0 B
+├ ƒ /api/tts/status                      0 B                0 B
+├ ƒ /api/voice                           0 B                0 B
+├ ƒ /api/voice/status                    0 B                0 B
+├ ƒ /claims                              181 B          96.4 kB
+├ ƒ /claims/[no]                         181 B          96.4 kB
+├ ƒ /login                               1.1 kB          111 kB
+├ ƒ /order                               4.01 kB         122 kB
+├ ƒ /orders                              1.09 kB         119 kB
+├ ƒ /orders/[no]                         1.74 kB         120 kB
+├ ƒ /orders/[no]/claim                   2.07 kB         120 kB
+├ ƒ /owner/holidays                      1.29 kB        88.8 kB
+├ ƒ /products                            2.29 kB         121 kB
+├ ƒ /quotes                              181 B          96.4 kB
+├ ƒ /quotes/[no]                         1.97 kB         120 kB
+├ ƒ /samples                             2.27 kB         112 kB
+├ ƒ /staff/claims                        145 B           120 kB
+├ ƒ /staff/claims/[no]                   145 B           120 kB
+├ ƒ /staff/orders                        2.02 kB         120 kB
+└ ƒ /staff/orders/[no]                   2.02 kB         120 kB
++ First Load JS shared by all            87.5 kB
+  ├ chunks/117-d5568bb59c0c8623.js       31.7 kB
+  ├ chunks/fd9d1056-8b0452e95899cf6d.js  53.6 kB
+  └ other shared chunks (total)          2.14 kB
+
+
+ƒ Middleware                             27.3 kB
+
+ƒ  (Dynamic)  server-rendered on demand
+

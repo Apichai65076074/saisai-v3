@@ -1,0 +1,192 @@
+{
+  "started_epoch": 1793171301.381565,
+  "deadline_epoch": 1793179500.0,
+  "stage": "x2-load-voice",
+  "loads": [
+    "scale-x2-stt",
+    "scale-x2-tts",
+    "scale-x2-voice"
+  ],
+  "owner_pid": 415804,
+  "owner_start_ticks": "1277372",
+  "controller_pid": 451381,
+  "watchdog_pid": 416465,
+  "resumed_from": "416438",
+  "selected_offers": {
+    "llm-1": {
+      "id": 44173825,
+      "machine_id": 143422,
+      "gpu_name": "RTX 5090",
+      "gpu_ram": 32607,
+      "dph_total": 0.5303703703703704,
+      "dph_base": 0.4933333333333333,
+      "storage_cost": 0.3333333333333333,
+      "reliability": 0.9984359,
+      "verification": "verified",
+      "cuda_max_good": 13.0,
+      "inet_down": 562.9,
+      "inet_down_cost": 0.005208333333333333,
+      "inet_up_cost": 0.005208333333333333,
+      "geolocation": "South Korea, KR",
+      "disk_space": 636.0,
+      "cpu_ram": 31193
+    },
+    "llm-2": {
+      "id": 52190785,
+      "machine_id": 145050,
+      "gpu_name": "RTX 5090",
+      "gpu_ram": 32607,
+      "dph_total": 0.5303703703703704,
+      "dph_base": 0.4933333333333333,
+      "storage_cost": 0.3333333333333333,
+      "reliability": 0.9983785,
+      "verification": "verified",
+      "cuda_max_good": 13.0,
+      "inet_down": 439.3,
+      "inet_down_cost": 0.005208333333333333,
+      "inet_up_cost": 0.005208333333333333,
+      "geolocation": "South Korea, KR",
+      "disk_space": 536.0,
+      "cpu_ram": 31193
+    },
+    "stt": {
+      "id": 38460295,
+      "machine_id": 16299,
+      "gpu_name": "RTX 4090",
+      "gpu_ram": 24564,
+      "dph_total": 0.41388888888888886,
+      "dph_base": 0.39999999999999997,
+      "storage_cost": 0.19999999999999998,
+      "reliability": 0.9983061,
+      "verification": "verified",
+      "cuda_max_good": 12.7,
+      "inet_down": 13575.7,
+      "inet_down_cost": 0.0026041666666666665,
+      "inet_up_cost": 0.00390625,
+      "geolocation": "Ireland, IE",
+      "disk_space": 150.4,
+      "cpu_ram": 103136
+    },
+    "tts": {
+      "id": 58001235,
+      "machine_id": 20592,
+      "gpu_name": "RTX 4090",
+      "gpu_ram": 24564,
+      "dph_total": 0.38722222222222225,
+      "dph_base": 0.37333333333333335,
+      "storage_cost": 0.19999999999999998,
+      "reliability": 0.9931067,
+      "verification": "verified",
+      "cuda_max_good": 13.4,
+      "inet_down": 203.3,
+      "inet_down_cost": 0.00390625,
+      "inet_up_cost": 0.00390625,
+      "geolocation": "T\u00fcrkiye, TR",
+      "disk_space": 635.0,
+      "cpu_ram": 31734
+    },
+    "rerank": {
+      "id": 53929960,
+      "machine_id": 35777,
+      "gpu_name": "RTX 4090",
+      "gpu_ram": 24564,
+      "dph_total": 0.41255555555555556,
+      "dph_base": 0.39866666666666667,
+      "storage_cost": 0.19999999999999998,
+      "reliability": 0.9964135,
+      "verification": "verified",
+      "cuda_max_good": 13.2,
+      "inet_down": 478.3,
+      "inet_down_cost": 0.0026041666666666665,
+      "inet_up_cost": 0.00390625,
+      "geolocation": "Thailand, TH",
+      "disk_space": 1403.0,
+      "cpu_ram": 48156
+    }
+  },
+  "health": {
+    "llm-1": {
+      "status": "ok"
+    },
+    "llm-2": {
+      "status": "ok"
+    },
+    "stt": {
+      "status": "ok",
+      "models": {
+        "stt": "large-v3"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1,
+      "stt_execution_concurrency": 1,
+      "stt_decode": {
+        "beam_size": 1,
+        "best_of": 1,
+        "temperature": 0.0,
+        "vad_filter": true,
+        "condition_on_previous_text": false
+      }
+    },
+    "tts": {
+      "status": "ok",
+      "models": {
+        "tts": "VoxCPM2"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1,
+      "stt_execution_concurrency": 1,
+      "stt_decode": {
+        "beam_size": 1,
+        "best_of": 1,
+        "temperature": 0.0,
+        "vad_filter": true,
+        "condition_on_previous_text": false
+      }
+    },
+    "rerank": {
+      "status": "ok",
+      "models": {
+        "rerank": "bge-reranker-v2-m3"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1,
+      "stt_execution_concurrency": 1,
+      "stt_decode": {
+        "beam_size": 1,
+        "best_of": 1,
+        "temperature": 0.0,
+        "vad_filter": true,
+        "condition_on_previous_text": false
+      }
+    }
+  },
+  "budget_gates": [
+    {
+      "step": "scale-x2-stt",
+      "actual_usd": 10.676,
+      "estimated_usd": 16.27749,
+      "burn_hr": 2.27441,
+      "projected_usd": 11.39623,
+      "run": true
+    },
+    {
+      "step": "scale-x2-tts",
+      "actual_usd": 11.601,
+      "estimated_usd": 17.59559,
+      "burn_hr": 2.37756,
+      "projected_usd": 12.03689,
+      "run": true
+    },
+    {
+      "step": "scale-x2-voice",
+      "actual_usd": 11.785,
+      "estimated_usd": 17.77031,
+      "burn_hr": 2.37756,
+      "projected_usd": 12.22089,
+      "run": true
+    }
+  ]
+}

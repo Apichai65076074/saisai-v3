@@ -1,0 +1,12 @@
+npm notice run saisai-web@3.0.0 test
+npm notice run vitest run --maxWorkers=2 --minWorkers=1 tests/unit/tts-delivery.test.ts
+
+ RUN  v2.1.9 /root/runs/saisai/wt/T22/web
+
+ ✓ tests/unit/tts-delivery.test.ts (3 tests) 145ms
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  10:09:56
+   Duration  2.12s (transform 565ms, setup 0ms, collect 259ms, tests 145ms, environment 1ms, prepare 440ms)
+

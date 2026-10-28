@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-10-27T16:08:35.051Z",
+  "health": {
+    "ok": true,
+    "db": true,
+    "mode": "mock"
+  },
+  "cards": [
+    {
+      "scale": "scale-base",
+      "value": "0",
+      "text": "scale-base\n\nรองรับพร้อมกันได้ 0 คน\n\ngpu-mix-scale-base-nocache-r2\n\nอัตราขยาย: ยังประเมินไม่ได้"
+    },
+    {
+      "scale": "scale-x2",
+      "value": "",
+      "text": "scale-x2\n\nยังไม่ได้วัด\n\nไม่มีผล AI ที่ตรงเงื่อนไข\n\nอัตราขยาย: ยังประเมินไม่ได้"
+    },
+    {
+      "scale": "scale-x4",
+      "value": "",
+      "text": "scale-x4\n\nยังไม่ได้วัด\n\nไม่มีผล AI ที่ตรงเงื่อนไข\n\nอัตราขยาย: ยังประเมินไม่ได้"
+    }
+  ],
+  "scale_p95_lines": 1
+}

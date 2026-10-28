@@ -1,0 +1,2478 @@
+{
+ "doc": "SS-FAQ-EN",
+ "file": "SS-FAQ-EN.pdf",
+ "lang": "en",
+ "title": "English Catalog and FAQ",
+ "subtitle": "Products, MOQ, logo printing, lead time, samples, claims and export documents",
+ "version": "Test edition 1.0 · October 2026",
+ "pages_planned": 12,
+ "facts": [
+  {
+   "id": "FAQ-001",
+   "type": "text",
+   "topic": "",
+   "statement": "All dates and times in this guide use Thailand time (Asia/Bangkok).",
+   "evidence": [
+    "Asia/Bangkok"
+   ],
+   "source": "rules.ts:bangkokDate"
+  },
+  {
+   "id": "FAQ-002",
+   "type": "text",
+   "topic": "",
+   "statement": "The Thai-language documents (SS-POLICY, SS-CAT-BOTTLES and others) contain the full details; this guide is a summary.",
+   "evidence": [
+    "SS-POLICY"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-003",
+   "type": "text",
+   "topic": "",
+   "statement": "The website can be switched between Thai and English with the TH/EN button.",
+   "evidence": [
+    "TH/EN"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-004",
+   "type": "text",
+   "topic": "1. Company overview",
+   "statement": "SaiSai Glassware was founded in 2015 (B.E. 2558) and makes glass bottles for beverages, honey and cosmetics.",
+   "evidence": [
+    "2015"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-005",
+   "type": "text",
+   "topic": "1. Company overview",
+   "statement": "The factory is located in a test industrial estate in Bang Phli, Samut Prakan, Thailand (fictitious address).",
+   "evidence": [
+    "Bang Phli"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-006",
+   "type": "text",
+   "topic": "1. Company overview",
+   "statement": "Total production capacity is about 120,000 bottles per day on 3 forming lines.",
+   "evidence": [
+    "120,000 bottles per day"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-007",
+   "type": "text",
+   "topic": "1. Company overview",
+   "statement": "The factory is certified to ISO 9001 (since 2018) and GMP for food packaging (since 2020).",
+   "evidence": [
+    "ISO 9001",
+    "GMP"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-008",
+   "type": "text",
+   "topic": "1. Company overview",
+   "statement": "SaiSai sells to business customers (B2B) only; one company account can have several users.",
+   "evidence": [
+    "B2B"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-009",
+   "type": "text",
+   "topic": "1. Company overview",
+   "statement": "Each user can only see orders, claims and quotations of their own company.",
+   "evidence": [
+    "their own company"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-010",
+   "type": "text",
+   "topic": "1. Company overview",
+   "statement": "All bottles are soda-lime glass (Type III), lead-free and 100% recyclable.",
+   "evidence": [
+    "Type III",
+    "100% recyclable"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-011",
+   "type": "text",
+   "topic": "1. Company overview",
+   "statement": "The glass contains about 30% recycled cullet.",
+   "evidence": [
+    "30% recycled cullet"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-012",
+   "type": "text",
+   "topic": "1. Company overview",
+   "statement": "Health drinks and juices: B-250 and B-500 in clear or amber.",
+   "evidence": [
+    "Health drinks and juices"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-013",
+   "type": "text",
+   "topic": "1. Company overview",
+   "statement": "Energy drinks and health shots: B-100 and B-150 in amber.",
+   "evidence": [
+    "Energy drinks"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-014",
+   "type": "text",
+   "topic": "1. Company overview",
+   "statement": "Honey: B-250 amber is the most recommended bottle; B-500 amber for family size.",
+   "evidence": [
+    "B-250 amber is the most recommended"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-015",
+   "type": "text",
+   "topic": "1. Company overview",
+   "statement": "Cosmetics (serum, toner, essential oils): B-100 and B-150.",
+   "evidence": [
+    "Cosmetics"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-016",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "Product P01 is the B-100 clear bottle (100 ml, slug b100-clear).",
+   "evidence": [
+    "P01",
+    "b100-clear"
+   ],
+   "source": "02-seed.sql"
+  },
+  {
+   "id": "FAQ-017",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "Product P02 is the B-100 amber bottle (100 ml, slug b100-amber).",
+   "evidence": [
+    "P02",
+    "b100-amber"
+   ],
+   "source": "02-seed.sql"
+  },
+  {
+   "id": "FAQ-018",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "Product P03 is the B-150 clear bottle (150 ml, slug b150-clear).",
+   "evidence": [
+    "P03",
+    "b150-clear"
+   ],
+   "source": "02-seed.sql"
+  },
+  {
+   "id": "FAQ-019",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "Product P04 is the B-150 amber bottle (150 ml, slug b150-amber).",
+   "evidence": [
+    "P04",
+    "b150-amber"
+   ],
+   "source": "02-seed.sql"
+  },
+  {
+   "id": "FAQ-020",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "Product P05 is the B-250 clear bottle (250 ml, slug b250-clear).",
+   "evidence": [
+    "P05",
+    "b250-clear"
+   ],
+   "source": "02-seed.sql"
+  },
+  {
+   "id": "FAQ-021",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "Product P06 is the B-250 amber bottle (250 ml, slug b250-amber).",
+   "evidence": [
+    "P06",
+    "b250-amber"
+   ],
+   "source": "02-seed.sql"
+  },
+  {
+   "id": "FAQ-022",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "Product P07 is the B-250 green bottle (250 ml, slug b250-green).",
+   "evidence": [
+    "P07",
+    "b250-green"
+   ],
+   "source": "02-seed.sql"
+  },
+  {
+   "id": "FAQ-023",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "Product P08 is the B-500 clear bottle (500 ml, slug b500-clear).",
+   "evidence": [
+    "P08",
+    "b500-clear"
+   ],
+   "source": "02-seed.sql"
+  },
+  {
+   "id": "FAQ-024",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "Product P09 is the B-500 amber bottle (500 ml, slug b500-amber).",
+   "evidence": [
+    "P09",
+    "b500-amber"
+   ],
+   "source": "02-seed.sql"
+  },
+  {
+   "id": "FAQ-025",
+   "type": "footnote",
+   "topic": "2. Products",
+   "statement": "Green glass is available for the B-250 only (footnote ¹ of Table 2.2).",
+   "evidence": [
+    "¹ Only the B-250 is available in green."
+   ],
+   "source": "rules.ts:MODELS.colors"
+  },
+  {
+   "id": "FAQ-026",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "Amber glass is available for all 4 models.",
+   "evidence": [
+    "amber",
+    "yes"
+   ],
+   "source": "rules.ts:MODELS.colors"
+  },
+  {
+   "id": "FAQ-027",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "The B-100 is 98 mm tall and 45 mm in diameter.",
+   "evidence": [
+    "B-100",
+    "98",
+    "45"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-028",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "The B-100 weighs 95 g (empty) and has a 28 mm neck.",
+   "evidence": [
+    "B-100",
+    "95"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-029",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "The B-150 is 118 mm tall and 52 mm in diameter.",
+   "evidence": [
+    "B-150",
+    "118",
+    "52"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-030",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "The B-150 weighs 130 g (empty) and has a 28 mm neck.",
+   "evidence": [
+    "B-150",
+    "130"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-031",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "The B-250 is 150 mm tall and 60 mm in diameter.",
+   "evidence": [
+    "B-250",
+    "150",
+    "60"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-032",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "The B-250 weighs 190 g (empty) and has a 38 mm neck.",
+   "evidence": [
+    "B-250",
+    "190"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-033",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "The B-500 is 205 mm tall and 75 mm in diameter.",
+   "evidence": [
+    "B-500",
+    "205",
+    "75"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-034",
+   "type": "table2",
+   "topic": "2. Products",
+   "statement": "The B-500 weighs 320 g (empty) and has a 43 mm neck.",
+   "evidence": [
+    "B-500",
+    "320"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-035",
+   "type": "text",
+   "topic": "2. Products",
+   "statement": "The B-500 uses a 43 mm lug finish for metal twist caps (1/4 turn).",
+   "evidence": [
+    "1/4 turn"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-036",
+   "type": "text",
+   "topic": "2. Products",
+   "statement": "The B-100 and B-150 share the same 28 mm neck, so they can use the same caps.",
+   "evidence": [
+    "same caps"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-037",
+   "type": "text",
+   "topic": "2. Products",
+   "statement": "SaiSai does not sell caps; customers source caps that match the neck finish.",
+   "evidence": [
+    "does not sell caps"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-038",
+   "type": "text",
+   "topic": "2. Products",
+   "statement": "Amber glass blocks more than 90% of UV light between 300 and 400 nm.",
+   "evidence": [
+    "more than 90%"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-039",
+   "type": "text",
+   "topic": "2. Products",
+   "statement": "All bottles withstand a thermal shock of at least 42 °C.",
+   "evidence": [
+    "42 °C"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-040",
+   "type": "text",
+   "topic": "2. Products",
+   "statement": "Hot filling is allowed up to 85 °C if bottles are pre-heated to at least 45 °C.",
+   "evidence": [
+    "85 °C",
+    "45 °C"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-041",
+   "type": "table2",
+   "topic": "3. Ordering and MOQ",
+   "statement": "The minimum order quantity (MOQ) for the B-100 is 2,400 bottles.",
+   "evidence": [
+    "B-100",
+    "2,400"
+   ],
+   "source": "rules.ts:MODELS.minQty"
+  },
+  {
+   "id": "FAQ-042",
+   "type": "table2",
+   "topic": "3. Ordering and MOQ",
+   "statement": "The minimum order quantity (MOQ) for the B-150 is 1,800 bottles.",
+   "evidence": [
+    "B-150",
+    "1,800"
+   ],
+   "source": "rules.ts:MODELS.minQty"
+  },
+  {
+   "id": "FAQ-043",
+   "type": "table2",
+   "topic": "3. Ordering and MOQ",
+   "statement": "The minimum order quantity (MOQ) for the B-250 is 1,200 bottles.",
+   "evidence": [
+    "B-250",
+    "1,200"
+   ],
+   "source": "rules.ts:MODELS.minQty"
+  },
+  {
+   "id": "FAQ-044",
+   "type": "table2",
+   "topic": "3. Ordering and MOQ",
+   "statement": "The minimum order quantity (MOQ) for the B-500 is 800 bottles.",
+   "evidence": [
+    "B-500",
+    "800"
+   ],
+   "source": "rules.ts:MODELS.minQty"
+  },
+  {
+   "id": "FAQ-045",
+   "type": "text",
+   "topic": "3. Ordering and MOQ",
+   "statement": "Quantities must be in steps of 100 bottles.",
+   "evidence": [
+    "steps of 100"
+   ],
+   "source": "rules.ts:QTY_STEP"
+  },
+  {
+   "id": "FAQ-046",
+   "type": "text",
+   "topic": "3. Ordering and MOQ",
+   "statement": "The maximum is 200,000 bottles per order; larger orders must be arranged with sales.",
+   "evidence": [
+    "200,000"
+   ],
+   "source": "rules.ts:QTY_MAX"
+  },
+  {
+   "id": "FAQ-047",
+   "type": "text",
+   "topic": "3. Ordering and MOQ",
+   "statement": "An identical order from the same company within 10 minutes is treated as a duplicate.",
+   "evidence": [
+    "10 minutes"
+   ],
+   "source": "rules.ts:DUPLICATE_WINDOW_MINUTES"
+  },
+  {
+   "id": "FAQ-048",
+   "type": "text",
+   "topic": "3. Ordering and MOQ",
+   "statement": "Step 1 Order received",
+   "evidence": [
+    "Order received"
+   ],
+   "source": "rules.ts:ORDER_STEPS"
+  },
+  {
+   "id": "FAQ-049",
+   "type": "text",
+   "topic": "3. Ordering and MOQ",
+   "statement": "Step 2 Spec confirmation (logo artwork is approved here)",
+   "evidence": [
+    "Spec confirmation"
+   ],
+   "source": "rules.ts:ORDER_STEPS"
+  },
+  {
+   "id": "FAQ-050",
+   "type": "text",
+   "topic": "3. Ordering and MOQ",
+   "statement": "Step 3 In production (prepaid orders must be paid before this step)",
+   "evidence": [
+    "In production"
+   ],
+   "source": "rules.ts:checkAdvance"
+  },
+  {
+   "id": "FAQ-051",
+   "type": "text",
+   "topic": "3. Ordering and MOQ",
+   "statement": "Step 4 Quality inspection (AQL sampling)",
+   "evidence": [
+    "Quality inspection"
+   ],
+   "source": "rules.ts:ORDER_STEPS"
+  },
+  {
+   "id": "FAQ-052",
+   "type": "text",
+   "topic": "3. Ordering and MOQ",
+   "statement": "Step 5 Ready to ship",
+   "evidence": [
+    "Ready to ship"
+   ],
+   "source": "rules.ts:ORDER_STEPS"
+  },
+  {
+   "id": "FAQ-053",
+   "type": "text",
+   "topic": "3. Ordering and MOQ",
+   "statement": "Step 6 Shipped (the 7-day claim period starts)",
+   "evidence": [
+    "Shipped"
+   ],
+   "source": "rules.ts:STATUS_SHIPPED"
+  },
+  {
+   "id": "FAQ-054",
+   "type": "text",
+   "topic": "3. Ordering and MOQ",
+   "statement": "An order moves forward one step at a time and cannot skip steps.",
+   "evidence": [
+    "one step at a time"
+   ],
+   "source": "rules.ts:checkAdvance"
+  },
+  {
+   "id": "FAQ-055",
+   "type": "text",
+   "topic": "4. Logo printing",
+   "statement": "Logos are printed by ceramic screen printing and fired at about 600 °C, so the print becomes part of the glass.",
+   "evidence": [
+    "ceramic screen printing",
+    "600 °C"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-056",
+   "type": "text",
+   "topic": "4. Logo printing",
+   "statement": "Logo printing requires at least 5,000 bottles per order.",
+   "evidence": [
+    "5,000"
+   ],
+   "source": "rules.ts:LOGO_MIN_QTY"
+  },
+  {
+   "id": "FAQ-057",
+   "type": "text",
+   "topic": "4. Logo printing",
+   "statement": "The logo printing fee is THB 0.80 per bottle for every model and colour.",
+   "evidence": [
+    "THB 0.80"
+   ],
+   "source": "rules.ts:LOGO_UNIT_PRICE"
+  },
+  {
+   "id": "FAQ-058",
+   "type": "text",
+   "topic": "4. Logo printing",
+   "statement": "The flat fee covers up to 2 positions (front and back) with up to 2 colours per position.",
+   "evidence": [
+    "up to 2 positions"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-059",
+   "type": "text",
+   "topic": "4. Logo printing",
+   "statement": "Quantity discounts apply to the bottle amount only, not to logo printing or delivery.",
+   "evidence": [
+    "not to logo printing"
+   ],
+   "source": "rules.ts:priceLines"
+  },
+  {
+   "id": "FAQ-060",
+   "type": "text",
+   "topic": "4. Logo printing",
+   "statement": "Accepted artwork files are AI (CS6 or later), vector PDF, SVG and EPS; JPG and PNG are reference only.",
+   "evidence": [
+    "AI (CS6 or later)",
+    "reference only"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-061",
+   "type": "text",
+   "topic": "4. Logo printing",
+   "statement": "Text must be converted to outlines and artwork must be at 1:1 scale.",
+   "evidence": [
+    "outlines"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-062",
+   "type": "text",
+   "topic": "4. Logo printing",
+   "statement": "The minimum line width is 0.3 mm and the minimum text height is 1.5 mm.",
+   "evidence": [
+    "0.3 mm",
+    "1.5 mm"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-063",
+   "type": "text",
+   "topic": "4. Logo printing",
+   "statement": "Artwork is approved at step 2 (Spec confirmation); production cannot start before approval.",
+   "evidence": [
+    "step 2 (Spec confirmation)"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-064",
+   "type": "text",
+   "topic": "4. Logo printing",
+   "statement": "A digital proof is sent within 2 working days; 2 revisions are free.",
+   "evidence": [
+    "2 revisions are free"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-065",
+   "type": "text",
+   "topic": "4. Logo printing",
+   "statement": "8 standard ceramic ink colours are available; gold and metallic inks are not offered.",
+   "evidence": [
+    "8 standard"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-066",
+   "type": "table2",
+   "topic": "4. Logo printing",
+   "statement": "The maximum front print area of the B-100 is 40 × 30 mm.",
+   "evidence": [
+    "B-100",
+    "40 × 30"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-067",
+   "type": "table2",
+   "topic": "4. Logo printing",
+   "statement": "The maximum front print area of the B-150 is 45 × 40 mm.",
+   "evidence": [
+    "B-150",
+    "45 × 40"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-068",
+   "type": "table2",
+   "topic": "4. Logo printing",
+   "statement": "The maximum front print area of the B-250 is 60 × 55 mm.",
+   "evidence": [
+    "B-250",
+    "60 × 55"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-069",
+   "type": "table2",
+   "topic": "4. Logo printing",
+   "statement": "The maximum front print area of the B-500 is 80 × 90 mm.",
+   "evidence": [
+    "B-500",
+    "80 × 90"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-070",
+   "type": "text",
+   "topic": "5. Lead time and delivery",
+   "statement": "The lead time is 14 days: the pickup date must be at least today + 14 days.",
+   "evidence": [
+    "14 days"
+   ],
+   "source": "rules.ts:PICKUP_LEAD_DAYS"
+  },
+  {
+   "id": "FAQ-071",
+   "type": "text",
+   "topic": "5. Lead time and delivery",
+   "statement": "The earliest pickup date skips factory holidays.",
+   "evidence": [
+    "skips factory holidays"
+   ],
+   "source": "rules.ts:earliestPickupDate"
+  },
+  {
+   "id": "FAQ-072",
+   "type": "text",
+   "topic": "5. Lead time and delivery",
+   "statement": "Logo printing does not extend the 14-day lead time if artwork is approved by day 3.",
+   "evidence": [
+    "by day 3"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-073",
+   "type": "text",
+   "topic": "5. Lead time and delivery",
+   "statement": "Customers can change the pickup date themselves only while the order is at step 1 or 2.",
+   "evidence": [
+    "step 1 or 2"
+   ],
+   "source": "rules.ts:RESCHEDULE_MAX_STATUS"
+  },
+  {
+   "id": "FAQ-074",
+   "type": "table2",
+   "topic": "5. Lead time and delivery",
+   "statement": "23 Oct 2026 (Chulalongkorn Day) is a factory holiday and cannot be chosen as a pickup date.",
+   "evidence": [
+    "23 Oct 2026",
+    "Chulalongkorn Day"
+   ],
+   "source": "04-factory-holiday.sql"
+  },
+  {
+   "id": "FAQ-075",
+   "type": "table2",
+   "topic": "5. Lead time and delivery",
+   "statement": "5 Dec 2026 (National Father's Day) is a factory holiday and cannot be chosen as a pickup date.",
+   "evidence": [
+    "5 Dec 2026",
+    "National Father's Day"
+   ],
+   "source": "04-factory-holiday.sql"
+  },
+  {
+   "id": "FAQ-076",
+   "type": "table2",
+   "topic": "5. Lead time and delivery",
+   "statement": "31 Dec 2026 (New Year's Eve) is a factory holiday and cannot be chosen as a pickup date.",
+   "evidence": [
+    "31 Dec 2026",
+    "New Year's Eve"
+   ],
+   "source": "04-factory-holiday.sql"
+  },
+  {
+   "id": "FAQ-077",
+   "type": "table2",
+   "topic": "5. Lead time and delivery",
+   "statement": "One truck trip carries up to 20,000 bottles of any model.",
+   "evidence": [
+    "20,000"
+   ],
+   "source": "rules.ts:TRIP_CAPACITY"
+  },
+  {
+   "id": "FAQ-078",
+   "type": "table2",
+   "topic": "5. Lead time and delivery",
+   "statement": "Delivery within 0–50 km is free.",
+   "evidence": [
+    "0–50 km",
+    "free"
+   ],
+   "source": "rules.ts:FREE_SHIPPING_MAX_KM"
+  },
+  {
+   "id": "FAQ-079",
+   "type": "table2",
+   "topic": "5. Lead time and delivery",
+   "statement": "Delivery over 50 km costs THB 1,500 per trip.",
+   "evidence": [
+    "THB 1,500 per trip"
+   ],
+   "source": "rules.ts:SHIPPING_PER_TRIP"
+  },
+  {
+   "id": "FAQ-080",
+   "type": "table2",
+   "topic": "5. Lead time and delivery",
+   "statement": "Distances over 300 km cannot be priced by the system; please contact sales.",
+   "evidence": [
+    "over 300 km",
+    "contact sales"
+   ],
+   "source": "rules.ts:MAX_DISTANCE_KM"
+  },
+  {
+   "id": "FAQ-081",
+   "type": "text",
+   "topic": "5. Lead time and delivery",
+   "statement": "Example: 25,000 bottles delivered 160 km away need 2 trips, so delivery costs THB 3,000.",
+   "evidence": [
+    "THB 3,000"
+   ],
+   "source": "rules.ts:shippingAmount"
+  },
+  {
+   "id": "FAQ-082",
+   "type": "text",
+   "topic": "5. Lead time and delivery",
+   "statement": "Customers can collect at the factory Monday–Saturday, 08:30–16:30, free of delivery charge (enter 0 km).",
+   "evidence": [
+    "08:30–16:30"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-083",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "Companies with fewer than 3 shipped orders must pay in full before production (prepay).",
+   "evidence": [
+    "prepay"
+   ],
+   "source": "rules.ts:paymentTerms"
+  },
+  {
+   "id": "FAQ-084",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "After 3 shipped orders, a company gets 30-day credit automatically.",
+   "evidence": [
+    "3 shipped orders",
+    "30-day credit"
+   ],
+   "source": "rules.ts:CREDIT_MIN_SHIPPED"
+  },
+  {
+   "id": "FAQ-085",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "The credit due date is the shipping date + 30 calendar days.",
+   "evidence": [
+    "+ 30 calendar days"
+   ],
+   "source": "rules.ts:creditDueDate"
+  },
+  {
+   "id": "FAQ-086",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "VAT 7% is added to every order and rounded half-up to 2 decimals.",
+   "evidence": [
+    "VAT 7%"
+   ],
+   "source": "rules.ts:VAT_RATE"
+  },
+  {
+   "id": "FAQ-087",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "Bank transfer: SaiSai Glassware Co., Ltd. · Test Bank · account 000-0-00000-0.",
+   "evidence": [
+    "000-0-00000-0"
+   ],
+   "source": "SAISAI.md 1"
+  },
+  {
+   "id": "FAQ-088",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "Cash and personal cheques are not accepted.",
+   "evidence": [
+    "not accepted"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-089",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "Logged-in customers can request a quotation from the order page or from the chatbot Nong Sai.",
+   "evidence": [
+    "Nong Sai"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-090",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "Quotation numbers look like QT-0001.",
+   "evidence": [
+    "QT-0001"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-091",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "A quotation is valid for 7 days from the issue date.",
+   "evidence": [
+    "valid for 7 days"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-092",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "A quotation keeps all price lines as of the issue date and can be converted to an order once.",
+   "evidence": [
+    "converted to an order once"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-093",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "When converting, all rules are checked again (14-day lead time, holidays, duplicates).",
+   "evidence": [
+    "checked again"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-094",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "Expired quotations cannot be converted; please request a new one.",
+   "evidence": [
+    "Expired quotations"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-095",
+   "type": "text",
+   "topic": "6. Payment, credit and quotations",
+   "statement": "Order totals are calculated in this order: bottles − discount + logo + delivery = subtotal, then + VAT 7% = total.",
+   "evidence": [
+    "bottles − discount + logo + delivery"
+   ],
+   "source": "rules.ts:priceLines"
+  },
+  {
+   "id": "FAQ-096",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "Free samples: up to 3 bottles per model per company per month.",
+   "evidence": [
+    "3 bottles per model"
+   ],
+   "source": "rules.ts:SAMPLE_MAX_PER_MODEL"
+  },
+  {
+   "id": "FAQ-097",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "Samples cost THB 0.00 and the quota resets on the first day of each calendar month.",
+   "evidence": [
+    "first day of each calendar month"
+   ],
+   "source": "rules.ts:monthRange"
+  },
+  {
+   "id": "FAQ-098",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "The sample quota counts by model, not by colour.",
+   "evidence": [
+    "not by colour"
+   ],
+   "source": "rules.ts:checkSampleRequest"
+  },
+  {
+   "id": "FAQ-099",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "Samples are sent by parcel within 5 working days and are not printed with logos.",
+   "evidence": [
+    "5 working days"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-100",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "Claims must be reported within 7 days of the shipping date (shipping day = day 0).",
+   "evidence": [
+    "within 7 days",
+    "day 0"
+   ],
+   "source": "rules.ts:CLAIM_WINDOW_DAYS"
+  },
+  {
+   "id": "FAQ-101",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "Example: shipped on 12 Oct 2026, claims are accepted until 19 Oct 2026.",
+   "evidence": [
+    "19 Oct 2026"
+   ],
+   "source": "rules.ts:claimWindow"
+  },
+  {
+   "id": "FAQ-102",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "A claim needs the lot number in the format LOT- followed by 6 digits, e.g. LOT-261001.",
+   "evidence": [
+    "LOT-",
+    "6 digits"
+   ],
+   "source": "rules.ts:LOT_PATTERN"
+  },
+  {
+   "id": "FAQ-103",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "The lot number is printed on the carton side label and on the delivery note, not on the bottle.",
+   "evidence": [
+    "carton side label"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-104",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "Attach 1 to 5 photos, JPG or PNG, each no larger than 5 MB.",
+   "evidence": [
+    "1 to 5 photos",
+    "5 MB"
+   ],
+   "source": "rules.ts:PHOTO_MAX_BYTES"
+  },
+  {
+   "id": "FAQ-105",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "Claim status flow: received → reviewing → approved or rejected.",
+   "evidence": [
+    "received → reviewing"
+   ],
+   "source": "rules.ts:canTransitionClaim"
+  },
+  {
+   "id": "FAQ-106",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "A rejection always includes a reason of 1–1,000 characters.",
+   "evidence": [
+    "1–1,000 characters"
+   ],
+   "source": "rules.ts:REASON_MAX_CHARS"
+  },
+  {
+   "id": "FAQ-107",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "Damage caused by hot filling above the limit is not covered.",
+   "evidence": [
+    "not covered"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-108",
+   "type": "text",
+   "topic": "7. Free samples and claims",
+   "statement": "Approved claims receive replacement bottles in the next delivery or a credit note.",
+   "evidence": [
+    "credit note"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-109",
+   "type": "table2",
+   "topic": "8. Export documents",
+   "statement": "The packing list in English shows cartons, pallets and gross weights.",
+   "evidence": [
+    "Packing list",
+    "Cartons, pallets and gross weights"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-110",
+   "type": "table2",
+   "topic": "8. Export documents",
+   "statement": "A Certificate of Analysis (CoA) is provided per lot on request within 2 working days.",
+   "evidence": [
+    "Certificate of Analysis (CoA)",
+    "within 2 working days"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-111",
+   "type": "table2",
+   "topic": "8. Export documents",
+   "statement": "The food-contact test certificate number is FC-2026-014, valid until 31 Jan 2027.",
+   "evidence": [
+    "FC-2026-014",
+    "31 Jan 2027"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-112",
+   "type": "table2",
+   "topic": "8. Export documents",
+   "statement": "SaiSai does not issue certificates of origin; the exporter must apply for them.",
+   "evidence": [
+    "Certificate of origin",
+    "Applied for by the exporter"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-113",
+   "type": "table2",
+   "topic": "8. Export documents",
+   "statement": "Export customs clearance is not provided by SaiSai; it is handled by the customer's forwarder.",
+   "evidence": [
+    "Export customs clearance",
+    "customer's forwarder"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-114",
+   "type": "text",
+   "topic": "8. Export documents",
+   "statement": "SaiSai does not ship overseas; export customers collect at the factory or use a domestic forwarder warehouse.",
+   "evidence": [
+    "does not ship overseas"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-115",
+   "type": "text",
+   "topic": "8. Export documents",
+   "statement": "Laem Chabang port is about 95 km from the factory, so delivery there costs THB 1,500 per trip.",
+   "evidence": [
+    "Laem Chabang",
+    "95 km"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-116",
+   "type": "text",
+   "topic": "8. Export documents",
+   "statement": "Pallets are 120 × 100 cm wooden pallets; no deposit and no return needed.",
+   "evidence": [
+    "120 × 100 cm"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-117",
+   "type": "text",
+   "topic": "8. Export documents",
+   "statement": "Pallets can be arranged for 20-foot containers if requested at spec confirmation.",
+   "evidence": [
+    "20-foot containers"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-118",
+   "type": "table2",
+   "topic": "8. Export documents",
+   "statement": "A B-100 carton holds 96 bottles and a full pallet holds 5,760 bottles.",
+   "evidence": [
+    "B-100",
+    "96",
+    "5,760"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-119",
+   "type": "table2",
+   "topic": "8. Export documents",
+   "statement": "A B-150 carton holds 72 bottles and a full pallet holds 4,320 bottles.",
+   "evidence": [
+    "B-150",
+    "72",
+    "4,320"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-120",
+   "type": "table2",
+   "topic": "8. Export documents",
+   "statement": "A B-250 carton holds 48 bottles and a full pallet holds 2,400 bottles.",
+   "evidence": [
+    "B-250",
+    "48",
+    "2,400"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-121",
+   "type": "table2",
+   "topic": "8. Export documents",
+   "statement": "A B-500 carton holds 24 bottles and a full pallet holds 1,152 bottles.",
+   "evidence": [
+    "B-500",
+    "24",
+    "1,152"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-122",
+   "type": "text",
+   "topic": "9. Quick FAQ and contact",
+   "statement": "Q: What is the lead time? · A: 14 days from today, skipping factory holidays.",
+   "evidence": [
+    "14 days from today"
+   ],
+   "source": "rules.ts:PICKUP_LEAD_DAYS"
+  },
+  {
+   "id": "FAQ-123",
+   "type": "text",
+   "topic": "9. Quick FAQ and contact",
+   "statement": "Q: Can I order 2,000 B-100 bottles? · A: No, the MOQ for the B-100 is 2,400.",
+   "evidence": [
+    "2,400"
+   ],
+   "source": "rules.ts:MODELS.minQty"
+  },
+  {
+   "id": "FAQ-124",
+   "type": "text",
+   "topic": "9. Quick FAQ and contact",
+   "statement": "Q: Can I get a green B-500? · A: No, green is available for the B-250 only.",
+   "evidence": [
+    "green is available for the B-250 only"
+   ],
+   "source": "rules.ts:MODELS.colors"
+  },
+  {
+   "id": "FAQ-125",
+   "type": "text",
+   "topic": "9. Quick FAQ and contact",
+   "statement": "Q: Can I print a logo on 3,000 bottles? · A: No, logo printing needs at least 5,000 bottles.",
+   "evidence": [
+    "at least 5,000 bottles"
+   ],
+   "source": "rules.ts:LOGO_MIN_QTY"
+  },
+  {
+   "id": "FAQ-126",
+   "type": "text",
+   "topic": "9. Quick FAQ and contact",
+   "statement": "Q: How many free samples can I get? · A: 3 per model per month.",
+   "evidence": [
+    "3 per model per month"
+   ],
+   "source": "rules.ts:SAMPLE_MAX_PER_MODEL"
+  },
+  {
+   "id": "FAQ-127",
+   "type": "text",
+   "topic": "9. Quick FAQ and contact",
+   "statement": "Q: How long do I have to report broken bottles? · A: 7 days from shipping.",
+   "evidence": [
+    "7 days from shipping"
+   ],
+   "source": "rules.ts:CLAIM_WINDOW_DAYS"
+  },
+  {
+   "id": "FAQ-128",
+   "type": "text",
+   "topic": "9. Quick FAQ and contact",
+   "statement": "Q: Do you sell carbonated-drink bottles? · A: No, our bottles are not designed for carbonated drinks.",
+   "evidence": [
+    "carbonated"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-129",
+   "type": "text",
+   "topic": "9. Quick FAQ and contact",
+   "statement": "Q: Are prices listed in this guide? · A: No, see the ordering system or request a quotation.",
+   "evidence": [
+    "request a quotation"
+   ],
+   "source": "สมมติฐาน"
+  },
+  {
+   "id": "FAQ-130",
+   "type": "text",
+   "topic": "9. Quick FAQ and contact",
+   "statement": "Sales phone: 02-000-0000 (Mon–Fri 08:30–17:00, Thailand time).",
+   "evidence": [
+    "02-000-0000"
+   ],
+   "source": "SAISAI.md 1"
+  },
+  {
+   "id": "FAQ-131",
+   "type": "text",
+   "topic": "9. Quick FAQ and contact",
+   "statement": "LINE: @saisai-test",
+   "evidence": [
+    "@saisai-test"
+   ],
+   "source": "SAISAI.md 1"
+  },
+  {
+   "id": "FAQ-132",
+   "type": "text",
+   "topic": "9. Quick FAQ and contact",
+   "statement": "The chatbot Nong Sai answers in English when you write or speak in English.",
+   "evidence": [
+    "answers in English"
+   ],
+   "source": "SAISAI.md 4.4"
+  }
+ ],
+ "pages": [
+  {
+   "blocks": [
+    {
+     "t": "cover",
+     "lines": [
+      "This English guide summarises the products and sales policies of SaiSai Glassware Co., Ltd. for international and English-speaking B2B customers.",
+      "Policy numbers in this guide match the shop's ordering system (rules.ts). Bottle prices are not listed; please use the ordering system or request a quotation.",
+      "Warning: the company, people, phone numbers and bank account in this document are fictitious test data."
+     ]
+    }
+   ]
+  },
+  {
+   "blocks": [
+    {
+     "t": "toc"
+    },
+    {
+     "t": "h2",
+     "text": "About this guide"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-001",
+      "FAQ-002",
+      "FAQ-003"
+     ],
+     "style": "bullet"
+    }
+   ]
+  },
+  {
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "1. Company overview"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-004",
+      "FAQ-005",
+      "FAQ-006",
+      "FAQ-007",
+      "FAQ-008",
+      "FAQ-009",
+      "FAQ-010",
+      "FAQ-011"
+     ],
+     "style": "bullet"
+    },
+    {
+     "t": "h2",
+     "text": "1.1 Who uses our bottles"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-012",
+      "FAQ-013",
+      "FAQ-014",
+      "FAQ-015"
+     ],
+     "style": "bullet"
+    }
+   ]
+  },
+  {
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "2. Products"
+    },
+    {
+     "t": "p",
+     "text": "SaiSai makes 4 bottle models in up to 3 colours, 9 products in total. Bottle prices are shown in the ordering system only."
+    },
+    {
+     "t": "table",
+     "title": "Table 2.1 Product codes",
+     "cols": [
+      12,
+      22,
+      16,
+      14,
+      16,
+      20
+     ],
+     "head": [
+      [
+       "Code",
+       "Slug",
+       "Model",
+       "Size",
+       "Colour",
+       "MOQ (bottles)"
+      ]
+     ],
+     "rows": [
+      [
+       "P01",
+       "b100-clear",
+       "B-100",
+       "100 ml",
+       "clear",
+       {
+        "text": "2,400",
+        "align": "right"
+       }
+      ],
+      [
+       "P02",
+       "b100-amber",
+       "B-100",
+       "100 ml",
+       "amber",
+       {
+        "text": "2,400",
+        "align": "right"
+       }
+      ],
+      [
+       "P03",
+       "b150-clear",
+       "B-150",
+       "150 ml",
+       "clear",
+       {
+        "text": "1,800",
+        "align": "right"
+       }
+      ],
+      [
+       "P04",
+       "b150-amber",
+       "B-150",
+       "150 ml",
+       "amber",
+       {
+        "text": "1,800",
+        "align": "right"
+       }
+      ],
+      [
+       "P05",
+       "b250-clear",
+       "B-250",
+       "250 ml",
+       "clear",
+       {
+        "text": "1,200",
+        "align": "right"
+       }
+      ],
+      [
+       "P06",
+       "b250-amber",
+       "B-250",
+       "250 ml",
+       "amber",
+       {
+        "text": "1,200",
+        "align": "right"
+       }
+      ],
+      [
+       "P07",
+       "b250-green",
+       "B-250",
+       "250 ml",
+       "green",
+       {
+        "text": "1,200",
+        "align": "right"
+       }
+      ],
+      [
+       "P08",
+       "b500-clear",
+       "B-500",
+       "500 ml",
+       "clear",
+       {
+        "text": "800",
+        "align": "right"
+       }
+      ],
+      [
+       "P09",
+       "b500-amber",
+       "B-500",
+       "500 ml",
+       "amber",
+       {
+        "text": "800",
+        "align": "right"
+       }
+      ]
+     ],
+     "facts": [
+      "FAQ-016",
+      "FAQ-017",
+      "FAQ-018",
+      "FAQ-019",
+      "FAQ-020",
+      "FAQ-021",
+      "FAQ-022",
+      "FAQ-023",
+      "FAQ-024"
+     ]
+    },
+    {
+     "t": "table",
+     "title": "Table 2.2 Colours by model",
+     "cols": [
+      28,
+      24,
+      24,
+      24
+     ],
+     "head": [
+      [
+       {
+        "text": "Model",
+        "rs": 2
+       },
+       {
+        "text": "Colour",
+        "cs": 3
+       }
+      ],
+      [
+       "clear",
+       "amber",
+       "green¹"
+      ]
+     ],
+     "rows": [
+      [
+       "B-100",
+       {
+        "text": "yes",
+        "align": "center"
+       },
+       {
+        "text": "yes",
+        "align": "center"
+       },
+       {
+        "text": "no",
+        "align": "center"
+       }
+      ],
+      [
+       "B-150",
+       {
+        "text": "yes",
+        "align": "center"
+       },
+       {
+        "text": "yes",
+        "align": "center"
+       },
+       {
+        "text": "no",
+        "align": "center"
+       }
+      ],
+      [
+       "B-250",
+       {
+        "text": "yes",
+        "align": "center"
+       },
+       {
+        "text": "yes",
+        "align": "center"
+       },
+       {
+        "text": "yes",
+        "align": "center"
+       }
+      ],
+      [
+       "B-500",
+       {
+        "text": "yes",
+        "align": "center"
+       },
+       {
+        "text": "yes",
+        "align": "center"
+       },
+       {
+        "text": "no",
+        "align": "center"
+       }
+      ]
+     ],
+     "notes": [
+      "¹ Only the B-250 is available in green."
+     ],
+     "facts": [
+      "FAQ-025",
+      "FAQ-026"
+     ]
+    }
+   ]
+  },
+  {
+   "blocks": [
+    {
+     "t": "h2",
+     "text": "2.1 Key dimensions"
+    },
+    {
+     "t": "table",
+     "title": "Table 2.3 Dimensions (nominal)",
+     "cols": [
+      16,
+      14,
+      16,
+      14,
+      16,
+      24
+     ],
+     "head": [
+      [
+       {
+        "text": "Model",
+        "rs": 2
+       },
+       {
+        "text": "Outside (mm)",
+        "cs": 2
+       },
+       {
+        "text": "Neck",
+        "cs": 2
+       },
+       {
+        "text": "Weight (g)",
+        "rs": 2
+       }
+      ],
+      [
+       "Height",
+       "Diameter",
+       "Size (mm)",
+       "Finish"
+      ]
+     ],
+     "rows": [
+      [
+       "B-100",
+       {
+        "text": "98",
+        "align": "center"
+       },
+       {
+        "text": "45",
+        "align": "center"
+       },
+       {
+        "text": "28",
+        "align": "center"
+       },
+       "PP 28 mm screw",
+       {
+        "text": "95",
+        "align": "center"
+       }
+      ],
+      [
+       "B-150",
+       {
+        "text": "118",
+        "align": "center"
+       },
+       {
+        "text": "52",
+        "align": "center"
+       },
+       {
+        "text": "28",
+        "align": "center"
+       },
+       "PP 28 mm screw",
+       {
+        "text": "130",
+        "align": "center"
+       }
+      ],
+      [
+       "B-250",
+       {
+        "text": "150",
+        "align": "center"
+       },
+       {
+        "text": "60",
+        "align": "center"
+       },
+       {
+        "text": "38",
+        "align": "center"
+       },
+       "PP 38 mm screw",
+       {
+        "text": "190",
+        "align": "center"
+       }
+      ],
+      [
+       "B-500",
+       {
+        "text": "205",
+        "align": "center"
+       },
+       {
+        "text": "75",
+        "align": "center"
+       },
+       {
+        "text": "43",
+        "align": "center"
+       },
+       "Lug 43 mm",
+       {
+        "text": "320",
+        "align": "center"
+       }
+      ]
+     ],
+     "notes": [
+      "Full specifications, tolerances and compatible caps are in SS-CAT-BOTTLES (Thai)."
+     ],
+     "facts": [
+      "FAQ-027",
+      "FAQ-028",
+      "FAQ-029",
+      "FAQ-030",
+      "FAQ-031",
+      "FAQ-032",
+      "FAQ-033",
+      "FAQ-034"
+     ]
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-035",
+      "FAQ-036",
+      "FAQ-037",
+      "FAQ-038",
+      "FAQ-039",
+      "FAQ-040"
+     ],
+     "style": "bullet"
+    }
+   ]
+  },
+  {
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "3. Ordering and MOQ"
+    },
+    {
+     "t": "table",
+     "title": "Table 3.1 Minimum order quantity",
+     "cols": [
+      34,
+      33,
+      33
+     ],
+     "head": [
+      [
+       "Model",
+       "MOQ (bottles)",
+       "Order step"
+      ]
+     ],
+     "rows": [
+      [
+       "B-100",
+       {
+        "text": "2,400",
+        "align": "right"
+       },
+       {
+        "text": "100",
+        "align": "right"
+       }
+      ],
+      [
+       "B-150",
+       {
+        "text": "1,800",
+        "align": "right"
+       },
+       {
+        "text": "100",
+        "align": "right"
+       }
+      ],
+      [
+       "B-250",
+       {
+        "text": "1,200",
+        "align": "right"
+       },
+       {
+        "text": "100",
+        "align": "right"
+       }
+      ],
+      [
+       "B-500",
+       {
+        "text": "800",
+        "align": "right"
+       },
+       {
+        "text": "100",
+        "align": "right"
+       }
+      ]
+     ],
+     "facts": [
+      "FAQ-041",
+      "FAQ-042",
+      "FAQ-043",
+      "FAQ-044"
+     ]
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-045",
+      "FAQ-046",
+      "FAQ-047"
+     ],
+     "style": "bullet"
+    },
+    {
+     "t": "h2",
+     "text": "3.1 Order status (6 steps)"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-048",
+      "FAQ-049",
+      "FAQ-050",
+      "FAQ-051",
+      "FAQ-052",
+      "FAQ-053"
+     ],
+     "style": "num"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-054"
+     ],
+     "style": "bullet"
+    }
+   ]
+  },
+  {
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "4. Logo printing"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-055",
+      "FAQ-056",
+      "FAQ-057",
+      "FAQ-058",
+      "FAQ-059",
+      "FAQ-060",
+      "FAQ-061",
+      "FAQ-062",
+      "FAQ-063",
+      "FAQ-064",
+      "FAQ-065"
+     ],
+     "style": "bullet"
+    },
+    {
+     "t": "table",
+     "title": "Table 4.1 Maximum print area (width × height, mm)",
+     "cols": [
+      25,
+      25,
+      25,
+      25
+     ],
+     "head": [
+      [
+       {
+        "text": "Model",
+        "rs": 2
+       },
+       {
+        "text": "Print area",
+        "cs": 2
+       },
+       {
+        "text": "From base (mm)",
+        "rs": 2
+       }
+      ],
+      [
+       "Front",
+       "Back"
+      ]
+     ],
+     "rows": [
+      [
+       "B-100",
+       {
+        "text": "40 × 30",
+        "align": "center"
+       },
+       {
+        "text": "40 × 30",
+        "align": "center"
+       },
+       {
+        "text": "15",
+        "align": "center"
+       }
+      ],
+      [
+       "B-150",
+       {
+        "text": "45 × 40",
+        "align": "center"
+       },
+       {
+        "text": "45 × 35",
+        "align": "center"
+       },
+       {
+        "text": "18",
+        "align": "center"
+       }
+      ],
+      [
+       "B-250",
+       {
+        "text": "60 × 55",
+        "align": "center"
+       },
+       {
+        "text": "60 × 45",
+        "align": "center"
+       },
+       {
+        "text": "20",
+        "align": "center"
+       }
+      ],
+      [
+       "B-500",
+       {
+        "text": "80 × 90",
+        "align": "center"
+       },
+       {
+        "text": "80 × 70",
+        "align": "center"
+       },
+       {
+        "text": "25",
+        "align": "center"
+       }
+      ]
+     ],
+     "facts": [
+      "FAQ-066",
+      "FAQ-067",
+      "FAQ-068",
+      "FAQ-069"
+     ]
+    }
+   ]
+  },
+  {
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "5. Lead time and delivery"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-070",
+      "FAQ-071",
+      "FAQ-072",
+      "FAQ-073"
+     ],
+     "style": "bullet"
+    },
+    {
+     "t": "table",
+     "title": "Table 5.1 Factory holidays 2026",
+     "cols": [
+      40,
+      60
+     ],
+     "head": [
+      [
+       "Date",
+       "Holiday"
+      ]
+     ],
+     "rows": [
+      [
+       "23 Oct 2026",
+       "Chulalongkorn Day"
+      ],
+      [
+       "5 Dec 2026",
+       "National Father's Day"
+      ],
+      [
+       "31 Dec 2026",
+       "New Year's Eve"
+      ]
+     ],
+     "facts": [
+      "FAQ-074",
+      "FAQ-075",
+      "FAQ-076"
+     ]
+    },
+    {
+     "t": "table",
+     "title": "Table 5.2 Delivery charges (before VAT)",
+     "cols": [
+      30,
+      70
+     ],
+     "head": [
+      [
+       "Distance",
+       "Charge"
+      ]
+     ],
+     "rows": [
+      [
+       "0–50 km",
+       "free"
+      ],
+      [
+       "51–300 km",
+       "THB 1,500 per trip · trips = bottles ÷ 20,000, rounded up"
+      ],
+      [
+       "over 300 km",
+       "contact sales (no online price or quotation)"
+      ]
+     ],
+     "facts": [
+      "FAQ-077",
+      "FAQ-078",
+      "FAQ-079",
+      "FAQ-080"
+     ]
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-081",
+      "FAQ-082"
+     ],
+     "style": "bullet"
+    }
+   ]
+  },
+  {
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "6. Payment, credit and quotations"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-083",
+      "FAQ-084",
+      "FAQ-085",
+      "FAQ-086",
+      "FAQ-087",
+      "FAQ-088"
+     ],
+     "style": "bullet"
+    },
+    {
+     "t": "h2",
+     "text": "6.1 Quotations"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-089",
+      "FAQ-090",
+      "FAQ-091",
+      "FAQ-092",
+      "FAQ-093",
+      "FAQ-094"
+     ],
+     "style": "bullet"
+    },
+    {
+     "t": "h2",
+     "text": "6.2 Price lines"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-095"
+     ],
+     "style": "bullet"
+    }
+   ]
+  },
+  {
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "7. Free samples and claims"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-096",
+      "FAQ-097",
+      "FAQ-098",
+      "FAQ-099"
+     ],
+     "style": "bullet"
+    },
+    {
+     "t": "h2",
+     "text": "7.1 Claims"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-100",
+      "FAQ-101",
+      "FAQ-102",
+      "FAQ-103",
+      "FAQ-104",
+      "FAQ-105",
+      "FAQ-106",
+      "FAQ-107",
+      "FAQ-108"
+     ],
+     "style": "bullet"
+    }
+   ]
+  },
+  {
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "8. Export documents"
+    },
+    {
+     "t": "table",
+     "title": "Table 8.1 Documents for export customers",
+     "cols": [
+      36,
+      18,
+      46
+     ],
+     "head": [
+      [
+       {
+        "text": "Document",
+        "rs": 2
+       },
+       {
+        "text": "Provided by SaiSai",
+        "cs": 2
+       }
+      ],
+      [
+       "Provided",
+       "Notes"
+      ]
+     ],
+     "rows": [
+      [
+       "Commercial invoice",
+       "Yes",
+       "English · issued on shipping"
+      ],
+      [
+       "Packing list",
+       "Yes",
+       "Cartons, pallets and gross weights"
+      ],
+      [
+       "Certificate of Analysis (CoA)",
+       "On request",
+       "Per lot · within 2 working days"
+      ],
+      [
+       "Food-contact test certificate",
+       "On request",
+       "FC-2026-014 · valid to 31 Jan 2027"
+      ],
+      [
+       "Certificate of origin",
+       "No",
+       "Applied for by the exporter"
+      ],
+      [
+       "Export customs clearance",
+       "No",
+       "Handled by the customer's forwarder"
+      ]
+     ],
+     "facts": [
+      "FAQ-109",
+      "FAQ-110",
+      "FAQ-111",
+      "FAQ-112",
+      "FAQ-113"
+     ]
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-114",
+      "FAQ-115",
+      "FAQ-116",
+      "FAQ-117"
+     ],
+     "style": "bullet"
+    },
+    {
+     "t": "table",
+     "title": "Table 8.2 Packing summary",
+     "cols": [
+      25,
+      25,
+      25,
+      25
+     ],
+     "head": [
+      [
+       {
+        "text": "Model",
+        "rs": 2
+       },
+       {
+        "text": "Per carton",
+        "rs": 2
+       },
+       {
+        "text": "Per pallet",
+        "cs": 2
+       }
+      ],
+      [
+       "Cartons",
+       "Bottles"
+      ]
+     ],
+     "rows": [
+      [
+       "B-100",
+       {
+        "text": "96",
+        "align": "center"
+       },
+       {
+        "text": "60",
+        "align": "center"
+       },
+       {
+        "text": "5,760",
+        "align": "right"
+       }
+      ],
+      [
+       "B-150",
+       {
+        "text": "72",
+        "align": "center"
+       },
+       {
+        "text": "60",
+        "align": "center"
+       },
+       {
+        "text": "4,320",
+        "align": "right"
+       }
+      ],
+      [
+       "B-250",
+       {
+        "text": "48",
+        "align": "center"
+       },
+       {
+        "text": "50",
+        "align": "center"
+       },
+       {
+        "text": "2,400",
+        "align": "right"
+       }
+      ],
+      [
+       "B-500",
+       {
+        "text": "24",
+        "align": "center"
+       },
+       {
+        "text": "48",
+        "align": "center"
+       },
+       {
+        "text": "1,152",
+        "align": "right"
+       }
+      ]
+     ],
+     "facts": [
+      "FAQ-118",
+      "FAQ-119",
+      "FAQ-120",
+      "FAQ-121"
+     ]
+    }
+   ]
+  },
+  {
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "9. Quick FAQ and contact"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-122",
+      "FAQ-123",
+      "FAQ-124",
+      "FAQ-125",
+      "FAQ-126",
+      "FAQ-127",
+      "FAQ-128",
+      "FAQ-129"
+     ],
+     "style": "bullet"
+    },
+    {
+     "t": "h2",
+     "text": "Contact"
+    },
+    {
+     "t": "facts",
+     "ids": [
+      "FAQ-130",
+      "FAQ-131",
+      "FAQ-132"
+     ],
+     "style": "bullet"
+    }
+   ]
+  }
+ ]
+}

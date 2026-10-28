@@ -1,0 +1,4 @@
+[13:54:29] search 2 รอบ (ห่าง 3s): 15+15 แถว → รวมไม่ซ้ำ 22 offers
+[13:56:18] search 2 รอบ (ห่าง 3s): 16+16 แถว → รวมไม่ซ้ำ 22 offers
+{"returncode": 2, "instances": []}
+{"returncode": 0, "instances": [{"id": 58061043, "label": "saisai-20261027-stt", "status": "running", "dph_total": 0.41388888888888886}]}

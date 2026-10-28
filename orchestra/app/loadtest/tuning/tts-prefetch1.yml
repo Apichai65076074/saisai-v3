@@ -1,0 +1,5 @@
+# T22 supplementary tuning only (not the primary baseline): TTS_PREFETCH 2 -> 1
+services:
+  tts-worker:
+    environment:
+      TTS_PREFETCH: '1'

@@ -1,0 +1,287 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/root/runs/saisai/wt/T23/e2e/node_modules/.bin/playwright",
+      "test",
+      "tests/L01.spec.ts",
+      "tests/L02.spec.ts"
+    ],
+    "configFile": "/root/runs/saisai/wt/T23/e2e/playwright.config.ts",
+    "rootDir": "/root/runs/saisai/wt/T23/e2e/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/root/runs/saisai/wt/T23/e2e/test-results-T23",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/root/runs/saisai/wt/T23/e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/root/runs/saisai/wt/T23/e2e/test-results-T23",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "/root/runs/saisai/wt/T23/e2e/tests",
+        "snapshotDir": "/root/runs/saisai/wt/T23/e2e/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://localhost:3600",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "video": {
+            "mode": "on",
+            "size": {
+              "width": 1280,
+              "height": 800
+            }
+          },
+          "locale": "th-TH",
+          "timezoneId": "Asia/Bangkok",
+          "permissions": [
+            "microphone"
+          ],
+          "actionTimeout": 30000,
+          "navigationTimeout": 60000,
+          "browserName": "chromium",
+          "launchOptions": {
+            "executablePath": "/ms-playwright/chromium-1247/chrome-linux64/chrome",
+            "args": [
+              "--use-fake-ui-for-media-stream",
+              "--use-fake-device-for-media-stream",
+              "--autoplay-policy=no-user-gesture-required",
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader",
+              "--ignore-gpu-blocklist"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../loadtest/results/scale-resume-L01-L02.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0-alpha-1790635538000",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "L01.spec.ts",
+      "file": "L01.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "L01 POST load-run-a.json → load-chart 8 points and load-max-users from the file",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 91521,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.load-run[data-run-id=\"28\"]').getByTestId('load-chart')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.load-run[data-run-id=\"28\"]').getByTestId('load-chart') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.load-run[data-run-id=\"28\"]').getByTestId('load-chart')\u001b[22m\n\u001b[2m    42 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.load-run[data-run-id=\"28\"]').getByTestId('load-chart')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.load-run[data-run-id=\"28\"]').getByTestId('load-chart') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.load-run[data-run-id=\"28\"]').getByTestId('load-chart')\u001b[22m\n\u001b[2m    42 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at /root/runs/saisai/wt/T23/e2e/tests/L01.spec.ts:30:23",
+                    "location": {
+                      "file": "/root/runs/saisai/wt/T23/e2e/tests/L01.spec.ts",
+                      "column": 23,
+                      "line": 30
+                    },
+                    "snippet": "  28 |   }\n  29 |   const chart = selectedRun.getByTestId('load-chart');\n> 30 |   await expect(chart).toHaveCount(1);\n     |                       ^\n  31 |   await expect(chart).toHaveAttribute('data-points', String(fixture.stages.length));\n  32 |   await expect(chart).toHaveAttribute('data-points', '8');\n  33 |   await expect(chart.locator('[data-series=\"p95_ms\"] circle')).toHaveCount(8);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/root/runs/saisai/wt/T23/e2e/tests/L01.spec.ts",
+                        "column": 23,
+                        "line": 30
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.load-run[data-run-id=\"28\"]').getByTestId('load-chart')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  20000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.load-run[data-run-id=\"28\"]').getByTestId('load-chart') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.load-run[data-run-id=\"28\"]').getByTestId('load-chart')\u001b[22m\n\u001b[2m    42 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  28 |   }\n  29 |   const chart = selectedRun.getByTestId('load-chart');\n> 30 |   await expect(chart).toHaveCount(1);\n     |                       ^\n  31 |   await expect(chart).toHaveAttribute('data-points', String(fixture.stages.length));\n  32 |   await expect(chart).toHaveAttribute('data-points', '8');\n  33 |   await expect(chart.locator('[data-series=\"p95_ms\"] circle')).toHaveCount(8);\n    at /root/runs/saisai/wt/T23/e2e/tests/L01.spec.ts:30:23"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T14:49:00.027Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/root/runs/saisai/wt/T23/e2e/test-results-T23/L01-L01-POST-load-run-a-js-f31fa-oad-max-users-from-the-file-chromium/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/root/runs/saisai/wt/T23/e2e/test-results-T23/L01-L01-POST-load-run-a-js-f31fa-oad-max-users-from-the-file-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/root/runs/saisai/wt/T23/e2e/tests/L01.spec.ts",
+                    "column": 23,
+                    "line": 30
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c3ddb1bc45b5402980f3-2e60f411416771da486b",
+          "file": "L01.spec.ts",
+          "line": 11,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "L02.spec.ts",
+      "file": "L02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "L02 failing stage is red and the chart has the 200-user target line",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 57080,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.load-run[data-run-id=\"29\"]').getByTestId('load-chart')\nExpected: \u001b[32m\"8\"\u001b[39m\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.load-run[data-run-id=\"29\"]').getByTestId('load-chart') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.load-run[data-run-id=\"29\"]').getByTestId('load-chart')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.load-run[data-run-id=\"29\"]').getByTestId('load-chart')\nExpected: \u001b[32m\"8\"\u001b[39m\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.load-run[data-run-id=\"29\"]').getByTestId('load-chart') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.load-run[data-run-id=\"29\"]').getByTestId('load-chart')\u001b[22m\n\n    at /root/runs/saisai/wt/T23/e2e/tests/L02.spec.ts:23:23",
+                    "location": {
+                      "file": "/root/runs/saisai/wt/T23/e2e/tests/L02.spec.ts",
+                      "column": 23,
+                      "line": 23
+                    },
+                    "snippet": "  21 |   const selectedRun = page.locator(`.load-run[data-run-id=\"${run.id}\"]`);\n  22 |   const chart = selectedRun.getByTestId('load-chart');\n> 23 |   await expect(chart).toHaveAttribute('data-points', '8');\n     |                       ^\n  24 |\n  25 |   // ตาราง: ขั้นไม่ผ่านเป็นสีแดง · ขั้นผ่านไม่แดง\n  26 |   const bad = selectedRun.locator('[data-testid=\"load-stage-row\"][data-pass=\"false\"]');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/root/runs/saisai/wt/T23/e2e/tests/L02.spec.ts",
+                        "column": 23,
+                        "line": 23
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.load-run[data-run-id=\"29\"]').getByTestId('load-chart')\nExpected: \u001b[32m\"8\"\u001b[39m\nTimeout: 20000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.load-run[data-run-id=\"29\"]').getByTestId('load-chart') with timeout 20000ms\u001b[22m\n\u001b[2m  - waiting for locator('.load-run[data-run-id=\"29\"]').getByTestId('load-chart')\u001b[22m\n\n\n  21 |   const selectedRun = page.locator(`.load-run[data-run-id=\"${run.id}\"]`);\n  22 |   const chart = selectedRun.getByTestId('load-chart');\n> 23 |   await expect(chart).toHaveAttribute('data-points', '8');\n     |                       ^\n  24 |\n  25 |   // ตาราง: ขั้นไม่ผ่านเป็นสีแดง · ขั้นผ่านไม่แดง\n  26 |   const bad = selectedRun.locator('[data-testid=\"load-stage-row\"][data-pass=\"false\"]');\n    at /root/runs/saisai/wt/T23/e2e/tests/L02.spec.ts:23:23"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T14:50:42.001Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/root/runs/saisai/wt/T23/e2e/test-results-T23/L02-L02-failing-stage-is-r-a0d5f-as-the-200-user-target-line-chromium/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/root/runs/saisai/wt/T23/e2e/test-results-T23/L02-L02-failing-stage-is-r-a0d5f-as-the-200-user-target-line-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/root/runs/saisai/wt/T23/e2e/tests/L02.spec.ts",
+                    "column": 23,
+                    "line": 23
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "107ffdab037fc4178bf8-0718b410729331531d23",
+          "file": "L02.spec.ts",
+          "line": 13,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T14:48:55.550Z",
+    "duration": 165696.41199999998,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

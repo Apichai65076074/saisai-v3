@@ -1,0 +1,373 @@
+{"t": "2026-10-25T11:05:53+07:00", "event": "INIT", "problem": "/workspace/noom_saisai/SAISAI.md", "max_agents": 12, "orchestrator": "yolo3"}
+{"t": "2026-10-25T11:06:45+07:00", "event": "QUOTA", "best_orchestrator": "cyolo1", "accounts": {"yolo1": null, "yolo2": null, "yolo3": 40, "cyolo1": 54, "cyolo2": 51}}
+{"t": "2026-10-25T11:26:54+07:00", "event": "START", "task": "T06", "account": "cyolo1", "attempt": 1, "why": "KC-QUEST 27.1 (urgency=0.145 fit=0.012 session=0.948 speed=0.456 load=0.0) · ประเมิน 2.00M tok ≈ 5ชม. 5.2% / สัปดาห์ 0.65% · อันดับ 2 cyolo2 24.1"}
+{"t": "2026-10-25T11:26:58+07:00", "event": "START", "task": "T04", "account": "yolo3", "attempt": 1, "why": "KC-QUEST 30.9 (urgency=0.146 fit=0.017 session=0.645 speed=1.0 load=0.0) · ประเมิน 4.20M tok ≈ 5ชม. 5.46% / สัปดาห์ 0.66% · อันดับ 2 cyolo1 29.4"}
+{"t": "2026-10-25T11:34:51+07:00", "event": "DONE", "task": "T06", "account": "cyolo1", "mtok": 0.371, "summary": ""}
+{"t": "2026-10-25T11:44:31+07:00", "event": "DONE", "task": "T04", "account": "yolo3", "mtok": 1.262, "summary": " the binary download.\n- Extra files: `web/lib/http.ts`, `web/lib/session-token.ts`, `web/lib/test-mode.ts` and `web/app/not-found.tsx`.\n- One line `*.tsbuildinfo` added to `.gitignore`.\n\nI did not copy `web/lib/rules.ts`, which is T05's job, but `.gitattributes` already has `web/lib/rules.ts -text`."}
+{"t": "2026-10-25T11:44:32+07:00", "event": "START", "task": "T05", "account": "cyolo2", "attempt": 1, "why": "KC-QUEST 28.2 (urgency=0.146 fit=0.003 session=0.788 speed=0.7 load=0.0) · ประเมิน 0.48M tok ≈ 5ชม. 1.25% / สัปดาห์ 0.16% · อันดับ 2 yolo3 27.8"}
+{"t": "2026-10-25T11:44:33+07:00", "event": "START", "task": "T10", "account": "yolo3", "attempt": 1, "why": "KC-QUEST 27.6 (urgency=0.146 fit=0.058 session=0.411 speed=0.96 load=0.0) · ประเมิน 0.72M tok ≈ 5ชม. 0.94% / สัปดาห์ 2.08% · อันดับ 2 cyolo1 27.1"}
+{"t": "2026-10-25T11:44:35+07:00", "event": "START", "task": "T11", "account": "cyolo1", "attempt": 1, "why": "KC-QUEST 26.3 (urgency=0.146 fit=0.005 session=0.741 speed=0.619 load=0.0) · ประเมิน 0.72M tok ≈ 5ชม. 1.87% / สัปดาห์ 0.23% · อันดับ 2 yolo3 23.0"}
+{"t": "2026-10-25T11:49:36+07:00", "event": "DONE", "task": "T05", "account": "cyolo2", "mtok": 0.257, "summary": ""}
+{"t": "2026-10-25T11:49:37+07:00", "event": "START", "task": "T07", "account": "cyolo2", "attempt": 1, "why": "KC-QUEST 26.5 (urgency=0.146 fit=0.01 session=0.663 speed=0.7 load=0.0) · ประเมิน 1.44M tok ≈ 5ชม. 3.74% / สัปดาห์ 0.47% · อันดับ 2 yolo3 24.9"}
+{"t": "2026-10-25T11:57:26+07:00", "event": "DONE", "task": "T11", "account": "cyolo1", "mtok": 0.614, "summary": ""}
+{"t": "2026-10-25T11:58:26+07:00", "event": "DONE", "task": "T10", "account": "yolo3", "mtok": 0.552, "summary": "'/'` เอง\n\nไม่ได้แก้ไฟล์ของงานอื่น\n\n⚠️ มีเรื่องหนึ่ง: ก่อน build ผมสั่ง `pkill -f \"next dev\"` เพื่อหยุด dev server ของ T10 แต่คำสั่งนี้จับ process ทุกตัวที่ชื่อตรง จึงอาจหยุด dev server ของ T07 ไปด้วย · ตอนนี้ dev server ของ T07 เปิดใหม่แล้ว (เริ่ม 11:57) · บันทึกเรื่องนี้ไว้ใน `progress/T10.md` แล้ว"}
+{"t": "2026-10-25T11:58:27+07:00", "event": "START", "task": "T12", "account": "yolo3", "attempt": 1, "why": "KC-QUEST 26.1 (urgency=0.146 fit=0.105 session=0.264 speed=0.944 load=0.0) · ประเมิน 1.26M tok ≈ 5ชม. 1.64% / สัปดาห์ 3.67% · อันดับ 2 cyolo1 25.0"}
+{"t": "2026-10-25T11:58:27+07:00", "event": "START", "task": "T14", "account": "cyolo1", "attempt": 1, "why": "KC-QUEST 24.2 (urgency=0.146 fit=0.047 session=0.521 speed=0.638 load=0.0) · ประเมิน 0.72M tok ≈ 5ชม. 1.87% / สัปดาห์ 2.16% · อันดับ 2 yolo3 21.3"}
+{"t": "2026-10-25T12:07:11+07:00", "event": "MERGE_CONFLICT", "task": "T07", "account": "cyolo2"}
+{"t": "2026-10-25T12:07:11+07:00", "event": "START", "task": "T07", "account": "cyolo2", "attempt": 2, "why": "KC-QUEST 23.9 (urgency=0.146 fit=0.078 session=0.398 speed=0.7 load=0.0) · ประเมิน 0.83M tok ≈ 5ชม. 2.15% / สัปดาห์ 3.51% · อันดับ 2 cyolo1 18.2"}
+{"t": "2026-10-25T12:08:14+07:00", "event": "DONE", "task": "T14", "account": "cyolo1", "mtok": 0.324, "summary": ""}
+{"t": "2026-10-25T12:10:32+07:00", "event": "ORCH_LOW", "account": "yolo3", "headroom": 14}
+{"t": "2026-10-25T12:10:59+07:00", "event": "QUOTA", "best_orchestrator": "cyolo1", "accounts": {"yolo1": null, "yolo2": null, "yolo3": 14, "cyolo1": 38, "cyolo2": 37}}
+{"t": "2026-10-25T12:11:21+07:00", "event": "ORCH_SWITCH", "from_account": "yolo3", "to_account": "cyolo1", "pid": 355446, "log": "/root/runs/saisai/logs/orchestrator.cyolo1.121121.jsonl"}
+{"t": "2026-10-25T12:14:49+07:00", "event": "QUOTA", "best_orchestrator": "yolo1", "accounts": {"yolo1": 36, "yolo2": null, "yolo3": 12, "cyolo1": 33, "cyolo2": 33}}
+{"t": "2026-10-25T12:18:19+07:00", "event": "DONE", "task": "T07", "account": "cyolo2", "mtok": 1.798, "summary": ""}
+{"t": "2026-10-25T12:18:20+07:00", "event": "START", "task": "T08", "account": "yolo1", "attempt": 1, "why": "KC-QUEST 46.2 (urgency=0.423 fit=0.006 session=0.981 speed=0.96 load=0.0) · ประเมิน 0.72M tok ≈ 5ชม. 1.87% / สัปดาห์ 0.23% · อันดับ 2 cyolo2 21.4"}
+{"t": "2026-10-25T12:18:21+07:00", "event": "START", "task": "T16", "account": "yolo1", "attempt": 1, "why": "KC-QUEST 39.9 (urgency=0.423 fit=0.016 session=0.935 speed=0.797 load=0.333) · ประเมิน 1.78M tok ≈ 5ชม. 4.63% / สัปดาห์ 0.58% · อันดับ 2 cyolo2 21.2"}
+{"t": "2026-10-25T12:18:22+07:00", "event": "START", "task": "T17", "account": "yolo1", "attempt": 1, "why": "KC-QUEST 36.1 (urgency=0.423 fit=0.006 session=0.919 speed=0.797 load=0.667) · ประเมิน 0.60M tok ≈ 5ชม. 1.56% / สัปดาห์ 0.2% · อันดับ 2 cyolo1 19.5"}
+{"t": "2026-10-25T12:18:24+07:00", "event": "START", "task": "T19", "account": "cyolo1", "attempt": 1, "why": "KC-QUEST 19.1 (urgency=0.146 fit=0.034 session=0.298 speed=0.538 load=0.0) · ประเมิน 0.48M tok ≈ 5ชม. 1.25% / สัปดาห์ 1.44% · อันดับ 2 cyolo2 19.1"}
+{"t": "2026-10-25T12:18:26+07:00", "event": "START", "task": "T09", "account": "cyolo2", "attempt": 1, "why": "KC-QUEST 18.8 (urgency=0.146 fit=0.053 session=0.284 speed=0.508 load=0.0) · ประเมิน 0.60M tok ≈ 5ชม. 1.56% / สัปดาห์ 2.3%"}
+{"t": "2026-10-26T00:04:22+07:00", "event": "QUOTA", "best_orchestrator": "yolo1", "accounts": {"yolo1": 100, "yolo2": null, "yolo3": 42, "cyolo1": 42, "cyolo2": 42}}
+{"t": "2026-10-26T00:06:54+07:00", "event": "ORCH_SWITCH", "from_account": "cyolo1", "to_account": "yolo1", "pid": 1213, "log": "/root/runs/saisai/logs/orchestrator.yolo1.000654.jsonl"}
+{"t": "2026-10-26T00:42:45+07:00", "event": "ORCH_SWITCH", "from_account": "yolo1", "to_account": "yolo1", "pid": 1678, "log": "/root/runs/saisai/logs/orchestrator.yolo1.004245.jsonl"}
+{"t": "2026-10-26T00:47:19+07:00", "event": "ORCH_SWITCH", "from_account": "yolo1", "to_account": "yolo1", "pid": 2195, "log": "/root/runs/saisai/logs/orchestrator.yolo1.004719.jsonl"}
+{"t": "2026-10-26T00:48:02+07:00", "event": "HANDOFF", "task": "T08", "from_account": "yolo1", "why": "สั่งสลับเอง"}
+{"t": "2026-10-26T00:48:02+07:00", "event": "HANDOFF", "task": "T09", "from_account": "cyolo2", "why": "สั่งสลับเอง"}
+{"t": "2026-10-26T00:48:03+07:00", "event": "HANDOFF", "task": "T12", "from_account": "yolo3", "why": "สั่งสลับเอง"}
+{"t": "2026-10-26T00:48:04+07:00", "event": "HANDOFF", "task": "T16", "from_account": "yolo1", "why": "สั่งสลับเอง"}
+{"t": "2026-10-26T00:48:04+07:00", "event": "HANDOFF", "task": "T17", "from_account": "yolo1", "why": "สั่งสลับเอง"}
+{"t": "2026-10-26T00:48:04+07:00", "event": "HANDOFF", "task": "T19", "from_account": "cyolo1", "why": "สั่งสลับเอง"}
+{"t": "2026-10-26T00:48:19+07:00", "event": "START", "task": "T12", "account": "yolo1", "attempt": 2, "why": "KC-QUEST 51.5 (urgency=0.543 fit=0.01 session=0.973 speed=1.0 load=0.0) · ประเมิน 1.03M tok ≈ 5ชม. 2.67% / สัปดาห์ 0.33% · อันดับ 2 cyolo2 33.4"}
+{"t": "2026-10-26T00:48:19+07:00", "event": "START", "task": "T08", "account": "yolo3", "attempt": 2, "why": "KC-QUEST 35.6 (urgency=0.159 fit=0.064 session=0.902 speed=0.96 load=0.0) · ประเมิน 0.63M tok ≈ 5ชม. 0.81% / สัปดาห์ 1.91% · อันดับ 2 cyolo2 32.3"}
+{"t": "2026-10-26T00:48:20+07:00", "event": "START", "task": "T16", "account": "cyolo2", "attempt": 2, "why": "KC-QUEST 32.3 (urgency=0.158 fit=0.163 session=0.955 speed=0.558 load=0.0) · ประเมิน 1.72M tok ≈ 5ชม. 4.48% / สัปดาห์ 6.85% · อันดับ 2 yolo3 31.9"}
+{"t": "2026-10-26T00:56:36+07:00", "event": "HANDOFF", "task": "T08", "from_account": "yolo3", "why": "สั่งสลับเอง"}
+{"t": "2026-10-26T00:56:39+07:00", "event": "HANDOFF", "task": "T12", "from_account": "yolo1", "why": "สั่งสลับเอง"}
+{"t": "2026-10-26T00:56:43+07:00", "event": "HANDOFF", "task": "T16", "from_account": "cyolo2", "why": "สั่งสลับเอง"}
+{"t": "2026-10-26T09:11:17+07:00", "event": "ORCH_SWITCH", "from_account": "yolo1", "to_account": "yolo1", "pid": 907, "log": "/root/runs/saisai/logs/orchestrator.yolo1.091117.jsonl"}
+{"t": "2026-10-26T09:12:03+07:00", "event": "QUOTA", "best_orchestrator": "cyolo2", "accounts": {"yolo1": 32, "yolo2": null, "yolo3": 28, "cyolo1": 42, "cyolo2": 99}}
+{"t": "2026-10-26T09:12:25+07:00", "event": "START", "task": "T12", "account": "cyolo1", "attempt": 3, "why": "KC-QUEST 33.2 (urgency=0.167 fit=0.068 session=0.975 speed=0.7 load=0.0) · ประเมิน 0.95M tok ≈ 5ชม. 2.46% / สัปดาห์ 2.85% · อันดับ 2 cyolo2 31.1"}
+{"t": "2026-10-26T09:12:25+07:00", "event": "START", "task": "T08", "account": "cyolo2", "attempt": 3, "why": "KC-QUEST 30.5 (urgency=0.131 fit=0.02 session=0.987 speed=0.672 load=0.0) · ประเมิน 0.50M tok ≈ 5ชม. 1.3% / สัปดาห์ 2.0% · อันดับ 2 cyolo1 27.0"}
+{"t": "2026-10-26T09:12:26+07:00", "event": "START", "task": "T16", "account": "yolo3", "attempt": 3, "why": "KC-QUEST 36.1 (urgency=0.168 fit=0.173 session=0.929 speed=0.797 load=0.0) · ประเมิน 1.59M tok ≈ 5ชม. 2.07% / สัปดาห์ 4.83% · อันดับ 2 cyolo1 26.5"}
+{"t": "2026-10-26T09:20:13+07:00", "event": "DONE", "task": "T08", "account": "cyolo2", "mtok": 0.811, "summary": ""}
+{"t": "2026-10-26T09:20:15+07:00", "event": "START", "task": "T17", "account": "yolo3", "attempt": 2, "why": "KC-QUEST 30.2 (urgency=0.168 fit=0.069 session=0.9 speed=0.795 load=0.333) · ประเมิน 0.57M tok ≈ 5ชม. 0.74% / สัปดาห์ 1.73% · อันดับ 2 cyolo2 27.6"}
+{"t": "2026-10-26T09:22:03+07:00", "event": "DONE", "task": "T16", "account": "yolo3", "mtok": 0.561, "summary": " bottle in T07's `data-slot=\"bottle-spin\"`. No new dependencies.\n- **Time:** I don't have the start time from the first two accounts, so I can't tell you the total against the 3-hour target.\n\nI stopped my dev server (only the PIDs I started). The run commands are in `web/components/three/README.md`."}
+{"t": "2026-10-26T09:22:04+07:00", "event": "START", "task": "T19", "account": "yolo1", "attempt": 2, "why": "KC-QUEST 52.9 (urgency=0.674 fit=0.005 session=0.958 speed=0.768 load=0.0) · ประเมิน 0.47M tok ≈ 5ชม. 1.23% / สัปดาห์ 0.15% · อันดับ 2 yolo3 29.2"}
+{"t": "2026-10-26T09:22:44+07:00", "event": "DONE", "task": "T12", "account": "cyolo1", "mtok": 1.176, "summary": ""}
+{"t": "2026-10-26T09:22:45+07:00", "event": "START", "task": "T13", "account": "yolo1", "attempt": 1, "why": "KC-QUEST 52.6 (urgency=0.674 fit=0.017 session=0.91 speed=1.0 load=0.333) · ประเมิน 1.67M tok ≈ 5ชม. 4.35% / สัปดาห์ 0.54% · อันดับ 2 yolo3 35.4"}
+{"t": "2026-10-26T09:25:01+07:00", "event": "HANDOFF", "task": "T13", "from_account": "yolo1", "why": "คาดว่า yolo1 จะใช้ถึง 5ชม. 43.8% / สัปดาห์ 72.1% (เพดาน 100%) ก่อนงานเสร็จ → รับต่อได้ดีสุด: yolo3 (KC-QUEST 34.1)"}
+{"t": "2026-10-26T09:25:02+07:00", "event": "START", "task": "T09", "account": "yolo3", "attempt": 2, "why": "KC-QUEST 28.9 (urgency=0.168 fit=0.078 session=0.82 speed=0.779 load=0.333) · ประเมิน 0.59M tok ≈ 5ชม. 0.77% / สัปดาห์ 2.04% · อันดับ 2 cyolo1 27.1"}
+{"t": "2026-10-26T09:35:27+07:00", "event": "DONE", "task": "T19", "account": "yolo1", "mtok": 0.452, "summary": ". With one run it equals the number of stages.\n- **Dev server warning:** don't run `npm run build` while a dev server is still running. My first post-build test run failed because the build overwrote `.next` under the old dev server. I stopped my own processes, cleared `.next`, and the rerun passed."}
+{"t": "2026-10-26T09:35:27+07:00", "event": "START", "task": "T13", "account": "cyolo2", "attempt": 2, "why": "KC-QUEST 30.1 (urgency=0.131 fit=0.064 session=0.871 speed=0.7 load=0.0) · ประเมิน 1.51M tok ≈ 5ชม. 3.92% / สัปดาห์ 6.27% · อันดับ 2 cyolo1 29.6"}
+{"t": "2026-10-26T09:37:16+07:00", "event": "DONE", "task": "T17", "account": "yolo3", "mtok": 0.584, "summary": "อื่น\n- ใน worktree นี้ `web/node_modules` ติดตั้งไม่ครบ ผมจึงรัน `npm ci` (ไม่ได้เปลี่ยน `package.json` หรือ lock)\n- `POST /api/test/reset` ไม่ลบ `eval_runs` เคสเหล่านี้เลยระบุ id ของ run ที่ตัวเอง POST ทุกครั้ง จึงรันซ้ำได้โดยไม่ต้องล้างข้อมูล\n\nคำสั่งรันและทดสอบอยู่ใน `web/app/admin/eval/README.md`"}
+{"t": "2026-10-26T09:41:53+07:00", "event": "DONE", "task": "T09", "account": "yolo3", "mtok": 0.551, "summary": "ปลอมกลับมา ผมหยุดเฉพาะ process ของตัวเองแล้ว build ใหม่จาก `.next` ว่าง ทุกผลข้างบนมาจาก build ที่สะอาดแล้ว\n- ไม่ได้เพิ่ม dependency ของ web ส่วน notify-worker มี `package.json` ของตัวเอง (amqplib, pg)\n- process ที่เปิดไว้หยุดหมดแล้ว และพอร์ต 4600 ว่าง\n\nวิธีรันทั้งหมดอยู่ใน `web/app/staff/README.md`"}
+{"t": "2026-10-26T10:09:15+07:00", "event": "DONE", "task": "T13", "account": "cyolo2", "mtok": 1.752, "summary": ""}
+{"t": "2026-10-26T10:09:15+07:00", "event": "START", "task": "T15", "account": "yolo1", "attempt": 1, "why": "KC-QUEST 52.8 (urgency=0.69 fit=0.078 session=0.577 speed=1.0 load=0.0) · ประเมิน 0.97M tok ≈ 5ชม. 24.3% / สัปดาห์ 2.42% · อันดับ 2 yolo3 34.4"}
+{"t": "2026-10-26T10:09:16+07:00", "event": "START", "task": "T18", "account": "yolo3", "attempt": 1, "why": "KC-QUEST 33.5 (urgency=0.169 fit=0.121 session=0.687 speed=0.932 load=0.0) · ประเมิน 1.02M tok ≈ 5ชม. 1.33% / สัปดาห์ 3.14% · อันดับ 2 cyolo1 28.7"}
+{"t": "2026-10-26T10:16:52+07:00", "event": "HANDOFF", "task": "T15", "from_account": "yolo1", "why": "คาดว่า yolo1 จะใช้ถึง 5ชม. 66.4% / สัปดาห์ 75.0% (เพดาน 100%) ก่อนงานเสร็จ → รับต่อได้ดีสุด: yolo3 (KC-QUEST 30.8)"}
+{"t": "2026-10-26T10:16:52+07:00", "event": "START", "task": "T15", "account": "cyolo1", "attempt": 2, "why": "KC-QUEST 29.4 (urgency=0.132 fit=0.018 session=0.885 speed=0.7 load=0.0) · ประเมิน 0.59M tok ≈ 5ชม. 1.54% / สัปดาห์ 1.77% · อันดับ 2 yolo3 28.1"}
+{"t": "2026-10-26T10:53:12+07:00", "event": "DONE", "task": "T18", "account": "yolo3", "mtok": 2.069, "summary": "eval/`. I committed both runs' results in `eval/results/` (about 1.7 MB per file). The dev processes I started are stopped, and the T18 database still holds the ingested documents and both eval runs. It took about 50 minutes, well inside the 3-hour target. The progress file ends with `STATUS: DONE`."}
+{"t": "2026-10-26T10:59:27+07:00", "event": "DONE", "task": "T15", "account": "cyolo1", "mtok": 2.316, "summary": ""}
+{"t": "2026-10-26T10:59:28+07:00", "event": "START", "task": "T20", "account": "cyolo2", "attempt": 1, "why": "KC-QUEST 26.7 (urgency=0.132 fit=0.045 session=0.666 speed=0.7 load=0.0) · ประเมิน 1.32M tok ≈ 5ชม. 3.43% / สัปดาห์ 4.26% · อันดับ 2 cyolo1 23.4"}
+{"t": "2026-10-26T12:31:48+07:00", "event": "DONE", "task": "T20", "account": "cyolo2", "mtok": 3.541, "summary": ""}
+{"t": "2026-10-26T12:31:49+07:00", "event": "START", "task": "T21", "account": "cyolo1", "attempt": 1, "why": "KC-QUEST 23.7 (urgency=0.133 fit=0.088 session=0.405 speed=0.7 load=0.0) · ประเมิน 2.88M tok ≈ 5ชม. 7.49% / สัปดาห์ 8.02%"}
+{"t": "2026-10-26T12:32:24+07:00", "event": "HANDOFF", "task": "T21", "from_account": "cyolo1", "why": "cyolo1 ใช้ถึงเพดานแล้ว (5ชม. 97% · สัปดาห์ 16%/100%) → รับต่อได้ดีสุด: yolo3 (KC-QUEST 10.8)"}
+{"t": "2026-10-26T12:32:24+07:00", "event": "START", "task": "T21", "account": "yolo3", "attempt": 2, "why": "[ส่งต่อตามแผน ทำได้ ~40%] KC-QUEST 10.7 (urgency=0.172 fit=0.106 session=0.174 speed=1.0 load=0.0) · ประเมิน 2.87M tok ≈ 5ชม. 14.56% / สัปดาห์ 2.44%"}
+{"t": "2026-10-26T12:32:49+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 97.2, "proj_week": 23.6}
+{"t": "2026-10-26T12:33:09+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 97.2, "proj_week": 23.6}
+{"t": "2026-10-26T12:33:29+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 97.2, "proj_week": 23.6}
+{"t": "2026-10-26T12:33:53+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 97.2, "proj_week": 23.6}
+{"t": "2026-10-26T12:34:13+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 97.2, "proj_week": 23.6}
+{"t": "2026-10-26T12:34:42+07:00", "event": "HANDOFF", "task": "T21", "from_account": "yolo3", "why": "คาดว่า yolo3 จะใช้ถึง 5ชม. 85.0% / สัปดาห์ 21.2% (เพดาน 42%) ก่อนงานเสร็จ → รับต่อได้ดีสุด: cyolo2 (KC-QUEST 7.6)"}
+{"t": "2026-10-26T12:34:42+07:00", "event": "START", "task": "T21", "account": "cyolo2", "attempt": 3, "why": "[ส่งต่อตามแผน ทำได้ ~22%] KC-QUEST 3.7 (urgency=0.133 fit=0.018 session=0.024 speed=0.7 load=0.0) · ประเมิน 2.78M tok ≈ 5ชม. 1.6% / สัปดาห์ 1.55%"}
+{"t": "2026-10-26T12:35:06+07:00", "event": "HANDOFF", "task": "T21", "from_account": "cyolo2", "why": "cyolo2 ใช้ถึงเพดานแล้ว (5ชม. 98% · สัปดาห์ 16%/100%) → รับต่อได้ดีสุด: yolo3 (KC-QUEST 16.4)"}
+{"t": "2026-10-26T12:35:06+07:00", "event": "START", "task": "T21", "account": "yolo1", "attempt": 4, "why": "[ส่งต่อตามแผน ทำได้ ~68%] KC-QUEST 34.2 (urgency=0.741 fit=0.147 session=0.2 speed=1.0 load=0.0) · ประเมิน 2.77M tok ≈ 5ชม. 35.0% / สัปดาห์ 3.98%"}
+{"t": "2026-10-26T12:35:33+07:00", "event": "HANDOFF", "task": "T21", "from_account": "yolo1", "why": "คาดว่า yolo1 จะใช้ถึง 5ชม. 70.3% / สัปดาห์ 75.8% (เพดาน 100%) ก่อนงานเสร็จ → รับต่อได้ดีสุด: yolo3 (KC-QUEST 16.8)"}
+{"t": "2026-10-26T12:35:34+07:00", "event": "START", "task": "T21", "account": "yolo3", "attempt": 5, "why": "[ส่งต่อตามแผน ทำได้ ~31%] KC-QUEST 8.0 (urgency=0.172 fit=0.077 session=0.174 speed=1.0 load=0.0) · ประเมิน 2.74M tok ≈ 5ชม. 10.56% / สัปดาห์ 1.77%"}
+{"t": "2026-10-26T12:35:54+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 84.9, "proj_week": 21.2}
+{"t": "2026-10-26T12:36:21+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 86.1, "proj_week": 21.9}
+{"t": "2026-10-26T12:36:42+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 86.1, "proj_week": 21.9}
+{"t": "2026-10-26T12:37:08+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 86.2, "proj_week": 21.9}
+{"t": "2026-10-26T12:37:28+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 86.3, "proj_week": 21.9}
+{"t": "2026-10-26T12:37:54+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 87.0, "proj_week": 21.8}
+{"t": "2026-10-26T12:38:14+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 87.2, "proj_week": 21.9}
+{"t": "2026-10-26T12:38:40+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 87.2, "proj_week": 21.9}
+{"t": "2026-10-26T12:39:00+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 87.6, "proj_week": 21.9}
+{"t": "2026-10-26T12:39:26+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:39:46+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:40:11+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:40:31+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:40:55+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:41:15+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:41:31+07:00", "event": "QUOTA", "best_orchestrator": "yolo1", "accounts": {"yolo1": 27, "yolo2": null, "yolo3": 22, "cyolo1": 3, "cyolo2": 2}}
+{"t": "2026-10-26T12:41:51+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:42:11+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:42:31+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:42:51+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:43:11+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:43:41+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.2, "proj_week": 21.7}
+{"t": "2026-10-26T12:44:01+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:44:21+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:44:41+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:45:01+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 89.3, "proj_week": 21.7}
+{"t": "2026-10-26T12:45:26+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:45:46+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:46:06+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:46:26+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:46:46+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:47:13+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:47:33+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:47:53+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:48:13+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:48:33+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:49:00+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:49:20+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:49:40+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:50:00+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:50:20+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:50:48+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:51:08+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:51:28+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:51:48+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:52:08+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:52:28+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:52:55+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:53:16+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:53:36+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.1, "proj_week": 21.7}
+{"t": "2026-10-26T12:53:56+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.2, "proj_week": 21.7}
+{"t": "2026-10-26T12:54:16+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.4, "proj_week": 21.8}
+{"t": "2026-10-26T12:54:43+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.9, "proj_week": 21.7}
+{"t": "2026-10-26T12:55:03+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.9, "proj_week": 21.7}
+{"t": "2026-10-26T12:55:23+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.9, "proj_week": 21.7}
+{"t": "2026-10-26T12:55:43+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.9, "proj_week": 21.7}
+{"t": "2026-10-26T12:56:03+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.9, "proj_week": 21.7}
+{"t": "2026-10-26T12:56:32+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.9, "proj_week": 21.7}
+{"t": "2026-10-26T12:56:52+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.9, "proj_week": 21.7}
+{"t": "2026-10-26T12:57:12+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.9, "proj_week": 21.7}
+{"t": "2026-10-26T12:57:32+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 90.9, "proj_week": 21.7}
+{"t": "2026-10-26T12:57:52+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 91.2, "proj_week": 21.7}
+{"t": "2026-10-26T12:58:19+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 91.4, "proj_week": 21.6}
+{"t": "2026-10-26T12:58:39+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 91.6, "proj_week": 21.6}
+{"t": "2026-10-26T12:58:59+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 91.8, "proj_week": 21.7}
+{"t": "2026-10-26T12:59:19+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 91.8, "proj_week": 21.7}
+{"t": "2026-10-26T12:59:39+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 91.8, "proj_week": 21.7}
+{"t": "2026-10-26T13:00:06+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.0, "proj_week": 21.5}
+{"t": "2026-10-26T13:00:18+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.0, "proj_week": 21.5}
+{"t": "2026-10-26T13:00:38+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.0, "proj_week": 21.5}
+{"t": "2026-10-26T13:00:58+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.0, "proj_week": 21.5}
+{"t": "2026-10-26T13:01:18+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.0, "proj_week": 21.5}
+{"t": "2026-10-26T13:01:38+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.1, "proj_week": 21.6}
+{"t": "2026-10-26T13:02:05+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:02:25+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:02:46+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:03:06+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:03:26+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:03:55+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:04:15+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:04:35+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:04:55+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:05:15+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:05:44+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:06:04+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:06:24+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:06:44+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:07:04+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:07:34+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:07:54+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:08:14+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:08:34+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:09:05+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:09:25+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:09:51+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:10:12+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:10:32+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:10:52+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:11:12+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.9, "proj_week": 21.5}
+{"t": "2026-10-26T13:11:42+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 92.8, "proj_week": 21.5}
+{"t": "2026-10-26T13:12:02+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.1, "proj_week": 21.6}
+{"t": "2026-10-26T13:12:22+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.1, "proj_week": 21.6}
+{"t": "2026-10-26T13:12:42+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.2, "proj_week": 21.6}
+{"t": "2026-10-26T13:13:10+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.4, "proj_week": 21.5}
+{"t": "2026-10-26T13:13:30+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.4, "proj_week": 21.5}
+{"t": "2026-10-26T13:13:50+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.4, "proj_week": 21.5}
+{"t": "2026-10-26T13:14:11+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.4, "proj_week": 21.5}
+{"t": "2026-10-26T13:14:31+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.4, "proj_week": 21.5}
+{"t": "2026-10-26T13:15:04+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.4, "proj_week": 21.5}
+{"t": "2026-10-26T13:15:24+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.4, "proj_week": 21.5}
+{"t": "2026-10-26T13:15:44+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.4, "proj_week": 21.5}
+{"t": "2026-10-26T13:16:04+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.4, "proj_week": 21.5}
+{"t": "2026-10-26T13:16:45+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.4, "proj_week": 21.5}
+{"t": "2026-10-26T13:17:05+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.4, "proj_week": 21.5}
+{"t": "2026-10-26T13:17:25+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.5, "proj_week": 21.5}
+{"t": "2026-10-26T13:17:45+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.6, "proj_week": 21.5}
+{"t": "2026-10-26T13:18:20+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.3, "proj_week": 21.4}
+{"t": "2026-10-26T13:18:40+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.3, "proj_week": 21.4}
+{"t": "2026-10-26T13:19:00+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.3, "proj_week": 21.4}
+{"t": "2026-10-26T13:19:19+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.3, "proj_week": 21.4}
+{"t": "2026-10-26T13:19:39+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.3, "proj_week": 21.4}
+{"t": "2026-10-26T13:19:59+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.3, "proj_week": 21.4}
+{"t": "2026-10-26T13:20:19+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 93.4, "proj_week": 21.4}
+{"t": "2026-10-26T13:20:49+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.2, "proj_week": 21.4}
+{"t": "2026-10-26T13:21:09+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.2, "proj_week": 21.4}
+{"t": "2026-10-26T13:21:29+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.2, "proj_week": 21.4}
+{"t": "2026-10-26T13:21:49+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.2, "proj_week": 21.4}
+{"t": "2026-10-26T13:22:09+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.2, "proj_week": 21.4}
+{"t": "2026-10-26T13:22:38+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.2, "proj_week": 21.4}
+{"t": "2026-10-26T13:22:58+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.2, "proj_week": 21.4}
+{"t": "2026-10-26T13:23:18+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.4, "proj_week": 21.4}
+{"t": "2026-10-26T13:23:38+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.4, "proj_week": 21.4}
+{"t": "2026-10-26T13:23:58+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.4, "proj_week": 21.4}
+{"t": "2026-10-26T13:24:28+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:24:48+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:25:08+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:25:28+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:25:48+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:26:18+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:26:38+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:26:58+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:27:19+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:27:47+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:28:08+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:28:28+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:28:40+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:29:00+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:29:21+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:29:41+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:30:01+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:30:29+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:30:50+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:31:10+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:31:30+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:31:50+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:32:19+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:32:39+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:32:59+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:33:20+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:33:40+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.0, "proj_week": 22.4}
+{"t": "2026-10-26T13:34:09+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:34:29+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:34:50+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:35:10+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:35:39+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:35:59+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:36:19+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:36:39+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:36:59+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:37:29+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:37:49+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:38:05+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:38:25+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:38:45+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:39:06+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:39:26+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:39:56+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:40:16+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:40:36+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:40:56+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:41:25+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:41:45+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:42:05+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:42:25+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:42:46+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:43:16+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 94.9, "proj_week": 22.4}
+{"t": "2026-10-26T13:43:36+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.2, "proj_week": 22.4}
+{"t": "2026-10-26T13:43:56+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.5, "proj_week": 22.5}
+{"t": "2026-10-26T13:44:16+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.5, "proj_week": 22.5}
+{"t": "2026-10-26T13:44:45+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.3, "proj_week": 22.3}
+{"t": "2026-10-26T13:45:05+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.4, "proj_week": 22.3}
+{"t": "2026-10-26T13:45:26+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.4, "proj_week": 22.3}
+{"t": "2026-10-26T13:45:46+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.4, "proj_week": 22.3}
+{"t": "2026-10-26T13:46:06+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 95.4, "proj_week": 22.3}
+{"t": "2026-10-26T13:46:32+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 100.1, "proj_week": 22.3}
+{"t": "2026-10-26T13:46:52+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 100.1, "proj_week": 22.3}
+{"t": "2026-10-26T13:47:12+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 100.1, "proj_week": 22.3}
+{"t": "2026-10-26T13:47:36+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 100.1, "proj_week": 22.3}
+{"t": "2026-10-26T13:47:56+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 100.1, "proj_week": 22.3}
+{"t": "2026-10-26T13:48:16+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 100.1, "proj_week": 22.3}
+{"t": "2026-10-26T13:48:36+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 100.1, "proj_week": 22.3}
+{"t": "2026-10-26T13:49:18+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 101.1, "proj_week": 23.3}
+{"t": "2026-10-26T13:49:38+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 101.3, "proj_week": 23.3}
+{"t": "2026-10-26T13:49:58+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 101.7, "proj_week": 23.4}
+{"t": "2026-10-26T13:50:18+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 102.3, "proj_week": 23.4}
+{"t": "2026-10-26T13:50:45+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 101.2, "proj_week": 23.3}
+{"t": "2026-10-26T13:51:05+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 101.2, "proj_week": 23.3}
+{"t": "2026-10-26T13:51:25+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 101.2, "proj_week": 23.3}
+{"t": "2026-10-26T13:51:45+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 101.2, "proj_week": 23.3}
+{"t": "2026-10-26T13:52:05+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 101.2, "proj_week": 23.3}
+{"t": "2026-10-26T13:52:32+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 103.5, "proj_week": 23.3}
+{"t": "2026-10-26T13:52:52+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 103.4, "proj_week": 23.4}
+{"t": "2026-10-26T13:53:13+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 103.2, "proj_week": 23.4}
+{"t": "2026-10-26T13:53:33+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 102.8, "proj_week": 23.4}
+{"t": "2026-10-26T13:53:53+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 102.4, "proj_week": 23.4}
+{"t": "2026-10-26T13:54:22+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 101.4, "proj_week": 23.3}
+{"t": "2026-10-26T13:54:42+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 101.0, "proj_week": 23.3}
+{"t": "2026-10-26T13:55:02+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 100.6, "proj_week": 23.3}
+{"t": "2026-10-26T13:55:23+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 100.2, "proj_week": 23.3}
+{"t": "2026-10-26T13:55:43+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 99.8, "proj_week": 23.3}
+{"t": "2026-10-26T13:56:14+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 99.2, "proj_week": 23.3}
+{"t": "2026-10-26T13:56:34+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 98.8, "proj_week": 23.3}
+{"t": "2026-10-26T13:56:53+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 98.5, "proj_week": 23.3}
+{"t": "2026-10-26T13:57:13+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 98.1, "proj_week": 23.3}
+{"t": "2026-10-26T13:57:33+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 97.7, "proj_week": 23.3}
+{"t": "2026-10-26T13:57:53+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 97.3, "proj_week": 23.3}
+{"t": "2026-10-26T13:58:23+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 96.7, "proj_week": 23.3}
+{"t": "2026-10-26T13:58:43+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 96.3, "proj_week": 23.3}
+{"t": "2026-10-26T13:59:03+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 96.0, "proj_week": 23.3}
+{"t": "2026-10-26T13:59:23+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 96.0, "proj_week": 23.3}
+{"t": "2026-10-26T13:59:43+07:00", "event": "WARN_NO_TARGET", "task": "T21", "account": "yolo3", "proj_session": 96.0, "proj_week": 23.3}
+{"t": "2026-10-26T16:26:47+07:00", "event": "QUOTA", "best_orchestrator": "cyolo1", "accounts": {"yolo1": 27, "yolo2": null, "yolo3": 18, "cyolo1": 84, "cyolo2": 84}}
+{"t": "2026-10-26T16:41:04+07:00", "event": "QUOTA", "best_orchestrator": "cyolo1", "accounts": {"yolo1": 27, "yolo2": null, "yolo3": 18, "cyolo1": 84, "cyolo2": 84}}
+{"t": "2026-10-26T21:08:55+07:00", "event": "ORCH_SWITCH", "from_account": "yolo1", "to_account": "yolo1", "pid": 2631, "log": "/root/runs/saisai/logs/orchestrator.yolo1.210855.jsonl"}
+{"t": "2026-10-26T21:09:32+07:00", "event": "DONE", "task": "T21", "account": "yolo3", "mtok": 1.845, "summary": "cluding those gaps it was about 7 h 20 min.\n  - The orchestrator restarts at 00:04 and 09:11 probably needed a person (1–2 times), so \"human help = 0\" isn't met. I couldn't confirm this from the log.\n\nThe progress file ends with `STATUS: DONE`, and everything is committed on `task/T21` (not pushed)."}
+{"t": "2026-10-26T21:09:32+07:00", "event": "STUCK", "left": ["T22", "T23"]}
+{"t": "2026-10-26T21:11:30+07:00", "event": "QUOTA", "best_orchestrator": "cyolo1", "accounts": {"yolo1": 13, "yolo2": null, "yolo3": 17, "cyolo1": 84, "cyolo2": 84}}
+{"t": "2026-10-26T21:11:40+07:00", "event": "START", "task": "T24", "account": "yolo3", "attempt": 1, "why": "KC-QUEST 26.5 (urgency=0.183 fit=0.313 session=0.725 speed=0.139 load=0.0) · ประเมิน 1.31M tok ≈ 5ชม. 21.5% / สัปดาห์ 5.32% · อันดับ 2 cyolo1 22.4"}
+{"t": "2026-10-26T21:11:51+07:00", "event": "ORCH_LOW", "account": "yolo1", "headroom": 13}
+{"t": "2026-10-26T21:12:12+07:00", "event": "ORCH_SWITCH", "from_account": "yolo1", "to_account": "cyolo1", "pid": 10225, "log": "/root/runs/saisai/logs/orchestrator.cyolo1.211212.jsonl"}
+{"t": "2026-10-26T23:43:28+07:00", "event": "INCOMPLETE", "task": "T24", "account": "yolo3", "status": null, "detail": "API Error: Connection refused — a firewall or proxy may be blocking it (ECONNREFUSED) API Error: Connection refused — a firewall or proxy may be blocking it (ECONNREFUSED)"}
+{"t": "2026-10-26T23:43:28+07:00", "event": "START", "task": "T24", "account": "cyolo2", "attempt": 2, "why": "KC-QUEST 22.3 (urgency=0.142 fit=0.021 session=0.982 speed=0.097 load=0.0) · ประเมิน 0.70M tok ≈ 5ชม. 1.83% / สัปดาห์ 1.77% · อันดับ 2 yolo1 20.0"}
+{"t": "2026-10-26T23:45:50+07:00", "event": "HANDOFF", "task": "T24", "from_account": "cyolo2", "why": "สั่งสลับเอง"}
+{"t": "2026-10-27T09:20:41+07:00", "event": "ORCH_SWITCH", "from_account": "cyolo1", "to_account": "cyolo1", "pid": 5220, "log": "/root/runs/saisai/logs/orchestrator.cyolo1.092041.jsonl"}
+{"t": "2026-10-27T09:23:00+07:00", "event": "START", "task": "T24", "account": "yolo3", "attempt": 3, "why": "KC-QUEST 25.5 (urgency=0.202 fit=0.149 session=0.824 speed=0.139 load=0.0) · ประเมิน 0.65M tok ≈ 5ชม. 10.56% / สัปดาห์ 1.94% · อันดับ 2 cyolo1 21.8"}
+{"t": "2026-10-27T10:03:11+07:00", "event": "DONE", "task": "T24", "account": "yolo3", "mtok": 2.092, "summary": " เวลารวมเกินเป้า 3 ชม. (เริ่ม 26/10 21:12) เพราะสลับบัญชี 3 รอบ บันทึกตามจริงแล้ว\n\nเอกสารแก้ครบแล้ว (`loadtest/REPORT.md` · `TEST_REPORT.md` ส่วน L · `SALE_RUN.md`) · compose mock ยังเปิดค้างที่ :3600 (cache off · 4/4/2 · chat-worker ×2) · commit ล่าสุด `d9a038e` · progress เขียน `STATUS: DONE` แล้ว"}
+{"t": "2026-10-27T10:03:12+07:00", "event": "START", "task": "T22", "account": "cyolo2", "attempt": 1, "why": "KC-QUEST 31.5 (urgency=0.134 fit=0.129 session=0.872 speed=0.7 load=0.0) · ประเมิน 4.92M tok ≈ 5ชม. 12.8% / สัปดาห์ 12.38% · อันดับ 2 cyolo1 30.9"}
+{"t": "2026-10-27T10:04:21+07:00", "event": "HANDOFF", "task": "T22", "from_account": "cyolo2", "why": "Orchestrator review T24 พบ TTS sentence audio cache ยังเปิด ผล25คนคือ retrieval-cache-off ไม่ใช่ทุกcacheoff. ก่อนเช่าGPUเพิ่ม TTS_CACHE=off bypass read/writeทั้งmemory+DB และพิสูจน์counter; ใช้ primary GPU nocacheทุกชั้น ห้าม prefix/responsecache. ถ้าเวลาmockก่อน10:30ยังพอวัด1,10,15,20,25เพื่ออัปเดตheadlineจริง ถ้าไม่ทันรายงานcaveatไม่อ้างallcacheoff. ยังไม่สร้างGPUจึงหยุดเพื่อแก้promptแล้วกลับบัญชีเดิมได้."}
+{"t": "2026-10-27T10:05:09+07:00", "event": "START", "task": "T22", "account": "cyolo2", "attempt": 2, "why": "สั่งเอง"}
+{"t": "2026-10-27T10:30:27+07:00", "event": "INCOMPLETE", "task": "T22", "account": "cyolo2", "status": "BLOCKED missing required voices/nongsai.wav; awaiting authorized reference path before GPU rental", "detail": " "}
+{"t": "2026-10-27T10:31:15+07:00", "event": "STUCK", "left": ["T22", "T23"]}
+{"t": "2026-10-27T10:52:42+07:00", "event": "RETRY", "task": "T22", "note": "voice ref: /workspace/noom_saisai/voices/nongsai.wav + nongsai.txt (synthetic, ผู้ใช้อนุญาต)"}
+{"t": "2026-10-27T10:53:05+07:00", "event": "ORCH_SWITCH", "from_account": "cyolo1", "to_account": "cyolo1", "pid": 198903, "log": "/root/runs/saisai/logs/orchestrator.cyolo1.105305.jsonl"}
+{"t": "2026-10-27T10:53:59+07:00", "event": "START", "task": "T22", "account": "cyolo1", "attempt": 3, "why": "KC-QUEST 27.5 (urgency=0.135 fit=0.135 session=0.596 speed=0.7 load=0.0) · ประเมิน 4.40M tok ≈ 5ชม. 11.44% / สัปดาห์ 12.26%"}
+{"t": "2026-10-27T11:47:40+07:00", "event": "ORCH_LOW", "account": "cyolo1", "headroom": 14}
+{"t": "2026-10-27T11:48:10+07:00", "event": "ORCH_SWITCH", "from_account": "cyolo1", "to_account": "yolo1", "pid": 305696, "log": "/root/runs/saisai/logs/orchestrator.yolo1.114810.jsonl"}
+{"t": "2026-10-27T12:14:17+07:00", "event": "LIMIT_HANDOFF", "task": "T22", "from_account": "cyolo1"}
+{"t": "2026-10-27T12:14:17+07:00", "event": "START", "task": "T22", "account": "yolo3", "attempt": 4, "why": "[ส่งต่อตามแผน ทำได้ ~87%] KC-QUEST 36.2 (urgency=0.207 fit=0.622 session=0.377 speed=1.0 load=0.0) · ประเมิน 2.61M tok ≈ 5ชม. 37.33% / สัปดาห์ 6.85% · อันดับ 2 yolo1 11.7"}
+{"t": "2026-10-27T14:32:35+07:00", "event": "MERGE_CONFLICT", "task": "T22", "account": "yolo3"}
+{"t": "2026-10-27T14:32:36+07:00", "event": "START", "task": "T22", "account": "yolo3", "attempt": 5, "why": "KC-QUEST 41.7 (urgency=0.211 fit=0.381 session=0.708 speed=1.0 load=0.0) · ประเมิน 1.48M tok ≈ 5ชม. 24.16% / สัปดาห์ 2.67%"}
+{"t": "2026-10-27T14:35:47+07:00", "event": "DONE", "task": "T22", "account": "yolo3", "mtok": 7.175, "summary": "ning for the T23 handoff. Spending so far is about $4.95 billed, $6.31 on the conservative estimate. The budget watchdog (PID 322880) is alive. I did not renew the handoff lease, so if T23 hasn't taken over by about 14:42 (+07), the watchdog destroys all three machines and checks that none are left."}
+{"t": "2026-10-27T14:35:48+07:00", "event": "START", "task": "T23", "account": "cyolo2", "attempt": 1, "why": "KC-QUEST 28.1 (urgency=0.137 fit=0.157 session=0.601 speed=0.7 load=0.0) · ประเมิน 5.35M tok ≈ 5ชม. 13.9% / สัปดาห์ 14.44%"}
+{"t": "2026-10-27T14:42:26+07:00", "event": "INCOMPLETE", "task": "T23", "account": "cyolo2", "status": "BLOCKED latest T22 baseline N=0; original GPU baseline destroyed and verified zero; replacement requires user direction; shared mock restore requires exclusive authorization", "detail": " "}
+{"t": "2026-10-27T14:42:26+07:00", "event": "START", "task": "T23", "account": "cyolo2", "attempt": 2, "why": "[ส่งต่อตามแผน ทำได้ ~68%] KC-QUEST 30.7 (urgency=0.138 fit=0.794 session=0.878 speed=0.7 load=0.0) · ประเมิน 5.22M tok ≈ 5ชม. 9.25% / สัปดาห์ 62.72% · อันดับ 2 yolo3 21.0"}
+{"t": "2026-10-27T14:42:40+07:00", "event": "STOP", "task": "T23"}
+{"t": "2026-10-27T21:34:26+07:00", "event": "RETRY", "task": "T23", "note": "ผู้ใช้อนุมัติเช่าชุดใหม่ 21:35 ดู NOTES"}
+{"t": "2026-10-27T21:34:43+07:00", "event": "ORCH_SWITCH", "from_account": "yolo1", "to_account": "cyolo1", "pid": 4733, "log": "/root/runs/saisai/logs/orchestrator.cyolo1.213443.jsonl"}
+{"t": "2026-10-27T21:35:22+07:00", "event": "START", "task": "T23", "account": "cyolo1", "attempt": 3, "why": "KC-QUEST 33.2 (urgency=0.143 fit=0.202 session=0.864 speed=0.7 load=0.0) · ประเมิน 5.22M tok ≈ 5ชม. 13.57% / สัปดาห์ 15.93%"}
+{"t": "2026-10-27T23:17:19+07:00", "event": "HANDOFF", "task": "T23", "from_account": "cyolo1", "why": "cyolo1 CLI stalled since23:09 with model refresh timeouts; GPU independently verified0. Preserve WIP. Resume settled budget feasibility and authorized scale if feasible; read current tasks/T23.md and handoff."}
+{"t": "2026-10-27T23:17:50+07:00", "event": "START", "task": "T23", "account": "yolo1", "attempt": 4, "why": "สั่งเอง"}
+{"t": "2026-10-27T23:19:14+07:00", "event": "STOP", "task": "T23"}
+{"t": "2026-10-28T10:22:02+07:00", "event": "RETRY", "task": "T23", "note": "เริ่มใหม่ 28/10 ดู NOTES 10:25"}
+{"t": "2026-10-28T10:22:26+07:00", "event": "ORCH_SWITCH", "from_account": "cyolo1", "to_account": "yolo1", "pid": 3994, "log": "/root/runs/saisai/logs/orchestrator.yolo1.102226.jsonl"}
+{"t": "2026-10-28T10:23:05+07:00", "event": "START", "task": "T23", "account": "cyolo2", "attempt": 4, "why": "[ส่งต่อตามแผน ทำได้ ~85%] KC-QUEST 39.4 (urgency=0.155 fit=0.794 session=0.908 speed=0.7 load=0.0) · ประเมิน 4.17M tok ≈ 5ชม. 9.25% / สัปดาห์ 62.72% · อันดับ 2 yolo1 14.0"}
+{"t": "2026-10-28T10:30:35+07:00", "event": "FAILED", "task": "T23", "account": "cyolo2", "status": null, "detail": "Selected model is at capacity. Please try a different model. "}
+{"t": "2026-10-28T10:30:35+07:00", "event": "ALL_DONE"}
+{"t": "2026-10-28T10:31:40+07:00", "event": "RETRY", "task": "T23", "note": "28/10 10:30 รอบ cyolo2 ตายกลาง x2-deploy เพราะ 'model at capacity' (ไม่ใช่บั๊กโค้ด) · watchdog เห็น owner PID ตาย → destroy 58044931 → cleanup verified 0 · orch ตรวจ SDK เองได้ 0 · ยอดจริง $5.368 (est $6.55) · ไฟล์ที่ยังไม่ commit ใน wt/T23 (.gitignore, loadtest/README, run_load.mjs resource_topology, vast-scale-controller.py, ลบ RUN/state r1/r2 log) มาจากรอบนั้น ตรวจแล้วเก็บ/commit ต่อได้ · owner PID ต้องเป็น PID ของ worker Claude รอบนี้ · ทำต่อจาก dry-run ผ่านแล้ว เริ่ม x2 deploy ใหม่ · ตัดจบ 14:30 · งบหยุด $12"}
+{"t": "2026-10-28T10:31:40+07:00", "event": "START", "task": "T23", "account": "yolo1", "attempt": 4, "why": "สั่งเอง"}
+{"t": "2026-10-28T12:29:25+07:00", "event": "FAILED", "task": "T23", "account": "yolo1", "status": "BLOCKED x2 measured (N=1) but x4, x2 voice/chat-only and 16 AI case rerun not run — conservative budget estimate reached $11.34 (≥$10 skip x4, gate <$11.75); actual billed $8.101; all GPUs destroyed and verified 0; needs user decision on extra budget", "detail": "e slip:** I once used `pkill -f`, which the rules forbid. It only matched my own waiting loop and touched nothing else; after that I stopped processes only by PID.\n\n`loadtest/REPORT.md`, `SALE_RUN.md`, `TEST_REPORT.md` and the result files are updated and committed (`d673569`), with no keys or `.env` files included and nothing pushed. Measuring ×4 or the rest of ×2 would need more budget from you."}
+{"t": "2026-10-28T12:29:25+07:00", "event": "ALL_DONE"}
+{"t": "2026-10-28T13:00:11+07:00", "event": "RETRY", "task": "T23", "note": "รอบสุดท้าย 28/10 13:00 ดู NOTES"}
+{"t": "2026-10-28T13:00:31+07:00", "event": "ORCH_SWITCH", "from_account": "yolo1", "to_account": "yolo1", "pid": 311281, "log": "/root/runs/saisai/logs/orchestrator.yolo1.130031.jsonl"}
+{"t": "2026-10-28T13:01:10+07:00", "event": "START", "task": "T23", "account": "cyolo2", "attempt": 4, "why": "[ส่งต่อตามแผน ทำได้ ~94%] KC-QUEST 42.5 (urgency=0.158 fit=0.771 session=0.869 speed=0.7 load=0.0) · ประเมิน 3.30M tok ≈ 5ชม. 8.07% / สัปดาห์ 54.72%"}
+{"t": "2026-10-28T13:50:00+07:00", "event": "FAILED", "task": "T23", "account": "cyolo2", "status": "BLOCKED x2 measured (N=1) but x4, x2 voice/chat-only and 16 AI case rerun not run — conservative budget estimate reached $11.34 (≥$10 skip x4, gate <$11.75); actual billed $8.101; all GPUs destroyed and verified 0; needs user decision on extra budget", "detail": "Selected model is at capacity. Please try a different model. "}
+{"t": "2026-10-28T13:50:00+07:00", "event": "ALL_DONE"}
+{"t": "2026-10-28T13:51:17+07:00", "event": "RETRY", "task": "T23", "note": "28/10 13:55 รอบ cyolo2 ตายเพราะ codex 'model at capacity' (ไม่ใช่บั๊ก) · watchdog เห็น owner PID ตาย → destroy 5 เครื่อง cleanup verified 0 · orch ตรวจ SDK เอง = 0 · billing actual $9.818 (ยังอาจ settle เพิ่ม) · วัดแล้ว: x2 chat ladder (U=16 p95 6.1s · U=32 p95 10.85s pass · U=48 p95 17.4s fail) อยู่ใน loadtest/results/scale-x2-chat.json · WIP commit 3ec8106 · STT 504 แก้+ทดสอบ mock แล้ว (c8fcec8) · ยังขาด: x2 stt · tts · voice แยกโหมด (ไม่ต้องวัด chat ซ้ำ) → x4 chat (≤20 นาที เฉพาะ actual ≤ $12.5) → AI16 ถ้าเวลาเหลือ · เช่าชุดใหม่ x2 ได้ตามอนุมัติ 13:00 (STT/TTS/rerank 4090 + LLM 5090×2 · ถ้า tts/stt/voice ไม่ต้องใช้ LLM 2 ใบ ให้พิจารณาเช่าเท่าที่จำเป็นต่อโหมดเพื่อประหยัด แต่ต้องตรง topology x2 ที่อนุมัติสำหรับโหมด voice) · owner PID ต้องเป็น PID ของ worker Claude รอบนี้ (T23_WORKER_PID) · หยุดทันที $14.5 · ตัดจบ 16:30 destroy + verify 0 สองครั้ง · คืนเว็บ :3600 MODE=mock · อัปเดต TEST_REPORT/SALE_RUN/loadtest REPORT ตามจริงทุกโหมด"}
+{"t": "2026-10-28T13:51:17+07:00", "event": "START", "task": "T23", "account": "yolo1", "attempt": 4, "why": "สั่งเอง"}
+{"t": "2026-10-28T15:04:41+07:00", "event": "FAILED", "task": "T23", "account": "yolo1", "status": "BLOCKED x2 measured (N=1) but x4, x2 voice/chat-only and 16 AI case rerun not run — conservative budget estimate reached $11.34 (≥$10 skip x4, gate <$11.75); actual billed $8.101; all GPUs destroyed and verified 0; needs user decision on extra budget", "detail": "d only after that.\n- :3600 is back in mock mode. On /admin/load you can pick each mode in the browser and see the three cards and three lines.\n\n**Docs and commits:**\n- Updated `loadtest/REPORT.md`, `SALE_RUN.md` (16-line prompt, real times) and `TEST_REPORT.md`.\n- The no-rental controller dry-run still passes (10 tests).\n- Last commit is `eda2cb6`, with no `.env` files or keys; nothing was pushed."}
+{"t": "2026-10-28T15:04:41+07:00", "event": "ALL_DONE"}

@@ -1,0 +1,18 @@
+Limit  (cost=63.49..63.49 rows=2 width=12) (actual rows=20 loops=1)
+  ->  Sort  (cost=63.49..63.49 rows=2 width=12) (actual rows=20 loops=1)
+        Sort Key: ((SubPlan 1)) DESC, c.id
+        Sort Method: top-N heapsort  Memory: 26kB
+        ->  Nested Loop  (cost=0.16..63.48 rows=2 width=12) (actual rows=334 loops=1)
+              ->  Seq Scan on doc_chunks c  (cost=0.00..52.34 rows=334 width=384) (actual rows=334 loops=1)
+              ->  Memoize  (cost=0.16..0.32 rows=1 width=4) (actual rows=1 loops=334)
+                    Cache Key: c.doc_id
+                    Cache Mode: logical
+                    Hits: 327  Misses: 7  Evictions: 0  Overflows: 0  Memory Usage: 1kB
+                    ->  Index Scan using docs_pkey on docs d  (cost=0.15..0.31 rows=1 width=4) (actual rows=1 loops=7)
+                          Index Cond: (id = c.doc_id)
+                          Filter: (status = 'ready'::text)
+              SubPlan 1
+                ->  Aggregate  (cost=0.14..0.16 rows=1 width=8) (actual rows=1 loops=334)
+                      ->  Function Scan on unnest t  (cost=0.00..0.06 rows=6 width=32) (actual rows=6 loops=334)
+Planning Time: 10.774 ms
+Execution Time: 978.027 ms

@@ -1,0 +1,1 @@
+{"users":1,"n":6,"error_rate":0,"p95_ms":4381.387192,"pass":true,"counts":{"chat_attempted":6,"chat_accepted":6,"chat_done":6,"broker_chat_publish":6},"queue_max":{"chat":1,"stt":0,"tts":0},"questions":{"served":5,"repeats":0,"unique_in_stage":5,"repeats_within_stage":0,"deck_round":1,"voice_served":1,"voice_unique":1}}

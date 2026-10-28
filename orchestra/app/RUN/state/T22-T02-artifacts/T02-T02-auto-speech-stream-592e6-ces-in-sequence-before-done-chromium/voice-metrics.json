@@ -1,0 +1,44 @@
+{
+  "states": [
+    "idle",
+    "thinking",
+    "talking",
+    "idle",
+    "talking",
+    "idle",
+    "talking",
+    "idle"
+  ],
+  "maxMouth": 1,
+  "speechEndedAt": 0,
+  "speechStartedAt": 0,
+  "doneAt": 20348.30000000028,
+  "plays": [
+    {
+      "seq": 1,
+      "lang": "en",
+      "at": 18146.100000000093,
+      "duration": 2.718005
+    },
+    {
+      "seq": 2,
+      "lang": "en",
+      "at": 20937.30000000028,
+      "duration": 10.909705
+    },
+    {
+      "seq": 3,
+      "lang": "en",
+      "at": 31933.80000000028,
+      "duration": 8.094286
+    }
+  ],
+  "ended": [
+    1,
+    2,
+    3
+  ],
+  "micCalls": 0,
+  "stoppedTracks": 0,
+  "stopToFirstAudioMs": null
+}

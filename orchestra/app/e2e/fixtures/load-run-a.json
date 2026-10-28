@@ -1,0 +1,151 @@
+{
+  "label": "load-run-a (mock fixture)",
+  "config": {
+    "mode": "mix",
+    "environment": "mock",
+    "think_sec": 30,
+    "stage_sec": 120,
+    "synthetic": true
+  },
+  "stages": [
+    {
+      "users": 1,
+      "mode": "mix",
+      "n": 1000,
+      "ok": 1000,
+      "err": 0,
+      "error_rate": 0.0,
+      "p50_ms": 800,
+      "p95_ms": 1200,
+      "ttft_p95_ms": 400,
+      "queue_max": {
+        "chat": 0,
+        "stt": 0,
+        "tts": 0
+      },
+      "pass": true
+    },
+    {
+      "users": 10,
+      "mode": "mix",
+      "n": 1000,
+      "ok": 1000,
+      "err": 0,
+      "error_rate": 0.0,
+      "p50_ms": 1000,
+      "p95_ms": 1800,
+      "ttft_p95_ms": 500,
+      "queue_max": {
+        "chat": 5,
+        "stt": 2,
+        "tts": 3
+      },
+      "pass": true
+    },
+    {
+      "users": 25,
+      "mode": "mix",
+      "n": 1000,
+      "ok": 1000,
+      "err": 0,
+      "error_rate": 0.0,
+      "p50_ms": 1400,
+      "p95_ms": 2500,
+      "ttft_p95_ms": 650,
+      "queue_max": {
+        "chat": 10,
+        "stt": 4,
+        "tts": 6
+      },
+      "pass": true
+    },
+    {
+      "users": 50,
+      "mode": "mix",
+      "n": 1000,
+      "ok": 1000,
+      "err": 0,
+      "error_rate": 0.0,
+      "p50_ms": 1800,
+      "p95_ms": 3200,
+      "ttft_p95_ms": 800,
+      "queue_max": {
+        "chat": 15,
+        "stt": 6,
+        "tts": 9
+      },
+      "pass": true
+    },
+    {
+      "users": 100,
+      "mode": "mix",
+      "n": 1000,
+      "ok": 1000,
+      "err": 0,
+      "error_rate": 0.0,
+      "p50_ms": 2500,
+      "p95_ms": 4800,
+      "ttft_p95_ms": 1100,
+      "queue_max": {
+        "chat": 20,
+        "stt": 8,
+        "tts": 12
+      },
+      "pass": true
+    },
+    {
+      "users": 150,
+      "mode": "mix",
+      "n": 1000,
+      "ok": 1000,
+      "err": 0,
+      "error_rate": 0.0,
+      "p50_ms": 3500,
+      "p95_ms": 7000,
+      "ttft_p95_ms": 1600,
+      "queue_max": {
+        "chat": 25,
+        "stt": 10,
+        "tts": 15
+      },
+      "pass": true
+    },
+    {
+      "users": 200,
+      "mode": "mix",
+      "n": 1000,
+      "ok": 1000,
+      "err": 0,
+      "error_rate": 0.0,
+      "p50_ms": 4800,
+      "p95_ms": 11000,
+      "ttft_p95_ms": 2400,
+      "queue_max": {
+        "chat": 30,
+        "stt": 12,
+        "tts": 18
+      },
+      "pass": true
+    },
+    {
+      "users": 250,
+      "mode": "mix",
+      "n": 1000,
+      "ok": 970,
+      "err": 30,
+      "error_rate": 0.03,
+      "p50_ms": 7800,
+      "p95_ms": 16000,
+      "ttft_p95_ms": 4800,
+      "queue_max": {
+        "chat": 35,
+        "stt": 14,
+        "tts": 21
+      },
+      "pass": false
+    }
+  ],
+  "max_users_ok": {
+    "mix": 200
+  }
+}

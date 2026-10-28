@@ -1,0 +1,181 @@
+{
+  "captured_epoch": 1793165199.9361293,
+  "inventory": {
+    "task_instances": 0,
+    "other_instances": 0
+  },
+  "instances": [
+    {
+      "instance_id": 57914113,
+      "label": "saisai-20261027-llm",
+      "gpu": 1.787,
+      "disk": 0.136,
+      "bwd": 0.13,
+      "bwu": 0.004,
+      "total": 2.057
+    },
+    {
+      "instance_id": 57914254,
+      "label": "saisai-20261027-stt",
+      "gpu": 1.445,
+      "disk": 0.05,
+      "bwd": 0.022,
+      "bwu": 0.001,
+      "total": 1.518
+    },
+    {
+      "instance_id": 57914350,
+      "label": "saisai-20261027-tts",
+      "gpu": 1.434,
+      "disk": 0.05,
+      "bwd": 0.027,
+      "bwu": 0.002,
+      "total": 1.513
+    },
+    {
+      "instance_id": 57974344,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0.1,
+      "disk": 0.009,
+      "bwd": 0.025,
+      "bwu": 0.001,
+      "total": 0.135
+    },
+    {
+      "instance_id": 57974686,
+      "label": "saisai-20261027-llm-2",
+      "gpu": 0.083,
+      "disk": 0.007,
+      "bwd": 0.001,
+      "bwu": 0.0,
+      "total": 0.091
+    },
+    {
+      "instance_id": 57975038,
+      "label": "saisai-20261027-stt",
+      "gpu": 0.0,
+      "disk": 0.002,
+      "bwd": 0.0,
+      "bwu": 0.0,
+      "total": 0.002
+    },
+    {
+      "instance_id": 57978074,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0.042,
+      "disk": 0.004,
+      "bwd": 0.0,
+      "bwu": 0.0,
+      "total": 0.046
+    },
+    {
+      "instance_id": 57978391,
+      "label": "saisai-20261027-llm-2",
+      "gpu": 0.0,
+      "disk": 0.002,
+      "bwd": 0.0,
+      "bwu": 0.0,
+      "total": 0.002
+    },
+    {
+      "instance_id": 57980427,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0.0,
+      "disk": 0.001,
+      "bwd": 0.0,
+      "bwu": 0.0,
+      "total": 0.001
+    },
+    {
+      "instance_id": 57981212,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0.0,
+      "disk": 0.003,
+      "bwd": 0.0,
+      "bwu": 0.0,
+      "total": 0.003
+    },
+    {
+      "instance_id": 58044931,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0.0,
+      "disk": 0.002,
+      "bwd": 0.0,
+      "bwu": 0.0,
+      "total": 0.002
+    },
+    {
+      "instance_id": 58045480,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0.035,
+      "disk": 0.004,
+      "bwd": 0.0,
+      "bwu": 0.0,
+      "total": 0.039
+    },
+    {
+      "instance_id": 58046704,
+      "label": "saisai-20261027-stt",
+      "gpu": 0.073,
+      "disk": 0.003,
+      "bwd": 0.001,
+      "bwu": 0.0,
+      "total": 0.077
+    },
+    {
+      "instance_id": 58046920,
+      "label": "saisai-20261027-tts",
+      "gpu": 0.051,
+      "disk": 0.003,
+      "bwd": 0.0,
+      "bwu": 0.0,
+      "total": 0.054
+    },
+    {
+      "instance_id": 58048734,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0.606,
+      "disk": 0.024,
+      "bwd": 0.064,
+      "bwu": 0.003,
+      "total": 0.697
+    },
+    {
+      "instance_id": 58049004,
+      "label": "saisai-20261027-stt",
+      "gpu": 0.371,
+      "disk": 0.019,
+      "bwd": 0.014,
+      "bwu": 0.0,
+      "total": 0.404
+    },
+    {
+      "instance_id": 58049112,
+      "label": "saisai-20261027-llm-2",
+      "gpu": 0.647,
+      "disk": 0.022,
+      "bwd": 0.064,
+      "bwu": 0.002,
+      "total": 0.735
+    },
+    {
+      "instance_id": 58049267,
+      "label": "saisai-20261027-tts",
+      "gpu": 0.362,
+      "disk": 0.018,
+      "bwd": 0.03,
+      "bwu": 0.001,
+      "total": 0.411
+    },
+    {
+      "instance_id": 58049699,
+      "label": "saisai-20261027-rerank",
+      "gpu": 0.298,
+      "disk": 0.012,
+      "bwd": 0.004,
+      "bwu": 0.0,
+      "total": 0.314
+    }
+  ],
+  "total": 8.101
+}

@@ -1,0 +1,709 @@
+[
+ {
+  "id": "CONV-01",
+  "title": "B-250 สี/ราคา/ขั้นต่ำ/ส่วนลด/โลโก้",
+  "type": "catalog_price",
+  "lang": "th",
+  "account": null,
+  "now": null,
+  "turns": [
+   {
+    "text": "ขวด B-250 มีสีอะไรบ้าง",
+    "expected": "ใส ชา เขียว",
+    "expected_values": [
+     [
+      "ใส",
+      "clear"
+     ],
+     [
+      "ชา",
+      "amber"
+     ],
+     [
+      "เขียว",
+      "green"
+     ]
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "สีเขียวใบละเท่าไร",
+    "refers_back": true,
+    "expected": "5.80 บาท",
+    "expected_values": [
+     "5.80"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "ขั้นต่ำเท่าไร",
+    "refers_back": true,
+    "expected": "1,200 ใบ",
+    "expected_values": [
+     "1,200"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "ถ้าหมื่นใบค่าขวดเท่าไร",
+    "refers_back": true,
+    "expected_values": [
+     "58,000.00",
+     "2,900.00"
+    ],
+    "expected": "bottles · discount: 58,000.00 · 2,900.00",
+    "kind": "price"
+   },
+   {
+    "text": "ใส่โลโก้ด้วยเพิ่มเท่าไร",
+    "refers_back": true,
+    "expected_values": [
+     "8,000.00"
+    ],
+    "expected": "logo: 8,000.00",
+    "kind": "price"
+   }
+  ]
+ },
+ {
+  "id": "CONV-02",
+  "title": "B-100 ส่งคลังบางนา → หมื่นใบ → วันรับของ → ใบเสนอราคา",
+  "type": "quote",
+  "lang": "th",
+  "account": "C01",
+  "now": null,
+  "turns": [
+   {
+    "text": "ราคา B-100 สีใส 9,600 ใบ ส่งคลังบางนา",
+    "expected_values": [
+     "30,720.00",
+     "2,150.40",
+     "32,870.40",
+     "320.00"
+    ],
+    "expected": "subtotal · vat · total · upsell: 30,720.00 · 2,150.40 · 32,870.40 · 320.00",
+    "kind": "price"
+   },
+   {
+    "text": "แล้วถ้าหมื่นใบล่ะ",
+    "refers_back": true,
+    "expected_values": [
+     "30,400.00",
+     "32,528.00"
+    ],
+    "expected": "subtotal · total: 30,400.00 · 32,528.00",
+    "kind": "price"
+   },
+   {
+    "text": "รับของเร็วสุดวันไหน",
+    "expected_values": [
+     "2026-10-25"
+    ],
+    "expected": "earliest: 2026-10-25",
+    "kind": "price"
+   },
+   {
+    "text": "ขอใบเสนอราคาเลย",
+    "refers_back": true,
+    "expected": "ออกใบเสนอราคา QT-NNNN",
+    "expected_values": [
+     "QT-"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "ใบนี้หมดอายุเมื่อไร",
+    "refers_back": true,
+    "expected": "หมดอายุ 2026-10-18",
+    "expected_values": [
+     "2026-10-18"
+    ],
+    "kind": "fixed"
+   }
+  ]
+ },
+ {
+  "id": "CONV-03",
+  "title": "B-500 25,000 ใบ ค่าส่ง 160/50/51/>300 กม.",
+  "type": "shipping",
+  "lang": "th",
+  "account": null,
+  "now": null,
+  "turns": [
+   {
+    "text": "B-500 สีใส 25,000 ใบ ส่ง 160 กม. ค่าส่งเท่าไร",
+    "expected_values": [
+     "3,000.00",
+     "2"
+    ],
+    "expected": "shipping · trips: 3,000.00 · 2",
+    "kind": "price"
+   },
+   {
+    "text": "ถ้าส่ง 50 กม. แทนล่ะ",
+    "refers_back": true,
+    "expected_values": [
+     "0.00"
+    ],
+    "expected": "shipping: 0.00",
+    "kind": "price"
+   },
+   {
+    "text": "51 กม. ล่ะ",
+    "refers_back": true,
+    "expected_values": [
+     "3,000.00"
+    ],
+    "expected": "shipping: 3,000.00",
+    "kind": "price"
+   },
+   {
+    "text": "ถ้าไกลเกิน 300 กม. ล่ะ",
+    "refers_back": true,
+    "expected_values": [
+     [
+      "DISTANCE_TOO_FAR",
+      "ติดต่อ",
+      "contact",
+      "02-000-0000"
+     ]
+    ],
+    "expected": "errors: DISTANCE_TOO_FAR|ติดต่อ|contact|02-000-0000",
+    "kind": "price"
+   },
+   {
+    "text": "ขอเบอร์ติดต่อฝ่ายขาย",
+    "expected": "02-000-0000",
+    "expected_values": [
+     "02-000-0000"
+    ],
+    "kind": "fixed"
+   }
+  ]
+ },
+ {
+  "id": "CONV-04",
+  "title": "ขั้นตอนเคลม: วัน/รูป/ไฟล์/ล็อต",
+  "type": "doc_claim",
+  "lang": "th",
+  "account": null,
+  "now": null,
+  "turns": [
+   {
+    "text": "เคลมขวดแตกได้ภายในกี่วัน",
+    "expected_values": [
+     "7"
+    ],
+    "facts": [
+     "POL-107",
+     "LOG-110"
+    ],
+    "doc_files": [
+     "SS-POLICY.pdf",
+     "SS-LOGISTICS.pdf"
+    ],
+    "expected": "แจ้งเคลมได้ภายใน 7 วันนับจากวันจัดส่ง / แจ้งเคลมในระบบภายใน 7 วันนับจากวันจัดส่ง โดยวันจัดส่งนับเป็นวันที่ 0",
+    "kind": "doc"
+   },
+   {
+    "text": "ต้องแนบรูปกี่รูป",
+    "refers_back": true,
+    "expected_values": [
+     "1",
+     "5"
+    ],
+    "facts": [
+     "POL-119",
+     "LOG-111"
+    ],
+    "doc_files": [
+     "SS-POLICY.pdf",
+     "SS-LOGISTICS.pdf"
+    ],
+    "expected": "ต้องแนบรูปอย่างน้อย 1 รูป และไม่เกิน 5 รูปต่อคำขอเคลม / แนบรูปได้ 1–5 รูป เป็นไฟล์ JPG หรือ PNG ขนาดไม่เกิน 5 MB ต่อรูป",
+    "kind": "doc"
+   },
+   {
+    "text": "ไฟล์แบบไหนได้บ้าง",
+    "refers_back": true,
+    "expected_values": [
+     "JPG",
+     "PNG"
+    ],
+    "facts": [
+     "POL-120",
+     "LOG-111"
+    ],
+    "doc_files": [
+     "SS-POLICY.pdf",
+     "SS-LOGISTICS.pdf"
+    ],
+    "expected": "รับเฉพาะไฟล์ JPG หรือ PNG ระบบตรวจชนิดจากเนื้อไฟล์จริง ไม่ใช่จากนามสกุล / แนบรูปได้ 1–5 รูป เป็นไฟล์ JPG หรือ PNG ขนาดไม่เกิน 5 MB ต่อรูป",
+    "kind": "doc"
+   },
+   {
+    "text": "เลขล็อตเขียนยังไง",
+    "refers_back": true,
+    "expected_values": [
+     "LOT-",
+     "6"
+    ],
+    "facts": [
+     "POL-112",
+     "QC-032"
+    ],
+    "doc_files": [
+     "SS-POLICY.pdf",
+     "SS-QC-STANDARD.pdf"
+    ],
+    "expected": "ต้องระบุเลขล็อตในรูปแบบ LOT- ตามด้วยตัวเลข 6 หลัก เช่น LOT-261001 / เลขล็อตมีรูปแบบ LOT- ตามด้วยตัวเลข 6 หลัก",
+    "kind": "doc"
+   }
+  ]
+ },
+ {
+  "id": "CONV-05",
+  "title": "เครดิต · ครบกำหนด · บัญชีโอน · ออเดอร์ตัวเอง",
+  "type": "credit",
+  "lang": "th",
+  "account": "C01",
+  "now": null,
+  "turns": [
+   {
+    "text": "ได้เครดิตเมื่อไร",
+    "expected": "ส่งแล้ว 3 ออเดอร์ ได้เครดิต 30 วัน",
+    "expected_values": [
+     "3",
+     "30"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "ถ้าส่ง 1 พ.ย. ครบกำหนดวันไหน",
+    "refers_back": true,
+    "expected": "2026-12-01",
+    "expected_values": [
+     "2026-12-01"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "โอนเข้าบัญชีอะไร",
+    "expected": "ธนาคารทดสอบ 000-0-00000-0",
+    "expected_values": [
+     "000-0-00000-0"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "ยังไม่โอนเริ่มผลิตได้ไหม",
+    "refers_back": true,
+    "expected_values": [
+     [
+      "บันทึกรับเงิน",
+      "รับเงิน"
+     ]
+    ],
+    "facts": [
+     "POL-018"
+    ],
+    "doc_files": [
+     "SS-POLICY.pdf"
+    ],
+    "expected": "ออเดอร์แบบโอนก่อน (prepay) ต้องบันทึกรับเงินก่อนเลื่อนเข้าขั้นที่ 3 กำลังผลิต",
+    "kind": "doc"
+   },
+   {
+    "text": "ออเดอร์ SO-0012 ถึงไหนแล้ว",
+    "expected": "SO-0012 ของ C01 (สถานะ 5 พร้อมจัดส่ง)",
+    "expected_values": [
+     "SO-0012"
+    ],
+    "kind": "fixed"
+   }
+  ]
+ },
+ {
+  "id": "CONV-06",
+  "title": "EN: sizes → B-150 amber → minimum → samples → pickup",
+  "type": "catalog_en",
+  "lang": "en",
+  "account": "C03",
+  "now": null,
+  "turns": [
+   {
+    "text": "What sizes do you have?",
+    "expected": "100/150/250/500 ml",
+    "expected_values": [
+     "100",
+     "150",
+     "250",
+     "500"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "What is the price of B-150 amber?",
+    "expected": "4.10",
+    "expected_values": [
+     "4.10"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "What is the minimum order?",
+    "refers_back": true,
+    "expected": "1,800",
+    "expected_values": [
+     "1,800"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "Can I get free samples?",
+    "expected": "3 per model per month",
+    "expected_values": [
+     "3"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "What is the earliest pickup date?",
+    "expected_values": [
+     "2026-10-25"
+    ],
+    "expected": "earliest: 2026-10-25",
+    "kind": "price"
+   }
+  ]
+ },
+ {
+  "id": "CONV-07",
+  "title": "EN: lead time → price with/without logo → claim window",
+  "type": "doc_price_en",
+  "lang": "en",
+  "account": null,
+  "now": null,
+  "turns": [
+   {
+    "text": "What is the lead time?",
+    "expected_values": [
+     "14"
+    ],
+    "facts": [
+     "FAQ-070",
+     "FAQ-122"
+    ],
+    "doc_files": [
+     "SS-FAQ-EN.pdf"
+    ],
+    "expected": "The lead time is 14 days: the pickup date must be at least today + 14 days. / Q: What is the lead time? · A: 14 days from today, skipping factory holidays.",
+    "kind": "doc"
+   },
+   {
+    "text": "How much is the total for 10,000 B-250 clear bottles with logo, pick up at the factory?",
+    "expected_values": [
+     "8,000.00",
+     "61,418.00"
+    ],
+    "expected": "logo · total: 8,000.00 · 61,418.00",
+    "kind": "price"
+   },
+   {
+    "text": "And the total without logo?",
+    "refers_back": true,
+    "expected_values": [
+     "52,858.00"
+    ],
+    "expected": "total: 52,858.00",
+    "kind": "price"
+   },
+   {
+    "text": "How many days do I have to report a claim?",
+    "expected_values": [
+     "7"
+    ],
+    "facts": [
+     "FAQ-100"
+    ],
+    "doc_files": [
+     "SS-FAQ-EN.pdf"
+    ],
+    "expected": "Claims must be reported within 7 days of the shipping date (shipping day = day 0).",
+    "kind": "doc"
+   }
+  ]
+ },
+ {
+  "id": "CONV-08",
+  "title": "เสียง: B-250 เขียว → หมื่นใบ → โลโก้ → วันรับของ",
+  "type": "voice",
+  "lang": "th",
+  "account": null,
+  "now": null,
+  "turns": [
+   {
+    "audio": "V01.wav",
+    "reference": "ขวดสองร้อยห้าสิบมิลสีเขียวใบละเท่าไร",
+    "voice_id": "V01",
+    "expected": "5.80",
+    "expected_values": [
+     "5.80"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "audio": "V02.wav",
+    "reference": "ถ้าสั่งหมื่นใบได้ส่วนลดกี่เปอร์เซ็นต์",
+    "voice_id": "V02",
+    "refers_back": true,
+    "expected_values": [
+     "5%"
+    ],
+    "expected": "rate: 5%",
+    "kind": "price"
+   },
+   {
+    "audio": "V03.wav",
+    "reference": "พิมพ์โลโก้ด้วยเพิ่มเท่าไร",
+    "voice_id": "V03",
+    "refers_back": true,
+    "expected_values": [
+     "8,000.00"
+    ],
+    "expected": "logo: 8,000.00",
+    "kind": "price"
+   },
+   {
+    "audio": "V09.wav",
+    "reference": "วันรับของเร็วที่สุดคือวันไหน",
+    "voice_id": "V09",
+    "expected_values": [
+     "2026-10-25"
+    ],
+    "expected": "earliest: 2026-10-25",
+    "kind": "price"
+   }
+  ]
+ },
+ {
+  "id": "CONV-09",
+  "title": "เสียง: ค่าส่งนครสวรรค์ → 30,000 ใบ → ขอใบเสนอราคา → หมดอายุ",
+  "type": "voice",
+  "lang": "th",
+  "account": "C01",
+  "now": null,
+  "turns": [
+   {
+    "audio": "V04.wav",
+    "reference": "ส่งไปโรงงานนครสวรรค์ค่าส่งเท่าไร",
+    "voice_id": "V04",
+    "expected_values": [
+     "1,500.00"
+    ],
+    "expected": "shipping: 1,500.00",
+    "kind": "price"
+   },
+   {
+    "text": "ถ้าสั่ง B-250 สีใส 30,000 ใบล่ะ",
+    "refers_back": true,
+    "expected_values": [
+     "3,000.00",
+     "2",
+     "161,784.00"
+    ],
+    "expected": "shipping · trips · total: 3,000.00 · 2 · 161,784.00",
+    "kind": "price"
+   },
+   {
+    "audio": "V05.wav",
+    "reference": "ขอใบเสนอราคาด้วย",
+    "voice_id": "V05",
+    "refers_back": true,
+    "expected": "QT-NNNN",
+    "expected_values": [
+     "QT-"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "ใบนี้หมดอายุเมื่อไร",
+    "refers_back": true,
+    "expected": "2026-10-18",
+    "expected_values": [
+     "2026-10-18"
+    ],
+    "kind": "fixed"
+   }
+  ]
+ },
+ {
+  "id": "CONV-10",
+  "title": "เสียง: เคลม → B-500 ขั้นต่ำ → samples → เบอร์ฝ่ายขาย",
+  "type": "voice",
+  "lang": "th",
+  "account": null,
+  "now": null,
+  "turns": [
+   {
+    "audio": "V06.wav",
+    "reference": "ขวดแตกเคลมได้ภายในกี่วัน",
+    "voice_id": "V06",
+    "expected_values": [
+     "7"
+    ],
+    "facts": [
+     "POL-107",
+     "LOG-110"
+    ],
+    "doc_files": [
+     "SS-POLICY.pdf",
+     "SS-LOGISTICS.pdf"
+    ],
+    "expected": "แจ้งเคลมได้ภายใน 7 วันนับจากวันจัดส่ง / แจ้งเคลมในระบบภายใน 7 วันนับจากวันจัดส่ง โดยวันจัดส่งนับเป็นวันที่ 0",
+    "kind": "doc"
+   },
+   {
+    "audio": "V07.wav",
+    "reference": "ขวดห้าร้อยมิลสั่งขั้นต่ำกี่ใบ",
+    "voice_id": "V07",
+    "expected": "800",
+    "expected_values": [
+     "800"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "audio": "V10.wav",
+    "reference": "Can I get free samples?",
+    "voice_id": "V10",
+    "expected": "3",
+    "expected_values": [
+     "3"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "ขอเบอร์ติดต่อฝ่ายขายหน่อย",
+    "expected": "02-000-0000",
+    "expected_values": [
+     "02-000-0000"
+    ],
+    "kind": "fixed"
+   }
+  ]
+ },
+ {
+  "id": "CONV-11",
+  "title": "EN voice: 150 ml minimum → amber price → 6,000 with logo → quotation → expiry",
+  "type": "voice_en",
+  "lang": "en",
+  "account": "C03",
+  "now": null,
+  "turns": [
+   {
+    "audio": "V08.wav",
+    "reference": "What is the minimum order for the 150 ml bottle?",
+    "voice_id": "V08",
+    "expected": "1,800",
+    "expected_values": [
+     "1,800"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "What is the unit price of the amber one?",
+    "refers_back": true,
+    "expected": "4.10",
+    "expected_values": [
+     "4.10"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "What is the price for 6,000 bottles with logo, pick up at the factory?",
+    "refers_back": true,
+    "expected_values": [
+     "4,800.00",
+     "31,458.00"
+    ],
+    "expected": "logo · total: 4,800.00 · 31,458.00",
+    "kind": "price"
+   },
+   {
+    "text": "Please request a quotation.",
+    "refers_back": true,
+    "expected": "QT-NNNN",
+    "expected_values": [
+     "QT-"
+    ],
+    "kind": "fixed"
+   },
+   {
+    "text": "When does it expire? valid until?",
+    "refers_back": true,
+    "expected": "2026-10-18",
+    "expected_values": [
+     "2026-10-18"
+    ],
+    "kind": "fixed"
+   }
+  ]
+ },
+ {
+  "id": "CONV-12",
+  "title": "กล่อง/เที่ยวรถ (PDF) → ค่าส่ง 45,000 ใบ → สีเขียว",
+  "type": "doc_shipping",
+  "lang": "th",
+  "account": null,
+  "now": null,
+  "turns": [
+   {
+    "text": "ขวด B-250 บรรจุกล่องละกี่ใบ",
+    "expected_values": [
+     "48"
+    ],
+    "facts": [
+     "LOG-022"
+    ],
+    "doc_files": [
+     "SS-LOGISTICS.pdf"
+    ],
+    "expected": "ขวด B-250 บรรจุกล่องละ 48 ใบ",
+    "kind": "doc"
+   },
+   {
+    "text": "รถหนึ่งเที่ยวขนขวดได้กี่ใบ",
+    "expected_values": [
+     "20,000"
+    ],
+    "facts": [
+     "LOG-001",
+     "LOG-059"
+    ],
+    "doc_files": [
+     "SS-LOGISTICS.pdf"
+    ],
+    "expected": "รถ 1 เที่ยวขนขวดได้ 20,000 ใบ ไม่ว่ารุ่นใด / รถ 1 เที่ยวขนขวดได้สูงสุด 20,000 ใบ นับตามจำนวนใบ ไม่ขึ้นกับรุ่นหรือจำนวนพาเลท",
+    "kind": "doc"
+   },
+   {
+    "text": "ถ้าสั่ง B-100 สีใส 45,000 ใบ ส่ง 120 กม. ค่าส่งเท่าไร",
+    "expected_values": [
+     "4,500.00",
+     "3"
+    ],
+    "expected": "shipping · trips: 4,500.00 · 3",
+    "kind": "price"
+   },
+   {
+    "text": "สีเขียวมีรุ่นอะไรบ้าง",
+    "expected": "B-250",
+    "expected_values": [
+     "B-250"
+    ],
+    "kind": "fixed"
+   }
+  ]
+ }
+]

@@ -1,0 +1,57 @@
+# T23: invoke with tools/vast-scale-stack.py; credentials stay in process env.
+x-t23-ai: &t23-ai
+  MODE: ai
+  TTS_CACHE: 'off'
+  TTS_WARM: '0'
+  RAG_CANDIDATE_CACHE: 'off'
+  CHAT_PREFETCH: '4'
+  STT_PREFETCH: '4'
+  TTS_PREFETCH: '2'
+  LLM_BASE_URL: http://host.docker.internal:58081/v1
+  LLM_MODEL: saisai-qwen
+  LLM_API_KEY: ${LLM_API_KEY:-mock}
+  STT_URL: http://host.docker.internal:58082
+  TTS_URL: http://host.docker.internal:58083
+  RERANK_URL: http://host.docker.internal:58086
+  AIBOX_API_KEY: ${AIBOX_API_KEY:-mock}
+services:
+  web:
+    extra_hosts: ['host.docker.internal:host-gateway']
+    environment: *t23-ai
+  chat-worker:
+    extra_hosts: ['host.docker.internal:host-gateway']
+    environment: *t23-ai
+  chat-worker-2:
+    extends: {file: docker-compose.yml, service: chat-worker}
+    extra_hosts: ['host.docker.internal:host-gateway']
+    profiles: ['scale-x2', 'scale-x4']
+    environment:
+      <<: *t23-ai
+      LLM_BASE_URL: http://host.docker.internal:58085/v1
+  chat-worker-3:
+    extends: {file: docker-compose.yml, service: chat-worker}
+    extra_hosts: ['host.docker.internal:host-gateway']
+    profiles: ['scale-x4']
+    environment:
+      <<: *t23-ai
+      LLM_BASE_URL: http://host.docker.internal:58089/v1
+  chat-worker-4:
+    extends: {file: docker-compose.yml, service: chat-worker}
+    extra_hosts: ['host.docker.internal:host-gateway']
+    profiles: ['scale-x4']
+    environment:
+      <<: *t23-ai
+      LLM_BASE_URL: http://host.docker.internal:58091/v1
+  stt-worker:
+    extra_hosts: ['host.docker.internal:host-gateway']
+    environment: *t23-ai
+  tts-worker:
+    extra_hosts: ['host.docker.internal:host-gateway']
+    environment: *t23-ai
+  tts-worker-2:
+    extends: {file: docker-compose.yml, service: tts-worker}
+    extra_hosts: ['host.docker.internal:host-gateway']
+    profiles: ['scale-x4']
+    environment:
+      <<: *t23-ai
+      TTS_URL: http://host.docker.internal:58087

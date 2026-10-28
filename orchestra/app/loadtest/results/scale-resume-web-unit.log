@@ -1,0 +1,12 @@
+npm notice run saisai-web@3.0.0 test
+npm notice run vitest run app/admin/load/scale.test.tsx
+
+ RUN  v2.1.9 /root/runs/saisai/wt/T23/web
+
+ ✓ app/admin/load/scale.test.tsx (7 tests) 49ms
+
+ Test Files  1 passed (1)
+      Tests  7 passed (7)
+   Start at  21:40:54
+   Duration  2.16s (transform 263ms, setup 0ms, collect 349ms, tests 49ms, environment 0ms, prepare 211ms)
+

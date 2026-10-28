@@ -1,0 +1,130 @@
+{
+  "started_epoch": 1793161153.548221,
+  "deadline_epoch": 1793168353.548221,
+  "stage": "x2-model-readiness",
+  "loads": [],
+  "owner_pid": 22734,
+  "owner_start_ticks": "79333",
+  "controller_pid": 114456,
+  "watchdog_pid": 114486,
+  "last_provisioned": "rerank",
+  "selected_offers": {
+    "llm-1": {
+      "id": 57635213,
+      "machine_id": 149368,
+      "gpu_name": "RTX 5090",
+      "gpu_ram": 32607,
+      "dph_total": 0.5955555555555556,
+      "dph_base": 0.5733333333333334,
+      "storage_cost": 0.19999999999999998,
+      "reliability": 0.9944998,
+      "verification": "verified",
+      "cuda_max_good": 13.2,
+      "inet_down": 344.1,
+      "inet_down_cost": 0.0026041666666666665,
+      "inet_up_cost": 0.00390625,
+      "geolocation": "Vietnam, VN",
+      "disk_space": 671.0,
+      "cpu_ram": 46080
+    },
+    "stt": {
+      "id": 54489630,
+      "machine_id": 95005,
+      "gpu_name": "RTX 4090",
+      "gpu_ram": 24564,
+      "dph_total": 0.39185185185185184,
+      "dph_base": 0.37333333333333335,
+      "storage_cost": 0.2666666666666666,
+      "reliability": 0.9979643,
+      "verification": "verified",
+      "cuda_max_good": 13.0,
+      "inet_down": 1499.1,
+      "inet_down_cost": 0.0026041666666666665,
+      "inet_up_cost": 0.005208333333333333,
+      "geolocation": "Poland, PL",
+      "disk_space": 243.5,
+      "cpu_ram": 32162
+    },
+    "llm-2": {
+      "id": 49161360,
+      "machine_id": 149231,
+      "gpu_name": "RTX 5090",
+      "gpu_ram": 32607,
+      "dph_total": 0.6755555555555556,
+      "dph_base": 0.6533333333333333,
+      "storage_cost": 0.19999999999999998,
+      "reliability": 0.9957093,
+      "verification": "verified",
+      "cuda_max_good": 13.2,
+      "inet_down": 881.5,
+      "inet_down_cost": 0.0026041666666666665,
+      "inet_up_cost": 0.00390625,
+      "geolocation": "New York, US",
+      "disk_space": 215.5,
+      "cpu_ram": 64265
+    },
+    "tts": {
+      "id": 54489652,
+      "machine_id": 60701,
+      "gpu_name": "RTX 4090",
+      "gpu_ram": 24564,
+      "dph_total": 0.39185185185185184,
+      "dph_base": 0.37333333333333335,
+      "storage_cost": 0.2666666666666666,
+      "reliability": 0.9977464,
+      "verification": "verified",
+      "cuda_max_good": 13.0,
+      "inet_down": 1344.4,
+      "inet_down_cost": 0.0026041666666666665,
+      "inet_up_cost": 0.005208333333333333,
+      "geolocation": "Poland, PL",
+      "disk_space": 247.7,
+      "cpu_ram": 48266
+    },
+    "rerank": {
+      "id": 53366998,
+      "machine_id": 148288,
+      "gpu_name": "RTX 4090",
+      "gpu_ram": 24564,
+      "dph_total": 0.40055555555555555,
+      "dph_base": 0.38666666666666666,
+      "storage_cost": 0.19999999999999998,
+      "reliability": 0.9971636,
+      "verification": "verified",
+      "cuda_max_good": 13.2,
+      "inet_down": 77.8,
+      "inet_down_cost": 0.0026041666666666665,
+      "inet_up_cost": 0.00390625,
+      "geolocation": "Denmark, DK",
+      "disk_space": 1318.0,
+      "cpu_ram": 64108
+    }
+  },
+  "health": {
+    "llm-1": {
+      "status": "ok"
+    },
+    "llm-2": {
+      "status": "ok"
+    },
+    "stt": {
+      "status": "ok",
+      "models": {
+        "stt": "large-v3"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1
+    },
+    "tts": null,
+    "rerank": {
+      "status": "ok",
+      "models": {
+        "rerank": "bge-reranker-v2-m3"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1
+    }
+  }
+}

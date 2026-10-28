@@ -1,0 +1,9 @@
+{"users":1,"n":4,"error_rate":0,"p95_ms":5415.497399999993,"pass":true,"counts":{"chat_attempted":4,"chat_accepted":4,"chat_done":4,"broker_chat_publish":4},"queue_max":{"chat":1,"stt":0,"tts":0}}
+{"users":10,"n":41,"error_rate":0,"p95_ms":5488.124551999994,"pass":true,"counts":{"chat_attempted":41,"chat_accepted":41,"chat_done":41,"broker_chat_publish":41},"queue_max":{"chat":3,"stt":1,"tts":2}}
+{"users":25,"n":101,"error_rate":0,"p95_ms":9771.808366000012,"pass":true,"counts":{"chat_attempted":101,"chat_accepted":101,"chat_done":101,"broker_chat_publish":101},"queue_max":{"chat":17,"stt":1,"tts":7}}
+{"users":50,"n":206,"error_rate":0.019417475728155338,"p95_ms":14359.945260000008,"pass":false,"counts":{"chat_attempted":206,"chat_accepted":206,"chat_done":206,"broker_chat_publish":206},"queue_max":{"chat":40,"stt":1,"tts":23}}
+{"users":100,"n":360,"error_rate":0.08055555555555556,"p95_ms":25681.841353000025,"pass":false,"counts":{"chat_attempted":360,"chat_accepted":346,"chat_done":346,"broker_chat_publish":346},"queue_max":{"chat":73,"stt":11,"tts":9}}
+{"users":150,"n":477,"error_rate":0.31865828092243187,"p95_ms":26233.11026700004,"pass":false,"counts":{"chat_attempted":477,"chat_accepted":421,"chat_done":421,"broker_chat_publish":421},"queue_max":{"chat":73,"stt":23,"tts":14}}
+{"users":200,"n":647,"error_rate":0.508500772797527,"p95_ms":26302.819796000025,"pass":false,"counts":{"chat_attempted":647,"chat_accepted":414,"chat_done":414,"broker_chat_publish":414},"queue_max":{"chat":75,"stt":31,"tts":0}}
+{"users":250,"n":852,"error_rate":0.6502347417840375,"p95_ms":30572.488365000114,"pass":false,"counts":{"chat_attempted":852,"chat_accepted":399,"chat_done":399,"broker_chat_publish":399},"queue_max":{"chat":76,"stt":43,"tts":0}}
+{"posted_run_id":1,"output":"/root/runs/saisai/wt/T20/loadtest/results/mock-mix-baseline.json"}

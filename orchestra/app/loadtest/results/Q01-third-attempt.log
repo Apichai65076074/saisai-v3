@@ -1,0 +1,40 @@
+npm notice run npx
+npm notice run 'playwright' test tests/Q01.spec.ts
+
+Running 1 test using 1 worker
+
+(node:74601) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/Q01.spec.ts:9:1 › Q01 20 concurrent chat windows finish without errors with two consumers (2.8m)
+
+
+  1) [chromium] › tests/Q01.spec.ts:9:1 › Q01 20 concurrent chat windows finish without errors with two consumers 
+
+    Test was interrupted.
+
+    Error: expect(locator).toBeEditable() failed
+
+    Locator: getByTestId('chat-input')
+    Expected: editable
+    Error: Test ended.
+
+    Call log:
+      - Expect "toBeEditable" getByTestId('chat-input') with timeout 30000ms
+      - waiting for getByTestId('chat-input')
+      - Test ended.
+
+
+       at ../lib/chat.ts:19
+
+      17 |   if (!(await panel.isVisible().catch(() => false))) await page.getByTestId('chat-open').click();
+      18 |   await expect(panel).toBeVisible();
+    > 19 |   await expect(page.getByTestId('chat-input')).toBeEditable({ timeout: 30_000 });
+         |                                                ^
+      20 | }
+      21 |
+      22 | /** ข้อความ + cite ของ bubble บอทลำดับ index (ตัดลิงก์/ปุ่มออก) */
+        at openChat (/root/runs/saisai/wt/T20/e2e/lib/chat.ts:19:48)
+        at /root/runs/saisai/wt/T20/e2e/tests/Q01.spec.ts:39:7
+
+  1 interrupted
+    [chromium] › tests/Q01.spec.ts:9:1 › Q01 20 concurrent chat windows finish without errors with two consumers 

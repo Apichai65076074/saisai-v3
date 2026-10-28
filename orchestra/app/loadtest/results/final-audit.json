@@ -1,0 +1,38 @@
+{
+  "verified_at": "2026-10-26T05:30:03.664Z",
+  "n": 3288,
+  "errors": 0,
+  "by_kind": {
+    "chat": 2297,
+    "voice": 991
+  },
+  "broker_publish": 3288,
+  "accepted": 3288,
+  "done": 3288,
+  "all_stages_conserved": true,
+  "target_200": true,
+  "queue": {
+    "at": "2026-10-26T05:30:03.664Z",
+    "chat": {
+      "ready": 0,
+      "unacked": 0,
+      "total": 0,
+      "consumers": 2,
+      "publish": 7734
+    },
+    "stt": {
+      "ready": 0,
+      "unacked": 0,
+      "total": 0,
+      "consumers": 1,
+      "publish": 2451
+    },
+    "tts": {
+      "ready": 0,
+      "unacked": 0,
+      "total": 0,
+      "consumers": 1,
+      "publish": 8971
+    }
+  }
+}

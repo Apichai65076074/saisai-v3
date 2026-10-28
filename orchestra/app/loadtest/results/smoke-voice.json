@@ -1,0 +1,289 @@
+{
+  "label": "smoke-voice",
+  "config": {
+    "mode": "voice",
+    "environment": "mock",
+    "think_sec": 0,
+    "stage_sec": 10,
+    "shard": "1/1",
+    "started_at": "2026-10-26T04:25:11.587Z",
+    "mq_prefix": "T20_",
+    "latency_definition": "chat completion; stt/tts completion; voice stop-to-first-audio; mix per-transaction chat completion or voice first audio",
+    "mix_voice_probability": 0.3,
+    "mock_latency_ms": 800,
+    "token_metric": "output_chars only; SSE has no token usage",
+    "finished_at": "2026-10-26T04:25:31.512Z"
+  },
+  "stages": [
+    {
+      "users": 1,
+      "local_users": 1,
+      "mode": "voice",
+      "n": 2,
+      "ok": 2,
+      "err": 0,
+      "error_rate": 0,
+      "p50_ms": 4520.096343,
+      "p95_ms": 4635.368213000001,
+      "ttft_p50_ms": 2745.4345989999997,
+      "ttft_p95_ms": 3669.860049,
+      "completion_p95_ms": 3756.671709000001,
+      "first_audio_p95_ms": 4635.368213000001,
+      "stt_rtf_p95": 0.25926354115974887,
+      "tts_rtf_p95": 9.596778170515098,
+      "output_chars_per_sec": 13.537845396521451,
+      "elapsed_ms": 13665.394646,
+      "queue_max": {
+        "chat": 1,
+        "stt": 0,
+        "tts": 1
+      },
+      "counts": {
+        "chat_attempted": 2,
+        "chat_accepted": 2,
+        "chat_done": 2,
+        "broker_chat_publish": 2
+      },
+      "queue_samples": [
+        {
+          "at": "2026-10-26T04:25:11.789Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 2,
+            "publish": 24
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 11
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 10
+          }
+        },
+        {
+          "at": "2026-10-26T04:25:13.804Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 2,
+            "publish": 24
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 12
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 10
+          }
+        },
+        {
+          "at": "2026-10-26T04:25:15.817Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 2,
+            "publish": 24
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 12
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 10
+          }
+        },
+        {
+          "at": "2026-10-26T04:25:17.815Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 2,
+            "publish": 26
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 13
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 11
+          }
+        },
+        {
+          "at": "2026-10-26T04:25:19.800Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 2,
+            "publish": 26
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 13
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 11
+          }
+        },
+        {
+          "at": "2026-10-26T04:25:21.801Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 2,
+            "publish": 26
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 13
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 11
+          }
+        },
+        {
+          "at": "2026-10-26T04:25:23.838Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 2,
+            "publish": 26
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 13
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 22
+          }
+        },
+        {
+          "at": "2026-10-26T04:25:31.505Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 2,
+            "publish": 26
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 13
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 22
+          }
+        }
+      ],
+      "queue_errors": [],
+      "samples": [
+        {
+          "kind": "voice",
+          "started_at": "2026-10-26T04:25:11.790Z",
+          "stt_ms": 860.437652,
+          "stt_rtf": 0.15796481752640013,
+          "message_id": "ca112fbe-d8c3-4fd4-b957-40eb128d5745",
+          "ttft_ms": 2745.4345989999997,
+          "completion_ms": 2783.868975,
+          "output_chars": 33,
+          "tts_rtf": 0.4148706651658769,
+          "first_audio_ms": 4520.096343,
+          "delay_ms": 4520.096343,
+          "ok": true
+        },
+        {
+          "kind": "voice",
+          "started_at": "2026-10-26T04:25:16.312Z",
+          "stt_ms": 862.6292160000003,
+          "stt_rtf": 0.25926354115974887,
+          "message_id": "919974d0-c2d9-48ca-b625-3b8f7a83550c",
+          "ttft_ms": 3669.860049,
+          "completion_ms": 3756.671709000001,
+          "output_chars": 152,
+          "tts_rtf": 9.596778170515098,
+          "first_audio_ms": 4635.368213000001,
+          "delay_ms": 4635.368213000001,
+          "ok": true
+        }
+      ],
+      "telemetry_valid": true,
+      "by_kind": {
+        "voice": {
+          "n": 2,
+          "err": 0,
+          "p50_ms": 4520.096343,
+          "p95_ms": 4635.368213000001
+        }
+      },
+      "message_conservation": true,
+      "pass": true,
+      "target_200_pass": null
+    }
+  ],
+  "max_users_ok": {
+    "voice": 1
+  }
+}

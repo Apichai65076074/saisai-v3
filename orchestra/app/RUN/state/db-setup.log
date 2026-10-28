@@ -1,0 +1,32 @@
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1135:18)
+    at internalConnectMultiple (node:net:1211:5)
+    at afterConnectMultiple (node:net:1716:7) {
+  code: 'ECONNREFUSED',
+  [errors]: [
+    Error: connect ECONNREFUSED 192.168.65.254:56432
+        at createConnectionError (node:net:1679:14)
+        at afterConnectMultiple (node:net:1709:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '192.168.65.254',
+      port: 56432
+    },
+    Error: connect ENETUNREACH fdc4:f303:9324::254:56432 - Local (:::0)
+        at internalConnectMultiple (node:net:1207:16)
+        at afterConnectMultiple (node:net:1716:7) {
+      errno: -101,
+      code: 'ENETUNREACH',
+      syscall: 'connect',
+      address: 'fdc4:f303:9324::254',
+      port: 56432
+    }
+  ]
+}
+
+Node.js v22.23.2

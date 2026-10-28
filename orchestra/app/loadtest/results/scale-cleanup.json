@@ -1,0 +1,20 @@
+{
+  "destroy_requested_ids": [
+    57914113,
+    57914254,
+    57914350
+  ],
+  "checks": [
+    {
+      "at": "2026-10-27T07:37:22.401305+00:00",
+      "task_ids": [],
+      "other_instance_count": 0
+    },
+    {
+      "at": "2026-10-27T07:37:27.033263+00:00",
+      "task_ids": [],
+      "other_instance_count": 0
+    }
+  ],
+  "verified_zero": true
+}

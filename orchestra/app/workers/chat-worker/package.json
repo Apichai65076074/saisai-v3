@@ -1,0 +1,9 @@
+{
+  "name": "saisai-chat-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --import ../../web/node_modules/tsx/dist/loader.mjs index.mjs",
+    "test": "node --import ../../web/node_modules/tsx/dist/loader.mjs --test test/*.test.mjs"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "checked_at": "2026-10-27T14:37:59.053952+00:00",
+  "status": "BLOCKED",
+  "rental_ready": false,
+  "note": "File/port checks only; require fresh live ledger reconciliation, cheapest verified offers, budget reserve and running watchdog before create.",
+  "approval": "2026-10-27 21:35 +07; new set authorized",
+  "files": {
+    "RUN/state/vast-handoff.md": true,
+    "RUN/state/vast-ledger.json": true,
+    "voices/nongsai.wav": true,
+    "voices/nongsai.txt": true
+  },
+  "services": {
+    "postgres": {
+      "host": "host.docker.internal",
+      "port": 56432,
+      "reachable": false,
+      "error_type": "OSError"
+    },
+    "rabbitmq": {
+      "host": "host.docker.internal",
+      "port": 56672,
+      "reachable": false,
+      "error_type": "OSError"
+    },
+    "rabbitmq_api": {
+      "host": "host.docker.internal",
+      "port": 56673,
+      "reachable": false,
+      "error_type": "OSError"
+    },
+    "embedder": {
+      "host": "host.docker.internal",
+      "port": 56680,
+      "reachable": false,
+      "error_type": "OSError"
+    }
+  },
+  "blockers": [
+    "Assigned postgres endpoint unreachable",
+    "Assigned rabbitmq endpoint unreachable",
+    "Assigned rabbitmq_api endpoint unreachable",
+    "Assigned embedder endpoint unreachable"
+  ],
+  "planned_topologies": {
+    "scale-x2": {
+      "gpu_total": 5,
+      "llm_5090": 2,
+      "stt_4090": 1,
+      "tts_4090": 1,
+      "rerank_4090": 1,
+      "workers": {
+        "chat": 2,
+        "stt": 1,
+        "tts": 2
+      },
+      "hourly_cap_usd": 3.8
+    },
+    "scale-x4": {
+      "gpu_total": 8,
+      "llm_5090": 4,
+      "stt_4090": 1,
+      "tts_4090": 2,
+      "rerank_4090": 1,
+      "workers": {
+        "chat": 4,
+        "stt": 1,
+        "tts": 4
+      },
+      "hourly_cap_usd": 7.5,
+      "load_only": true,
+      "max_minutes": 30
+    }
+  },
+  "limits": {
+    "skip_x4_at_usd": 10,
+    "destroy_at_usd": 12,
+    "prefetch": {
+      "chat": 4,
+      "stt": 4,
+      "tts": 2
+    },
+    "llm_max_concurrency_per_gpu": 4,
+    "tts_execution_per_gpu": "source adapter serializes to 1; live verification required",
+    "gpu_price_caps_usd_hr": {
+      "RTX_5090": 1.2,
+      "RTX_4090": 0.5
+    }
+  },
+  "baseline": {
+    "source": "loadtest/results/scale-base.json",
+    "N": 0,
+    "ratio_available": false,
+    "note": "Retain original T22 result; no positive baseline or scaling ratio may be invented."
+  }
+}

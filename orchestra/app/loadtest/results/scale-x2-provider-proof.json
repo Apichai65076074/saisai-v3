@@ -1,0 +1,73 @@
+{
+  "health": {
+    "llm-1": {
+      "status": "ok"
+    },
+    "llm-2": {
+      "status": "ok"
+    },
+    "stt": {
+      "status": "ok",
+      "models": {
+        "stt": "large-v3"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1,
+      "stt_execution_concurrency": 1,
+      "stt_decode": {
+        "beam_size": 1,
+        "best_of": 1,
+        "temperature": 0.0,
+        "vad_filter": true,
+        "condition_on_previous_text": false
+      }
+    },
+    "tts": {
+      "status": "ok",
+      "models": {
+        "tts": "VoxCPM2"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1,
+      "stt_execution_concurrency": 1,
+      "stt_decode": {
+        "beam_size": 1,
+        "best_of": 1,
+        "temperature": 0.0,
+        "vad_filter": true,
+        "condition_on_previous_text": false
+      }
+    },
+    "rerank": {
+      "status": "ok",
+      "models": {
+        "rerank": "bge-reranker-v2-m3"
+      },
+      "response_cache": "off",
+      "audio_cache": "off",
+      "tts_execution_concurrency": 1,
+      "stt_execution_concurrency": 1,
+      "stt_decode": {
+        "beam_size": 1,
+        "best_of": 1,
+        "temperature": 0.0,
+        "vad_filter": true,
+        "condition_on_previous_text": false
+      }
+    }
+  },
+  "speech": [
+    {
+      "bytes": 522284,
+      "cache_control": null,
+      "rtf": null
+    },
+    {
+      "bytes": 706604,
+      "cache_control": null,
+      "rtf": null
+    }
+  ]
+}

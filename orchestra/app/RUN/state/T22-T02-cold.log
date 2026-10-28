@@ -1,0 +1,10 @@
+npm notice run npx
+npm notice run 'playwright' test tests/T02.spec.ts
+
+Running 1 test using 1 worker
+
+(node:145715) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › tests/T02.spec.ts:6:1 › T02 auto speech streams three sentences in sequence before done (1.1m)
+
+  1 passed (1.2m)

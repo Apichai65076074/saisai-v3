@@ -1,0 +1,7 @@
+{
+  "checked_epoch": 1793116524.5480654,
+  "id": 57981212,
+  "status": "offline",
+  "source": "independent toolkit show_instances",
+  "instruction": "Record failed host and reconcile/cleanup before retry. Inspect central budget freshness; no capacity measurement yet."
+}

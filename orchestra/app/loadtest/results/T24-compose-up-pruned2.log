@@ -1,0 +1,68 @@
+ Image saisai3-chat-worker Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 540B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 496B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+#3 DONE 2.9s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 211B done
+#4 DONE 0.0s
+
+#5 [1/8] FROM docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d
+#5 resolve docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d 0.1s done
+#5 DONE 0.1s
+
+#6 [internal] load build context
+#6 transferring context: 355.25kB 0.0s done
+#6 DONE 0.1s
+
+#7 [4/8] RUN cd web && npm ci --omit=dev
+#7 CACHED
+
+#8 [5/8] COPY web/lib/ ./web/lib/
+#8 CACHED
+
+#9 [2/8] WORKDIR /app
+#9 CACHED
+
+#10 [3/8] COPY web/package.json web/package-lock.json ./web/
+#10 CACHED
+
+#11 [6/8] COPY shared/ ./shared/
+#11 CACHED
+
+#12 [7/8] COPY workers/chat-worker/ ./workers/chat-worker/
+#12 DONE 0.1s
+
+#13 [8/8] WORKDIR /app/workers/chat-worker
+#13 DONE 0.1s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 0.4s done
+#14 exporting manifest sha256:6b2cd27320a4cb4a7251e451c4aa5061cf953bd30a25f8ca0e9d625e94b7d3a0 0.0s done
+#14 exporting config sha256:c42b66fbf5543a67db22747196b11de7e671f359b4b891a008110f7d5190d083 0.1s done
+#14 exporting attestation manifest sha256:dd81b29bc147bfc7ca9f9ecd00b633afd7fe0b3cf5a9b03bfd53437fddcad558 0.0s done
+#14 exporting manifest list sha256:e6173c58c2a0e0a30597d3add6b783f3f00b92e16aa94982daf8c5df88a4516b 0.0s done
+#14 naming to docker.io/library/saisai3-chat-worker:latest
+#14 naming to docker.io/library/saisai3-chat-worker:latest done
+#14 unpacking to docker.io/library/saisai3-chat-worker:latest 0.1s done
+#14 DONE 0.8s
+
+#15 resolving provenance for metadata file
+#15 DONE 0.0s
+ Image saisai3-chat-worker Built 
+ Container saisai3-chat-worker-1 Recreate 
+ Container saisai3-chat-worker-2 Recreate 
+ Container saisai3-chat-worker-1 Recreated 
+ Container saisai3-chat-worker-2 Recreated 
+ Container saisai3-chat-worker-2 Starting 
+ Container saisai3-chat-worker-2 Started 
+ Container saisai3-chat-worker-1 Starting 
+ Container saisai3-chat-worker-1 Started 

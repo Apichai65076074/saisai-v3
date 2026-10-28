@@ -1,0 +1,13 @@
+**/node_modules
+**/.next
+**/test-results
+**/playwright-report
+.env*
+!.env.example
+.git
+**/__pycache__
+**/*.pyc
+test-videos
+test-gifs
+e2e/results
+legacy/web/node_modules

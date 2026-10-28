@@ -1,0 +1,1303 @@
+{
+ "name": "saisai-v3",
+ "problem": "SAISAI.md",
+ "note": "est_min = ประเมินนาที (เวลา agent) · est_mtok = est_min × 0.12 (yolo 7.2 M tok/ชม. · งาน image cyolo × 0.08) ให้ planner จำลองเวลาเป็นนาทีตรงกับ est_min · status done = เสร็จแล้ว (est_mtok 0.001 · planner นับขั้นต่ำ 3 นาที) · approval user = ห้ามเริ่มจนกว่าผู้ใช้อนุมัติ · orch: owns ไม่มี prefix app/ (root ของ repo = app) · ดู NOTES.md",
+ "tasks": [
+  {
+   "id": "T01",
+   "title": "[done] PDF 7 เล่ม 122 หน้า จาก data/facts/*.json",
+   "size": "S",
+   "area": "rag",
+   "depends_on": [],
+   "status": "done",
+   "est_min": 0,
+   "est_mtok": 0.001,
+   "owns": [
+    "docs/pdf/",
+    "data/facts/",
+    "tools/make_pdfs.py",
+    "tools/verify_pdfs.py"
+   ],
+   "tests": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R08"
+   ],
+   "acceptance": "เสร็จแล้ว (commit 804a959) · py tools/verify_pdfs.py ผ่าน · 7 ไฟล์ใน docs/pdf/ รวม 122 หน้า · fact id ตามตารางข้อ 5 อยู่ในหน้าที่ระบุ (ฐานของ R01–R08)",
+   "note": "เสร็จก่อนรัน · ข้อมูล commit ใน main (inputs)"
+  },
+  {
+   "id": "T02",
+   "title": "[done] คำถาม RAG 770 ข้อ (Gemini) + Qwen review 770/770",
+   "size": "S",
+   "area": "rag",
+   "depends_on": [
+    "T01"
+   ],
+   "status": "done",
+   "est_min": 0,
+   "est_mtok": 0.001,
+   "owns": [
+    "gemini/",
+    "qwen/"
+   ],
+   "tests": [
+    "E01",
+    "E02",
+    "E03"
+   ],
+   "acceptance": "เสร็จแล้ว (commit 1b16e28 · 7d7bb92 · 93f137f) · py gemini/check_questions.py ผ่าน · ทุกเล่ม ≥ 100 ข้อ · negative ≥ 5 · en ≥ 7 ต่อเล่ม · qwen/review 770/770 · canary 30/30 (ชุด rag ข้อ 8)",
+   "note": "เสร็จก่อนรัน · ข้อมูล commit ใน main (inputs)"
+  },
+  {
+   "id": "T03",
+   "title": "[done] ไฟล์เสียงทดสอบ V01–V10 + questions/index.json",
+   "size": "S",
+   "area": "voice",
+   "depends_on": [],
+   "status": "done",
+   "est_min": 0,
+   "est_mtok": 0.001,
+   "owns": [
+    "test-fixtures/voice/"
+   ],
+   "tests": [
+    "V01",
+    "V02",
+    "V03",
+    "V04",
+    "V05",
+    "V06"
+   ],
+   "acceptance": "เสร็จแล้ว (commit 1fa903a · Windows TTS) · test-fixtures/voice/V01–V10.wav + questions.json + index.json ครบ 10 · ⚠️ ข้อ 6 กำหนด VoxCPM2 เสียงลูกค้า 48 kHz −16 LUFS — ตรวจซ้ำตอน T15 (STT ต้องถอดตรง questions.json)",
+   "note": "เสร็จก่อนรัน · ข้อมูล commit ใน main (inputs)"
+  },
+  {
+   "id": "T04",
+   "title": "โครงแอปใหม่: docker compose (web·db pgvector·rabbitmq·embedder·mock profile) + schema/seed 02-seed.sql + /api/test/reset",
+   "size": "L",
+   "area": "infra",
+   "depends_on": [],
+   "est_min": 35,
+   "est_mtok": 4.2,
+   "owns": [
+    "docker-compose.yml",
+    ".env.example",
+    ".dockerignore",
+    ".gitattributes",
+    "README.md",
+    "db/",
+    "web/package.json",
+    "web/package-lock.json",
+    "web/tsconfig.json",
+    "web/next.config.mjs",
+    "web/Dockerfile",
+    "web/app/layout.tsx",
+    "web/app/globals.css",
+    "web/middleware.ts",
+    "web/lib/db.ts",
+    "web/lib/clock.ts",
+    "web/lib/auth.ts",
+    "web/lib/money.ts",
+    "web/app/api/health/",
+    "web/app/api/auth/",
+    "web/app/api/test/",
+    "web/components/Nav.tsx",
+    "e2e/package.json",
+    "e2e/playwright.config.ts",
+    "e2e/lib/"
+   ],
+   "tests": [
+    "W01",
+    "W13"
+   ],
+   "acceptance": "docker compose --profile mock config ผ่าน · ทุก service มี healthcheck + depends_on service_healthy · ไม่มี bind mount ยกเว้น docs/pdf:ro · port 3600 / 15672 (127.0.0.1) เท่านั้น · POST /api/test/reset → 200 และ now = 2026-10-11T10:00+07:00 · SELECT count(*) FROM products = 9 · SO ถึง SO-0018 · CL-0004 · SR-0003 · .env.example ครบ 16 ตัวแปรข้อ 6",
+   "status": "done",
+   "account": "yolo3",
+   "attempts": 1,
+   "history": [
+    {
+     "t": "2026-10-25T11:26:58+07:00",
+     "account": "yolo3",
+     "attempt": 1,
+     "why": "KC-QUEST 30.9 (urgency=0.146 fit=0.017 session=0.645 speed=1.0 load=0.0) · ประเมิน 4.20M tok ≈ 5ชม. 5.46% / สัปดาห์ 0.66% · อันดับ 2 cyolo1 29.4"
+    }
+   ],
+   "mtok_used": 1.262,
+   "progress": 1.0,
+   "finished": "2026-10-25T11:44:31+07:00"
+  },
+  {
+   "id": "T05",
+   "title": "lib กฎ: คัดลอก rules.ts (ห้ามแก้ตรรกะ) + POST /api/quote + unit test",
+   "size": "M",
+   "area": "backend",
+   "depends_on": [
+    "T04"
+   ],
+   "est_min": 20,
+   "est_mtok": 2.4,
+   "owns": [
+    "web/lib/rules.ts",
+    "web/lib/server/pricing.ts",
+    "web/app/api/quote/",
+    "web/tests/unit/"
+   ],
+   "tests": [
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06",
+    "W07"
+   ],
+   "source": {
+    "path": "D:/Work/Teaching-CWN2026/saisai-legacy-change-request/web/lib/rules.ts",
+    "commit": "8549183",
+    "sha256": "1f880cd34c63667d90b7fac8e0cdbd6dfaa0a80ef270cda007e4957dfbf3122c",
+    "path_in_repo": "legacy/web/lib/rules.ts"
+   },
+   "acceptance": "ต้นฉบับ D:/Work/Teaching-CWN2026/saisai-legacy-change-request/web/lib/rules.ts (commit 8549183 · อ่านอย่างเดียว) · sha256 ของ app/web/lib/rules.ts ที่คัดลอกต้อง = 1f880cd34c63667d90b7fac8e0cdbd6dfaa0a80ef270cda007e4957dfbf3122c (ตรวจ: py -c \"import hashlib;print(hashlib.sha256(open('app/web/lib/rules.ts','rb').read()).hexdigest())\") · ห้ามแก้แม้แต่ไบต์เดียว (รวม line ending) · unit test: upsell ฿320.00 / ฿260.00 · W03 รวม 63,023.00 · W04 ต.ค. 97,584.00 → พ.ย. 95,529.60 · W06 0.00 / 3,000.00 / DISTANCE_TOO_FAR · W07 PICKUP_TOO_SOON / FACTORY_CLOSED / earliest 2026-10-25 · ทั้งหมดผ่าน npm test",
+   "status": "done",
+   "account": "cyolo2",
+   "attempts": 1,
+   "history": [
+    {
+     "t": "2026-10-25T11:44:32+07:00",
+     "account": "cyolo2",
+     "attempt": 1,
+     "why": "KC-QUEST 28.2 (urgency=0.146 fit=0.003 session=0.788 speed=0.7 load=0.0) · ประเมิน 0.48M tok ≈ 5ชม. 1.25% / สัปดาห์ 0.16% · อันดับ 2 yolo3 27.8"
+    }
+   ],
+   "mtok_used": 0.257,
+   "progress": 1.0,
+   "finished": "2026-10-25T11:49:36+07:00"
+  },
+  {
+   "id": "T06",
+   "title": "รูปทั้งเว็บ (cyolo): มาสคอตน้องใส concept + 4 ท่า · banner-factory-3d · ขวด 9 รูป · PROMPTS.md",
+   "size": "M",
+   "area": "image",
+   "depends_on": [],
+   "only": "cyolo",
+   "est_min": 25,
+   "est_mtok": 2.0,
+   "owns": [
+    "web/public/img/",
+    "web/public/assets/"
+   ],
+   "tests": [
+    "W01",
+    "D03"
+   ],
+   "acceptance": "ไฟล์ครบ: img/mascot/nongsai-concept.webp + nongsai-{idle,listening,thinking,talking}.webp (512×512 โปร่งใส) · img/banner-factory-3d.webp (1920×800) · assets/bottle-*.png 9 ไฟล์ตรง path ใน seed · PROMPTS.md มี prompt ทุกรูป · ไม่มีตัวหนังสืออื่นนอกจาก SaiSai (ตรวจด้วยตา + py PIL ขนาด/alpha)",
+   "status": "done",
+   "account": "cyolo1",
+   "attempts": 1,
+   "history": [
+    {
+     "t": "2026-10-25T11:26:54+07:00",
+     "account": "cyolo1",
+     "attempt": 1,
+     "why": "KC-QUEST 27.1 (urgency=0.145 fit=0.012 session=0.948 speed=0.456 load=0.0) · ประเมิน 2.00M tok ≈ 5ชม. 5.2% / สัปดาห์ 0.65% · อันดับ 2 cyolo2 24.1"
+    }
+   ],
+   "mtok_used": 0.371,
+   "progress": 1.0,
+   "finished": "2026-10-25T11:34:51+07:00"
+  },
+  {
+   "id": "T07",
+   "title": "หน้าเว็บหลัก: / (shell) · /login · /products · /order · /orders · /orders/[no] · เคลม · /samples · TH/EN",
+   "size": "L",
+   "area": "frontend",
+   "depends_on": [
+    "T05"
+   ],
+   "est_min": 40,
+   "est_mtok": 4.8,
+   "owns": [
+    "web/app/(shop)/",
+    "web/app/api/orders/",
+    "web/app/api/claims/",
+    "web/app/api/samples/",
+    "web/app/api/products/",
+    "web/app/api/addresses/",
+    "web/lib/server/orders.ts",
+    "web/lib/server/products.ts",
+    "web/lib/server/claims.ts",
+    "web/lib/server/samples.ts",
+    "web/lib/i18n/",
+    "db/init/510-T07-*.sql",
+    "e2e/tests/W01.spec.ts",
+    "e2e/tests/W02.spec.ts",
+    "e2e/tests/W03.spec.ts",
+    "e2e/tests/W04.spec.ts",
+    "e2e/tests/W05.spec.ts",
+    "e2e/tests/W06.spec.ts",
+    "e2e/tests/W07.spec.ts",
+    "e2e/tests/W11.spec.ts",
+    "e2e/tests/W12.spec.ts",
+    "e2e/tests/W13.spec.ts"
+   ],
+   "tests": [
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06",
+    "W07",
+    "W11",
+    "W12",
+    "W13"
+   ],
+   "acceptance": "Playwright (mock) ผ่าน W01–W07 · W11 (SAMPLE_QUOTA แล้ว SR-0004 ฿0.00) · W12 (claim-window-error) · W13 (arun เปิด SO-0001 ของ C02 → 404 'ไม่พบออเดอร์นี้') · ราคาในหน้า /order มาจาก POST /api/quote เท่านั้น (grep ไม่มีสูตรเงินใน app/)",
+   "status": "done",
+   "account": "cyolo2",
+   "attempts": 2,
+   "history": [
+    {
+     "t": "2026-10-25T11:49:37+07:00",
+     "account": "cyolo2",
+     "attempt": 1,
+     "why": "KC-QUEST 26.5 (urgency=0.146 fit=0.01 session=0.663 speed=0.7 load=0.0) · ประเมิน 1.44M tok ≈ 5ชม. 3.74% / สัปดาห์ 0.47% · อันดับ 2 yolo3 24.9"
+    },
+    {
+     "t": "2026-10-25T12:07:11+07:00",
+     "account": "cyolo2",
+     "attempt": 2,
+     "why": "KC-QUEST 23.9 (urgency=0.146 fit=0.078 session=0.398 speed=0.7 load=0.0) · ประเมิน 0.83M tok ≈ 5ชม. 2.15% / สัปดาห์ 3.51% · อันดับ 2 cyolo1 18.2"
+    }
+   ],
+   "mtok_used": 1.798,
+   "progress": 1.0,
+   "handoff_note": "- merge เข้า main แล้ว **conflict** · ให้รัน `git merge main` ใน worktree นี้ แก้ conflict ให้ครบ รันเกณฑ์ผ่านซ้ำ แล้วเขียน STATUS: DONE ใหม่\n```\nAuto-merging shared/mq-topology.mjs\nCONFLICT (add/add): Merge conflict in shared/mq-topology.mjs\nAutomatic merge failed; fix conflicts and then commit the result.\n\n```",
+   "finished": "2026-10-25T12:18:19+07:00"
+  },
+  {
+   "id": "T08",
+   "title": "ใบเสนอราคา QT: POST/GET /api/quotes · /quotes/[no] · print CSS · หมดอายุ 7 วัน · แปลงเป็นออเดอร์",
+   "size": "M",
+   "area": "backend",
+   "depends_on": [
+    "T07"
+   ],
+   "est_min": 30,
+   "est_mtok": 3.6,
+   "owns": [
+    "web/app/quotes/",
+    "web/app/api/quotes/",
+    "web/lib/server/quotes.ts",
+    "db/init/520-T08-*.sql",
+    "e2e/tests/W08.spec.ts",
+    "e2e/tests/W09.spec.ts",
+    "e2e/tests/W10.spec.ts"
+   ],
+   "tests": [
+    "W08",
+    "W09",
+    "W10"
+   ],
+   "acceptance": "Playwright ผ่าน W08 (QT-0001 · บรรทัดเงินตรง W03 · quote-valid-until 2026-10-18) · W09 (แปลง → SO-0019 ขั้น 1 ยอด 63,023.00) · W10 (now 2026-10-19 → quote-expired · quote-convert disabled) · W06 ระยะ 301 กม. quote-request กดไม่ได้",
+   "status": "done",
+   "account": "cyolo2",
+   "attempts": 3,
+   "history": [
+    {
+     "t": "2026-10-25T12:18:20+07:00",
+     "account": "yolo1",
+     "attempt": 1,
+     "why": "KC-QUEST 46.2 (urgency=0.423 fit=0.006 session=0.981 speed=0.96 load=0.0) · ประเมิน 0.72M tok ≈ 5ชม. 1.87% / สัปดาห์ 0.23% · อันดับ 2 cyolo2 21.4"
+    },
+    {
+     "t": "2026-10-26T00:48:19+07:00",
+     "account": "yolo3",
+     "attempt": 2,
+     "why": "KC-QUEST 35.6 (urgency=0.159 fit=0.064 session=0.902 speed=0.96 load=0.0) · ประเมิน 0.63M tok ≈ 5ชม. 0.81% / สัปดาห์ 1.91% · อันดับ 2 cyolo2 32.3"
+    },
+    {
+     "t": "2026-10-26T09:12:25+07:00",
+     "account": "cyolo2",
+     "attempt": 3,
+     "why": "KC-QUEST 30.5 (urgency=0.131 fit=0.02 session=0.987 speed=0.672 load=0.0) · ประเมิน 0.50M tok ≈ 5ชม. 1.3% / สัปดาห์ 2.0% · อันดับ 2 cyolo1 27.0"
+    }
+   ],
+   "mtok_used": 0.811,
+   "progress": 1.0,
+   "handoff_note": "- เหตุผลที่สลับ: สั่งสลับเอง\n- บัญชีเดิม: yolo3 · checklist ~60% · commit ของงานนี้แล้ว 3 ครั้ง\n- commit ของงานนี้ (ใหม่สุดก่อน):\n```\n05b2d28 T08: WIP ก่อนสลับบัญชี\n3420c04 T08: quote pages /quotes /quotes/[no] with print CSS and convert action\n6075f22 T08: WIP ก่อนสลับบัญชี\n```",
+   "avoid": [
+    "yolo1",
+    "yolo3"
+   ],
+   "finished": "2026-10-26T09:20:13+07:00"
+  },
+  {
+   "id": "T09",
+   "title": "หลังร้าน /staff/orders · /staff/claims · /owner/holidays + order.events → notify-worker + notify-box",
+   "size": "M",
+   "area": "backend",
+   "depends_on": [
+    "T07",
+    "T10"
+   ],
+   "est_min": 25,
+   "est_mtok": 3.0,
+   "owns": [
+    "web/app/staff/",
+    "web/app/owner/holidays/",
+    "web/app/api/staff/",
+    "web/app/api/owner/",
+    "web/components/notify/",
+    "workers/notify-worker/",
+    "db/init/530-T09-*.sql",
+    "e2e/tests/W14.spec.ts"
+   ],
+   "tests": [
+    "W14",
+    "W12"
+   ],
+   "acceptance": "Playwright ผ่าน W14 (สั่งออเดอร์ใหม่ → notify-item data-type=order.created ภายใน 5 วิ) · ออก QT → notify-item quote.created · เลื่อนขั้นทีละ 1 · prepay ไปขั้น 3 ไม่ได้ถ้ายังไม่บันทึกรับเงิน · เพิ่ม/ลบวันหยุดแล้ว W07 earliest-pickup เปลี่ยนตาม",
+   "status": "done",
+   "account": "yolo3",
+   "attempts": 2,
+   "history": [
+    {
+     "t": "2026-10-25T12:18:26+07:00",
+     "account": "cyolo2",
+     "attempt": 1,
+     "why": "KC-QUEST 18.8 (urgency=0.146 fit=0.053 session=0.284 speed=0.508 load=0.0) · ประเมิน 0.60M tok ≈ 5ชม. 1.56% / สัปดาห์ 2.3%"
+    },
+    {
+     "t": "2026-10-26T09:25:02+07:00",
+     "account": "yolo3",
+     "attempt": 2,
+     "why": "KC-QUEST 28.9 (urgency=0.168 fit=0.078 session=0.82 speed=0.779 load=0.333) · ประเมิน 0.59M tok ≈ 5ชม. 0.77% / สัปดาห์ 2.04% · อันดับ 2 cyolo1 27.1"
+    }
+   ],
+   "mtok_used": 0.551,
+   "progress": 1.0,
+   "handoff_note": "- เหตุผลที่สลับ: สั่งสลับเอง\n- บัญชีเดิม: cyolo2 · checklist ~50% · commit ของงานนี้แล้ว 1 ครั้ง\n- commit ของงานนี้ (ใหม่สุดก่อน):\n```\na496f10 T09: staff orders claims and owner holiday management\n```",
+   "avoid": [
+    "cyolo2"
+   ],
+   "finished": "2026-10-26T09:41:53+07:00"
+  },
+  {
+   "id": "T10",
+   "title": "ชั้น RabbitMQ: คิว chat/stt/tts/rag · RPC chat.request→chat.reply · priority · DLQ · backpressure · SSE /api/chat",
+   "size": "M",
+   "area": "mq",
+   "depends_on": [
+    "T04"
+   ],
+   "est_min": 30,
+   "est_mtok": 3.6,
+   "owns": [
+    "shared/mq-topology.mjs",
+    "web/lib/mq/",
+    "web/app/api/chat/",
+    "workers/_stub/",
+    "db/init/540-T10-*.sql"
+   ],
+   "tests": [
+    "Q01",
+    "Q02"
+   ],
+   "acceptance": "rabbitmqadmin/HTTP :15672 เห็นคิว chat.request (x-max-priority 5 · DLX→chat.dlq) · stt.request · tts.request · rag.ingest (durable) · exchange chat.reply (direct) · order.events (fanout) · Q02: หยุด chat-worker → SSE ส่ง status 'รอคิว' → เปิดกลับ ได้คำตอบ ไม่หาย · ล้ม > 2 ครั้ง → chat.dlq · companyId มาจาก session ฝั่ง server เท่านั้น (unit test)",
+   "status": "done",
+   "account": "yolo3",
+   "attempts": 1,
+   "history": [
+    {
+     "t": "2026-10-25T11:44:33+07:00",
+     "account": "yolo3",
+     "attempt": 1,
+     "why": "KC-QUEST 27.6 (urgency=0.146 fit=0.058 session=0.411 speed=0.96 load=0.0) · ประเมิน 0.72M tok ≈ 5ชม. 0.94% / สัปดาห์ 2.08% · อันดับ 2 cyolo1 27.1"
+    }
+   ],
+   "mtok_used": 0.552,
+   "progress": 1.0,
+   "finished": "2026-10-25T11:58:26+07:00"
+  },
+  {
+   "id": "T11",
+   "title": "mock-llm: LLM tag PRICE/QUOTE/ORDER_STATUS · หลายรอบ · ตัวเลขไทย · STT เทียบ fixture · TTS tts-cache · rerank ลำดับเดิม · MOCK_LATENCY_MS",
+   "size": "M",
+   "area": "chat",
+   "depends_on": [
+    "T04",
+    "T03"
+   ],
+   "est_min": 30,
+   "est_mtok": 3.6,
+   "owns": [
+    "mock-llm/",
+    "e2e/voice-fixtures/tts-cache/"
+   ],
+   "tests": [
+    "C05",
+    "C13",
+    "M01",
+    "M02",
+    "V01",
+    "T01"
+   ],
+   "acceptance": "copy test-fixtures/voice → app/e2e/voice-fixtures/ + tts-cache/ · curl /v1/audio/transcriptions ด้วย V01–V10 ได้ข้อความตรง questions.json 10/10 · /v1/chat/completions แปลง 'หมื่นใบ'=10000 · 'สองร้อยห้าสิบมิล'=B-250 แล้วออก [PRICE]{…} ถูกรูป · /v1/audio/speech คืน WAV จาก tts-cache หรือ generic.wav · /health 200",
+   "status": "done",
+   "account": "cyolo1",
+   "attempts": 1,
+   "history": [
+    {
+     "t": "2026-10-25T11:44:35+07:00",
+     "account": "cyolo1",
+     "attempt": 1,
+     "why": "KC-QUEST 26.3 (urgency=0.146 fit=0.005 session=0.741 speed=0.619 load=0.0) · ประเมิน 0.72M tok ≈ 5ชม. 1.87% / สัปดาห์ 0.23% · อันดับ 2 yolo3 23.0"
+    }
+   ],
+   "mtok_used": 0.614,
+   "progress": 1.0,
+   "finished": "2026-10-25T11:57:26+07:00"
+  },
+  {
+   "id": "T12",
+   "title": "rag-worker + embedder: อ่าน PDF · chunk 500/80 + หัวตาราง · pgvector + pg_trgm · ingest 7 ไฟล์ตอนเริ่ม · /admin/docs อัปโหลด",
+   "size": "L",
+   "area": "rag",
+   "depends_on": [
+    "T10",
+    "T01"
+   ],
+   "est_min": 35,
+   "est_mtok": 4.2,
+   "owns": [
+    "workers/rag-worker/",
+    "web/app/admin/docs/",
+    "web/app/api/admin/docs/",
+    "web/app/api/docs/",
+    "e2e/fixtures/SS-PROMO-NOV.pdf",
+    "db/init/550-T12-*.sql",
+    "e2e/tests/Q03.spec.ts"
+   ],
+   "tests": [
+    "R05",
+    "R07",
+    "Q03"
+   ],
+   "acceptance": "หลัง up: docs 7 แถว status=ready · doc_chunks ทุกแถวมี filename+page · chunk ของตาราง LOG-026 มีชื่อตาราง+หัวคอลัมน์ 2 ชั้น · Playwright R07 (อัปโหลด SS-PROMO-NOV.pdf → ready) · Q03 (หยุด rag-worker กลางงาน → เปิดกลับ → ready ข้อความไม่หาย)",
+   "status": "done",
+   "account": "cyolo1",
+   "attempts": 3,
+   "history": [
+    {
+     "t": "2026-10-25T11:58:27+07:00",
+     "account": "yolo3",
+     "attempt": 1,
+     "why": "KC-QUEST 26.1 (urgency=0.146 fit=0.105 session=0.264 speed=0.944 load=0.0) · ประเมิน 1.26M tok ≈ 5ชม. 1.64% / สัปดาห์ 3.67% · อันดับ 2 cyolo1 25.0"
+    },
+    {
+     "t": "2026-10-26T00:48:19+07:00",
+     "account": "yolo1",
+     "attempt": 2,
+     "why": "KC-QUEST 51.5 (urgency=0.543 fit=0.01 session=0.973 speed=1.0 load=0.0) · ประเมิน 1.03M tok ≈ 5ชม. 2.67% / สัปดาห์ 0.33% · อันดับ 2 cyolo2 33.4"
+    },
+    {
+     "t": "2026-10-26T09:12:25+07:00",
+     "account": "cyolo1",
+     "attempt": 3,
+     "why": "KC-QUEST 33.2 (urgency=0.167 fit=0.068 session=0.975 speed=0.7 load=0.0) · ประเมิน 0.95M tok ≈ 5ชม. 2.46% / สัปดาห์ 2.85% · อันดับ 2 cyolo2 31.1"
+    }
+   ],
+   "mtok_used": 1.176,
+   "progress": 1.0,
+   "handoff_note": "- เหตุผลที่สลับ: สั่งสลับเอง\n- บัญชีเดิม: yolo1 · checklist ~57% · commit ของงานนี้แล้ว 3 ครั้ง\n- commit ของงานนี้ (ใหม่สุดก่อน):\n```\nff3ee62 T12: rag-worker ingest 7 ไฟล์ผ่าน test + SS-PROMO-NOV.pdf (สคริปต์สร้าง)\n748db58 T12: WIP ก่อนสลับบัญชี\n29b64ac T12: extract.py (PyMuPDF · chunk 500/80 · ตารางหัว 2 ชั้น + เชิงอรรถ) + check_extract\n```",
+   "avoid": [
+    "yolo3",
+    "yolo1"
+   ],
+   "finished": "2026-10-26T09:22:44+07:00"
+  },
+  {
+   "id": "T13",
+   "title": "chat-worker: SQL สินค้า/บริษัท · Hybrid RAG (vector+trgm→RRF top20→rerank top4 · fallback) · tag → quote()/QT/สถานะ · ประวัติ 10 · privacy · ส่ง tts.request รายประโยค",
+   "size": "L",
+   "area": "chat",
+   "depends_on": [
+    "T05",
+    "T08",
+    "T11",
+    "T12",
+    "T14"
+   ],
+   "est_min": 50,
+   "est_mtok": 6.0,
+   "owns": [
+    "workers/chat-worker/",
+    "db/init/560-T13-*.sql",
+    "e2e/tests/C01.spec.ts",
+    "e2e/tests/C02.spec.ts",
+    "e2e/tests/C03.spec.ts",
+    "e2e/tests/C04.spec.ts",
+    "e2e/tests/C05.spec.ts",
+    "e2e/tests/C06.spec.ts",
+    "e2e/tests/C07.spec.ts",
+    "e2e/tests/C08.spec.ts",
+    "e2e/tests/C09.spec.ts",
+    "e2e/tests/C10.spec.ts",
+    "e2e/tests/C11.spec.ts",
+    "e2e/tests/C12.spec.ts",
+    "e2e/tests/C13.spec.ts",
+    "e2e/tests/C14.spec.ts",
+    "e2e/tests/R01.spec.ts",
+    "e2e/tests/R02.spec.ts",
+    "e2e/tests/R03.spec.ts",
+    "e2e/tests/R04.spec.ts",
+    "e2e/tests/R05.spec.ts",
+    "e2e/tests/R06.spec.ts",
+    "e2e/tests/R07.spec.ts",
+    "e2e/tests/R08.spec.ts",
+    "e2e/tests/M01.spec.ts",
+    "e2e/tests/M02.spec.ts",
+    "e2e/tests/M03.spec.ts",
+    "e2e/tests/M04.spec.ts",
+    "e2e/tests/M05.spec.ts",
+    "e2e/tests/M06.spec.ts",
+    "e2e/tests/Q02.spec.ts"
+   ],
+   "tests": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R08",
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06"
+   ],
+   "acceptance": "Playwright (mock) ผ่าน C01–C14 · R01–R06 + R08 (chat-cite ชี้ไฟล์ถูก) · M01–M06 ครบ 30 รอบ · RERANK=off และ rerank timeout > 3 วิ แชทยังตอบ (top4 ของ RRF) · done มี retrieved(4)+products เสมอ · C14/M04 ไม่รั่วเลข SO บริษัทอื่น · ตัด tag และ <think> ก่อนแสดง",
+   "status": "done",
+   "account": "cyolo2",
+   "attempts": 2,
+   "history": [
+    {
+     "t": "2026-10-26T09:22:45+07:00",
+     "account": "yolo1",
+     "attempt": 1,
+     "why": "KC-QUEST 52.6 (urgency=0.674 fit=0.017 session=0.91 speed=1.0 load=0.333) · ประเมิน 1.67M tok ≈ 5ชม. 4.35% / สัปดาห์ 0.54% · อันดับ 2 yolo3 35.4"
+    },
+    {
+     "t": "2026-10-26T09:35:27+07:00",
+     "account": "cyolo2",
+     "attempt": 2,
+     "why": "KC-QUEST 30.1 (urgency=0.131 fit=0.064 session=0.871 speed=0.7 load=0.0) · ประเมิน 1.51M tok ≈ 5ชม. 3.92% / สัปดาห์ 6.27% · อันดับ 2 cyolo1 29.6"
+    }
+   ],
+   "mtok_used": 1.752,
+   "progress": 1.0,
+   "handoff_note": "- เหตุผลที่สลับ: คาดว่า yolo1 จะใช้ถึง 5ชม. 43.8% / สัปดาห์ 72.1% (เพดาน 100%) ก่อนงานเสร็จ → รับต่อได้ดีสุด: yolo3 (KC-QUEST 34.1)\n- บัญชีเดิม: yolo1 · checklist ~0% · commit ของงานนี้แล้ว 0 ครั้ง\n- commit ของงานนี้ (ใหม่สุดก่อน):\n```\n```",
+   "avoid": [
+    "yolo1"
+   ],
+   "finished": "2026-10-26T10:09:15+07:00"
+  },
+  {
+   "id": "T14",
+   "title": "หน้าต่างแชท: ปุ่มลอย · ฟอง · คำถามแนะนำ 3 · chat-cite (เปิด PDF หน้านั้น) · 🔊 tts-play / tts-auto คิวเล่นตาม seq",
+   "size": "M",
+   "area": "frontend",
+   "depends_on": [
+    "T10"
+   ],
+   "est_min": 30,
+   "est_mtok": 3.6,
+   "owns": [
+    "web/components/chat/"
+   ],
+   "tests": [
+    "C01",
+    "T01",
+    "T02",
+    "T03",
+    "R01"
+   ],
+   "acceptance": "testid ครบ chat-open/input/send/msg-user/msg-bot/suggest-1..3/chat-cite/tts-play/tts-auto/chat-audio · SSE delta แสดงสด · T02: คำตอบ 3 ประโยคเล่นครบ 3 ช่วงตาม seq และเสียงแรกเริ่มก่อน done · ไม่มี consumer tts.request → ซ่อน 🔊/tts-auto",
+   "status": "done",
+   "account": "cyolo1",
+   "attempts": 1,
+   "history": [
+    {
+     "t": "2026-10-25T11:58:27+07:00",
+     "account": "cyolo1",
+     "attempt": 1,
+     "why": "KC-QUEST 24.2 (urgency=0.146 fit=0.047 session=0.521 speed=0.638 load=0.0) · ประเมิน 0.72M tok ≈ 5ชม. 1.87% / สัปดาห์ 2.16% · อันดับ 2 yolo3 21.3"
+    }
+   ],
+   "mtok_used": 0.324,
+   "progress": 1.0,
+   "finished": "2026-10-25T12:08:14+07:00"
+  },
+  {
+   "id": "T15",
+   "title": "เสียง: stt-worker · tts-worker (cache sha256 · อ่านเงิน/รหัสเป็นคำ) · /api/voice · /api/voice/status · /api/tts · voice-mic · voice-mode · fake-mic.ts",
+   "size": "M",
+   "area": "voice",
+   "depends_on": [
+    "T10",
+    "T11",
+    "T14",
+    "T13"
+   ],
+   "est_min": 40,
+   "est_mtok": 4.8,
+   "owns": [
+    "workers/stt-worker/",
+    "workers/tts-worker/",
+    "web/app/api/voice/",
+    "web/app/api/tts/",
+    "web/components/voice/",
+    "e2e/lib/fake-mic.ts",
+    "db/init/570-T15-*.sql",
+    "e2e/tests/T01.spec.ts",
+    "e2e/tests/T02.spec.ts",
+    "e2e/tests/T03.spec.ts",
+    "e2e/tests/V01.spec.ts",
+    "e2e/tests/V02.spec.ts",
+    "e2e/tests/V03.spec.ts",
+    "e2e/tests/V04.spec.ts",
+    "e2e/tests/V05.spec.ts",
+    "e2e/tests/V06.spec.ts"
+   ],
+   "tests": [
+    "V01",
+    "V02",
+    "V03",
+    "V04",
+    "V05",
+    "V06",
+    "T01",
+    "T02",
+    "T03"
+   ],
+   "acceptance": "Playwright (mock) ผ่าน V01–V06 (10 รอบ · 5 ข้อแบบ BuildMart ต่อรอบ: ถอดถูก · ตอบถูก · chat-audio > 1 วิ · มาสคอต listening→thinking→talking→idle + data-mouth > 0 · MP4 มีเสียง) · T01–T03 · V06 หยุด stt-worker → voice-mic หาย · unit test ฿5.80 → 'ห้าบาทแปดสิบสตางค์' · B-250 → 'บี สองร้อยห้าสิบ'",
+   "status": "done",
+   "account": "cyolo1",
+   "attempts": 2,
+   "history": [
+    {
+     "t": "2026-10-26T10:09:15+07:00",
+     "account": "yolo1",
+     "attempt": 1,
+     "why": "KC-QUEST 52.8 (urgency=0.69 fit=0.078 session=0.577 speed=1.0 load=0.0) · ประเมิน 0.97M tok ≈ 5ชม. 24.3% / สัปดาห์ 2.42% · อันดับ 2 yolo3 34.4"
+    },
+    {
+     "t": "2026-10-26T10:16:52+07:00",
+     "account": "cyolo1",
+     "attempt": 2,
+     "why": "KC-QUEST 29.4 (urgency=0.132 fit=0.018 session=0.885 speed=0.7 load=0.0) · ประเมิน 0.59M tok ≈ 5ชม. 1.54% / สัปดาห์ 1.77% · อันดับ 2 yolo3 28.1"
+    }
+   ],
+   "mtok_used": 2.316,
+   "progress": 1.0,
+   "handoff_note": "- เหตุผลที่สลับ: คาดว่า yolo1 จะใช้ถึง 5ชม. 66.4% / สัปดาห์ 75.0% (เพดาน 100%) ก่อนงานเสร็จ → รับต่อได้ดีสุด: yolo3 (KC-QUEST 30.8)\n- บัญชีเดิม: yolo1 · checklist ~28% · commit ของงานนี้แล้ว 2 ครั้ง\n- commit ของงานนี้ (ใหม่สุดก่อน):\n```\n3c68af2 T15: /api/voice /api/tts* + VoiceControls (voice-mic · voice-mode) mounted in chat slot\n88cb70e T15: stt-worker + tts-worker (normalize · cache sha256 · warm) + tests\n```",
+   "avoid": [
+    "yolo1"
+   ],
+   "finished": "2026-10-26T10:59:27+07:00"
+  },
+  {
+   "id": "T16",
+   "title": "3D: ฉากหน้าแรกขวด 9 ใบ + สายพาน · หมุนขวดในการ์ด · มาสคอต 3D 4 ท่า + ขยับปาก WebAudio · fallback ไม่มี WebGL",
+   "size": "L",
+   "area": "frontend",
+   "depends_on": [
+    "T06",
+    "T07",
+    "T14"
+   ],
+   "est_min": 45,
+   "est_mtok": 5.4,
+   "owns": [
+    "web/components/three/",
+    "web/app/page.tsx",
+    "e2e/tests/D01.spec.ts",
+    "e2e/tests/D02.spec.ts",
+    "e2e/tests/D03.spec.ts"
+   ],
+   "tests": [
+    "D01",
+    "D02",
+    "D03"
+   ],
+   "acceptance": "Playwright (SwiftShader) ผ่าน D01 (canvas · ขวด 9 · คลิกเขียว → /order?model=B-250&color=green) · D02 (mascot data-state ครบ 4 ท่า · data-mouth ≥ 10 ครั้ง/วิ ระหว่าง talking · จบ = 0) · D03 (--disable-webgl → hero-image + mascot <img> · console ไม่มี error) · dpr ≤ 2 · prefers-reduced-motion นิ่ง",
+   "status": "done",
+   "account": "yolo3",
+   "attempts": 3,
+   "history": [
+    {
+     "t": "2026-10-25T12:18:21+07:00",
+     "account": "yolo1",
+     "attempt": 1,
+     "why": "KC-QUEST 39.9 (urgency=0.423 fit=0.016 session=0.935 speed=0.797 load=0.333) · ประเมิน 1.78M tok ≈ 5ชม. 4.63% / สัปดาห์ 0.58% · อันดับ 2 cyolo2 21.2"
+    },
+    {
+     "t": "2026-10-26T00:48:20+07:00",
+     "account": "cyolo2",
+     "attempt": 2,
+     "why": "KC-QUEST 32.3 (urgency=0.158 fit=0.163 session=0.955 speed=0.558 load=0.0) · ประเมิน 1.72M tok ≈ 5ชม. 4.48% / สัปดาห์ 6.85% · อันดับ 2 yolo3 31.9"
+    },
+    {
+     "t": "2026-10-26T09:12:26+07:00",
+     "account": "yolo3",
+     "attempt": 3,
+     "why": "KC-QUEST 36.1 (urgency=0.168 fit=0.173 session=0.929 speed=0.797 load=0.0) · ประเมิน 1.59M tok ≈ 5ชม. 2.07% / สัปดาห์ 4.83% · อันดับ 2 cyolo1 26.5"
+    }
+   ],
+   "mtok_used": 0.561,
+   "progress": 1.0,
+   "handoff_note": "- เหตุผลที่สลับ: สั่งสลับเอง\n- บัญชีเดิม: cyolo2 · checklist ~60% · commit ของงานนี้แล้ว 3 ครั้ง\n- commit ของงานนี้ (ใหม่สุดก่อน):\n```\n07bf8fa T16: add D-series browser coverage and integration documentation\n6a59f63 T16: integrate primitive mascot and shared WebAudio RMS mouth\n93ec785 T16: add bottle hero conveyor and lazy product rotation\n```",
+   "avoid": [
+    "yolo1",
+    "cyolo2"
+   ],
+   "finished": "2026-10-26T09:22:03+07:00"
+  },
+  {
+   "id": "T17",
+   "title": "dashboard ประเมิน RAG: GET/POST /api/admin/eval · /admin/eval (การ์ด · กราฟต่อเล่ม · eval-by-doc on/off · compare · only=fail)",
+   "size": "M",
+   "area": "frontend",
+   "depends_on": [
+    "T07"
+   ],
+   "est_min": 25,
+   "est_mtok": 3.0,
+   "owns": [
+    "web/app/admin/eval/",
+    "web/app/api/admin/eval/",
+    "e2e/fixtures/eval-run-a.json",
+    "e2e/fixtures/eval-run-b.json",
+    "db/init/580-T17-*.sql",
+    "e2e/tests/E01.spec.ts",
+    "e2e/tests/E02.spec.ts",
+    "e2e/tests/E03.spec.ts"
+   ],
+   "tests": [
+    "E01",
+    "E02",
+    "E03"
+   ],
+   "acceptance": "Playwright ผ่าน E01 (POST eval-run-a.json → eval-metric ตรงไฟล์) · E02 (eval-compare 2 run +/− เขียว/แดง) · E03 (?only=fail เห็นเฉพาะ data-pass=false) · eval-by-doc มี 7 เล่ม + แถวรวม · POST ต้อง cookie owner หรือ x-eval-token",
+   "status": "done",
+   "account": "yolo3",
+   "attempts": 2,
+   "history": [
+    {
+     "t": "2026-10-25T12:18:22+07:00",
+     "account": "yolo1",
+     "attempt": 1,
+     "why": "KC-QUEST 36.1 (urgency=0.423 fit=0.006 session=0.919 speed=0.797 load=0.667) · ประเมิน 0.60M tok ≈ 5ชม. 1.56% / สัปดาห์ 0.2% · อันดับ 2 cyolo1 19.5"
+    },
+    {
+     "t": "2026-10-26T09:20:15+07:00",
+     "account": "yolo3",
+     "attempt": 2,
+     "why": "KC-QUEST 30.2 (urgency=0.168 fit=0.069 session=0.9 speed=0.795 load=0.333) · ประเมิน 0.57M tok ≈ 5ชม. 0.74% / สัปดาห์ 1.73% · อันดับ 2 cyolo2 27.6"
+    }
+   ],
+   "mtok_used": 0.584,
+   "progress": 1.0,
+   "handoff_note": "- เหตุผลที่สลับ: สั่งสลับเอง\n- บัญชีเดิม: yolo1 · checklist ~0% · commit ของงานนี้แล้ว 1 ครั้ง\n- commit ของงานนี้ (ใหม่สุดก่อน):\n```\n03f5084 T17: WIP ก่อนสลับบัญชี\n```",
+   "avoid": [
+    "yolo1"
+   ],
+   "finished": "2026-10-26T09:37:16+07:00"
+  },
+  {
+   "id": "T18",
+   "title": "ชุดประเมิน: eval/rag.json (จาก 770 ข้อ) · qa.json 70–80 · conv 10–12 บท · run_eval.mjs · judgments · score.mjs · รัน mock rerank on/off",
+   "size": "L",
+   "area": "rag",
+   "depends_on": [
+    "T02",
+    "T13",
+    "T17"
+   ],
+   "est_min": 30,
+   "est_mtok": 3.6,
+   "owns": [
+    "eval/"
+   ],
+   "tests": [
+    "E01",
+    "E02",
+    "E03",
+    "R01",
+    "R08"
+   ],
+   "acceptance": "eval/rag.json 770 ข้อ (ผ่าน check_questions.py) · qa.json 70–80 ข้อครบ type ข้อ 8 ตัวเลขยืนยันด้วย quote()/SQL · conv 10–12 บท (≥ 3 เสียง · ≥ 2 EN) · score.mjs ออก metric ครบรวม privacy_ok · POST 2 run (rerank on/off · mock) → /admin/eval แสดง · eval/REPORT.md มีตาราง by_doc",
+   "status": "done",
+   "account": "yolo3",
+   "attempts": 1,
+   "history": [
+    {
+     "t": "2026-10-26T10:09:16+07:00",
+     "account": "yolo3",
+     "attempt": 1,
+     "why": "KC-QUEST 33.5 (urgency=0.169 fit=0.121 session=0.687 speed=0.932 load=0.0) · ประเมิน 1.02M tok ≈ 5ชม. 1.33% / สัปดาห์ 3.14% · อันดับ 2 cyolo1 28.7"
+    }
+   ],
+   "mtok_used": 2.069,
+   "progress": 1.0,
+   "finished": "2026-10-26T10:53:12+07:00"
+  },
+  {
+   "id": "T19",
+   "title": "dashboard load test: GET/POST /api/admin/load · /admin/load (การ์ด N ต่อโหมด · กราฟ delay + เส้น 12 วิ + เส้นเป้า 200 · ขั้นไม่ผ่านสีแดง)",
+   "size": "M",
+   "area": "frontend",
+   "depends_on": [
+    "T07"
+   ],
+   "est_min": 20,
+   "est_mtok": 2.4,
+   "owns": [
+    "web/app/admin/load/",
+    "web/app/api/admin/load/",
+    "e2e/fixtures/load-run-a.json",
+    "loadtest/criteria.json",
+    "db/init/590-T19-*.sql",
+    "e2e/tests/L01.spec.ts",
+    "e2e/tests/L02.spec.ts"
+   ],
+   "tests": [
+    "L01",
+    "L02"
+   ],
+   "acceptance": "Playwright ผ่าน L01 (POST load-run-a.json 8 ขั้น → load-chart data-points=8 · load-max-users ตรงไฟล์) · L02 (ขั้นไม่ผ่านสีแดง · มีเส้นเป้า 200) · criteria.json p95 ≤ 12 วิ · error ≤ 1%",
+   "status": "done",
+   "account": "yolo1",
+   "attempts": 2,
+   "history": [
+    {
+     "t": "2026-10-25T12:18:24+07:00",
+     "account": "cyolo1",
+     "attempt": 1,
+     "why": "KC-QUEST 19.1 (urgency=0.146 fit=0.034 session=0.298 speed=0.538 load=0.0) · ประเมิน 0.48M tok ≈ 5ชม. 1.25% / สัปดาห์ 1.44% · อันดับ 2 cyolo2 19.1"
+    },
+    {
+     "t": "2026-10-26T09:22:04+07:00",
+     "account": "yolo1",
+     "attempt": 2,
+     "why": "KC-QUEST 52.9 (urgency=0.674 fit=0.005 session=0.958 speed=0.768 load=0.0) · ประเมิน 0.47M tok ≈ 5ชม. 1.23% / สัปดาห์ 0.15% · อันดับ 2 yolo3 29.2"
+    }
+   ],
+   "mtok_used": 0.452,
+   "progress": 1.0,
+   "handoff_note": "- เหตุผลที่สลับ: สั่งสลับเอง\n- บัญชีเดิม: cyolo1 · checklist ~0% · commit ของงานนี้แล้ว 1 ครั้ง\n- commit ของงานนี้ (ใหม่สุดก่อน):\n```\n78ae5be T19: WIP ก่อนสลับบัญชี\n```",
+   "avoid": [
+    "cyolo1"
+   ],
+   "finished": "2026-10-26T09:35:27+07:00"
+  },
+  {
+   "id": "T20",
+   "title": "load test mock: loadtest/run_load.mjs 5 โหมด · อ่านคิว :15672 · รัน mix 1→250 (chat-worker ×2) · Q01 20 หน้าต่าง",
+   "size": "M",
+   "area": "test",
+   "depends_on": [
+    "T13",
+    "T15",
+    "T19"
+   ],
+   "est_min": 35,
+   "est_mtok": 4.2,
+   "owns": [
+    "loadtest/run_load.mjs",
+    "loadtest/results/",
+    "loadtest/REPORT.md",
+    "e2e/tests/Q01.spec.ts"
+   ],
+   "tests": [
+    "Q01",
+    "L01",
+    "L02"
+   ],
+   "acceptance": "node run_load.mjs --mode mix --users 1,10,25,50,100,150,200,250 --label mock-mix → results/mock-mix.json · ขั้น 200 คน error < 1% และ p95 ≤ 12 วิ · publish chat.request = chat.reply done (ไม่หาย) · บันทึกจุดพังขั้น 250 · Playwright Q01 (20 หน้าต่าง · chat.request 2 consumer) ผ่าน",
+   "status": "done",
+   "exclusive": true,
+   "note": "exclusive: ต้องรัน docker compose ทั้งระบบ (chat-worker ×2)",
+   "account": "cyolo2",
+   "attempts": 1,
+   "history": [
+    {
+     "t": "2026-10-26T10:59:28+07:00",
+     "account": "cyolo2",
+     "attempt": 1,
+     "why": "KC-QUEST 26.7 (urgency=0.132 fit=0.045 session=0.666 speed=0.7 load=0.0) · ประเมิน 1.32M tok ≈ 5ชม. 3.43% / สัปดาห์ 4.26% · อันดับ 2 cyolo1 23.4"
+    }
+   ],
+   "mtok_used": 3.541,
+   "progress": 1.0,
+   "finished": "2026-10-26T12:31:48+07:00"
+  },
+  {
+   "id": "T21",
+   "title": "รวมระบบ MODE=mock: Playwright 62 เคสทั้งเพลย์ลิสต์ + GIF ทุกเคส + MP4 เคส T/V + unit rules.ts → TEST_REPORT.md (คอลัมน์ mock)",
+   "size": "L",
+   "area": "test",
+   "depends_on": [
+    "T08",
+    "T09",
+    "T12",
+    "T13",
+    "T15",
+    "T16",
+    "T18",
+    "T20"
+   ],
+   "exclusive": true,
+   "est_min": 60,
+   "est_mtok": 7.2,
+   "owns": [
+    "e2e/scripts/",
+    "test-gifs/",
+    "test-videos/",
+    "TEST_REPORT.md",
+    "SALE_RUN.md",
+    "e2e/playwright.config.ts"
+   ],
+   "tests": [
+    "W01",
+    "W14",
+    "C01",
+    "C14",
+    "R01",
+    "R08",
+    "Q01",
+    "Q03",
+    "T01",
+    "T03",
+    "M01",
+    "M06",
+    "V01",
+    "V06",
+    "D01",
+    "D03",
+    "E01",
+    "E03",
+    "L01",
+    "L02"
+   ],
+   "acceptance": "npx playwright test (MODE=mock) = 62/62 (W14 C14 R8 Q3 T3 M6 V6 D3 E3 L2) · TEST_REPORT.md บนสุดตาราง 'โหมด | ผ่าน / ทั้งหมด' แถว mock 62/62 · GIF 62 ไฟล์ · MP4 มีเสียง 9 ไฟล์ (T01–T03 · V01–V06) · unit rules.ts ผ่าน · เวลารวม mock บันทึกใน SALE_RUN.md",
+   "status": "done",
+   "account": "yolo3",
+   "attempts": 5,
+   "history": [
+    {
+     "t": "2026-10-26T12:31:49+07:00",
+     "account": "cyolo1",
+     "attempt": 1,
+     "why": "KC-QUEST 23.7 (urgency=0.133 fit=0.088 session=0.405 speed=0.7 load=0.0) · ประเมิน 2.88M tok ≈ 5ชม. 7.49% / สัปดาห์ 8.02%"
+    },
+    {
+     "t": "2026-10-26T12:32:24+07:00",
+     "account": "yolo3",
+     "attempt": 2,
+     "why": "[ส่งต่อตามแผน ทำได้ ~40%] KC-QUEST 10.7 (urgency=0.172 fit=0.106 session=0.174 speed=1.0 load=0.0) · ประเมิน 2.87M tok ≈ 5ชม. 14.56% / สัปดาห์ 2.44%"
+    },
+    {
+     "t": "2026-10-26T12:34:42+07:00",
+     "account": "cyolo2",
+     "attempt": 3,
+     "why": "[ส่งต่อตามแผน ทำได้ ~22%] KC-QUEST 3.7 (urgency=0.133 fit=0.018 session=0.024 speed=0.7 load=0.0) · ประเมิน 2.78M tok ≈ 5ชม. 1.6% / สัปดาห์ 1.55%"
+    },
+    {
+     "t": "2026-10-26T12:35:06+07:00",
+     "account": "yolo1",
+     "attempt": 4,
+     "why": "[ส่งต่อตามแผน ทำได้ ~68%] KC-QUEST 34.2 (urgency=0.741 fit=0.147 session=0.2 speed=1.0 load=0.0) · ประเมิน 2.77M tok ≈ 5ชม. 35.0% / สัปดาห์ 3.98%"
+    },
+    {
+     "t": "2026-10-26T12:35:34+07:00",
+     "account": "yolo3",
+     "attempt": 5,
+     "why": "[ส่งต่อตามแผน ทำได้ ~31%] KC-QUEST 8.0 (urgency=0.172 fit=0.077 session=0.174 speed=1.0 load=0.0) · ประเมิน 2.74M tok ≈ 5ชม. 10.56% / สัปดาห์ 1.77%"
+    }
+   ],
+   "mtok_used": 1.845,
+   "progress": 1.0,
+   "handoff_note": "- เหตุผลที่สลับ: คาดว่า yolo1 จะใช้ถึง 5ชม. 70.3% / สัปดาห์ 75.8% (เพดาน 100%) ก่อนงานเสร็จ → รับต่อได้ดีสุด: yolo3 (KC-QUEST 16.8)\n- บัญชีเดิม: yolo1 · checklist ~33% · commit ของงานนี้แล้ว 0 ครั้ง\n- commit ของงานนี้ (ใหม่สุดก่อน):\n```\n```",
+   "avoid": [
+    "cyolo1",
+    "yolo3",
+    "cyolo2",
+    "yolo1"
+   ],
+   "finished": "2026-10-26T21:09:32+07:00"
+  },
+  {
+   "id": "T22",
+   "title": "GPU baseline (อนุมัติ 27/10): 5090 Qwen · 4090 Whisper · 4090 VoxCPM2+rerank · ai 62 เคส/eval/load · งบหยุด $12",
+   "size": "L",
+   "area": "infra",
+   "depends_on": [
+    "T21",
+    "T24"
+   ],
+   "exclusive": true,
+   "approval": "user",
+   "no_handoff": true,
+   "est_min": 120,
+   "est_mtok": 14.4,
+   "owns": [
+    "vast_llm/",
+    "vast_aibox/",
+    "tools/vast-*.py",
+    "tools/vast-*.sh",
+    "docker-compose.ai.yml",
+    ".gitignore",
+    ".env.vast",
+    ".env.aibox",
+    "workers/",
+    "web/",
+    "e2e/",
+    "eval/",
+    "loadtest/",
+    "test-gifs/ai/",
+    "test-videos/ai/",
+    "TEST_REPORT.md",
+    "README.md",
+    "loadtest/results/",
+    "eval/REPORT.md"
+   ],
+   "tests": [
+    "W01",
+    "C01",
+    "R01",
+    "T01",
+    "M01",
+    "V01",
+    "V04",
+    "D01",
+    "E01",
+    "L01"
+   ],
+   "acceptance": "อนุมัติ 27/10 09:20 ตาม prompt T22; baseline≤$2.20/hr 5090≤$1.20 4090≤$0.50; หยุดค่าใช้จ่ายรวมT22+T23ที่$12 เพดาน$15 · CER large-v3/turbo V01–V10 · RTF VoxCPM2 · VRAM · ai62เคส+eval770 on/off · เสียงแรก<6sวัดจริง · load nocache rag770 prefetch4/4/2 ต่อGPU+scale-base · คำนวณGPU200จากผลจริง · ส่งbaselineเดิมให้T23พร้อมwatchdog≤10นาที หรือdestroy+verify0ถ้าไม่ส่งต่อ · billแยกเครื่อง",
+   "status": "done",
+   "note": "27/10 10:30 BLOCKED missing authorized voices/nongsai.wav (5–15s). ขอไฟล์/pathผู้ใช้แล้ว; ห้ามretryก่อนinputพร้อม. GPUอนุมัติ09:20ยังมีผล งบหยุด$12/เพดาน$15. WIP7177356มีTTS_CACHEoff+ผลcoldmockheadline15; GPUยัง0/spent$0. เมื่อได้ไฟล์ตรวจสิทธิ์แล้วretryT22จากbranchเดิม ไม่ทำmockซ้ำเกินcutoff",
+   "account": "yolo3",
+   "attempts": 5,
+   "history": [
+    {
+     "t": "2026-10-27T10:03:12+07:00",
+     "account": "cyolo2",
+     "attempt": 1,
+     "why": "KC-QUEST 31.5 (urgency=0.134 fit=0.129 session=0.872 speed=0.7 load=0.0) · ประเมิน 4.92M tok ≈ 5ชม. 12.8% / สัปดาห์ 12.38% · อันดับ 2 cyolo1 30.9"
+    },
+    {
+     "t": "2026-10-27T10:05:09+07:00",
+     "account": "cyolo2",
+     "attempt": 2,
+     "why": "สั่งเอง"
+    },
+    {
+     "t": "2026-10-27T10:53:59+07:00",
+     "account": "cyolo1",
+     "attempt": 3,
+     "why": "KC-QUEST 27.5 (urgency=0.135 fit=0.135 session=0.596 speed=0.7 load=0.0) · ประเมิน 4.40M tok ≈ 5ชม. 11.44% / สัปดาห์ 12.26%"
+    },
+    {
+     "t": "2026-10-27T12:14:17+07:00",
+     "account": "yolo3",
+     "attempt": 4,
+     "why": "[ส่งต่อตามแผน ทำได้ ~87%] KC-QUEST 36.2 (urgency=0.207 fit=0.622 session=0.377 speed=1.0 load=0.0) · ประเมิน 2.61M tok ≈ 5ชม. 37.33% / สัปดาห์ 6.85% · อันดับ 2 yolo1 11.7"
+    },
+    {
+     "t": "2026-10-27T14:32:36+07:00",
+     "account": "yolo3",
+     "attempt": 5,
+     "why": "KC-QUEST 41.7 (urgency=0.211 fit=0.381 session=0.708 speed=1.0 load=0.0) · ประเมิน 1.48M tok ≈ 5ชม. 24.16% / สัปดาห์ 2.67%"
+    }
+   ],
+   "handoff_note": "- merge เข้า main แล้ว **conflict** · ให้รัน `git merge main` ใน worktree นี้ แก้ conflict ให้ครบ รันเกณฑ์ผ่านซ้ำ แล้วเขียน STATUS: DONE ใหม่\n```\nerror: The following untracked working tree files would be overwritten by merge:\n\tvoices/nongsai.txt\n\tvoices/nongsai.wav\nPlease move or remove them before you merge.\nAborting\nMerge with strategy ort failed.\n\n```",
+   "avoid": [
+    "cyolo2",
+    "cyolo1"
+   ],
+   "mtok_used": 7.175,
+   "progress": 1.0,
+   "finished": "2026-10-27T14:35:47+07:00"
+  },
+  {
+   "id": "T23",
+   "title": "GPU scale ×2→×4 จากชุดเดิม (อนุมัติ 27/10) · SALE_RUN · destroy+verify0 · งบรวมหยุด $12",
+   "size": "L",
+   "area": "infra",
+   "depends_on": [
+    "T22"
+   ],
+   "exclusive": true,
+   "approval": "user",
+   "no_handoff": true,
+   "est_min": 110,
+   "est_mtok": 13.2,
+   "owns": [
+    "loadtest/results/scale-*.json",
+    "loadtest/",
+    "docker-compose.ai.yml",
+    "tools/vast-*.py",
+    "tools/vast-*.sh",
+    "web/app/admin/load/",
+    "web/app/api/admin/load/",
+    "e2e/tests/L01.spec.ts",
+    "e2e/tests/L02.spec.ts",
+    "loadtest/REPORT.md",
+    "SALE_RUN.md"
+   ],
+   "tests": [
+    "L01",
+    "L02"
+   ],
+   "acceptance": "อนุมัติ27/10 09:20 ตามpromptT23; เพิ่มจากbaselineเดิมทีละขั้น×2→×4 ภายใต้เพดาน/hrเดิม; รวมT22+T23หยุด$12/เพดาน$15 · results scale-base/x2/x4 nocache rag770 prefetch4/4/2 · N×2≥2Nbase N×4≥4Nbase หรือรายงานคอขวดจริง · dashboard3การ์ด/3เส้น · SALE_RUNพรอมต์≤20บรรทัด+เวลาจริง(ไม่ลดเคสเพื่อให้ทัน) · destroyทั้งหมด+verify0+ค่าใช้จ่ายแยกเครื่อง",
+   "status": "done",
+   "note": "28/10 15:04 รอบสุดท้ายครบตามอนุมัติ 13:00: STT504 แก้+ทดสอบ mock · x2 (cache off) chat N=32 · stt N=0 (คอขวด network upload) · tts N=1 · voice N=0 · x4 chat N=16 (LLM util 8–16% คอขวด rerank/retrieval) · AI16 ไม่ได้รัน (optional · ติด stop $14.5) · billing actual $13.066 · GPU 0 (watchdog+orch SDK) · merge main b95f856",
+   "account": "yolo1",
+   "attempts": 4,
+   "history": [
+    {
+     "t": "2026-10-27T14:35:48+07:00",
+     "account": "cyolo2",
+     "attempt": 1,
+     "why": "KC-QUEST 28.1 (urgency=0.137 fit=0.157 session=0.601 speed=0.7 load=0.0) · ประเมิน 5.35M tok ≈ 5ชม. 13.9% / สัปดาห์ 14.44%"
+    },
+    {
+     "t": "2026-10-27T14:42:26+07:00",
+     "account": "cyolo2",
+     "attempt": 2,
+     "why": "[ส่งต่อตามแผน ทำได้ ~68%] KC-QUEST 30.7 (urgency=0.138 fit=0.794 session=0.878 speed=0.7 load=0.0) · ประเมิน 5.22M tok ≈ 5ชม. 9.25% / สัปดาห์ 62.72% · อันดับ 2 yolo3 21.0"
+    },
+    {
+     "t": "2026-10-27T21:35:22+07:00",
+     "account": "cyolo1",
+     "attempt": 3,
+     "why": "KC-QUEST 33.2 (urgency=0.143 fit=0.202 session=0.864 speed=0.7 load=0.0) · ประเมิน 5.22M tok ≈ 5ชม. 13.57% / สัปดาห์ 15.93%"
+    },
+    {
+     "t": "2026-10-27T23:17:50+07:00",
+     "account": "yolo1",
+     "attempt": 4,
+     "why": "สั่งเอง"
+    },
+    {
+     "t": "2026-10-28T10:23:05+07:00",
+     "account": "cyolo2",
+     "attempt": 4,
+     "why": "[ส่งต่อตามแผน ทำได้ ~85%] KC-QUEST 39.4 (urgency=0.155 fit=0.794 session=0.908 speed=0.7 load=0.0) · ประเมิน 4.17M tok ≈ 5ชม. 9.25% / สัปดาห์ 62.72% · อันดับ 2 yolo1 14.0"
+    },
+    {
+     "t": "2026-10-28T10:31:40+07:00",
+     "account": "yolo1",
+     "attempt": 4,
+     "why": "สั่งเอง"
+    },
+    {
+     "t": "2026-10-28T13:01:10+07:00",
+     "account": "cyolo2",
+     "attempt": 4,
+     "why": "[ส่งต่อตามแผน ทำได้ ~94%] KC-QUEST 42.5 (urgency=0.158 fit=0.771 session=0.869 speed=0.7 load=0.0) · ประเมิน 3.30M tok ≈ 5ชม. 8.07% / สัปดาห์ 54.72%"
+    },
+    {
+     "t": "2026-10-28T13:51:17+07:00",
+     "account": "yolo1",
+     "attempt": 4,
+     "why": "สั่งเอง"
+    }
+   ],
+   "mtok_used": 8.275,
+   "progress": 0.73,
+   "handoff_note": "- เหตุผลที่สลับ: cyolo1 CLI stalled since23:09 with model refresh timeouts; GPU independently verified0. Preserve WIP. Resume settled budget feasibility and authorized scale if feasible; read current tasks/T23.md and handoff.\n- บัญชีเดิม: cyolo1 · checklist ~68% · commit ของงานนี้แล้ว 5 ครั้ง\n- commit ของงานนี้ (ใหม่สุดก่อน):\n```\n19892fe T23: WIP ก่อนสลับบัญชี\n4f270c8 T23: enforce hard billing deadlines and independent verified cleanup\ncc3e529 T23: supervise finite retry and verify browser display and settled reserves\n79b9f84 T23: configure dedicated scale endpoints and verify primary display\n68356d3 T23: reconcile new-set approval and guard five-GPU deployment\n```\n- หมายเหตุจาก orchestrator: เริ่มใหม่ 28/10 ดู NOTES 10:25\n- หมายเหตุจาก orchestrator: 28/10 10:30 รอบ cyolo2 ตายกลาง x2-deploy เพราะ 'model at capacity' (ไม่ใช่บั๊กโค้ด) · watchdog เห็น owner PID ตาย → destroy 58044931 → cleanup verified 0 · orch ตรวจ SDK เองได้ 0 · ยอดจริง $5.368 (est $6.55) · ไฟล์ที่ยังไม่ commit ใน wt/T23 (.gitignore, loadtest/README, run_load.mjs resource_topology, vast-scale-controller.py, ลบ RUN/state r1/r2 log) มาจากรอบนั้น ตรวจแล้วเก็บ/commit ต่อได้ · owner PID ต้องเป็น PID ของ worker Claude รอบนี้ · ทำต่อจาก dry-run ผ่านแล้ว เริ่ม x2 deploy ใหม่ · ตัดจบ 14:30 · งบหยุด $12\n- หมายเหตุจาก orchestrator: รอบสุดท้าย 28/10 13:00 ดู NOTES\n- หมายเหตุจาก orchestrator: 28/10 13:55 รอบ cyolo2 ตายเพราะ codex 'model at capacity' (ไม่ใช่บั๊ก) · watchdog เห็น owner PID ตาย → destroy 5 เครื่อง cleanup verified 0 · orch ตรวจ SDK เอง = 0 · billing actual $9.818 (ยังอาจ settle เพิ่ม) · วัดแล้ว: x2 chat ladder (U=16 p95 6.1s · U=32 p95 10.85s pass · U=48 p95 17.4s fail) อยู่ใน loadtest/results/scale-x2-chat.json · WIP commit 3ec8106 · STT 504 แก้+ทดสอบ mock แล้ว (c8fcec8) · ยังขาด: x2 stt · tts · voice แยกโหมด (ไม่ต้องวัด chat ซ้ำ) → x4 chat (≤20 นาที เฉพาะ actual ≤ $12.5) → AI16 ถ้าเวลาเหลือ · เช่าชุดใหม่ x2 ได้ตามอนุมัติ 13:00 (STT/TTS/rerank 4090 + LLM 5090×2 · ถ้า tts/stt/voice ไม่ต้องใช้ LLM 2 ใบ ให้พิจารณาเช่าเท่าที่จำเป็นต่อโหมดเพื่อประหยัด แต่ต้องตรง topology x2 ที่อนุมัติสำหรับโหมด voice) · owner PID ต้องเป็น PID ของ worker Claude รอบนี้ (T23_WORKER_PID) · หยุดทันที $14.5 · ตัดจบ 16:30 destroy + verify 0 สองครั้ง · คืนเว็บ :3600 MODE=mock · อัปเดต TEST_REPORT/SALE_RUN/loadtest REPORT ตามจริงทุกโหมด",
+   "avoid": [
+    "cyolo1"
+   ]
+  },
+  {
+   "id": "T24",
+   "title": "load test mock ตัวเลขหลัก: ปิด cache/prefetch 4/4/2 · คำถามไม่ซ้ำสุ่มจาก 770 · mix 1→250 · dashboard/รายงานใช้ค่า nocache เป็นหลัก (cache = เสริม)",
+   "size": "M",
+   "area": "test",
+   "depends_on": [
+    "T21"
+   ],
+   "exclusive": true,
+   "est_min": 60,
+   "est_mtok": 2.5,
+   "owns": [
+    "loadtest/",
+    "workers/chat-worker/lib/retrieve.mjs",
+    "docker-compose.yml",
+    "web/app/admin/load/",
+    "TEST_REPORT.md",
+    "SALE_RUN.md"
+   ],
+   "tests": [
+    "L01",
+    "L02"
+   ],
+   "acceptance": "results/mock-mix-nocache.json (cache off · prefetch 4/4/2 · rag770 ไม่ซ้ำ) · รายงานคนสูงสุดที่ error<1% p95≤12 วิ ตามจริง · /admin/load ใช้ค่า nocache เป็นหลัก · L01 L02 + unit ผ่าน",
+   "status": "done",
+   "note": "เพิ่มโดย orchestrator 26/10 21:15 ตามคำสั่งผู้ใช้ 13:56 (ตัวเลขรองรับกี่คนต้องปิด cache + คำถามไม่ซ้ำ)",
+   "account": "yolo3",
+   "attempts": 3,
+   "history": [
+    {
+     "t": "2026-10-26T21:11:40+07:00",
+     "account": "yolo3",
+     "attempt": 1,
+     "why": "KC-QUEST 26.5 (urgency=0.183 fit=0.313 session=0.725 speed=0.139 load=0.0) · ประเมิน 1.31M tok ≈ 5ชม. 21.5% / สัปดาห์ 5.32% · อันดับ 2 cyolo1 22.4"
+    },
+    {
+     "t": "2026-10-26T23:43:28+07:00",
+     "account": "cyolo2",
+     "attempt": 2,
+     "why": "KC-QUEST 22.3 (urgency=0.142 fit=0.021 session=0.982 speed=0.097 load=0.0) · ประเมิน 0.70M tok ≈ 5ชม. 1.83% / สัปดาห์ 1.77% · อันดับ 2 yolo1 20.0"
+    },
+    {
+     "t": "2026-10-27T09:23:00+07:00",
+     "account": "yolo3",
+     "attempt": 3,
+     "why": "KC-QUEST 25.5 (urgency=0.202 fit=0.149 session=0.824 speed=0.139 load=0.0) · ประเมิน 0.65M tok ≈ 5ชม. 10.56% / สัปดาห์ 1.94% · อันดับ 2 cyolo1 21.8"
+    }
+   ],
+   "mtok_used": 2.092,
+   "progress": 1.0,
+   "handoff_note": "- เหตุผลที่สลับ: สั่งสลับเอง\n- บัญชีเดิม: cyolo2 · checklist ~45% · commit ของงานนี้แล้ว 8 ครั้ง\n- commit ของงานนี้ (ใหม่สุดก่อน):\n```\n0286963 T24: WIP ก่อนสลับบัญชี\nd8ac821 T24: WIP (จบไม่ครบ)\n394ee9b T24: keyword equivalence 858/858 identical + hit@4 tool\nf09a7c4 T24: exact pruned keyword search (doc_chunk_trgms upper bound) — same top-20, ~7x less DB work\n342854e T24: main run mock-mix-nocache (cache off, 4/4/2, rag770) + dashboard primary-run selection\n376883b T24: compose_mock defaults (cache off, 4/4/2, :3600) + smoke\n7101bf5 T24: run_load --questions rag770 (seeded deck without replacement, repeats counted)\ndea959b T24: RAG_CANDIDATE_CACHE switch (default off) + unit test\n```",
+   "avoid": [
+    "cyolo2"
+   ],
+   "finished": "2026-10-27T10:03:11+07:00"
+  }
+ ]
+}

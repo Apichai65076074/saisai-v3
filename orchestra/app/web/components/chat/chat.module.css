@@ -1,0 +1,31 @@
+.widget { position: fixed; right: 22px; bottom: 20px; z-index: 100; color: #0b2e3f; }
+.launcher { border-radius: 30px; color: white; background: #0e7c9b; box-shadow: 0 6px 22px #0b2e3f30; min-height: 48px; }
+.panel { position: absolute; right: 0; bottom: 62px; width: min(410px, calc(100vw - 24px)); height: min(700px, calc(100dvh - 105px)); background: #fff; border: 1px solid #d6e6eb; border-radius: 20px; box-shadow: 0 14px 60px #0b2e3f35; display: flex; flex-direction: column; overflow: hidden; }
+.panel[hidden] { display: none; }
+.header { display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #0b2e3f; color: #fff; }
+.header small { display: block; color: #c8e9f1; }
+.mascot { width: 52px; height: 52px; flex-shrink: 0; }
+.mascot img { object-fit: contain; }
+.close { margin-left: auto; background: transparent; color: white; font-size: 26px; padding: 0 10px; }
+.messages { flex: 1; min-height: 80px; overflow-y: auto; overscroll-behavior: contain; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.welcome { color: #5b6f78; margin: 4px 0; }
+.bubble { max-width: 94%; border-radius: 15px; padding: 10px 13px; overflow-wrap: anywhere; }
+.user { align-self: flex-end; background: #0e7c9b; color: #fff; border-bottom-right-radius: 3px; }
+.bot { align-self: flex-start; background: #eff7f9; border-bottom-left-radius: 3px; }
+.text { white-space: pre-wrap; }
+.cite { display: block; font-size: 0.85rem; margin-top: 8px; text-decoration: underline; }
+.play { padding: 3px 8px; background: #fff; margin-top: 6px; border: 1px solid #d6e6eb; }
+.status { min-height: 25px; font-size: 0.85rem; padding: 0 14px; color: #5b6f78; }
+.suggestions { display: flex; gap: 6px; padding: 5px 12px; flex-wrap: wrap; }
+.suggestions button { background: #fff; border: 1px solid #b7dce7; color: #0b6079; padding: 5px 8px; font-size: 0.8rem; }
+.tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 0 12px; }
+.auto { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 400; margin: 4px 0; }
+.auto input { width: auto; accent-color: #0e7c9b; }
+.form { display: flex; gap: 8px; padding: 10px 12px 12px; }
+.form input { min-width: 0; width: 100%; flex: 1; }
+.form button { background: #0e7c9b; color: #fff; }
+.resume { margin: 0 12px; padding: 5px; background: #fff6e5; color: #76431e; }
+.widget button:focus-visible { outline: 3px solid #0e7c9b; outline-offset: 2px; }
+@media (max-width: 480px) { .widget { right: 12px; bottom: 12px; } .panel { bottom: 58px; height: min(700px, calc(100dvh - 85px)); } }
+/* T15: distinguish transcribed microphone bubbles without changing stored text. */
+.text[data-testid='chat-msg-voice']::before { content: '🎙 '; }

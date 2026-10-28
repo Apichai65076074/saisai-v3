@@ -1,0 +1,26 @@
+{
+  "started_epoch": 1793115247.5867863,
+  "deadline_epoch": 1793118547.5867863,
+  "stage": "FAILED",
+  "loads": [],
+  "owner_pid": 6379,
+  "owner_start_ticks": "22372",
+  "controller_pid": 108587,
+  "watchdog_pid": 108595,
+  "failure": {
+    "type": "RuntimeError",
+    "message": "T23-r3-create-llm-1 failed: 1"
+  },
+  "cleanup": {
+    "checked_epoch": 1793115377.9398384,
+    "task_instances": 0,
+    "other_instances": 0,
+    "verified": true
+  },
+  "cleanup_second_check": {
+    "checked_epoch": 1793115379.389477,
+    "task_instances": 0,
+    "other_instances": 0
+  },
+  "finished_epoch": 1793115379.3973901
+}

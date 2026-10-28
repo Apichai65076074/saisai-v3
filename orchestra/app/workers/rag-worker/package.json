@@ -1,0 +1,14 @@
+{
+  "name": "saisai-rag-worker",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.9",
+    "pg": "^8.13.1"
+  }
+}

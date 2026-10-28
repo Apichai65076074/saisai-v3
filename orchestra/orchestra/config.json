@@ -1,0 +1,65 @@
+{
+  "max_agents": 3,
+  "board_mirror": "/workspace/noom_saisai/orchestra",
+  "port_base": 4600,
+  "per_account_max": {
+    "yolo": 3,
+    "cyolo": 2
+  },
+  "models": {
+    "orchestrator": {
+      "yolo": [
+        "opus",
+        "high"
+      ],
+      "cyolo": [
+        "gpt-6.1-sol",
+        "medium"
+      ]
+    },
+    "worker": {
+      "yolo": [
+        "opus",
+        "medium"
+      ],
+      "cyolo": [
+        "gpt-6.1-sol",
+        "medium"
+      ]
+    },
+    "image": {
+      "cyolo": [
+        "gpt-6.1-sol",
+        "low"
+      ]
+    }
+  },
+  "dev_db": {
+    "name": "ss-devdb",
+    "port": 56432,
+    "user": "dev",
+    "password": "dev",
+    "host": "auto",
+    "image": "pgvector/pgvector:pg16"
+  },
+  "dev_services": [
+    {
+      "name": "ss-devmq",
+      "image": "rabbitmq:4.4-management",
+      "ports": {
+        "5672": 56672,
+        "15672": 56673
+      },
+      "env": "AMQP_URL=amqp://guest:guest@{host}:56672"
+    },
+    {
+      "name": "ss-devembed",
+      "image": "ghcr.io/huggingface/text-embeddings-inference:cpu-1.9",
+      "args": "--model-id intfloat/multilingual-e5-small",
+      "ports": {
+        "80": 56680
+      },
+      "env": "EMBED_URL=http://{host}:56680"
+    }
+  ]
+}

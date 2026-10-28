@@ -1,0 +1,7 @@
+SS-CAT-BOTTLES.pdf|ready|24|59
+SS-FAQ-EN.pdf|ready|12|40
+SS-LOGISTICS.pdf|ready|14|39
+SS-LOGO-PRINT.pdf|ready|18|44
+SS-POLICY.pdf|ready|16|51
+SS-QC-STANDARD.pdf|ready|20|52
+SS-USE-CARE.pdf|ready|18|49

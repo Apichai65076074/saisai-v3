@@ -1,0 +1,3472 @@
+{
+  "label": "gpu-mix-scale-base-nocache",
+  "config": {
+    "mode": "mix",
+    "environment": "ai",
+    "think_sec": 30,
+    "stage_sec": 120,
+    "shard": "1/1",
+    "started_at": "2026-10-27T06:15:38.675Z",
+    "mq_prefix": "T22_ai_",
+    "latency_definition": "chat completion; stt/tts completion; voice stop-to-first-audio; mix per-transaction chat completion or voice first audio",
+    "mix_voice_probability": 0.3,
+    "mock_latency_ms": null,
+    "token_metric": "output_chars only; SSE has no token usage",
+    "observed_consumers": {
+      "chat": 1,
+      "stt": 1,
+      "tts": 1
+    },
+    "prefetch_hint": {
+      "chat": 4,
+      "stt": 4,
+      "tts": 2
+    },
+    "prefetch": {
+      "chat": 4,
+      "stt": 4,
+      "tts": 2
+    },
+    "cache": "off",
+    "tts_cache": "off",
+    "tts_rerank_load": null,
+    "questions": "rag770",
+    "question_source": "gemini/rag-questions/*.jsonl (shuffled by seed, without replacement across all sessions; reshuffle + count repeats when exhausted)",
+    "question_pool": 770,
+    "seed": 20261027,
+    "voice_questions": {
+      "source": "e2e/voice-fixtures V01-V10 (random with replacement)",
+      "pool": 10,
+      "repeats_expected": true,
+      "served": 4,
+      "unique_questions": 4,
+      "repeats": 0
+    },
+    "pass_rule": "headline (max_users_strict): p95_ms <= 12000 && error_rate < 0.01; stage.pass = T19 schema (error_rate <= 0.01)",
+    "unique_questions": 9,
+    "repeats": 0,
+    "questions_served": 9,
+    "stopped_on_failed_stage": 2,
+    "remaining_users": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48
+    ],
+    "finished_at": "2026-10-27T06:20:05.891Z"
+  },
+  "stages": [
+    {
+      "users": 1,
+      "local_users": 1,
+      "mode": "mix",
+      "n": 6,
+      "ok": 6,
+      "err": 0,
+      "error_rate": 0,
+      "p50_ms": 2657.643416,
+      "p95_ms": 4009.0447859999986,
+      "ttft_p50_ms": 1355.4969959999944,
+      "ttft_p95_ms": 1932.6036479999893,
+      "completion_p95_ms": 4009.0447859999986,
+      "first_audio_p95_ms": 0,
+      "stt_rtf_p95": 0,
+      "tts_rtf_p95": 0,
+      "tokens_per_sec": null,
+      "output_chars_per_sec": 13.950637835094858,
+      "elapsed_ms": 124008.66687599999,
+      "queue_max": {
+        "chat": 1,
+        "stt": 0,
+        "tts": 4
+      },
+      "counts": {
+        "chat_attempted": 6,
+        "chat_accepted": 6,
+        "chat_done": 6,
+        "broker_chat_publish": 6
+      },
+      "queue_samples": [
+        {
+          "at": "2026-10-27T06:15:38.939Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 311
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 2,
+            "unacked": 2,
+            "total": 4,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:15:40.971Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 311
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 2,
+            "unacked": 2,
+            "total": 4,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:15:42.978Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 312
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 2,
+            "unacked": 2,
+            "total": 4,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:15:44.987Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 312
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 2,
+            "unacked": 2,
+            "total": 4,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:15:46.973Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 312
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 2,
+            "unacked": 2,
+            "total": 4,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:15:48.970Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 312
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:15:50.991Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 312
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:15:52.978Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 312
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:15:54.969Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 312
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:15:56.981Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 312
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:15:58.978Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 312
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:00.988Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 312
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:02.970Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:04.976Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:06.991Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:08.986Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:11.013Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:12.997Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:15.000Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:17.026Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:18.997Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:21.000Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:22.994Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:25.008Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:27.031Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:28.995Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:30.988Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 313
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:32.986Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 314
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:34.988Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 314
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:37.011Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 314
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:39.006Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 314
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:40.994Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 314
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:42.994Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 314
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:45.005Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 314
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:47.001Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 314
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:49.028Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 314
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:51.002Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 314
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:52.996Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:54.993Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:57.041Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:16:59.008Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:01.020Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:03.015Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:05.001Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:07.011Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:09.011Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:11.011Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:13.020Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:15.014Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:17.024Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:19.013Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:21.023Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:23.024Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:25.021Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:26.998Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:29.054Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:31.010Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 315
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:33.005Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 316
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:35.031Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 316
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:37.033Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 316
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:39.011Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 316
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:41.035Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 316
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:48.954Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 317
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        }
+      ],
+      "queue_errors": [],
+      "samples": [
+        {
+          "kind": "chat",
+          "started_at": "2026-10-27T06:15:38.939Z",
+          "question_id": "LOG-Q006",
+          "message_id": "ec5ab813-35bb-441e-84db-15d522181b6d",
+          "ttft_ms": 1218.667153,
+          "completion_ms": 2657.643416,
+          "output_chars": 391,
+          "delay_ms": 2657.643416,
+          "ok": true
+        },
+        {
+          "kind": "chat",
+          "started_at": "2026-10-27T06:15:59.431Z",
+          "question_id": "LGP-Q059",
+          "message_id": "bd396e60-cd57-493f-a423-47c2cc39f1e3",
+          "ttft_ms": 1327.746869999999,
+          "completion_ms": 2511.1622019999995,
+          "output_chars": 258,
+          "delay_ms": 2511.1622019999995,
+          "ok": true
+        },
+        {
+          "kind": "chat",
+          "started_at": "2026-10-27T06:16:28.248Z",
+          "question_id": "CAT-Q028",
+          "message_id": "3921f474-3876-47cd-9bf4-5f2c295931df",
+          "ttft_ms": 1355.4969959999944,
+          "completion_ms": 3016.8545049999957,
+          "output_chars": 372,
+          "delay_ms": 3016.8545049999957,
+          "ok": true
+        },
+        {
+          "kind": "chat",
+          "started_at": "2026-10-27T06:16:48.600Z",
+          "question_id": "LOG-Q082",
+          "message_id": "a07466f1-24b1-45d7-948a-1f43e7551c17",
+          "ttft_ms": 1932.6036479999893,
+          "completion_ms": 2879.126311,
+          "output_chars": 163,
+          "delay_ms": 2879.126311,
+          "ok": true
+        },
+        {
+          "kind": "chat",
+          "started_at": "2026-10-27T06:17:27.213Z",
+          "question_id": "FAQ-Q053",
+          "message_id": "2dd9cb22-f4f1-481c-894a-04185d4a70f0",
+          "ttft_ms": 1527.2139289999905,
+          "completion_ms": 2352.976889999991,
+          "output_chars": 189,
+          "delay_ms": 2352.976889999991,
+          "ok": true
+        },
+        {
+          "kind": "chat",
+          "started_at": "2026-10-27T06:17:38.920Z",
+          "question_id": "LOG-Q086",
+          "message_id": "d8baafba-7e17-4fe5-b46e-4fc592718a1e",
+          "ttft_ms": 1682.210733,
+          "completion_ms": 4009.0447859999986,
+          "output_chars": 357,
+          "delay_ms": 4009.0447859999986,
+          "ok": true
+        }
+      ],
+      "telemetry_valid": true,
+      "by_kind": {
+        "chat": {
+          "n": 6,
+          "err": 0,
+          "p50_ms": 2657.643416,
+          "p95_ms": 4009.0447859999986
+        }
+      },
+      "questions": {
+        "served": 6,
+        "repeats": 0,
+        "unique_in_stage": 6,
+        "repeats_within_stage": 0,
+        "deck_round": 1,
+        "voice_served": 0,
+        "voice_unique": 0,
+        "voice_repeats": 0
+      },
+      "message_conservation": true,
+      "pass": true,
+      "pass_strict": true,
+      "target_200_pass": null
+    },
+    {
+      "users": 2,
+      "local_users": 2,
+      "mode": "mix",
+      "n": 7,
+      "ok": 5,
+      "err": 2,
+      "error_rate": 0.2857142857142857,
+      "p50_ms": 8783.026687000005,
+      "p95_ms": 25575.630505999987,
+      "ttft_p50_ms": 2808.467736999999,
+      "ttft_p95_ms": 4439.186950000003,
+      "completion_p95_ms": 5973.0039160000015,
+      "first_audio_p95_ms": 11744.466989999986,
+      "stt_rtf_p95": 0.5551001911764658,
+      "tts_rtf_p95": 17.28893483416667,
+      "tokens_per_sec": null,
+      "output_chars_per_sec": 20.57541537970174,
+      "elapsed_ms": 130641.34795800001,
+      "queue_max": {
+        "chat": 1,
+        "stt": 1,
+        "tts": 12
+      },
+      "counts": {
+        "chat_attempted": 7,
+        "chat_accepted": 7,
+        "chat_done": 7,
+        "broker_chat_publish": 7
+      },
+      "queue_samples": [
+        {
+          "at": "2026-10-27T06:17:49.236Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 317
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:51.297Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 317
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 36
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:53.263Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 319
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:55.279Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 319
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 97
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:57.280Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 319
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:17:59.257Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 319
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:01.261Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 319
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:03.292Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 319
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:05.270Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 319
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:07.300Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 319
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:09.274Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 319
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:11.282Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 319
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:13.263Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 319
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:15.265Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 319
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:17.289Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 320
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:19.272Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 320
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:21.285Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 320
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:23.266Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 320
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:25.279Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 320
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:27.290Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 320
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:29.274Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 320
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:31.281Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 320
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:33.277Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 320
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:35.273Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 320
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 37
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:37.279Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 321
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:39.297Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 321
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:41.287Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 321
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 99
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:43.274Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 322
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 10,
+            "unacked": 2,
+            "total": 12,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:45.278Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 322
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 10,
+            "unacked": 2,
+            "total": 12,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:47.277Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 322
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 10,
+            "unacked": 2,
+            "total": 12,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:49.307Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 322
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 10,
+            "unacked": 2,
+            "total": 12,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:51.283Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 322
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 10,
+            "unacked": 2,
+            "total": 12,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:53.301Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 322
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 7,
+            "unacked": 2,
+            "total": 9,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:55.284Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 322
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 7,
+            "unacked": 2,
+            "total": 9,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:57.301Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 322
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 7,
+            "unacked": 2,
+            "total": 9,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:18:59.310Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 322
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 4,
+            "unacked": 2,
+            "total": 6,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:01.290Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 322
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 4,
+            "unacked": 2,
+            "total": 6,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:03.293Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 322
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 4,
+            "unacked": 2,
+            "total": 6,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:05.294Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 322
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 38
+          },
+          "tts": {
+            "ready": 4,
+            "unacked": 2,
+            "total": 6,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:07.342Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 4,
+            "unacked": 2,
+            "total": 6,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:09.295Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:11.278Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 112
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:13.291Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:15.300Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:17.314Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:19.279Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:21.289Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 2,
+            "total": 2,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:23.309Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:25.309Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:27.313Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:29.304Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:31.286Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 0,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:33.320Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 0,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:35.288Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 323
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 39
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:37.300Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:39.281Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:41.283Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 114
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:43.306Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 10,
+            "unacked": 2,
+            "total": 12,
+            "consumers": 1,
+            "publish": 127
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:45.303Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 10,
+            "unacked": 2,
+            "total": 12,
+            "consumers": 1,
+            "publish": 127
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:47.297Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 1,
+            "total": 1,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 10,
+            "unacked": 2,
+            "total": 12,
+            "consumers": 1,
+            "publish": 127
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:49.282Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 10,
+            "unacked": 2,
+            "total": 12,
+            "consumers": 1,
+            "publish": 127
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:51.285Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 10,
+            "unacked": 2,
+            "total": 12,
+            "consumers": 1,
+            "publish": 127
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:53.296Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 6,
+            "unacked": 2,
+            "total": 8,
+            "consumers": 1,
+            "publish": 127
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:55.292Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 6,
+            "unacked": 2,
+            "total": 8,
+            "consumers": 1,
+            "publish": 127
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:57.300Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 6,
+            "unacked": 2,
+            "total": 8,
+            "consumers": 1,
+            "publish": 127
+          }
+        },
+        {
+          "at": "2026-10-27T06:19:59.282Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 3,
+            "unacked": 2,
+            "total": 5,
+            "consumers": 1,
+            "publish": 127
+          }
+        },
+        {
+          "at": "2026-10-27T06:20:05.888Z",
+          "chat": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 324
+          },
+          "stt": {
+            "ready": 0,
+            "unacked": 0,
+            "total": 0,
+            "consumers": 1,
+            "publish": 40
+          },
+          "tts": {
+            "ready": 3,
+            "unacked": 2,
+            "total": 5,
+            "consumers": 1,
+            "publish": 127
+          }
+        }
+      ],
+      "queue_errors": [],
+      "samples": [
+        {
+          "kind": "chat",
+          "started_at": "2026-10-27T06:17:49.239Z",
+          "question_id": "USE-Q108",
+          "message_id": "47479640-d0b9-46ff-8d09-b52467044a61",
+          "ttft_ms": 2197.9859859999997,
+          "completion_ms": 5973.0039160000015,
+          "output_chars": 919,
+          "delay_ms": 5973.0039160000015,
+          "ok": true
+        },
+        {
+          "kind": "voice",
+          "started_at": "2026-10-27T06:17:49.236Z",
+          "voice_file": "V09.wav",
+          "stt_ms": 1551.5965759999817,
+          "stt_rtf": 0.4663329450055359,
+          "message_id": "786123ca-741b-464c-99d5-77597d5fd6c0",
+          "ttft_ms": 3065.936707999994,
+          "completion_ms": 3837.890924999985,
+          "output_chars": 173,
+          "tts_rtf": 0.7007765229591834,
+          "first_audio_ms": 8783.026687000005,
+          "delay_ms": 8783.026687000005,
+          "ok": true
+        },
+        {
+          "kind": "chat",
+          "started_at": "2026-10-27T06:18:16.645Z",
+          "question_id": "LOG-Q007",
+          "message_id": "cdbd9f73-be06-4d4a-a9f0-61ba14f7e87e",
+          "ttft_ms": 1413.9351409999945,
+          "completion_ms": 1731.542213000008,
+          "output_chars": 63,
+          "delay_ms": 1731.542213000008,
+          "ok": true
+        },
+        {
+          "kind": "chat",
+          "started_at": "2026-10-27T06:18:41.796Z",
+          "question_id": "LOG-Q032",
+          "message_id": "77d17df9-9c53-45c1-9a4b-3c8b38538982",
+          "ttft_ms": 2032.4591099999961,
+          "completion_ms": 3566.4913939999824,
+          "output_chars": 269,
+          "delay_ms": 3566.4913939999824,
+          "ok": true
+        },
+        {
+          "kind": "voice",
+          "started_at": "2026-10-27T06:18:35.108Z",
+          "voice_file": "V05.wav",
+          "stt_ms": 1307.329808999988,
+          "stt_rtf": 0.4674391105284286,
+          "message_id": "2d167932-8464-4884-970f-37b9defbbf69",
+          "ttft_ms": 2831.3925480000034,
+          "completion_ms": 5002.201601999986,
+          "output_chars": 512,
+          "tts_rtf": 17.28893483416667,
+          "ok": false,
+          "error": "MISSING_TTS_SENTENCE",
+          "delay_ms": 25002.38196899998
+        },
+        {
+          "kind": "voice",
+          "started_at": "2026-10-27T06:19:03.477Z",
+          "voice_file": "V01.wav",
+          "stt_ms": 2573.880873999995,
+          "stt_rtf": 0.3955683547062997,
+          "message_id": "b3596e53-4f8f-4c62-a4bc-927dbb905664",
+          "ttft_ms": 4439.186950000003,
+          "completion_ms": 5158.518026000005,
+          "output_chars": 113,
+          "tts_rtf": 1.5839282604166631,
+          "first_audio_ms": 11744.466989999986,
+          "delay_ms": 11744.466989999986,
+          "ok": true
+        },
+        {
+          "kind": "voice",
+          "started_at": "2026-10-27T06:19:34.287Z",
+          "voice_file": "V10.wav",
+          "stt_ms": 1258.2270999999892,
+          "stt_rtf": 0.5551001911764658,
+          "message_id": "1f25ba73-9cfe-44fd-8421-a411be1faeed",
+          "ttft_ms": 2808.467736999999,
+          "completion_ms": 5570.933144999988,
+          "output_chars": 639,
+          "tts_rtf": 16.659909490833332,
+          "ok": false,
+          "error": "MISSING_TTS_SENTENCE",
+          "delay_ms": 25575.630505999987
+        }
+      ],
+      "telemetry_valid": true,
+      "by_kind": {
+        "chat": {
+          "n": 3,
+          "err": 0,
+          "p50_ms": 3566.4913939999824,
+          "p95_ms": 5973.0039160000015
+        },
+        "voice": {
+          "n": 4,
+          "err": 2,
+          "p50_ms": 11744.466989999986,
+          "p95_ms": 25575.630505999987
+        }
+      },
+      "questions": {
+        "served": 3,
+        "repeats": 0,
+        "unique_in_stage": 3,
+        "repeats_within_stage": 0,
+        "deck_round": 1,
+        "voice_served": 4,
+        "voice_unique": 4,
+        "voice_repeats": 0
+      },
+      "message_conservation": true,
+      "pass": false,
+      "pass_strict": false,
+      "target_200_pass": null
+    }
+  ],
+  "max_users_ok": {
+    "mix": 1
+  },
+  "max_users_strict": {
+    "mix": 1
+  }
+}

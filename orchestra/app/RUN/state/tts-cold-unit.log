@@ -1,0 +1,65 @@
+TAP version 13
+# cold runtime counters {"requests":6,"upstream":6,"memoryHits":0,"dbReads":0,"dbWrites":0,"shared":0}
+# Subtest: TTS_CACHE=off: sequential + simultaneous repeats call upstream each time, zero DB/cache work
+ok 1 - TTS_CACHE=off: sequential + simultaneous repeats call upstream each time, zero DB/cache work
+  ---
+  duration_ms: 229.885992
+  type: 'test'
+  ...
+# Subtest: ฿5.80 → ห้าบาทแปดสิบสตางค์
+ok 2 - ฿5.80 → ห้าบาทแปดสิบสตางค์
+  ---
+  duration_ms: 22.404259
+  type: 'test'
+  ...
+# Subtest: B-250 → บี สองร้อยห้าสิบ
+ok 3 - B-250 → บี สองร้อยห้าสิบ
+  ---
+  duration_ms: 1.492531
+  type: 'test'
+  ...
+# Subtest: เงินอื่น ๆ
+ok 4 - เงินอื่น ๆ
+  ---
+  duration_ms: 0.910441
+  type: 'test'
+  ...
+# Subtest: รหัสเอกสาร/สินค้าอ่านทีละหลัก
+ok 5 - รหัสเอกสาร/สินค้าอ่านทีละหลัก
+  ---
+  duration_ms: 1.236191
+  type: 'test'
+  ...
+# Subtest: จำนวนเต็ม
+ok 6 - จำนวนเต็ม
+  ---
+  duration_ms: 0.819526
+  type: 'test'
+  ...
+# Subtest: ตัด emoji/tag/markdown/ป้ายอ้างอิง
+ok 7 - ตัด emoji/tag/markdown/ป้ายอ้างอิง
+  ---
+  duration_ms: 0.71521
+  type: 'test'
+  ...
+# Subtest: ภาษาตามตัวอักษร
+ok 8 - ภาษาตามตัวอักษร
+  ---
+  duration_ms: 3.469135
+  type: 'test'
+  ...
+# Subtest: ยาวไม่เกิน 600 ตัวอักษร
+ok 9 - ยาวไม่เกิน 600 ตัวอักษร
+  ---
+  duration_ms: 1.462426
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 731.971807

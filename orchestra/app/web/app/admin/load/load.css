@@ -1,0 +1,27 @@
+.load-page{color:#0B2E3F}
+.load-run{border-left:5px solid #0E7C9B;padding:.2rem 0 .2rem 1rem;margin:1rem 0}
+.load-run h2{font-size:1.1rem;display:flex;align-items:center;gap:.5rem;margin:.2rem 0 .6rem}.load-run h2 small{font-weight:400;color:#5b6b72}
+.load-run h2 i,.load-legend i{display:inline-block;width:12px;height:12px;border-radius:3px}
+.load-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
+.load-card{padding:1rem 1.2rem;border:1px solid #d5dfe3;border-top:5px solid #A0522D;border-radius:10px;background:#fff}
+.load-card.ok{border-top-color:#0E7C9B}
+.load-card h3{margin:0 0 .3rem;font-size:1rem;color:#5b6b72}
+.load-big{margin:0;font-size:1.25rem}.load-big strong{font-size:3rem;line-height:1.1;color:#0B2E3F;margin:0 .2rem}
+.load-meta{color:#5b6b72;font-size:.85rem;margin:.5rem 0 0}
+.load-criteria{font-weight:600;margin:1rem 0;padding:.6rem .9rem;background:#EAF5F8;border-radius:8px}
+.load-controls{margin:1rem 0}.load-controls label{display:block;margin-bottom:.3rem}
+.load-controls select{min-width:min(100%,520px);padding:.3rem;border:1px solid #9fb3ba;border-radius:6px}
+.load-chart-wrap{margin:1.5rem 0;max-width:1000px}.load-chart-wrap figcaption{font-weight:600;margin-bottom:.4rem}
+.load-chart-wrap svg[data-testid=load-chart]{width:100%;height:auto;display:block;background:#fff}
+.load-legend{display:flex;flex-wrap:wrap;gap:.4rem 1rem;font-size:.85rem;margin-bottom:.4rem}.load-legend span{display:inline-flex;align-items:center;gap:.35rem}
+.load-axis{font-size:12px;fill:#5b6b72}.load-direct{font-size:12px;fill:#0B2E3F}.load-strong{font-weight:700}
+.load-chart-wrap .load-fail-text{fill:#C62828}
+.load-table{overflow-x:auto;margin:1.2rem 0}.load-table table{border-collapse:collapse;width:100%}
+.load-table th,.load-table td{padding:.45rem .6rem;border:1px solid #d5dfe3;text-align:right}
+.load-table caption{text-align:left;font-weight:700;margin-bottom:.5rem}
+.load-table tr.load-fail td{background:#FDE7E7;color:#C62828;font-weight:600}
+.load-table td.load-bad{text-decoration:underline}
+.load-headline{font-size:1.05rem;font-weight:700;margin:.6rem 0 1rem;padding:.7rem 1rem;border-left:5px solid #0E7C9B;background:#EAF5F8;border-radius:6px}
+.load-headline.none{border-left-color:#A0522D;background:#FBF1EB}
+.load-kind{font-size:.8rem;font-weight:600;padding:.15rem .55rem;border-radius:999px;background:#FBF1EB;color:#7A3E22;border:1px solid #E2C2AE}
+.load-kind.primary{background:#E3F3F7;color:#0B2E3F;border-color:#9CCFDD}

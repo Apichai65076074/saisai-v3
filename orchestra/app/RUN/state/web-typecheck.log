@@ -1,0 +1,6 @@
+npm notice run saisai-web@3.0.0 typecheck
+npm notice run tsc --noEmit
+tests/unit/tts-delivery.test.ts(21,34): error TS2322: Type '{ cache: string; questions: string; prefetch: { chat: number; stt: number; tts: number; }; }' is not assignable to type 'Record<string, unknown> & { think_sec: number; }'.
+  Property 'think_sec' is missing in type '{ cache: string; questions: string; prefetch: { chat: number; stt: number; tts: number; }; }' but required in type '{ think_sec: number; }'.
+tests/unit/tts-delivery.test.ts(22,39): error TS2322: Type '{ tts_cache: string; cache: string; questions: string; prefetch: { chat: number; stt: number; tts: number; }; }' is not assignable to type 'Record<string, unknown> & { think_sec: number; }'.
+  Property 'think_sec' is missing in type '{ tts_cache: string; cache: string; questions: string; prefetch: { chat: number; stt: number; tts: number; }; }' but required in type '{ think_sec: number; }'.

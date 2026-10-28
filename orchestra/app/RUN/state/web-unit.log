@@ -1,0 +1,17 @@
+npm notice run saisai-web@3.0.0 test
+npm notice run vitest run --maxWorkers=2 --minWorkers=1
+
+ RUN  v2.1.9 /root/runs/saisai/wt/T22/web
+
+ ✓ tests/unit/rules.test.ts (26 tests) 96ms
+ ↓ lib/mq/test/mq.int.test.ts (15 tests | 15 skipped)
+ ✓ lib/mq/test/chat.unit.test.ts (6 tests) 32ms
+ ✓ tests/unit/pricing.test.ts (9 tests) 262ms
+ ✓ components/chat/test/chat.test.ts (5 tests) 42ms
+ ✓ tests/unit/tts-delivery.test.ts (3 tests) 34ms
+
+ Test Files  5 passed | 1 skipped (6)
+      Tests  49 passed | 15 skipped (64)
+   Start at  10:10:22
+   Duration  3.70s (transform 1.44s, setup 0ms, collect 1.96s, tests 466ms, environment 3ms, prepare 1.41s)
+

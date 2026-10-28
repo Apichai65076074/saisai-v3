@@ -1,0 +1,223 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/root/runs/saisai/wt/T23/e2e/node_modules/.bin/playwright",
+      "test",
+      "tests/L01.spec.ts",
+      "tests/L02.spec.ts",
+      "--reporter=json"
+    ],
+    "configFile": "/root/runs/saisai/wt/T23/e2e/playwright.config.ts",
+    "rootDir": "/root/runs/saisai/wt/T23/e2e/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/root/runs/saisai/wt/T23/e2e/test-results-t23-final-display",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/root/runs/saisai/wt/T23/e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/root/runs/saisai/wt/T23/e2e/test-results-t23-final-display",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "/root/runs/saisai/wt/T23/e2e/tests",
+        "snapshotDir": "/root/runs/saisai/wt/T23/e2e/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://localhost:3600",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "video": {
+            "mode": "on",
+            "size": {
+              "width": 1280,
+              "height": 800
+            }
+          },
+          "locale": "th-TH",
+          "timezoneId": "Asia/Bangkok",
+          "permissions": [
+            "microphone"
+          ],
+          "actionTimeout": 30000,
+          "navigationTimeout": 60000,
+          "browserName": "chromium",
+          "launchOptions": {
+            "executablePath": "/ms-playwright/chromium-1247/chrome-linux64/chrome",
+            "args": [
+              "--use-fake-ui-for-media-stream",
+              "--use-fake-device-for-media-stream",
+              "--autoplay-policy=no-user-gesture-required",
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader",
+              "--ignore-gpu-blocklist"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0-alpha-1790635538000",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "L01.spec.ts",
+      "file": "L01.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "L01 POST load-run-a.json \u2192 load-chart 8 points and load-max-users from the file",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18873,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T06:17:15.462Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/root/runs/saisai/wt/T23/e2e/test-results-t23-final-display/L01-L01-POST-load-run-a-js-f31fa-oad-max-users-from-the-file-chromium/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c3ddb1bc45b5402980f3-2e60f411416771da486b",
+          "file": "L01.spec.ts",
+          "line": 11,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "L02.spec.ts",
+      "file": "L02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "L02 failing stage is red and the chart has the 200-user target line",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12711,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T06:17:36.274Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/root/runs/saisai/wt/T23/e2e/test-results-t23-final-display/L02-L02-failing-stage-is-r-a0d5f-as-the-200-user-target-line-chromium/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "107ffdab037fc4178bf8-0718b410729331531d23",
+          "file": "L02.spec.ts",
+          "line": 13,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T06:17:14.222Z",
+    "duration": 35220.949,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

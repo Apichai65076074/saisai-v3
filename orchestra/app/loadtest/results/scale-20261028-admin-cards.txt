@@ -1,0 +1,3 @@
+data-testid="load-scale-card" data-scale="scale-base" data-run-id="25" data-value="0"
+data-testid="load-scale-card" data-scale="scale-x2" data-run-id="32" data-value="1"
+data-testid="load-scale-card" data-scale="scale-x4" data-run-id="" data-value=""

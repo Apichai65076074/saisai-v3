@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: candidate cache shares searches, reranks each request, invalidates document changes, isolates DBs and expires
+ok 1 - candidate cache shares searches, reranks each request, invalidates document changes, isolates DBs and expires
+  ---
+  duration_ms: 150.12158
+  type: 'test'
+  ...
+# Subtest: embedding outage is not cached after vector service recovers
+ok 2 - embedding outage is not cached after vector service recovers
+  ---
+  duration_ms: 2.311838
+  type: 'test'
+  ...
+# Subtest: validates modes, stages, shard and durations before work
+ok 3 - validates modes, stages, shard and durations before work
+  ---
+  duration_ms: 4.098655
+  type: 'test'
+  ...
+# Subtest: SSE handles split UTF8, multiple frames, comments and multiline data
+ok 4 - SSE handles split UTF8, multiple frames, comments and multiline data
+  ---
+  duration_ms: 17.819852
+  type: 'test'
+  ...
+# Subtest: public API pipeline: session isolation, chat, STT, TTS, voice, 429, missing audio and SSE errors
+ok 5 - public API pipeline: session isolation, chat, STT, TTS, voice, 429, missing audio and SSE errors
+  ---
+  duration_ms: 291.952564
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 603.550102

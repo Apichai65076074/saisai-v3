@@ -1,0 +1,11 @@
+.voice { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.mic { border-radius: 50%; width: 40px; height: 40px; min-height: 40px; padding: 0; font-size: 1.1rem; background: #0e7c9b; color: #fff; position: relative; }
+.mic[data-phase='recording'] { background: #a0522d; animation: pulse 1.1s ease-in-out infinite; }
+.mic[data-phase='sending'] { background: #5b8a99; }
+.mic:disabled { opacity: 0.55; }
+.mode { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; font-weight: 400; margin: 4px 0; }
+.mode input { width: auto; accent-color: #0e7c9b; }
+.hint { font-size: 0.78rem; color: #5b6f78; }
+.error { font-size: 0.8rem; color: #a0522d; }
+@keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 #a0522d66; } 50% { box-shadow: 0 0 0 8px #a0522d00; } }
+@media (prefers-reduced-motion: reduce) { .mic[data-phase='recording'] { animation: none; outline: 3px solid #a0522d55; } }

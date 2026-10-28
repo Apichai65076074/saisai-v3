@@ -1,0 +1,80 @@
+{
+  "mode": "ai",
+  "started_at": "2026-10-27T05:12:49.070Z",
+  "transport": "temporary HTTPS; authenticated POST; no-store",
+  "items": [
+    {
+      "n": 1,
+      "elapsed_ms": 11159.541570000001,
+      "bytes": 506924,
+      "duration_s": 5.28,
+      "generation_s": 9.99547570499999,
+      "rtf": 1.8930825198863617,
+      "cache_control": "no-store",
+      "cf_cache_status": "DYNAMIC",
+      "sha256": "ba6f6a675f91dcf651b5d8d2eb79260a3177b770a0c23c49840aac21f78c34f0"
+    },
+    {
+      "n": 2,
+      "elapsed_ms": 2893.041435000001,
+      "bytes": 522284,
+      "duration_s": 5.44,
+      "generation_s": 2.0294173719885293,
+      "rtf": 0.37305466396847964,
+      "cache_control": "no-store",
+      "cf_cache_status": "DYNAMIC",
+      "sha256": "790b6b386a77d301887a383098dd863fa352438915bbc177b55b4ae2ddf997a9"
+    },
+    {
+      "n": 3,
+      "elapsed_ms": 3012.4765689999986,
+      "bytes": 522284,
+      "duration_s": 5.44,
+      "generation_s": 2.0283926959964447,
+      "rtf": 0.3728663044111111,
+      "cache_control": "no-store",
+      "cf_cache_status": "DYNAMIC",
+      "sha256": "aadf86371e3e231c62dd3879f5ccc3fbbcecef3089ba81b9077dac5474adbab2"
+    }
+  ],
+  "before": {
+    "upstream_calls": {
+      "stt": 0,
+      "tts": 0,
+      "rerank": 0
+    },
+    "response_cache": "off",
+    "audio_cache": "off"
+  },
+  "unauthorized_status": 401,
+  "rerank": {
+    "results": [
+      {
+        "index": 0,
+        "relevance_score": 0.99072265625,
+        "score": 0.99072265625
+      },
+      {
+        "index": 1,
+        "relevance_score": 0.004467010498046875,
+        "score": 0.004467010498046875
+      },
+      {
+        "index": 2,
+        "relevance_score": 0.000018656253814697266,
+        "score": 0.000018656253814697266
+      }
+    ]
+  },
+  "after": {
+    "upstream_calls": {
+      "stt": 0,
+      "tts": 3,
+      "rerank": 1
+    },
+    "response_cache": "off",
+    "audio_cache": "off"
+  },
+  "tts_upstream_delta": 3,
+  "finished_at": "2026-10-27T05:13:09.321Z"
+}

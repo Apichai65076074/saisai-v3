@@ -1,0 +1,18 @@
+{
+ "n": 770,
+ "rerank": "on",
+ "pruned": {
+  "hit_at_4": 74.7,
+  "mrr": 62.6
+ },
+ "fullscan": {
+  "hit_at_4": 74.7,
+  "mrr": 62.6
+ },
+ "top4_differs": [],
+ "t18_reference": {
+  "hit_at_4": 83,
+  "mrr": 69.5,
+  "source": "eval/REPORT.md (mock-rerank-on, via chat API)"
+ }
+}

@@ -1,0 +1,98 @@
+TAP version 13
+# Subtest: SQL context contains only authenticated company and latest ten history messages
+ok 1 - SQL context contains only authenticated company and latest ten history messages
+  ---
+  duration_ms: 175.486534
+  type: 'test'
+  ...
+# Subtest: cross-company ORDER tool has no rows; anonymous QUOTE cannot write
+ok 2 - cross-company ORDER tool has no rows; anonymous QUOTE cannot write
+  ---
+  duration_ms: 9.139463
+  type: 'test'
+  ...
+# Subtest: privacy guard rejects before LLM and done includes retrieval/products
+ok 3 - privacy guard rejects before LLM and done includes retrieval/products
+  ---
+  duration_ms: 19.829894
+  type: 'test'
+  ...
+# Subtest: sentence/tts arrive before stream finishes and hidden tags never leak
+ok 4 - sentence/tts arrive before stream finishes and hidden tags never leak
+  ---
+  duration_ms: 24.518103
+  type: 'test'
+  ...
+# Subtest: LLM outage emits error without throwing out of consumer
+ok 5 - LLM outage emits error without throwing out of consumer
+  ---
+  duration_ms: 15.285718
+  type: 'test'
+  ...
+# [retrieve] RAG_CANDIDATE_CACHE=off
+# [retrieve] keyword search = pruned (doc_chunk_trgms)
+# Subtest: RERANK=off and >3 second rerank still complete a real mock chat
+ok 6 - RERANK=off and >3 second rerank still complete a real mock chat
+  ---
+  duration_ms: 5033.540152
+  type: 'test'
+  ...
+# Subtest: unpaid production guard follows shared prepay versus credit eligibility
+ok 7 - unpaid production guard follows shared prepay versus credit eligibility
+  ---
+  duration_ms: 68.592635
+  type: 'test'
+  ...
+# Subtest: live consumer retries malformed requests twice then DLQ retains original content
+ok 8 - live consumer retries malformed requests twice then DLQ retains original content
+  ---
+  duration_ms: 259.641501
+  type: 'test'
+  ...
+# Subtest: tags, think and citations remain hidden at every possible token split
+ok 9 - tags, think and citations remain hidden at every possible token split
+  ---
+  duration_ms: 10.825888
+  type: 'test'
+  ...
+# Subtest: sentence emitted before end, decimals preserved, long text capped
+ok 10 - sentence emitted before end, decimals preserved, long text capped
+  ---
+  duration_ms: 1.357225
+  type: 'test'
+  ...
+# Subtest: RRF merges identities and limits candidates to twenty
+ok 11 - RRF merges identities and limits candidates to twenty
+  ---
+  duration_ms: 0.862206
+  type: 'test'
+  ...
+# Subtest: RERANK=off skips network; malformed/server errors fall back
+ok 12 - RERANK=off skips network; malformed/server errors fall back
+  ---
+  duration_ms: 2.248037
+  type: 'test'
+  ...
+# [retrieve] RAG_CANDIDATE_CACHE=off
+# [retrieve] keyword search = fullscan (doc_chunk_trgms missing)
+# Subtest: rerank >3 sec aborts and returns RRF top4
+ok 13 - rerank >3 sec aborts and returns RRF top4
+  ---
+  duration_ms: 3002.883817
+  type: 'test'
+  ...
+# Subtest: embedding failure preserves lexical candidates
+ok 14 - embedding failure preserves lexical candidates
+  ---
+  duration_ms: 37.597899
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5803.889586

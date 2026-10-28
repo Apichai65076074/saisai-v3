@@ -1,0 +1,101 @@
+{
+  "instances": [
+    {
+      "instance_id": 57914113,
+      "download": 0.13,
+      "upload": 0.004
+    },
+    {
+      "instance_id": 57914254,
+      "download": 0.022,
+      "upload": 0.001
+    },
+    {
+      "instance_id": 57914350,
+      "download": 0.027,
+      "upload": 0.002
+    },
+    {
+      "instance_id": 57974344,
+      "download": 0.025,
+      "upload": 0.001
+    },
+    {
+      "instance_id": 57974686,
+      "download": 0.001,
+      "upload": 0
+    },
+    {
+      "instance_id": 57975038,
+      "download": 0,
+      "upload": 0
+    },
+    {
+      "instance_id": 57978074,
+      "download": 0,
+      "upload": 0
+    },
+    {
+      "instance_id": 57978391,
+      "download": 0,
+      "upload": 0
+    },
+    {
+      "instance_id": 57980427,
+      "download": 0,
+      "upload": 0
+    },
+    {
+      "instance_id": 57981212,
+      "download": 0,
+      "upload": 0
+    },
+    {
+      "instance_id": 58044931,
+      "download": 0,
+      "upload": 0
+    },
+    {
+      "instance_id": 58045480,
+      "download": 0,
+      "upload": 0
+    },
+    {
+      "instance_id": 58046704,
+      "download": 0.001,
+      "upload": 0
+    },
+    {
+      "instance_id": 58046920,
+      "download": 0,
+      "upload": 0
+    },
+    {
+      "instance_id": 58048734,
+      "download": 0.064,
+      "upload": 0.003
+    },
+    {
+      "instance_id": 58049004,
+      "download": 0.014,
+      "upload": 0
+    },
+    {
+      "instance_id": 58049112,
+      "download": 0.064,
+      "upload": 0.002
+    },
+    {
+      "instance_id": 58049267,
+      "download": 0.03,
+      "upload": 0.001
+    },
+    {
+      "instance_id": 58049699,
+      "download": 0.004,
+      "upload": 0
+    }
+  ],
+  "captured_epoch": 1793167343.708541,
+  "note": "network-only snapshot (bwd/bwu) for ended-reserve reconciliation"
+}

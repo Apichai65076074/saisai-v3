@@ -1,0 +1,8 @@
+{"BlockIO":"0B / 0B","CPUPerc":"18.42%","Container":"saisai3-web-1","ID":"3e5837773368","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-web-1","NetIO":"1GB / 692MB","PIDs":"11"}
+{"BlockIO":"0B / 0B","CPUPerc":"30.79%","Container":"saisai3-db-1","ID":"31460b622ece","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-db-1","NetIO":"966MB / 2.38GB","PIDs":"29"}
+{"BlockIO":"0B / 0B","CPUPerc":"14.44%","Container":"saisai3-rabbitmq-1","ID":"36fe7d290c46","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-rabbitmq-1","NetIO":"1.09GB / 1.1GB","PIDs":"29"}
+{"BlockIO":"0B / 0B","CPUPerc":"7.90%","Container":"saisai3-chat-worker-1","ID":"4324a2a7ba8f","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-chat-worker-1","NetIO":"29.8MB / 39.6MB","PIDs":"19"}
+{"BlockIO":"0B / 0B","CPUPerc":"6.50%","Container":"saisai3-chat-worker-2","ID":"5b725d13e489","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-chat-worker-2","NetIO":"29.9MB / 39.8MB","PIDs":"19"}
+{"BlockIO":"0B / 0B","CPUPerc":"1.76%","Container":"saisai3-stt-worker-1","ID":"e82b04e0aa4e","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-stt-worker-1","NetIO":"281MB / 211MB","PIDs":"11"}
+{"BlockIO":"0B / 0B","CPUPerc":"0.13%","Container":"saisai3-tts-worker-1","ID":"a37629038d5c","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-tts-worker-1","NetIO":"51.7MB / 306MB","PIDs":"11"}
+{"BlockIO":"0B / 0B","CPUPerc":"15.37%","Container":"saisai3-embedder-1","ID":"e32783ad83b3","MemPerc":"0.00%","MemUsage":"0B / 0B","Name":"saisai3-embedder-1","NetIO":"583MB / 45.4MB","PIDs":"14"}

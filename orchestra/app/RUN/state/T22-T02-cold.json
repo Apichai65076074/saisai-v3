@@ -1,0 +1,190 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/root/runs/saisai/wt/T22/e2e/node_modules/.bin/playwright",
+      "test",
+      "tests/T02.spec.ts"
+    ],
+    "configFile": "/root/runs/saisai/wt/T22/e2e/playwright.config.ts",
+    "rootDir": "/root/runs/saisai/wt/T22/e2e/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/root/runs/saisai/wt/T22/RUN/state/T22-T02-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/root/runs/saisai/wt/T22/e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/root/runs/saisai/wt/T22/RUN/state/T22-T02-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "/root/runs/saisai/wt/T22/e2e/tests",
+        "snapshotDir": "/root/runs/saisai/wt/T22/e2e/tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://localhost:3600",
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "video": {
+            "mode": "on",
+            "size": {
+              "width": 1280,
+              "height": 800
+            }
+          },
+          "locale": "th-TH",
+          "timezoneId": "Asia/Bangkok",
+          "permissions": [
+            "microphone"
+          ],
+          "actionTimeout": 30000,
+          "navigationTimeout": 60000,
+          "browserName": "chromium",
+          "launchOptions": {
+            "executablePath": "/ms-playwright/chromium-1247/chrome-linux64/chrome",
+            "args": [
+              "--use-fake-ui-for-media-stream",
+              "--use-fake-device-for-media-stream",
+              "--autoplay-policy=no-user-gesture-required",
+              "--use-angle=swiftshader",
+              "--enable-unsafe-swiftshader",
+              "--ignore-gpu-blocklist"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../RUN/state/T22-T02-cold.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0-alpha-1790635538000",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "T02.spec.ts",
+      "file": "T02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "T02 auto speech streams three sentences in sequence before done",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 64262,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T03:25:20.139Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "voice-mp4",
+                      "contentType": "video/mp4",
+                      "path": "/root/runs/saisai/wt/T22/RUN/state/T22-T02-artifacts/T02-T02-auto-speech-stream-592e6-ces-in-sequence-before-done-chromium/attachments/voice-mp4-4e995f9a5006c78038f7dba5ae6b385d4ef76032.mp4"
+                    },
+                    {
+                      "name": "voice-metrics",
+                      "contentType": "application/json",
+                      "body": "eyJzdGF0ZXMiOlsiaWRsZSIsInRoaW5raW5nIiwidGFsa2luZyIsImlkbGUiLCJ0YWxraW5nIiwiaWRsZSIsInRhbGtpbmciLCJpZGxlIl0sIm1heE1vdXRoIjoxLCJzcGVlY2hFbmRlZEF0IjowLCJzcGVlY2hTdGFydGVkQXQiOjAsImRvbmVBdCI6MjAzNDguMzAwMDAwMDAwMjgsInBsYXlzIjpbeyJzZXEiOjEsImxhbmciOiJlbiIsImF0IjoxODE0Ni4xMDAwMDAwMDAwOTMsImR1cmF0aW9uIjoyLjcxODAwNX0seyJzZXEiOjIsImxhbmciOiJlbiIsImF0IjoyMDkzNy4zMDAwMDAwMDAyOCwiZHVyYXRpb24iOjEwLjkwOTcwNX0seyJzZXEiOjMsImxhbmciOiJlbiIsImF0IjozMTkzMy44MDAwMDAwMDAyOCwiZHVyYXRpb24iOjguMDk0Mjg2fV0sImVuZGVkIjpbMSwyLDNdLCJtaWNDYWxscyI6MCwic3RvcHBlZFRyYWNrcyI6MCwic3RvcFRvRmlyc3RBdWRpb01zIjpudWxsfQ=="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/root/runs/saisai/wt/T22/RUN/state/T22-T02-artifacts/T02-T02-auto-speech-stream-592e6-ces-in-sequence-before-done-chromium/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "04d428d9c79880da46fa-6a6b079f31dac70d363d",
+          "file": "T02.spec.ts",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T03:25:15.333Z",
+    "duration": 70312.856,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "_note": "บัญชีทดสอบ seed ตาม legacy/web/SPEC.md ข้อ 6 (ใช้ในเครื่องทดสอบเท่านั้น)",
+  "C01": { "email": "arun@saisai.test", "password": "Arun#Test2026", "company": "C01" },
+  "C02": { "email": "theera@saisai.test", "password": "Theera#Test2026", "company": "C02" },
+  "C03": { "email": "kenji@saisai.test", "password": "Kenji#Test2026", "company": "C03" },
+  "C04": { "email": "mali@saisai.test", "password": "Mali#Test2026", "company": "C04" },
+  "C05": { "email": "napa@saisai.test", "password": "Napa#Test2026", "company": "C05" }
+}

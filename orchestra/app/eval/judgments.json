@@ -1,0 +1,332 @@
+{
+ "_meta": {
+  "judge": "Claude (T18) ตรวจด้วยตนเอง 2026-10-26 จาก run mock-rerank-on",
+  "n": 64,
+  "rules": "correctness 1 = ตอบตรงครบ · 0.5 = มีค่าถูกแต่ไม่ครบ/ตอบเป็นตารางดิบ · 0 = ผิด/ไม่ตอบ/ไม่บอกว่าไม่มีข้อมูล · answer_sha ผูกกับคำตอบที่ตรวจ (คำตอบเปลี่ยน → ไม่ใช้)"
+ },
+ "CAT-Q086": {
+  "correctness": 0.5,
+  "reason": "ตอบเป็นตารางทั้งตาราง มีค่าที่ถูกแต่ไม่ได้สรุปคำตอบตรงคำถาม (B-500 จุดบางสุด 2.3)",
+  "answer_sha": "920dd584100a"
+ },
+ "CAT-Q100": {
+  "correctness": 1,
+  "reason": "เอกสารไม่มีราคา แต่บอทตอบราคาจากระบบ (SQL/CTX) ตรง seed ไม่ได้แต่ง → ถือว่าถูก",
+  "answer_sha": "846249944752",
+  "faithfulness": 1
+ },
+ "CAT-Q095": {
+  "correctness": 1,
+  "reason": "มี Lug 43 มม. ฝาล็อกโลหะ ครบ (มีประโยคเกินเล็กน้อย)",
+  "answer_sha": "7f5dde6fc56c"
+ },
+ "CAT-Q089": {
+  "correctness": 1,
+  "reason": "อ้างเชิงอรรถ ¹ B-250 เท่านั้นที่มีสีเขียว",
+  "answer_sha": "91f3faafe534"
+ },
+ "CAT-Q021": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "3d6be8014a4f"
+ },
+ "CAT-Q022": {
+  "correctness": 0.5,
+  "reason": "ยกข้อมูล B-250 ขนาด 250 ml แต่ไม่ได้อธิบายว่าชื่อรุ่นบอกขนาดบรรจุ · ค้นได้หน้า 17 ไม่ใช่หน้า 5",
+  "answer_sha": "897dd31b7252"
+ },
+ "CAT-Q004": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "30e7706bcc6e"
+ },
+ "CAT-Q026": {
+  "correctness": 0,
+  "reason": "ตอบตารางแนะนำผลิตภัณฑ์ ไม่ได้บอกว่าสีใสเหมาะกับการโชว์สีสินค้า",
+  "answer_sha": "0369f1b75245"
+ },
+ "FAQ-Q087": {
+  "correctness": 0,
+  "reason": "ตอบตาราง MOQ แทนตาราง packing (96 / 5,760)",
+  "answer_sha": "5144903186c6"
+ },
+ "FAQ-Q105": {
+  "correctness": 0,
+  "reason": "คำถามนอกเอกสาร (ราคาฝา) แต่ตอบเป็นใบราคาขวดที่ไม่เกี่ยว",
+  "answer_sha": "bb9c8bfb6c7f"
+ },
+ "FAQ-Q098": {
+  "correctness": 0,
+  "reason": "ไม่ได้ตอบว่าต้องขั้นต่ำ 5,000 ใบ/3,000 ใบพิมพ์ไม่ได้",
+  "answer_sha": "e918d419912b"
+ },
+ "FAQ-Q089": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "69fa256963b4"
+ },
+ "FAQ-Q071": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "5f599af715e5"
+ },
+ "FAQ-Q050": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "434878ec3373"
+ },
+ "FAQ-Q079": {
+  "correctness": 0.5,
+  "reason": "ตอบเป็นตารางทั้งตาราง มีค่าที่ถูกแต่ไม่ได้สรุปคำตอบตรงคำถาม (B-500 MOQ 800)",
+  "answer_sha": "e5752071feec"
+ },
+ "FAQ-Q001": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "8ca31e4c6d16"
+ },
+ "LOG-Q080": {
+  "correctness": 0,
+  "reason": "ตอบใบราคาแทนจำนวนกล่อง/ใบต่อพาเลท B-150 (60 กล่อง 4,320 ใบ)",
+  "answer_sha": "6bc9ab909558"
+ },
+ "LOG-Q108": {
+  "correctness": 0,
+  "reason": "ไม่ได้บอกว่าไม่มีข้อมูล ตอบเรื่องส่งออก/พาเลทแทน",
+  "answer_sha": "f81934c3c592"
+ },
+ "LOG-Q092": {
+  "correctness": 0.5,
+  "reason": "เรียก PRICE ได้ 9 เที่ยว ค่าส่ง 13,500.00 ตรงตาราง แต่ไม่ได้ตอบจากตาราง/ไม่อ้างอิงหน้า",
+  "answer_sha": "a453e3ba1196"
+ },
+ "LOG-Q006": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "3c0a9f58e49a"
+ },
+ "LOG-Q109": {
+  "correctness": 0,
+  "reason": "คำถามนอกเอกสาร แต่ตอบเป็นใบราคา",
+  "answer_sha": "9d582d1543af"
+ },
+ "LOG-Q062": {
+  "correctness": 1,
+  "reason": "มีรูปที่ 2: ฉลากข้างกล่องที่อ่านเลขล็อตได้ชัด",
+  "answer_sha": "05ee338e8e85"
+ },
+ "LOG-Q065": {
+  "correctness": 1,
+  "reason": "มี 0.05%",
+  "answer_sha": "7d0fff7b8e64"
+ },
+ "LOG-Q003": {
+  "correctness": 0.5,
+  "reason": "ให้เบอร์ฝ่ายขายถูก แต่ตอบเป็นรหัส DISTANCE_TOO_FAR ไม่อธิบายว่าต้องติดต่อฝ่ายขาย",
+  "answer_sha": "70d0e95e8ed6"
+ },
+ "LGP-Q078": {
+  "correctness": 0.5,
+  "reason": "ตอบเป็นตารางทั้งตาราง มีค่าที่ถูกแต่ไม่ได้สรุปคำตอบตรงคำถาม (B-500 80×90 / 80×70)",
+  "answer_sha": "709ea56af281"
+ },
+ "LGP-Q100": {
+  "correctness": 0,
+  "reason": "ตอบค่าโลโก้ 0.80 อย่างเดียว ไม่ได้บอกว่าเอกสารไม่มีราคารวม",
+  "answer_sha": "c923b5027df6"
+ },
+ "LGP-Q092": {
+  "correctness": 0,
+  "reason": "ตอบใบราคาแทนเรื่องหมึก/ใบรับรอง INK-2026-03",
+  "answer_sha": "9d582d1543af"
+ },
+ "LGP-Q069": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "c7a6c173ac62"
+ },
+ "LGP-Q071": {
+  "correctness": 0,
+  "reason": "ไม่ได้ตอบเรื่องออเดอร์ซ้ำลายเดิมภายใน 12 เดือน",
+  "answer_sha": "3c98502080e6"
+ },
+ "LGP-Q105": {
+  "correctness": 0,
+  "reason": "คำถามเทียบคู่แข่ง ควรตอบว่าไม่มีข้อมูล",
+  "answer_sha": "c923b5027df6"
+ },
+ "LGP-Q061": {
+  "correctness": 0,
+  "reason": "ตอบใบราคาแทนผลของการอนุมัติแบบช้า",
+  "answer_sha": "9d582d1543af"
+ },
+ "LGP-Q073": {
+  "correctness": 0.5,
+  "reason": "ตอบเป็นตารางทั้งตาราง มีค่าที่ถูกแต่ไม่ได้สรุปคำตอบตรงคำถาม (≥ 300 รอบ)",
+  "answer_sha": "86e2c7178a31"
+ },
+ "POL-Q073": {
+  "correctness": 0.5,
+  "reason": "ตอบเป็นตารางทั้งตาราง มีค่าที่ถูกแต่ไม่ได้สรุปคำตอบตรงคำถาม (ขั้น 1 รับออเดอร์ · ขั้น 2 ยืนยันสเปก)",
+  "answer_sha": "3d874b32437c"
+ },
+ "POL-Q100": {
+  "correctness": 1,
+  "reason": "เอกสารไม่มีราคา แต่บอทตอบราคาจากระบบ (SQL/CTX) ตรง seed ไม่ได้แต่ง → ถือว่าถูก",
+  "answer_sha": "846249944752",
+  "faithfulness": 1
+ },
+ "POL-Q090": {
+  "correctness": 0,
+  "reason": "ตอบใบราคาแทนชื่อขั้น/การเลื่อนวันรับ",
+  "answer_sha": "9d582d1543af"
+ },
+ "POL-Q063": {
+  "correctness": 0,
+  "reason": "ตอบโควตาตัวอย่าง ไม่ได้ตอบว่าไม่พิมพ์โลโก้/ขอ proof แทน",
+  "answer_sha": "07ead9331527"
+ },
+ "POL-Q053": {
+  "correctness": 0.5,
+  "reason": "มี ฿50/พาเลท/วัน แต่ไม่ได้บอกว่าออกใบแจ้งหนี้แยก",
+  "answer_sha": "0bc665f75c23"
+ },
+ "POL-Q011": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "2cb188d35c76"
+ },
+ "POL-Q025": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "2acd8daa396f"
+ },
+ "POL-Q067": {
+  "correctness": 0,
+  "reason": "ตอบข้อกำหนดไฟล์โลโก้ (20 MB) แทนรูปเคลม 1–5 รูป JPG/PNG 5 MB",
+  "answer_sha": "55f9600f8216"
+ },
+ "QC-Q088": {
+  "correctness": 0.5,
+  "reason": "ตอบเป็นตารางทั้งตาราง มีค่าที่ถูกแต่ไม่ได้สรุปคำตอบตรงคำถาม (CoA · hot/cold end)",
+  "answer_sha": "16313a7732da"
+ },
+ "QC-Q101": {
+  "correctness": 1,
+  "reason": "เอกสารไม่มีราคา แต่บอทตอบราคาจากระบบ (SQL/CTX) ตรง seed ไม่ได้แต่ง → ถือว่าถูก",
+  "answer_sha": "7ac7b04ebdd2",
+  "faithfulness": 1
+ },
+ "QC-Q096": {
+  "correctness": 0,
+  "reason": "ตอบโควตาตัวอย่าง ไม่เกี่ยวกับขวดร้าว/AQL",
+  "answer_sha": "07ead9331527"
+ },
+ "QC-Q004": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "d23ecec8b85f"
+ },
+ "QC-Q065": {
+  "correctness": 0.5,
+  "reason": "ตอบเป็นตารางทั้งตาราง มีค่าที่ถูกแต่ไม่ได้สรุปคำตอบตรงคำถาม (บิ่น/ร้าว = ร้ายแรง)",
+  "answer_sha": "1e8277d58b41"
+ },
+ "QC-Q030": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "d774c88526cf"
+ },
+ "QC-Q027": {
+  "correctness": 0,
+  "reason": "ตอบใบราคาแทนค่า AQL 0 / 0.65 / 2.5",
+  "answer_sha": "9d582d1543af"
+ },
+ "QC-Q039": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "932b13655ba5"
+ },
+ "USE-Q084": {
+  "correctness": 0,
+  "reason": "ตอบโควตาตัวอย่าง ไม่เกี่ยวกับการบรรจุร้อน",
+  "answer_sha": "07ead9331527"
+ },
+ "USE-Q100": {
+  "correctness": 1,
+  "reason": "เอกสารไม่มีราคา แต่บอทตอบราคาจากระบบ (SQL/CTX) ตรง seed ไม่ได้แต่ง → ถือว่าถูก",
+  "answer_sha": "846249944752",
+  "faithfulness": 1
+ },
+ "USE-Q092": {
+  "correctness": 0.5,
+  "reason": "ตอบเป็นตารางทั้งตาราง มีค่าที่ถูกแต่ไม่ได้สรุปคำตอบตรงคำถาม (ออยล์บำรุงผิว B-100/B-150 สีชา)",
+  "answer_sha": "72182d6965e2"
+ },
+ "USE-Q106": {
+  "correctness": 0,
+  "reason": "คำถามเทียบคู่แข่ง ควรตอบว่าไม่มีข้อมูล",
+  "answer_sha": "ab96e4d7540b"
+ },
+ "USE-Q069": {
+  "correctness": 0,
+  "reason": "ไม่ได้ตอบว่าความเสียหายจากการใช้งานของลูกค้าไม่อยู่ในเงื่อนไขเคลม",
+  "answer_sha": "985932ae04ef"
+ },
+ "USE-Q074": {
+  "correctness": 0,
+  "reason": "ตอบรายการสินค้า 9 แบบ ไม่ได้ตอบคำแนะนำตามกลุ่มผลิตภัณฑ์",
+  "answer_sha": "4d53a9660f8d"
+ },
+ "USE-Q070": {
+  "correctness": 0,
+  "reason": "ไม่ได้ตอบเรื่องถังแยกเศษแก้ว",
+  "answer_sha": "256fc4720dd0"
+ },
+ "USE-Q101": {
+  "correctness": 1,
+  "reason": "เอกสารไม่มีราคา แต่บอทตอบราคาจากระบบ (SQL/CTX) ตรง seed ไม่ได้แต่ง → ถือว่าถูก",
+  "answer_sha": "5ff661950b83",
+  "faithfulness": 1
+ },
+ "QA-077": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "53db91d7a8e2"
+ },
+ "QA-003": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "c9ff3f2b157c"
+ },
+ "QA-029": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "66ee3854680d"
+ },
+ "QA-028": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "ec64a758d728"
+ },
+ "QA-005": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "8a991abe99ac"
+ },
+ "QA-035": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "8f5dd84d3993"
+ },
+ "QA-038": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "a45a5bffd46e"
+ },
+ "QA-024": {
+  "correctness": 1,
+  "reason": "",
+  "answer_sha": "3a7db933335c"
+ }
+}

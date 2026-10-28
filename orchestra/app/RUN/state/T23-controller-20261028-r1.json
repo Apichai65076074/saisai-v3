@@ -1,0 +1,26 @@
+{
+  "started_epoch": 1793158025.729784,
+  "deadline_epoch": 1793161325.729784,
+  "stage": "FAILED",
+  "loads": [],
+  "owner_pid": 5633,
+  "owner_start_ticks": "27792",
+  "controller_pid": 13719,
+  "failure": {
+    "type": "TypeError",
+    "message": "'tuple' object is not callable"
+  },
+  "cleanup": {
+    "checked_epoch": 1793158030.8699818,
+    "task_instances": 0,
+    "other_instances": 0,
+    "verified": true
+  },
+  "cleanup_second_check": {
+    "checked_epoch": 1793158032.1299925,
+    "task_instances": 0,
+    "other_instances": 0
+  },
+  "mock_restore_exit": 0,
+  "finished_epoch": 1793158033.3489003
+}

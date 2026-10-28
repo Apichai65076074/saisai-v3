@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-27T07:36:46.984205+00:00",
+  "task_count": 3,
+  "task_instances": [
+    {
+      "id": 57914113,
+      "label": "saisai-20261027-llm",
+      "status": "running",
+      "dph_total": 0.5303703703703704
+    },
+    {
+      "id": 57914254,
+      "label": "saisai-20261027-stt",
+      "status": "running",
+      "dph_total": 0.41388888888888886
+    },
+    {
+      "id": 57914350,
+      "label": "saisai-20261027-tts",
+      "status": "running",
+      "dph_total": 0.41388888888888886
+    }
+  ],
+  "other_instance_count": 0
+}

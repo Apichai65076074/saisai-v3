@@ -1,0 +1,61 @@
+workers/rag-worker/Dockerfile:8:RUN pip3 install --no-cache-dir --break-system-packages --no-deps -r /tmp/requirements.txt \
+web/app/admin/docs/DocsPanel.tsx:21:        const response = await fetch('/api/admin/docs', { cache: 'no-store', signal: abort.signal });
+web/app/admin/docs/DocsPanel.tsx:46:      const list = await fetch('/api/admin/docs', { cache: 'no-store' });
+web/app/admin/load/page.tsx:23:  // T24: ไม่ระบุ ?runs → run หลัก (ปิด cache · rag770 · prefetch 4/4/2) ล่าสุด
+web/app/admin/load/kind.ts:1:// T24: แยก run "ค่าหลัก" (ปิด cache · คำถามไม่ซ้ำ rag770 · prefetch 4/4/2) ออกจาก run "เสริม"
+web/app/admin/load/kind.ts:2:// ผลที่ไม่มี config.cache = รันก่อน T24 (T20) · label 'mock-mix' ของ T20 = final ที่เปิด RRF candidate cache (loadtest/REPORT.md)
+web/app/admin/load/kind.ts:5:export type RunKind = { primary: boolean; cache: 'on' | 'off' | 'unknown'; questions: 'rag770' | 'qa' | 'synthetic' | 'unknown'; prefetch: string | null; badge: string };
+web/app/admin/load/kind.ts:16:  const legacy = c.cache === undefined;
+web/app/admin/load/kind.ts:17:  const cache: RunKind['cache'] = c.cache === 'on' || c.cache === 'off' ? c.cache : legacy && run.label === 'mock-mix' ? 'on' : 'unknown';
+web/app/admin/load/kind.ts:21:  const primary = cache === 'off' && questions === 'rag770' && prefetch === DEFAULT_PREFETCH && !c.synthetic;
+web/app/admin/load/kind.ts:24:    ? ['ค่าหลัก', 'ปิด cache', q, `prefetch ${prefetch}`]
+web/app/admin/load/kind.ts:25:    : ['เสริม', cache === 'on' ? 'เปิด cache' : cache === 'off' ? 'ปิด cache' : 'ไม่ระบุ cache', questions === 'qa' && cache === 'on' ? 'คำถามซ้ำ' : q,
+web/app/admin/load/kind.ts:27:  return { primary, cache, questions, prefetch, badge: parts.join(' · ') };
+web/app/admin/load/LoadDashboard.tsx:148:        ? <>ตัวเลขหลัก (ปิด cache · คำถามไม่ซ้ำสุ่มจาก 770 ข้อ · prefetch 4/4/2): รองรับพร้อมกัน {runModes(headline).map(m => `${MODE_NAMES[m]} ${headline.max_users_ok[m] ?? 0} คน`).join(' · ')} — run #{headline.id} {headline.label} · run ที่เปิด cache/คำถามซ้ำ = ข้อมูลเสริม</>
+web/app/admin/load/LoadDashboard.tsx:149:        : <>ยังไม่มี run หลัก (ปิด cache · คำถามไม่ซ้ำ rag770 · prefetch 4/4/2) · ผลที่แสดงเป็นข้อมูลเสริม</>}
+web/app/admin/load/LoadDashboard.tsx:153:        <span className={k.primary ? 'load-kind primary' : 'load-kind'} data-testid="load-run-kind" data-kind={k.primary ? 'primary' : 'supplementary'} data-cache={k.cache} data-questions={k.questions}>{k.badge}</span></h2>
+web/components/three/README.md:7:`Mascot3D` occupies T14's existing mascot wrapper. It reads the shared avatar store and audio element; one cached MediaElementAudioSourceNode per audio element feeds an AnalyserNode and the speakers. RMS updates `data-mouth` every 50 ms, resetting to `0.00` on pause/end. The four primitive poses follow the supplied concept (round glass body, brown cork, eyes, cheeks, arms, feet and bubbles).
+web/components/chat/ChatWidget.tsx:74:    void fetch('/api/chat/history', { signal: abort.signal, cache: 'no-store' }).then(async (r) => {
+web/components/chat/ChatWidget.tsx:87:    const check = () => { void fetch('/api/tts/status', { signal: abort.signal, cache: 'no-store' }).then((r) => r.ok ? r.json() : { enabled: false }).then((data) => {
+web/components/chat/README.md:13:- `mascotSlot?: ReactNode` replaces the fallback image inside the required mascot wrapper. T16 can attach its AnalyserNode to the shared audio element and update the wrapper's `data-mouth` (initially `0.00`). Create/cache one MediaElementAudioSourceNode per element. The element stays mounted when the panel closes.
+web/components/voice/VoiceControls.tsx:89:        const r = await fetch('/api/voice/status', { cache: 'no-store' });
+web/components/notify/NotifyBox.tsx:10:  async function poll(){try{const r=await fetch('/api/staff/notifications',{cache:'no-store'});if(!r.ok)throw Error();const j=await r.json();if(active){setItems(j.notifications);setFailed(false);}}catch{if(active)setFailed(true);}finally{if(active)timer=setTimeout(poll,2000);}}
+web/lib/mq/test/mq.int.test.ts:68:    await sleep(600); // cache 0.5 วิ
+workers/chat-worker/lib/retrieve.mjs:2:// Cache only RRF candidates; reranking/generation always run. Per-DB isolation and
+workers/chat-worker/lib/retrieve.mjs:4:const candidateCaches = new WeakMap();
+workers/chat-worker/lib/retrieve.mjs:5:const CANDIDATE_CACHE_LIMIT = 256, CANDIDATE_CACHE_TTL_MS = 300000;
+workers/chat-worker/lib/retrieve.mjs:6:// T24: the cache is opt-in (RAG_CANDIDATE_CACHE=on). Off = no read, no write, no singleflight.
+workers/chat-worker/lib/retrieve.mjs:7:export const candidateCacheStats = { mode: null, hits: 0, misses: 0, bypass: 0 };
+workers/chat-worker/lib/retrieve.mjs:8:export const candidateCacheMode = options => ((options.candidateCache ?? process.env.RAG_CANDIDATE_CACHE ?? 'off') === 'on' ? 'on' : 'off');
+workers/chat-worker/lib/retrieve.mjs:47:// T24: exact top-20 with pruning (not a cache). word_similarity(t, x) <= |trgm(t) ∩ trgm(x)| / |trgm(t)|, so
+workers/chat-worker/lib/retrieve.mjs:106:  let candidateCache, candidateKey;
+workers/chat-worker/lib/retrieve.mjs:107:  const cacheMode = candidateCacheMode(options);
+workers/chat-worker/lib/retrieve.mjs:108:  if (candidateCacheStats.mode !== cacheMode) { candidateCacheStats.mode = cacheMode; console.log(`[retrieve] RAG_CANDIDATE_CACHE=${cacheMode}`); }
+workers/chat-worker/lib/retrieve.mjs:109:  if (cacheMode === 'off' || options.fetch) candidateCacheStats.bypass++;
+workers/chat-worker/lib/retrieve.mjs:110:  else { // injected transports remain uncached for eval/tests
+workers/chat-worker/lib/retrieve.mjs:112:    candidateCache = candidateCaches.get(db);
+workers/chat-worker/lib/retrieve.mjs:113:    if (!candidateCache) { candidateCache = new Map(); candidateCaches.set(db, candidateCache); }
+workers/chat-worker/lib/retrieve.mjs:115:    const hit = candidateCache.get(candidateKey);
+workers/chat-worker/lib/retrieve.mjs:117:      if (++candidateCacheStats.hits % 100 === 1) console.log(`[retrieve] candidate cache hits=${candidateCacheStats.hits} misses=${candidateCacheStats.misses}`);
+workers/chat-worker/lib/retrieve.mjs:118:      hit.expiresAt = Date.now() + CANDIDATE_CACHE_TTL_MS;
+workers/chat-worker/lib/retrieve.mjs:119:      candidateCache.delete(candidateKey); candidateCache.set(candidateKey, hit);
+workers/chat-worker/lib/retrieve.mjs:122:    candidateCache.delete(candidateKey);
+workers/chat-worker/lib/retrieve.mjs:123:    candidateCacheStats.misses++;
+workers/chat-worker/lib/retrieve.mjs:140:  if (candidateCache) {
+workers/chat-worker/lib/retrieve.mjs:142:    candidateCache.set(candidateKey, { expiresAt: Date.now() + CANDIDATE_CACHE_TTL_MS, promise: pending });
+workers/chat-worker/lib/retrieve.mjs:143:    pending.catch(() => { if (candidateCache.get(candidateKey)?.promise === pending) candidateCache.delete(candidateKey); });
+workers/chat-worker/lib/retrieve.mjs:144:    while (candidateCache.size > CANDIDATE_CACHE_LIMIT) candidateCache.delete(candidateCache.keys().next().value);
+workers/chat-worker/lib/retrieve.mjs:147:  if (candidateCache) {
+workers/chat-worker/lib/retrieve.mjs:148:    if (v.length) candidateCache.set(candidateKey, { expiresAt: Date.now() + CANDIDATE_CACHE_TTL_MS, rows: rrf(v, k.rows) });
+workers/chat-worker/lib/retrieve.mjs:149:    else candidateCache.delete(candidateKey); // retry vector retrieval after an embedder outage
+workers/chat-worker/lib/retrieve.mjs:150:    while (candidateCache.size > CANDIDATE_CACHE_LIMIT) candidateCache.delete(candidateCache.keys().next().value);
+web/lib/mq/index.ts:185:/** สถิติคิว (cache 0.5 วิ) · null = ไม่รู้ (MQ ล่ม / ไม่มีคิว) */
+web/app/api/docs/[filename]/route.ts:16:      'cache-control': 'private, max-age=60',
+web/app/api/claims/[no]/photos/[seq]/route.ts:25:          "cache-control": "private, no-store",
+web/app/api/admin/load/SCHEMA.md:5:The page always requires owner login. Responses have `Cache-Control: no-store`
+web/app/api/staff/claims/[no]/photos/[seq]/route.ts:9: return new Response(new Uint8Array(photo.content),{headers:{'Content-Type':photo.mime_type,'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
+web/app/api/chat/route.ts:154:      'Cache-Control': 'no-cache, no-transform',
+web/app/api/voice/status/route.ts:9:  return Response.json({ enabled: n > 0 }, { headers: { 'cache-control': 'no-store' } });
+web/app/api/tts/[audioId]/route.ts:1:// GET /api/tts/<audioId> (T15) → audio/wav จากตาราง tts_audio (audioId = sha256 ของข้อความ+ภาษา → cache ได้ยาว) · รองรับ Range
+web/app/api/tts/[audioId]/route.ts:18:    'cache-control': 'private, max-age=86400',
+web/app/api/tts/status/route.ts:9:  return Response.json({ enabled: n > 0 }, { headers: { 'cache-control': 'no-store' } });

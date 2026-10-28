@@ -1,0 +1,202 @@
+{
+  "started_at": "2026-10-27T04:25:16.444Z",
+  "mode": "ai",
+  "definition": "T18 normalized/clamped character Levenshtein CER",
+  "language_policy": "auto-detect; unsupported language retries Thai",
+  "models": {
+    "large-v3": {
+      "n": 10,
+      "mean_cer": 0.1668,
+      "items": [
+        {
+          "id": "V01",
+          "reference": "ขวดสองร้อยห้าสิบมิลสีเขียวใบละเท่าไร",
+          "hypothesis": "ขวด 250 มิล สีเขียวใบ และเท่าไหร่",
+          "language": "th",
+          "duration_s": 6.5068125,
+          "elapsed_ms": 10347.056669,
+          "cer": 0.4444444444444444
+        },
+        {
+          "id": "V02",
+          "reference": "ถ้าสั่งหมื่นใบได้ส่วนลดกี่เปอร์เซ็นต์",
+          "hypothesis": "ถ้าสั่ง 17,000 ได้ส่วนลดกี่เปอร์เซ็นต์",
+          "language": "th",
+          "duration_s": 4.387125,
+          "elapsed_ms": 21977.470291999998,
+          "cer": 0.1891891891891892
+        },
+        {
+          "id": "V03",
+          "reference": "พิมพ์โลโก้ด้วยเพิ่มเท่าไร",
+          "hypothesis": "พิมพ์โลโก้ ด้วย เพิ่มเทาไหร่",
+          "language": "th",
+          "duration_s": 1.71825,
+          "elapsed_ms": 13731.782196999997,
+          "cer": 0.12
+        },
+        {
+          "id": "V04",
+          "reference": "ส่งไปโรงงานนครสวรรค์ค่าส่งเท่าไร",
+          "hypothesis": "ส่งไปโรงงานนักอ่อนสวรรค์ ข้าส่งเท่าไหร่",
+          "language": "th",
+          "duration_s": 5.9766875,
+          "elapsed_ms": 34238.207650000004,
+          "cer": 0.3125
+        },
+        {
+          "id": "V05",
+          "reference": "ขอใบเสนอราคาด้วย",
+          "hypothesis": "ขอบ้ายเสนอราคาด้วย",
+          "language": "th",
+          "duration_s": 2.7968125,
+          "elapsed_ms": 19248.495012,
+          "cer": 0.25
+        },
+        {
+          "id": "V06",
+          "reference": "ขวดแตกเคลมได้ภายในกี่วัน",
+          "hypothesis": "ควดแตกเคลมได้ภายในกี่วัน",
+          "language": "th",
+          "duration_s": 4.916875,
+          "elapsed_ms": 20125.312252000003,
+          "cer": 0.041666666666666664
+        },
+        {
+          "id": "V07",
+          "reference": "ขวดห้าร้อยมิลสั่งขั้นต่ำกี่ใบ",
+          "hypothesis": "ขวด 500 มิตร สั่งขั้นต่ำกี่ใบ",
+          "language": "th",
+          "duration_s": 3.8575,
+          "elapsed_ms": 18573.68516599998,
+          "cer": 0.3103448275862069
+        },
+        {
+          "id": "V08",
+          "reference": "What is the minimum order for the 150 ml bottle?",
+          "hypothesis": "What is the minimum order for the 150 ml bottle?",
+          "language": "en",
+          "duration_s": 5.447,
+          "elapsed_ms": 23645.104013000004,
+          "cer": 0
+        },
+        {
+          "id": "V09",
+          "reference": "วันรับของเร็วที่สุดคือวันไหน",
+          "hypothesis": "วันรับของเร็วที่สุดคือวันไหน?",
+          "language": "th",
+          "duration_s": 3.32725,
+          "elapsed_ms": 19632.99315699999,
+          "cer": 0
+        },
+        {
+          "id": "V10",
+          "reference": "Can I get free samples?",
+          "hypothesis": "Can I get free samples?",
+          "language": "en",
+          "duration_s": 2.2666875,
+          "elapsed_ms": 11092.176834000013,
+          "cer": 0
+        }
+      ]
+    },
+    "large-v3-turbo": {
+      "n": 10,
+      "mean_cer": 0.3366,
+      "items": [
+        {
+          "id": "V01",
+          "reference": "ขวดสองร้อยห้าสิบมิลสีเขียวใบละเท่าไร",
+          "hypothesis": "ขวด 250 B-40 B-100 B-100 B-",
+          "language": "th",
+          "duration_s": 6.5068125,
+          "elapsed_ms": 31993.314732,
+          "cer": 0.9166666666666666
+        },
+        {
+          "id": "V02",
+          "reference": "ถ้าสั่งหมื่นใบได้ส่วนลดกี่เปอร์เซ็นต์",
+          "hypothesis": "ถ้าสั่ง 10.7 ได้ส่วนลด คี่%?",
+          "language": "th",
+          "duration_s": 4.387125,
+          "elapsed_ms": 22015.471150000027,
+          "cer": 0.5135135135135135
+        },
+        {
+          "id": "V03",
+          "reference": "พิมพ์โลโก้ด้วยเพิ่มเท่าไร",
+          "hypothesis": "Kim Loco đuổi cơm thậu đại",
+          "language": "th",
+          "duration_s": 1.71825,
+          "elapsed_ms": 8466.553190000006,
+          "cer": 1
+        },
+        {
+          "id": "V04",
+          "reference": "ส่งไปโรงงานนครสวรรค์ค่าส่งเท่าไร",
+          "hypothesis": "ส่งไปโรงงานนักออนสวรรคาส่งเท่าไหร่",
+          "language": "th",
+          "duration_s": 5.9766875,
+          "elapsed_ms": 24588.766769999987,
+          "cer": 0.3125
+        },
+        {
+          "id": "V05",
+          "reference": "ขอใบเสนอราคาด้วย",
+          "hypothesis": "ขอบายเสนอราคาด้วย",
+          "language": "th",
+          "duration_s": 2.7968125,
+          "elapsed_ms": 12930.787257999997,
+          "cer": 0.1875
+        },
+        {
+          "id": "V06",
+          "reference": "ขวดแตกเคลมได้ภายในกี่วัน",
+          "hypothesis": "ขวดแก้เกลม ได้ภายในกี่วัน",
+          "language": "th",
+          "duration_s": 4.916875,
+          "elapsed_ms": 20882.83125300001,
+          "cer": 0.125
+        },
+        {
+          "id": "V07",
+          "reference": "ขวดห้าร้อยมิลสั่งขั้นต่ำกี่ใบ",
+          "hypothesis": "ขวด 500 มิตร สั่งขั้นต่ำกี่ใบ",
+          "language": "th",
+          "duration_s": 3.8575,
+          "elapsed_ms": 17732.508528999984,
+          "cer": 0.3103448275862069
+        },
+        {
+          "id": "V08",
+          "reference": "What is the minimum order for the 150 ml bottle?",
+          "hypothesis": "What is the minimum order for the 150 ml bottle?",
+          "language": "en",
+          "duration_s": 5.447,
+          "elapsed_ms": 25726.08581300004,
+          "cer": 0
+        },
+        {
+          "id": "V09",
+          "reference": "วันรับของเร็วที่สุดคือวันไหน",
+          "hypothesis": "วันรับของเร็วที่สุดคือวันไหน",
+          "language": "th",
+          "duration_s": 3.32725,
+          "elapsed_ms": 15519.64403700002,
+          "cer": 0
+        },
+        {
+          "id": "V10",
+          "reference": "Can I get free samples?",
+          "hypothesis": "Can I get free samples?",
+          "language": "en",
+          "duration_s": 2.2666875,
+          "elapsed_ms": 4749.62774299999,
+          "cer": 0
+        }
+      ]
+    }
+  },
+  "selected": "large-v3",
+  "finished_at": "2026-10-27T04:31:34.759Z"
+}

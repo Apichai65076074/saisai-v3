@@ -1,0 +1,56 @@
+{
+  "label": "scale-x4",
+  "status": "SKIPPED",
+  "measured": false,
+  "reason": "cumulative conservative estimate >= $10 after x2 (user rule 21:35: at $10 skip x4)",
+  "stages": [],
+  "max_users_ok": null,
+  "resource_topology": {
+    "llm5090": 4,
+    "stt4090": 1,
+    "tts4090": 2,
+    "rerank4090": 1
+  },
+  "x4_decision": {
+    "projected_usd_with_cleanup": 15.123678796296296,
+    "status": "SKIPPED",
+    "reason": "cumulative $10 threshold"
+  },
+  "cost_after_x2": {
+    "stage": "T23-x2-load-mix",
+    "ids": [
+      58048734,
+      58049004,
+      58049112,
+      58049267,
+      58049699
+    ],
+    "actual_usd": 8.075,
+    "estimated_usd": 11.3355,
+    "burn_hr": 2.45537,
+    "headroom_to_12_usd": 0.6645,
+    "last_checked": 1793165156.9432325,
+    "watchdog_pid": 114486,
+    "other_instances": 0
+  },
+  "x4_offer_quotes": [
+    {
+      "id": 45669379,
+      "gpu_name": "RTX 5090",
+      "dph_total": 0.5303703703703704,
+      "reliability": 0.9973736
+    },
+    {
+      "id": 45043235,
+      "gpu_name": "RTX 5090",
+      "dph_total": 0.5303703703703704,
+      "reliability": 0.9973094
+    },
+    {
+      "id": 55517253,
+      "gpu_name": "RTX 4090",
+      "dph_total": 0.40648148148148144,
+      "reliability": 0.9991084
+    }
+  ]
+}

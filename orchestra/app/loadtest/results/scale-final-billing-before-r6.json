@@ -1,0 +1,238 @@
+{
+  "captured_epoch": 1793167607.7248378,
+  "inventory": {
+    "task_instances": 1,
+    "other_instances": 0
+  },
+  "instances": [
+    {
+      "instance_id": 58056674,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0,
+      "storage": 0.001,
+      "download": 0,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 0.0284,
+      "total": 0.001
+    },
+    {
+      "instance_id": 58049699,
+      "label": "saisai-20261027-rerank",
+      "gpu": 0.298,
+      "storage": 0.012,
+      "download": 0.004,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 0.8796,
+      "total": 0.314
+    },
+    {
+      "instance_id": 58049267,
+      "label": "saisai-20261027-tts",
+      "gpu": 0.362,
+      "storage": 0.018,
+      "download": 0.03,
+      "upload": 0.001,
+      "other": 0,
+      "rental_hours": 0.9806,
+      "total": 0.411
+    },
+    {
+      "instance_id": 58049112,
+      "label": "saisai-20261027-llm-2",
+      "gpu": 0.647,
+      "storage": 0.022,
+      "download": 0.064,
+      "upload": 0.002,
+      "other": 0,
+      "rental_hours": 1.0126,
+      "total": 0.735
+    },
+    {
+      "instance_id": 58049004,
+      "label": "saisai-20261027-stt",
+      "gpu": 0.371,
+      "storage": 0.019,
+      "download": 0.014,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 1.0437,
+      "total": 0.404
+    },
+    {
+      "instance_id": 58048734,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0.606,
+      "storage": 0.024,
+      "download": 0.064,
+      "upload": 0.003,
+      "other": 0,
+      "rental_hours": 1.1048,
+      "total": 0.697
+    },
+    {
+      "instance_id": 58046920,
+      "label": "saisai-20261027-tts",
+      "gpu": 0.051,
+      "storage": 0.003,
+      "download": 0,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 0.0796,
+      "total": 0.054
+    },
+    {
+      "instance_id": 58046704,
+      "label": "saisai-20261027-stt",
+      "gpu": 0.073,
+      "storage": 0.003,
+      "download": 0.001,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 0.1422,
+      "total": 0.077
+    },
+    {
+      "instance_id": 58045480,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0.035,
+      "storage": 0.004,
+      "download": 0,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 0.0448,
+      "total": 0.039
+    },
+    {
+      "instance_id": 58044931,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0,
+      "storage": 0.002,
+      "download": 0,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 0.0452,
+      "total": 0.002
+    },
+    {
+      "instance_id": 57981212,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0,
+      "storage": 0.003,
+      "download": 0,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 0.0981,
+      "total": 0.003
+    },
+    {
+      "instance_id": 57980427,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0,
+      "storage": 0.001,
+      "download": 0,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 0.0601,
+      "total": 0.001
+    },
+    {
+      "instance_id": 57978391,
+      "label": "saisai-20261027-llm-2",
+      "gpu": 0,
+      "storage": 0.002,
+      "download": 0,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 0.018,
+      "total": 0.002
+    },
+    {
+      "instance_id": 57978074,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0.042,
+      "storage": 0.004,
+      "download": 0,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 0.0656,
+      "total": 0.046
+    },
+    {
+      "instance_id": 57975038,
+      "label": "saisai-20261027-stt",
+      "gpu": 0,
+      "storage": 0.002,
+      "download": 0,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 0.117,
+      "total": 0.002
+    },
+    {
+      "instance_id": 57974686,
+      "label": "saisai-20261027-llm-2",
+      "gpu": 0.083,
+      "storage": 0.007,
+      "download": 0.001,
+      "upload": 0,
+      "other": 0,
+      "rental_hours": 0.1757,
+      "total": 0.091
+    },
+    {
+      "instance_id": 57974344,
+      "label": "saisai-20261027-llm-1",
+      "gpu": 0.1,
+      "storage": 0.009,
+      "download": 0.025,
+      "upload": 0.001,
+      "other": 0,
+      "rental_hours": 0.2369,
+      "total": 0.135
+    },
+    {
+      "instance_id": 57914350,
+      "label": "saisai-20261027-tts",
+      "gpu": 1.434,
+      "storage": 0.05,
+      "download": 0.027,
+      "upload": 0.002,
+      "other": 0,
+      "rental_hours": 3.5992,
+      "total": 1.513
+    },
+    {
+      "instance_id": 57914254,
+      "label": "saisai-20261027-stt",
+      "gpu": 1.445,
+      "storage": 0.05,
+      "download": 0.022,
+      "upload": 0.001,
+      "other": 0,
+      "rental_hours": 3.6126,
+      "total": 1.518
+    },
+    {
+      "instance_id": 57914113,
+      "label": "saisai-20261027-llm",
+      "gpu": 1.787,
+      "storage": 0.136,
+      "download": 0.13,
+      "upload": 0.004,
+      "other": 0,
+      "rental_hours": 3.6385,
+      "total": 2.057
+    }
+  ],
+  "total": {
+    "gpu": 7.334,
+    "storage": 0.372,
+    "download": 0.382,
+    "upload": 0.014,
+    "other": 0,
+    "usd": 8.102
+  },
+  "billing_settlement_note": "Actual billing snapshot; invoices may settle after destroy."
+}

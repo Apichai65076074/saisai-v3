@@ -1,0 +1,95 @@
+TAP version 13
+# cold runtime counters {"requests":6,"upstream":6,"memoryHits":0,"dbReads":0,"dbWrites":0,"shared":0}
+# Subtest: TTS_CACHE=off: sequential + simultaneous repeats call upstream each time, zero DB/cache work
+ok 1 - TTS_CACHE=off: sequential + simultaneous repeats call upstream each time, zero DB/cache work
+  ---
+  duration_ms: 138.568037
+  type: 'test'
+  ...
+# Subtest: ฿5.80 → ห้าบาทแปดสิบสตางค์
+ok 2 - ฿5.80 → ห้าบาทแปดสิบสตางค์
+  ---
+  duration_ms: 10.716882
+  type: 'test'
+  ...
+# Subtest: B-250 → บี สองร้อยห้าสิบ
+ok 3 - B-250 → บี สองร้อยห้าสิบ
+  ---
+  duration_ms: 1.611083
+  type: 'test'
+  ...
+# Subtest: เงินอื่น ๆ
+ok 4 - เงินอื่น ๆ
+  ---
+  duration_ms: 0.893056
+  type: 'test'
+  ...
+# Subtest: รหัสเอกสาร/สินค้าอ่านทีละหลัก
+ok 5 - รหัสเอกสาร/สินค้าอ่านทีละหลัก
+  ---
+  duration_ms: 1.19391
+  type: 'test'
+  ...
+# Subtest: จำนวนเต็ม
+ok 6 - จำนวนเต็ม
+  ---
+  duration_ms: 0.628211
+  type: 'test'
+  ...
+# Subtest: ตัด emoji/tag/markdown/ป้ายอ้างอิง
+ok 7 - ตัด emoji/tag/markdown/ป้ายอ้างอิง
+  ---
+  duration_ms: 0.860751
+  type: 'test'
+  ...
+# Subtest: ภาษาตามตัวอักษร
+ok 8 - ภาษาตามตัวอักษร
+  ---
+  duration_ms: 3.159555
+  type: 'test'
+  ...
+# Subtest: ยาวไม่เกิน 600 ตัวอักษร
+ok 9 - ยาวไม่เกิน 600 ตัวอักษร
+  ---
+  duration_ms: 2.714477
+  type: 'test'
+  ...
+# Subtest: wavDurationMs · audioIdFor
+ok 10 - wavDurationMs · audioIdFor
+  ---
+  duration_ms: 2.688672
+  type: 'test'
+  ...
+# Subtest: cache sha256(ข้อความ+ภาษา): เรียก service ครั้งเดียว · ส่ง voice nongsai + language
+not ok 11 - cache sha256(ข้อความ+ภาษา): เรียก service ครั้งเดียว · ส่ง voice nongsai + language
+  ---
+  duration_ms: 41.716627
+  type: 'test'
+  location: '/root/runs/saisai/wt/T22/workers/tts-worker/test/tts.test.mjs:30:1'
+  failureType: 'testCodeFailure'
+  error: ''
+  code: 'ECONNREFUSED'
+  name: 'AggregateError'
+  stack: |-
+    /root/runs/saisai/wt/T22/workers/tts-worker/node_modules/pg-pool/index.js:45:11
+    process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    async synth (file:///root/runs/saisai/wt/T22/workers/tts-worker/index.mjs:154:18)
+    async TestContext.<anonymous> (file:///root/runs/saisai/wt/T22/workers/tts-worker/test/tts.test.mjs:38:15)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: integration: tts.request → reply {type:tts, messageId, seq, audioId, durationMs, engine, lang}
+ok 12 - integration: tts.request → reply {type:tts, messageId, seq, audioId, durationMs, engine, lang} # SKIP ไม่มี DATABASE_URL/AMQP_URL
+  ---
+  duration_ms: 2.917012
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 10
+# fail 1
+# cancelled 0
+# skipped 1
+# todo 0
+# duration_ms 510.728599

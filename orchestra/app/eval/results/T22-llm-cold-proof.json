@@ -1,0 +1,82 @@
+{
+  "mode": "ai",
+  "cache": "off",
+  "items": [
+    {
+      "n": 1,
+      "elapsed_s": 0.5768349649997617,
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "ร้านขายขวดแก้วคือสถานที่ที่จำหน่ายภาชนะหรือบรรจุภัณฑ์ที่ทำจากแก้ว",
+            "refusal": null,
+            "role": "assistant"
+          }
+        }
+      ],
+      "usage": {
+        "completion_tokens": 17,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 24,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 41
+      },
+      "timings": {
+        "cache_n": 0,
+        "predicted_ms": 206.912713,
+        "predicted_n": 17,
+        "predicted_per_second": 77.3272930793769,
+        "predicted_per_token_ms": 12.9320445625,
+        "prompt_ms": 39.759906,
+        "prompt_n": 24,
+        "prompt_per_second": 603.6231574591751,
+        "prompt_per_token_ms": 1.65666275
+      }
+    },
+    {
+      "n": 2,
+      "elapsed_s": 0.6629169890002231,
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "ร้านขายขวดแก้วคือสถานที่ที่จำหน่ายภาชนะหรือบรรจุภัณฑ์ที่ทำจากแก้ว",
+            "refusal": null,
+            "role": "assistant"
+          }
+        }
+      ],
+      "usage": {
+        "completion_tokens": 17,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 24,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 41
+      },
+      "timings": {
+        "cache_n": 0,
+        "predicted_ms": 206.917302,
+        "predicted_n": 17,
+        "predicted_per_second": 77.32557811912703,
+        "predicted_per_token_ms": 12.932331375,
+        "prompt_ms": 30.049729,
+        "prompt_n": 24,
+        "prompt_per_second": 798.6760878941703,
+        "prompt_per_token_ms": 1.2520720416666666
+      }
+    }
+  ]
+}

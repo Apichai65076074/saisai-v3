@@ -1,0 +1,18 @@
+/* T08 ใบเสนอราคา · พิมพ์ได้ (ซ่อน nav/แชท/ปุ่ม) */
+.quote-paper { background: #fff; border: 1px solid #d7e3e8; border-radius: 12px; padding: 28px; }
+.quote-head { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; border-bottom: 3px solid #0E7C9B; padding-bottom: 16px; margin-bottom: 16px; }
+.quote-head h1 { margin: 0; color: #0B2E3F; }
+.quote-shop { color: #0B2E3F; }
+.quote-shop strong { color: #0E7C9B; font-size: 1.2em; }
+.quote-meta p { margin: 4px 0; }
+.quote-expired { background: #fdecea; color: #a12b1f; border: 1px solid #f3b8b1; padding: 10px 14px; border-radius: 8px; font-weight: 600; }
+.quote-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; margin-top: 20px; }
+.quote-actions label { display: block; }
+.quote-list td, .quote-list th { padding: 8px 10px; text-align: left; }
+@media print {
+  @page { size: A4; margin: 14mm; }
+  header.nav, .test-banner, [data-testid="chat-open"], #saisai-chat, .no-print { display: none !important; }
+  body { background: #fff !important; }
+  main.container { max-width: none; padding: 0; margin: 0; }
+  .quote-paper { border: 0; padding: 0; box-shadow: none; }
+}

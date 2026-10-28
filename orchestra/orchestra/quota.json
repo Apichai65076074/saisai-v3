@@ -1,0 +1,124 @@
+{
+ "at": "2026-10-28T15:04:41+07:00",
+ "accounts": [
+  {
+   "account": "yolo1",
+   "kind": "yolo",
+   "logged_in": true,
+   "plan": "team",
+   "session_used": 67,
+   "session_reset": "2026-10-28T15:19:00+07:00",
+   "week_used": 30,
+   "week_reset": "2026-11-02T20:59:00+07:00",
+   "at": "2026-10-28T15:04:38+07:00",
+   "cap_week": 100,
+   "headroom_session": 33,
+   "headroom_week": 70,
+   "headroom": 33,
+   "expires": "2026-11-02T20:59:00+07:00",
+   "hours_left": 125.9,
+   "use_first": 0.16,
+   "score": 22.8,
+   "slots": 3
+  },
+  {
+   "account": "yolo2",
+   "kind": "yolo",
+   "logged_in": true,
+   "plan": "team",
+   "session_used": 33,
+   "session_reset": "2026-10-28T15:20:00+07:00",
+   "week_used": 27,
+   "week_reset": "2026-11-02T21:00:00+07:00",
+   "at": "2026-10-28T13:01:04+07:00",
+   "disabled": true
+  },
+  {
+   "account": "yolo3",
+   "kind": "yolo",
+   "logged_in": true,
+   "plan": "max",
+   "session_used": 17,
+   "session_reset": "2026-10-28T15:10:00+07:00",
+   "week_used": 41,
+   "week_reset": "2026-10-31T08:00:00+07:00",
+   "at": "2026-10-28T13:01:04+07:00",
+   "cap_week": 42,
+   "headroom_session": 83,
+   "headroom_week": 1,
+   "headroom": 1,
+   "expires": "2026-10-31T08:00:00+07:00",
+   "hours_left": 64.9,
+   "use_first": 0.27,
+   "score": 16.6,
+   "slots": 0
+  },
+  {
+   "account": "yolo4",
+   "kind": "yolo",
+   "logged_in": false
+  },
+  {
+   "account": "yolo5",
+   "kind": "yolo",
+   "logged_in": false
+  },
+  {
+   "account": "cyolo1",
+   "kind": "cyolo",
+   "logged_in": true,
+   "plan": "plus",
+   "session_used": 0,
+   "session_reset": "2026-10-28T17:34:57+07:00",
+   "week_used": 28,
+   "week_reset": "2026-11-02T21:12:28+07:00",
+   "at": "2026-10-27T16:18:54.039Z",
+   "cap_week": 100,
+   "headroom_session": 100,
+   "headroom_week": 72,
+   "headroom": 72,
+   "expires": "2026-11-02T21:12:28+07:00",
+   "hours_left": 126.1,
+   "use_first": 0.16,
+   "score": 38.4,
+   "slots": 2
+  },
+  {
+   "account": "cyolo2",
+   "kind": "cyolo",
+   "logged_in": true,
+   "plan": "plus",
+   "session_used": 7,
+   "session_reset": "2026-10-28T18:35:53+07:00",
+   "week_used": 1,
+   "week_reset": "2026-11-04T13:35:53+07:00",
+   "at": "2026-10-28T06:48:13.192Z",
+   "cap_week": 100,
+   "headroom_session": 93,
+   "headroom_week": 99,
+   "headroom": 93,
+   "expires": "2026-11-04T13:35:53+07:00",
+   "hours_left": 166.5,
+   "use_first": 0.126,
+   "score": 44.8,
+   "slots": 2,
+   "proj_session": 7.7,
+   "proj_week": 3.9
+  },
+  {
+   "account": "cyolo3",
+   "kind": "cyolo",
+   "logged_in": false
+  },
+  {
+   "account": "cyolo4",
+   "kind": "cyolo",
+   "logged_in": false
+  },
+  {
+   "account": "cyolo5",
+   "kind": "cyolo",
+   "logged_in": false
+  }
+ ]
+}

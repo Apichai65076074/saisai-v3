@@ -1,0 +1,71 @@
+TAP version 13
+# Subtest: rag770 is the default question set and loads 770 unique read-only questions
+ok 1 - rag770 is the default question set and loads 770 unique read-only questions
+  ---
+  duration_ms: 45.266493
+  type: 'test'
+  ...
+# Subtest: deck deals without replacement, is seed-deterministic and counts repeats only after exhaustion
+ok 2 - deck deals without replacement, is seed-deterministic and counts repeats only after exhaustion
+  ---
+  duration_ms: 40.123303
+  type: 'test'
+  ...
+# [retrieve] RAG_CANDIDATE_CACHE=on
+# [retrieve] candidate cache hits=1 misses=1
+# [retrieve] keyword search = fullscan (doc_chunk_trgms missing)
+# [rerank] {"requests":2,"succeeded":1,"fallback":0}
+# [rerank] {"requests":2,"succeeded":2,"fallback":0}
+# [rerank] {"requests":3,"succeeded":3,"fallback":0}
+# [retrieve] keyword search = fullscan (doc_chunk_trgms missing)
+# [rerank] {"requests":4,"succeeded":4,"fallback":0}
+# [rerank] {"requests":5,"succeeded":5,"fallback":0}
+# [retrieve] keyword search = fullscan (doc_chunk_trgms missing)
+# [retrieve] RAG_CANDIDATE_CACHE=off
+# [retrieve] keyword search = fullscan (doc_chunk_trgms missing)
+# Subtest: candidate cache shares searches, reranks each request, invalidates document changes, isolates DBs and expires
+ok 3 - candidate cache shares searches, reranks each request, invalidates document changes, isolates DBs and expires
+  ---
+  duration_ms: 147.788384
+  type: 'test'
+  ...
+# Subtest: embedding outage is not cached after vector service recovers
+ok 4 - embedding outage is not cached after vector service recovers
+  ---
+  duration_ms: 3.064047
+  type: 'test'
+  ...
+# [retrieve] RAG_CANDIDATE_CACHE=on
+# Subtest: RAG_CANDIDATE_CACHE=off (default) searches the DB and embedder on every call, including concurrent identical queries
+ok 5 - RAG_CANDIDATE_CACHE=off (default) searches the DB and embedder on every call, including concurrent identical queries
+  ---
+  duration_ms: 27.116983
+  type: 'test'
+  ...
+# Subtest: validates modes, stages, shard and durations before work
+ok 6 - validates modes, stages, shard and durations before work
+  ---
+  duration_ms: 2.660322
+  type: 'test'
+  ...
+# Subtest: SSE handles split UTF8, multiple frames, comments and multiline data
+ok 7 - SSE handles split UTF8, multiple frames, comments and multiline data
+  ---
+  duration_ms: 11.569377
+  type: 'test'
+  ...
+# Subtest: public API pipeline: session isolation, chat, STT, TTS, voice, 429, missing audio and SSE errors
+ok 8 - public API pipeline: session isolation, chat, STT, TTS, voice, 429, missing audio and SSE errors
+  ---
+  duration_ms: 177.303008
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 419.072343
